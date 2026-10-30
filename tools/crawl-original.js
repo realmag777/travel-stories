@@ -178,10 +178,12 @@ async function scrollThrough(page) {
   const index = [];
   for (const [u, a] of assets) {
     const clean = u.split('?')[0];
-    let file = decodeURIComponent(clean.replace(/^https?:\/\//, '')).replace(/[^\w.\-]+/g, '_').slice(-120);
-    if (/_next\/image/.test(clean)) {
-      const sp = new URL(u).searchParams;
-      file = 'next_' + (sp.get('url') || '').replace(/[^\w.\-]+/g, '_').slice(-100) + '_w' + (sp.get('w') || '');
+    let file = decodeURIComponent(clean.replace(/^https?:\/\//, '')).replace(/[^\w.\-]+/g, '_');
+    // Short names keep Windows clones under the 260-character path limit; index.json keeps the URL.
+    if (file.length > 48 || /_next\/image/.test(clean)) {
+      const inner = /_next\/image/.test(clean) ? new URL(u).searchParams.get('url') || '' : clean;
+      const ext = (inner.match(/\.(css|svg|ico|jpe?g|png|webp|woff2)(?:$|\?)/i) || [, 'bin'])[1].toLowerCase();
+      file = require('crypto').createHash('sha1').update(u).digest('hex').slice(0, 12) + '.' + ext;
     }
     fs.writeFileSync(path.join(adir, file), a.body);
     index.push({ url: u, file, type: a.type, contentType: a.ct, bytes: a.body.length });
