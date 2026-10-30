@@ -1,0 +1,39 @@
+{
+ "at": "2026-10-30T18:23:10.490Z",
+ "url": "http://localhost:8350",
+ "pages": {
+  "home": {
+   "performance": 96,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "2.7 s",
+   "cls": "0",
+   "tbt": "0 ms",
+   "fcp": "0.8 s",
+   "failed": []
+  },
+  "stories": {
+   "performance": 99,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "2.0 s",
+   "cls": "0",
+   "tbt": "0 ms",
+   "fcp": "0.8 s",
+   "failed": []
+  },
+  "story": {
+   "performance": 100,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "1.7 s",
+   "cls": "0",
+   "tbt": "0 ms",
+   "fcp": "0.8 s",
+   "failed": []
+  }
+ }
+}

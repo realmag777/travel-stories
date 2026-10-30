@@ -108,6 +108,13 @@ test.describe('admin', () => {
     await slots.locator('[type=submit]').click();
     await expect(page.locator('.slot').first()).toBeVisible();
 
+    // Clean up: a traveller without stories can be deleted.
+    const travellerUrl = page.url();
+    await page.goto(travellerUrl);
+    await page.locator('.adm-head__actions [data-delete]').click();
+    await page.locator('[data-modal-confirm]').click();
+    await expect(page).toHaveURL(/\/admin\/travellers$/);
+
     await page.goto('/admin/bookings?status=new');
     const confirm = page.locator('[data-booking-status][data-status=confirmed]').first();
     if (await confirm.count()) {

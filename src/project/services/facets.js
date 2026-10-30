@@ -60,21 +60,33 @@ const FACET_EXPR = {
   tags: { from: 'stories s CROSS JOIN LATERAL unnest(s.tags) AS v(val)', value: 'v.val' },
 };
 
-/** Raw counts: { facet: { value: count } } for every facet, plus the total. */
+/**
+ * Raw counts: { facet: { value: count } } for every facet, plus the total.
+ * The fully filtered set is materialized once; facets without an active filter are grouped
+ * from it, and only active facets need their own scan (with their own condition dropped).
+ */
 async function counts(state) {
   const parts = whereParts(state);
+  const all = combine(parts, null);
+  const activeFacets = new Set(parts.map((p) => p.facet));
   const selects = [];
-  const bindings = [];
+  const bindings = [...all.bindings];
   for (const facet of ['category', ...FACETS]) {
     const e = FACET_EXPR[facet];
+    if (!activeFacets.has(facet)) {
+      selects.push(`SELECT '${facet}' AS facet, ${e.value} AS value, count(*)::int AS n FROM ${e.from.replace('stories s', 'base s')} GROUP BY 2`);
+      continue;
+    }
     const w = combine(parts, facet);
     selects.push(`SELECT '${facet}' AS facet, ${e.value} AS value, count(*)::int AS n FROM ${e.from} WHERE ${w.sql} GROUP BY 2`);
     bindings.push(...w.bindings);
   }
-  const all = combine(parts, null);
-  selects.push(`SELECT 'total' AS facet, NULL AS value, count(*)::int AS n FROM stories s WHERE ${all.sql}`);
-  bindings.push(...all.bindings);
-  const { rows } = await db.raw(selects.join('\nUNION ALL\n'), bindings);
+  selects.push(`SELECT 'total' AS facet, NULL AS value, count(*)::int AS n FROM base s`);
+  const sql = `WITH base AS MATERIALIZED (
+      SELECT s.category_id, s.country_code, s.region_slug, s.seasons, s.budget, s.trip_type, s.duration_days, s.tags
+      FROM stories s WHERE ${all.sql})
+    ${selects.join('\nUNION ALL\n')}`;
+  const { rows } = await db.raw(sql, bindings);
   const out = { total: 0 };
   for (const r of rows) {
     if (r.facet === 'total') { out.total = r.n; continue; }

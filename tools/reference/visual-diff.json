@@ -1,11 +1,35 @@
 {
- "at": "2026-10-30T17:57:49.241Z",
+ "at": "2026-10-30T18:22:49.280Z",
  "rows": [
+  {
+   "page": "home",
+   "width": 375,
+   "masked": 0,
+   "raw": 9.93,
+   "heightOriginal": 6225,
+   "heightOurs": 6225
+  },
+  {
+   "page": "home",
+   "width": 768,
+   "masked": 0,
+   "raw": 12.81,
+   "heightOriginal": 4250,
+   "heightOurs": 4250
+  },
+  {
+   "page": "home",
+   "width": 1440,
+   "masked": 0.01,
+   "raw": 6.64,
+   "heightOriginal": 3971,
+   "heightOurs": 3971
+  },
   {
    "page": "stories",
    "width": 375,
    "masked": 0,
-   "raw": 23.02,
+   "raw": 22.26,
    "heightOriginal": 6112,
    "heightOurs": 6112
   },
@@ -13,7 +37,7 @@
    "page": "stories",
    "width": 768,
    "masked": 0,
-   "raw": 23.71,
+   "raw": 22.7,
    "heightOriginal": 3708,
    "heightOurs": 3708
   },
@@ -21,9 +45,81 @@
    "page": "stories",
    "width": 1440,
    "masked": 0,
-   "raw": 26.31,
+   "raw": 25.18,
    "heightOriginal": 2716,
    "heightOurs": 2716
+  },
+  {
+   "page": "stories-category",
+   "width": 375,
+   "masked": 0.02,
+   "raw": 21.2,
+   "heightOriginal": 6112,
+   "heightOurs": 6112
+  },
+  {
+   "page": "stories-category",
+   "width": 768,
+   "masked": 0.01,
+   "raw": 21.76,
+   "heightOriginal": 3708,
+   "heightOurs": 3708
+  },
+  {
+   "page": "stories-category",
+   "width": 1440,
+   "masked": 0.01,
+   "raw": 24.24,
+   "heightOriginal": 2716,
+   "heightOurs": 2716
+  },
+  {
+   "page": "story",
+   "width": 375,
+   "masked": 0,
+   "raw": 20.44,
+   "heightOriginal": 3474,
+   "heightOurs": 3474
+  },
+  {
+   "page": "story",
+   "width": 768,
+   "masked": 0,
+   "raw": 25.26,
+   "heightOriginal": 2757,
+   "heightOurs": 2757
+  },
+  {
+   "page": "story",
+   "width": 1440,
+   "masked": 0,
+   "raw": 31.58,
+   "heightOriginal": 2625,
+   "heightOurs": 2625
+  },
+  {
+   "page": "travellers",
+   "width": 375,
+   "masked": 0,
+   "raw": 6.81,
+   "heightOriginal": 3938,
+   "heightOurs": 3938
+  },
+  {
+   "page": "travellers",
+   "width": 768,
+   "masked": 0,
+   "raw": 5.78,
+   "heightOriginal": 2190,
+   "heightOurs": 2190
+  },
+  {
+   "page": "travellers",
+   "width": 1440,
+   "masked": 0,
+   "raw": 5.51,
+   "heightOriginal": 1782,
+   "heightOurs": 1782
   },
   {
    "page": "traveller",
@@ -37,7 +133,7 @@
    "page": "traveller",
    "width": 768,
    "masked": 0,
-   "raw": 13.84,
+   "raw": 14.22,
    "heightOriginal": 2002,
    "heightOurs": 2002
   },
@@ -48,6 +144,54 @@
    "raw": 14.34,
    "heightOriginal": 2217,
    "heightOurs": 2217
+  },
+  {
+   "page": "login",
+   "width": 375,
+   "masked": 10.96,
+   "raw": 13.81,
+   "heightOriginal": 1044,
+   "heightOurs": 1047
+  },
+  {
+   "page": "login",
+   "width": 768,
+   "masked": 6.01,
+   "raw": 6.42,
+   "heightOriginal": 1044,
+   "heightOurs": 1044
+  },
+  {
+   "page": "login",
+   "width": 1440,
+   "masked": 3.17,
+   "raw": 3.3,
+   "heightOriginal": 1044,
+   "heightOurs": 1044
+  },
+  {
+   "page": "register",
+   "width": 375,
+   "masked": 10.96,
+   "raw": 13.77,
+   "heightOriginal": 1044,
+   "heightOurs": 1047
+  },
+  {
+   "page": "register",
+   "width": 768,
+   "masked": 5.4,
+   "raw": 6.2,
+   "heightOriginal": 1044,
+   "heightOurs": 1044
+  },
+  {
+   "page": "register",
+   "width": 1440,
+   "masked": 3.17,
+   "raw": 3.7,
+   "heightOriginal": 1044,
+   "heightOurs": 1044
   }
  ]
 }

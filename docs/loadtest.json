@@ -1,0 +1,67 @@
+{
+ "stories": 10000,
+ "runs": 60,
+ "seedMs": 2377,
+ "cases": {
+  "no filter": {
+   "total": 10000,
+   "p50": 37.9,
+   "p95": 40.1,
+   "max": 58.7
+  },
+  "1 facet (season)": {
+   "total": 3428,
+   "p50": 22.8,
+   "p95": 23.9,
+   "max": 27.1
+  },
+  "3 facets": {
+   "total": 539,
+   "p50": 16.6,
+   "p95": 21,
+   "max": 23.6
+  },
+  "5 facets + category": {
+   "total": 9,
+   "p50": 20.3,
+   "p95": 22.3,
+   "max": 22.4
+  },
+  "bbox (Europe)": {
+   "total": 27,
+   "p50": 3.9,
+   "p95": 4.7,
+   "max": 5.4
+  },
+  "sort popular": {
+   "total": 2455,
+   "p50": 18.8,
+   "p95": 21.2,
+   "max": 22.3
+  }
+ },
+ "explainSample": [
+  "Aggregate  (cost=1626.54..1626.55 rows=1 width=8) (actual time=2.002..2.003 rows=1 loops=1)",
+  "  Buffers: shared hit=545",
+  "  ->  Bitmap Heap Scan on stories s  (cost=280.23..1625.15 rows=559 width=0) (actual time=1.554..1.971 rows=539 loops=1)",
+  "        Recheck Cond: (((trip_type)::text = 'family'::text) AND ((budget)::text = ANY ('{low,medium}'::text[])) AND (seasons && '{summer}'::text[]))",
+  "        Filter: (NOT hidden)",
+  "        Heap Blocks: exact=498",
+  "        Buffers: shared hit=545",
+  "        ->  BitmapAnd  (cost=280.23..280.23 rows=559 width=0) (actual time=1.512..1.512 rows=0 loops=1)",
+  "              Buffers: shared hit=47",
+  "              ->  Bitmap Index Scan on stories_trip_type_idx  (cost=0.00..30.88 rows=2480 width=0) (actual time=0.174..0.174 rows=2480 loops=1)",
+  "                    Index Cond: ((trip_type)::text = 'family'::text)",
+  "                    Buffers: shared hit=3",
+  "              ->  Bitmap Index Scan on stories_budget_idx  (cost=0.00..74.26 rows=6625 width=0) (actual time=0.331..0.331 rows=6625 loops=1)",
+  "                    Index Cond: ((budget)::text = ANY ('{low,medium}'::text[]))",
+  "                    Buffers: shared hit=8",
+  "              ->  Bitmap Index Scan on stories_seasons_gin  (cost=0.00..174.16 rows=3400 width=0) (actual time=0.905..0.905 rows=3400 loops=1)",
+  "                    Index Cond: (seasons && '{summer}'::text[])",
+  "                    Buffers: shared hit=36",
+  "Planning:",
+  "  Buffers: shared hit=1",
+  "Planning Time: 0.119 ms",
+  "Execution Time: 2.078 ms"
+ ]
+}

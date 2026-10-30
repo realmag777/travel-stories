@@ -33,10 +33,10 @@ COPY migrations ./migrations
 COPY seeds ./seeds
 COPY tools/bootstrap.js tools/import-original.js tools/hash-password.js tools/load-seed.js tools/loadtest-seed.js ./tools/
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh && mkdir -p /app/uploads && chown -R node:node /app/uploads
+RUN chmod +x /usr/local/bin/entrypoint.sh && mkdir -p /app/uploads && chown -R node:node /app/uploads /app/seeds
 USER node
 EXPOSE 3000
-HEALTHCHECK --interval=15s --timeout=5s --start-period=180s --retries=5 \
+HEALTHCHECK --interval=15s --timeout=5s --start-period=900s --retries=5 \
   CMD node -e "fetch('http://127.0.0.1:3000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["node", "start.js"]
