@@ -6,7 +6,7 @@ function adminCredentials() {
   let pass = process.env.E2E_ADMIN_PASS;
   if (!pass) {
     const env = fs.readFileSync(path.join(__dirname, '..', '..', '.env'), 'utf8');
-    const m = env.match(/^#\s*ADMIN_PASS=(.+)$/m);
+    const m = env.match(/^#\s*ADMIN_PASS=(.+)$/m) || env.match(/^DEMO_ADMIN_PASS=(.+)$/m);
     pass = m && m[1].trim();
   }
   return { user: process.env.ADMIN_USER || 'admin', pass };

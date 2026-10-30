@@ -12,7 +12,7 @@ const OUT = path.join(PUB, 'build');
 const WATCH = process.argv.includes('--watch');
 
 const CSS_ORDER = [
-  'node_modules/modern-normalize/modern-normalize.css',
+  'public/vendor/modern-normalize.css',
   'public/css/tokens.css',
   'public/css/base.css',
   ...['header', 'nav', 'button', 'footer', 'hero', 'about', 'story-card', 'popular', 'travellers-block', 'join',
@@ -37,14 +37,14 @@ async function buildCss(manifest) {
   fs.writeFileSync(path.join(OUT, name), out);
   manifest['app.css'] = name;
 
-  const mapCss = ['node_modules/leaflet/dist/leaflet.css', 'node_modules/leaflet.markercluster/dist/MarkerCluster.css',
-    'node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css', 'public/css/components/map.css']
+  const mapCss = ['public/vendor/leaflet/leaflet.css', 'public/vendor/leaflet.markercluster/MarkerCluster.css',
+    'public/vendor/leaflet.markercluster/MarkerCluster.Default.css', 'public/css/components/map.css']
     .map((f) => fs.readFileSync(path.join(ROOT, f), 'utf8')).join('\n').replace(/url\(images\//g, 'url(/build/leaflet/');
   const mapBuf = Buffer.from(minifyCss(mapCss));
   manifest['map.css'] = hashName('map.css', mapBuf);
   fs.writeFileSync(path.join(OUT, manifest['map.css']), mapBuf);
 
-  const adminCss = ['node_modules/modern-normalize/modern-normalize.css', 'public/css/tokens.css', 'public/css/components/feedback.css', 'public/css/components/button.css', 'public/css/admin.css']
+  const adminCss = ['public/vendor/modern-normalize.css', 'public/css/tokens.css', 'public/css/components/feedback.css', 'public/css/components/button.css', 'public/css/admin.css']
     .map((f) => fs.readFileSync(path.join(ROOT, f), 'utf8')).join('\n');
   const adminBuf = Buffer.from(minifyCss(adminCss));
   manifest['admin.css'] = hashName('admin.css', adminBuf);
@@ -57,6 +57,8 @@ async function buildJs(manifest) {
     const r = await esbuild.build({
       entryPoints: [path.join(ROOT, entry)], bundle: true, minify: true, format: 'iife', target: ['es2020'],
       write: false, legalComments: 'none', platform: 'browser', define: { 'process.env.NODE_ENV': '"production"' },
+      // Leaflet comes from the copies committed in public/vendor (no CDN, no network at build).
+      alias: { leaflet: path.join(PUB, 'vendor/leaflet/leaflet-src.js'), 'leaflet.markercluster': path.join(PUB, 'vendor/leaflet.markercluster/leaflet.markercluster-src.js') },
     });
     const buf = Buffer.from(r.outputFiles[0].contents);
     manifest[`${name}.js`] = hashName(`${name}.js`, buf);
@@ -75,7 +77,7 @@ function copyFonts() {
   for (const [fam, subsets, weights] of want) {
     for (const s of subsets) for (const w of weights) {
       const f = `${fam}-${s}-${w}-normal.woff2`;
-      fs.copyFileSync(path.join(ROOT, 'node_modules', '@fontsource', fam, 'files', f), path.join(dir, f));
+      if (!fs.existsSync(path.join(dir, f))) fs.copyFileSync(path.join(ROOT, 'node_modules', '@fontsource', fam, 'files', f), path.join(dir, f));
     }
   }
 }
@@ -83,8 +85,8 @@ function copyFonts() {
 function copyLeafletImages() {
   const dir = path.join(OUT, 'leaflet');
   fs.mkdirSync(dir, { recursive: true });
-  for (const f of fs.readdirSync(path.join(ROOT, 'node_modules/leaflet/dist/images'))) {
-    fs.copyFileSync(path.join(ROOT, 'node_modules/leaflet/dist/images', f), path.join(dir, f));
+  for (const f of fs.readdirSync(path.join(PUB, 'vendor/leaflet/images'))) {
+    fs.copyFileSync(path.join(PUB, 'vendor/leaflet/images', f), path.join(dir, f));
   }
 }
 

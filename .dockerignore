@@ -8,3 +8,5 @@ tools/reference
 test-results
 playwright-report
 *.log
+demo
+.democheck

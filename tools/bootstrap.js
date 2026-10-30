@@ -14,11 +14,36 @@ async function waitForDb() {
   throw new Error('database is not reachable');
 }
 
+/** Copy the demo uploads into the uploads volume once (marker file); later starts keep changes. */
+function copyDemoUploads() {
+  const fs = require('fs');
+  const path = require('path');
+  const { UPLOADS } = require('../src/core/images');
+  const seed = path.join(__dirname, '..', 'demo-seed', 'uploads');
+  const marker = path.join(UPLOADS, '.demo-ready');
+  if (fs.existsSync(marker)) return console.log('[bootstrap] demo uploads already in place');
+  if (!fs.existsSync(seed)) throw new Error('demo uploads are missing: ' + seed);
+  fs.cpSync(seed, UPLOADS, { recursive: true, force: false, errorOnExist: false });
+  fs.writeFileSync(marker, new Date().toISOString());
+  console.log('[bootstrap] demo uploads copied into the volume');
+}
+
 async function main() {
   const t0 = Date.now();
   await waitForDb();
   const [batch, done] = await db.migrate.latest();
   console.log(`[bootstrap] migrations: batch ${batch}, ${done.length} applied`);
+
+  // Demo mode: data comes only from demo/db/demo.dump (restored by Postgres on first start)
+  // and demo/uploads. Nothing is imported or generated.
+  if (process.env.DEMO_MODE === '1') {
+    copyDemoUploads();
+    const [{ n }] = await db('stories').count({ n: '*' });
+    console.log(`[bootstrap] demo mode: ${n} stories from demo.dump, no import, no generation`);
+    console.log(`[bootstrap] ready in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+    await db.destroy();
+    return;
+  }
 
   const flags = (await settings.get('bootstrap')) || {};
   const save = async (k) => { flags[k] = new Date().toISOString(); await settings.set('bootstrap', flags); };

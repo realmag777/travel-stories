@@ -1,0 +1,24 @@
+{
+ "createdAt": "2026-10-30T19:26:28.424Z",
+ "counts": {
+  "stories": 418,
+  "storiesVisible": 354,
+  "storiesDemo": 250,
+  "travellers": 247,
+  "travellersVisible": 134,
+  "guides": 25,
+  "services": 51,
+  "slots": 1046,
+  "bookings": 10,
+  "categories": 10,
+  "countries": 81,
+  "coverKeys": 418,
+  "avatarKeys": 122
+ },
+ "uploads": {
+  "files": 2334,
+  "megabytes": 158.5,
+  "largestKb": 403
+ },
+ "dumpMegabytes": 0.6
+}

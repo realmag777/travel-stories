@@ -1,6 +1,6 @@
 node_modules/
 .env
-uploads/
+/uploads/
 reference-engine/
 res/
 tools/reference/screens-ours/
@@ -11,7 +11,7 @@ coverage/
 *.log
 .DS_Store
 public/build/
-public/fonts/
+
 tools/fetch-media.log
 dev-server.log
 test-results/

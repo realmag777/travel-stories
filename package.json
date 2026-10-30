@@ -16,7 +16,10 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "crawl": "node tools/crawl-original.js",
-    "visual": "node tools/visual-diff.js"
+    "visual": "node tools/visual-diff.js",
+    "demo": "node scripts/demo.js",
+    "demo:reset": "node scripts/demo.js --reset",
+    "demo:snapshot": "node tools/demo-snapshot.js"
   },
   "author": "Rostislav Sofronov (realmag777)",
   "license": "UNLICENSED",

@@ -1,0 +1,62 @@
+# Ready-to-run demo: the exact data snapshot from demo/db/demo.dump and demo/uploads.
+#   scripts/demo.sh  (or scripts/demo.ps1, or npm run demo)
+# On an empty database Postgres restores demo.dump once (docker-entrypoint-initdb.d);
+# uploads are copied into their own volume once. Later starts never overwrite data.
+# Nothing is imported or generated at start (DEMO_MODE=1).
+name: podorozhnyky-demo
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-podorozhnyky}
+      POSTGRES_USER: ${POSTGRES_USER:-podorozhnyky}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-demo-db-password}
+    volumes:
+      - demo-pgdata:/var/lib/postgresql/data
+      - ./demo/db:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 60
+
+  app:
+    build:
+      context: .
+      target: runtime
+    image: podorozhnyky-demo:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      PORT: 3000
+      DEMO_MODE: "1"
+      IMPORT_ORIGINAL: "0"
+      DATABASE_URL: postgres://${POSTGRES_USER:-podorozhnyky}:${POSTGRES_PASSWORD:-demo-db-password}@db:5432/${POSTGRES_DB:-podorozhnyky}
+      PUBLIC_URL: ${PUBLIC_URL:-http://localhost:${APP_PORT:-8080}}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${APP_BIND:-127.0.0.1}:${APP_PORT:-8080}:3000"
+    volumes:
+      - demo-uploads:/app/uploads
+      - ./demo/uploads:/app/demo-seed/uploads:ro
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 5s
+      timeout: 5s
+      start_period: 300s
+      retries: 60
+
+volumes:
+  demo-pgdata:
+  demo-uploads:
+
+# Own subnet so the demo can run next to other compose projects; change DEMO_SUBNET if it clashes.
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${DEMO_SUBNET:-10.77.32.0/24}
