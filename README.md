@@ -10,6 +10,16 @@
 
 ![Главная](docs/screenshots/home-1440.png)
 
+| Фильтр | Поиск обычным языком | Карта |
+|---|---|---|
+| ![Фильтр](docs/screenshots/stories-filter-1440.png) | ![Поиск](docs/screenshots/search-1440.png) | ![Карта](docs/screenshots/map-1440.png) |
+| **История** | **Бронирование** | **Мобильный фильтр** |
+| ![История](docs/screenshots/story-1440.png) | ![Бронирование](docs/screenshots/booking-1440.png) | ![Фильтр на телефоне](docs/screenshots/mobile-filters.png) |
+| **Админка: дашборд** | **Админка: редактор** | **Телефон** |
+| ![Дашборд](docs/screenshots/admin-dashboard.png) | ![Редактор](docs/screenshots/admin-story-editor.png) | ![Главная на телефоне](docs/screenshots/mobile-home.png) |
+
+Результаты проверок (тесты, visual diff, Lighthouse, нагрузка) — в [docs/REPORT.md](docs/REPORT.md), принятые решения — в [DECISIONS.md](DECISIONS.md).
+
 ## Чем отличается от оригинала
 
 | | Оригинал | Подорожники+ |
