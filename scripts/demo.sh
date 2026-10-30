@@ -27,8 +27,13 @@ ADMIN_PASS="$(envval DEMO_ADMIN_PASS)"
 
 # Port check (skipped when our own demo already listens there).
 running="$("${COMPOSE[@]}" ps -q app 2>/dev/null || true)"
-if [ -z "$running" ] && (exec 3<>"/dev/tcp/127.0.0.1/$PORT") 2>/dev/null; then
-  fail "Порт $PORT занят. Укажите другой в .env: APP_PORT=8090 — и запустите скрипт снова."
+# Docker may hold a just-released port for a moment (after demo-reset), so retry for ~5 s.
+if [ -z "$running" ]; then
+  busy=1
+  for i in 1 2 3 4 5 6; do
+    if (exec 3<>"/dev/tcp/127.0.0.1/$PORT") 2>/dev/null; then sleep 1; else busy=0; break; fi
+  done
+  if [ "$busy" = 1 ]; then fail "Порт $PORT занят. Укажите другой в .env: APP_PORT=8090 — и запустите скрипт снова."; fi
 fi
 
 echo "[demo] сборка и запуск (первый раз 3–6 минут: образ собирается, база восстанавливается из снимка)…"

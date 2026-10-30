@@ -31,11 +31,14 @@ if (-not (Test-Path demo/uploads/covers)) { Fail 'Нет demo/uploads — реп
 
 # Port check (skipped when our own demo already listens there).
 $running = docker @compose ps -q app 2>$null
+# Docker may hold a just-released port for a moment (after demo-reset), so retry for ~5 s.
 if (-not $running) {
-  $client = New-Object System.Net.Sockets.TcpClient
-  try {
-    $busy = $client.ConnectAsync('127.0.0.1', [int]$port).Wait(700)
-  } catch { $busy = $false } finally { $client.Dispose() }
+  $busy = $true
+  for ($i = 0; $i -lt 6 -and $busy; $i++) {
+    $client = New-Object System.Net.Sockets.TcpClient
+    try { $busy = $client.ConnectAsync('127.0.0.1', [int]$port).Wait(700) } catch { $busy = $false } finally { $client.Dispose() }
+    if ($busy) { Start-Sleep -Seconds 1 }
+  }
   if ($busy) { Fail "Порт $port занят. Укажите другой в .env: APP_PORT=8090 — и запустите скрипт снова." }
 }
 
