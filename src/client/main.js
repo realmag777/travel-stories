@@ -1,6 +1,7 @@
 // Public site bundle: header menu, saves, catalog, load-more.
 import { initSaved } from './saved.js';
 import { initCatalog, initLoadMore } from './catalog.js';
+import { initGuides } from './guides.js';
 
 function initMenu() {
   const burger = document.querySelector('[data-burger]');
@@ -40,6 +41,7 @@ initMenu();
 initSaved();
 initCatalog();
 initLoadMore();
+initGuides();
 
 // Booking widget is loaded only where it is needed.
 const bookingRoot = document.querySelector('[data-booking]');

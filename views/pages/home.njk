@@ -56,6 +56,7 @@
           </div>
           <div class="travellers-block__body">
             <h3 class="travellers-block__name">{{ u.name }}</h3>
+            {% if u.acceptsBookings %}<span class="travellers-block__badge" data-extra>{{ t('booking.badge') }}</span>{% endif %}
             <p class="travellers-block__text">{{ u.description }}</p>
             <a class="travellers-block__button" href="{{ url('/travellers/' + u.id) }}">{{ t('travellers.viewProfile') }}</a>
           </div>
@@ -68,6 +69,24 @@
     </div>
   </div>
 </section>
+
+{% if guides.length %}
+<section class="travellers-block guides-block" data-extra aria-labelledby="guides-title">
+  <div class="travellers-block__container">
+    <div class="travellers-block__header">
+      <h2 class="travellers-block__title" id="guides-title">{{ t('home.guides') }}</h2>
+    </div>
+    <div class="travellers-block__content">
+      <ul class="guide-list">
+        {% for g in guides %}<li class="guide-list__item">{% include "partials/guide-card.njk" %}</li>{% endfor %}
+      </ul>
+    </div>
+    <div class="travellers-block__more">
+      <a class="travellers-block__view-all" href="{{ url('/guides') }}">{{ t('home.viewAllGuides') }}</a>
+    </div>
+  </div>
+</section>
+{% endif %}
 
 <section>
   <div class="join">

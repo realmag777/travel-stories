@@ -4,7 +4,7 @@
   <div class="profile-card">
     <img class="profile-card__avatar" src="{{ traveller.avatar.large }}" alt="{{ traveller.name }}" width="199" height="199" fetchpriority="high">
     <div class="profile-card__text">
-      <h2 class="profile-card__name">{{ traveller.name }}</h2>
+      <h2 class="profile-card__name">{{ traveller.name }}{% if booking %}<span class="profile-card__badge" data-extra>{{ t('booking.badge') }}</span>{% endif %}</h2>
       <p class="profile-card__description">{{ traveller.description }}</p>
     </div>
   </div>
@@ -63,6 +63,9 @@
     </div>
   </div>
 </section>
+<div class="booking-sticky" data-booking-sticky data-extra>
+  <a class="action" href="#booking">{{ t('guides.book') }}</a>
+</div>
 {% endif %}
 
 <section class="profile-blog">

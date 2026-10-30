@@ -22,7 +22,8 @@
 .traveller-card__link { color: #000; background-color: #0000000d; border: 1px solid #00000026; border-radius: 8px; justify-content: center; align-items: center; min-height: 48px; margin-top: auto; font-size: 18px; font-weight: 500; line-height: 1.5; text-decoration: none; display: flex; }
 .traveller-card__link:hover, .traveller-card__link:focus-visible { color: #fff; background-color: #4169e1; }
 .traveller-card__link:active { color: #fff; background-color: #1a2a5a; }
-.traveller-card__badge { align-self: flex-start; margin: -8px 0 12px; padding: 2px 8px; border-radius: 6px; background: var(--color-white); font-size: 12px; font-weight: 600; color: var(--color-royal-blue-dark); }
+.traveller-card { position: relative; }
+.traveller-card__badge { position: absolute; top: 24px; right: 24px; padding: 2px 10px; border-radius: 6px; background: var(--color-royal-blue); color: var(--color-white); font-size: 12px; font-weight: 700; letter-spacing: .02em; }
 
 /* /travellers/:id profile. */
 .profile-head { background-color: #f7f9ff; width: 100%; min-height: 385px; padding: 32px 32px 0; }

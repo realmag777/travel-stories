@@ -52,7 +52,7 @@
     <div class="adm-card__head"><h2 class="adm-card__title">Послуги</h2></div>
     <table class="tbl tbl--compact"><thead><tr><th>Послуга</th><th>Тип</th><th class="num">Хв</th><th>Ціна</th><th></th></tr></thead><tbody>
       {% for s in services %}
-      <tr{% if not s.active %} class="muted"{% endif %}><td>{{ s.title }}{% if not s.active %} (вимкнено){% endif %}</td><td>{{ 'Созвон' if s.kind == 'call' else 'Екскурсія' }}</td><td class="num">{{ s.duration_min }}</td><td>{{ s.price_label }}</td>
+      <tr{% if not s.active %} class="muted"{% endif %}><td>{{ s.title }}{% if not s.active %} (вимкнено){% endif %}</td><td>{{ {call: 'Консультація', tour: 'Екскурсія', plan: 'Маршрут'}[s.kind] }}</td><td class="num">{{ s.duration_min }}</td><td>{{ s.price_label }}</td>
         <td class="nowrap"><button class="icon-btn" type="button" data-edit-service='{{ s | dump | safe }}' aria-label="Редагувати"><svg width="18" height="18"><use href="/sprite.svg#icon-edit"></use></svg></button>
         <button class="icon-btn icon-btn--danger" type="button" data-delete="/admin/services/{{ s.id }}/delete" data-confirm-title="Видалити послугу?" data-confirm-text="{{ s.title }}" aria-label="Видалити"><svg width="18" height="18"><use href="/sprite.svg#icon-close"></use></svg></button></td></tr>
       {% else %}<tr><td colspan="5" class="adm-empty">Послуг ще немає.</td></tr>{% endfor %}
@@ -60,7 +60,7 @@
     <form class="adm-inline-form" method="post" action="/admin/travellers/{{ traveller.id }}/services" data-ajax-form data-service-form novalidate>
       <input type="hidden" name="serviceId" value="">
       <div class="adm-row">
-        <div class="field"><label class="field__label" for="svc-kind">Тип</label><select class="field__select" id="svc-kind" name="kind"><option value="call">Консультація-созвон</option><option value="tour">Екскурсія</option></select><span class="field__error"></span></div>
+        <div class="field"><label class="field__label" for="svc-kind">Тип</label><select class="field__select" id="svc-kind" name="kind"><option value="call">Онлайн-консультація</option><option value="tour">Пішохідна екскурсія</option><option value="plan">Планування маршруту</option></select><span class="field__error"></span></div>
         {{ field('title', 'Назва (uk)', '', { max: 120, required: true }) }}
       </div>
       <div class="adm-row">{{ field('title_en', 'Назва (en)', '') }}{{ field('title_es', 'Назва (es)', '') }}</div>

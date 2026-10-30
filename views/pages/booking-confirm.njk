@@ -1,0 +1,38 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="confirm" data-booking-confirm="{{ b.token }}">
+  <div class="confirm__card">
+    {% if b.status == 'cancelled' %}
+    <span class="confirm__icon confirm__icon--cancel"><svg width="28" height="28" aria-hidden="true"><use href="/sprite.svg#icon-close"></use></svg></span>
+    <h1 class="confirm__title">{{ t('confirm.cancelledTitle') }}</h1>
+    <p class="confirm__lead">{{ t('confirm.cancelledLead') }}</p>
+    {% else %}
+    <span class="confirm__icon"><svg width="28" height="28" aria-hidden="true"><use href="/sprite.svg#icon-check"></use></svg></span>
+    <h1 class="confirm__title">{{ t('confirm.title') }}</h1>
+    <p class="confirm__lead">{{ t('confirm.lead_' + b.status) }}</p>
+    {% endif %}
+
+    <div class="confirm__guide">
+      <img src="{{ b.guide.avatar.src }}" alt="" width="56" height="56">
+      <div><span class="confirm__note">{{ t('confirm.guide') }}</span><br><a href="{{ url('/travellers/' + b.guide.id) }}"><b>{{ b.guide.name }}</b></a></div>
+    </div>
+
+    <dl class="confirm__details">
+      <div class="confirm__row"><dt>{{ t('confirm.number') }}</dt><dd>#{{ b.id }}</dd></div>
+      <div class="confirm__row"><dt>{{ t('confirm.service') }}</dt><dd>{{ b.service }}{% if b.kind %} · {{ t('booking.kind_' + b.kind) }}{% endif %}</dd></div>
+      <div class="confirm__row"><dt>{{ t('confirm.when') }}</dt><dd>{{ b.dateLabel }}, {{ b.time }} <span class="confirm__note">({{ t('confirm.kyiv') }})</span></dd></div>
+      <div class="confirm__row"><dt>{{ t('confirm.duration') }}</dt><dd>{{ t('booking.minutes', { n: b.duration }) }}</dd></div>
+      {% if b.price %}<div class="confirm__row"><dt>{{ t('confirm.price') }}</dt><dd>{{ b.price }} <span class="confirm__note">{{ t('confirm.noPayment') }}</span></dd></div>{% endif %}
+      <div class="confirm__row"><dt>{{ t('confirm.status') }}</dt><dd><span class="confirm__status confirm__status--{{ b.status }}" data-booking-status-label>{{ t('confirm.status_' + b.status) }}</span></dd></div>
+      <div class="confirm__row"><dt>{{ t('confirm.contact') }}</dt><dd>{{ b.name }} · {{ b.emailMasked }}</dd></div>
+      {% if b.message %}<div class="confirm__row"><dt>{{ t('confirm.message') }}</dt><dd>{{ b.message }}</dd></div>{% endif %}
+    </dl>
+
+    <div class="confirm__actions">
+      <a class="action" href="{{ url('/travellers/' + b.guide.id) }}">{{ t('confirm.toGuide') }}</a>
+      {% if b.cancelUrl and not b.past %}<a class="action action--ghost" href="{{ b.cancelUrl }}" data-cancel-link>{{ t('confirm.cancel') }}</a>{% endif %}
+    </div>
+    <p class="confirm__note">{{ t('confirm.keepLink') }}</p>
+  </div>
+</section>
+{% endblock %}

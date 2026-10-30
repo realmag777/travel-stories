@@ -121,7 +121,7 @@ const adminTraveller = z.object({
 });
 
 const adminService = z.object({
-  kind: z.enum(['call', 'tour']),
+  kind: z.enum(['call', 'tour', 'plan']),
   title: trimmed(2, 120),
   title_en: z.string().trim().max(120).optional().default(''),
   title_es: z.string().trim().max(120).optional().default(''),

@@ -143,6 +143,13 @@ describe('v2 extensions', () => {
     expect(c.data.favoriteCount).toBe(a.data.favoriteCount - 1);
   });
 
+  it('guides endpoint returns cards and facets', async () => {
+    const r = await get('/api/v2/guides?limit=3');
+    expect(r.body.data.total).toBeGreaterThan(0);
+    expect(r.body.data.guides[0]).toMatchObject({ id: expect.any(String), name: expect.any(String), services: expect.any(Array) });
+    expect(r.body.data.facets.service.map((s) => s.value)).toEqual(['call', 'tour', 'plan']);
+  });
+
   it('map points carry coordinates', async () => {
     const r = await get('/api/v2/map?country=JP');
     expect(r.body.data.points.length).toBeGreaterThan(0);

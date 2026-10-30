@@ -148,7 +148,9 @@ form.addEventListener('submit', async (e) => {
   submit.classList.add('is-loading');
   submit.disabled = true;
   try {
-    await request(`/api/v2/travellers/${travellerId}/bookings?lang=${locale}`, { method: 'POST', body: r.data, silent: true });
+    const created = await request(`/api/v2/travellers/${travellerId}/bookings?lang=${locale}`, { method: 'POST', body: r.data, silent: true });
+    // The confirmation page has the details and the one-time cancel link.
+    if (created.data.confirmUrl) { location.href = created.data.confirmUrl; return; }
     const done = document.createElement('div');
     done.className = 'booking__done';
     done.innerHTML = `<p class="booking__done-title"></p><p></p>`;

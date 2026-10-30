@@ -27,7 +27,7 @@
           <nav aria-label="{{ t('nav.main') }}">
             <ul class="nav__list">
               {% for item in navItems %}
-              <li class="nav__item{% if isHome %} nav__item--home{% endif %}{% if item.current %} nav__item--current{% endif %}"{% if item.savedOnly %} data-saved-nav hidden{% endif %}>
+              <li class="nav__item{% if isHome %} nav__item--home{% endif %}{% if item.current %} nav__item--current{% endif %}"{% if item.savedOnly %} data-saved-nav hidden{% endif %}{% if item.extra %} data-extra{% endif %}>
                 <a class="nav__link{% if isHome %} nav__link--home{% endif %}" href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>{{ item.label }}{% if item.savedOnly %} <span data-saved-count></span>{% endif %}</a>
               </li>
               {% endfor %}

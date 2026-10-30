@@ -16,7 +16,7 @@ const CSS_ORDER = [
   'public/css/tokens.css',
   'public/css/base.css',
   ...['header', 'nav', 'button', 'footer', 'hero', 'about', 'story-card', 'popular', 'travellers-block', 'join',
-    'stories-page', 'travellers-page', 'story-page', 'auth', 'filters', 'search', 'booking', 'feedback']
+    'stories-page', 'travellers-page', 'story-page', 'auth', 'filters', 'search', 'booking', 'guides', 'feedback']
     .map((n) => `public/css/components/${n}.css`),
 ];
 

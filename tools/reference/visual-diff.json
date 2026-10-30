@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:22:49.280Z",
+ "at": "2026-10-30T19:23:05.841Z",
  "rows": [
   {
    "page": "home",
@@ -21,7 +21,7 @@
    "page": "home",
    "width": 1440,
    "masked": 0.01,
-   "raw": 6.64,
+   "raw": 6.54,
    "heightOriginal": 3971,
    "heightOurs": 3971
   },
@@ -53,7 +53,7 @@
    "page": "stories-category",
    "width": 375,
    "masked": 0.02,
-   "raw": 21.2,
+   "raw": 24.26,
    "heightOriginal": 6112,
    "heightOurs": 6112
   },

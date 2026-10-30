@@ -8,7 +8,7 @@ test.describe('home page', () => {
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Відкрийте світ');
     await expect(page.getByRole('link', { name: 'Доєднатись' })).toBeVisible();
     const h2 = await page.locator('main h2').allTextContents();
-    expect(h2).toEqual(['Проєкт, створений для тих, хто живе подорожами', 'Популярні історії', 'Наші Мандрівники', 'Приєднуйтесь до нашої спільноти']);
+    expect(h2).toEqual(['Проєкт, створений для тих, хто живе подорожами', 'Популярні історії', 'Наші Мандрівники', 'Популярні гіди', 'Приєднуйтесь до нашої спільноти']);
     await expect(page.locator('.popular__item')).toHaveCount(4);
     await expect(page.locator('.popular__item:visible')).toHaveCount(3); // 4th is shown only on tablets, like the original
     await expect(page.locator('.travellers-block__card')).toHaveCount(4);
@@ -142,34 +142,74 @@ test.describe('map', () => {
   });
 });
 
-test.describe('booking', () => {
-  test('books a slot on a guide profile; the slot disappears', async ({ page, request }) => {
-    const guide = await (await request.get('/api/v2/stories?perPage=1')).json();
-    expect(guide.status).toBe(200);
-    // Find a guide through the travellers page badge.
-    await page.goto('/travellers');
-    let href = null;
-    for (let i = 0; i < 6 && !href; i++) {
-      const badge = page.locator('.traveller-card:has(.traveller-card__badge) a.traveller-card__link').first();
-      if (await badge.count()) href = await badge.getAttribute('href');
-      else await page.locator('[data-load-more-travellers]').click();
-    }
-    expect(href).toBeTruthy();
-    await page.goto(href);
+test.describe('guides and booking', () => {
+  test('home -> guides -> profile -> book a slot -> confirmation -> visible in admin', async ({ page }) => {
+    const { adminLogin } = require('./helpers');
+    await page.goto('/');
+    await expect(page.locator('.guides-block .guide-card')).toHaveCount(4);
+    await page.locator('.nav__list').getByRole('link', { name: 'Гіди', exact: true }).click();
+    await expect(page).toHaveURL(/\/guides$/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Гіди');
+    const card = page.locator('.guide-card').filter({ has: page.locator('time') }).first();
+    await card.locator('.guide-card__book').click();
+    await expect(page).toHaveURL(/\/travellers\/[0-9a-f]{24}#booking$/);
+    await expect(page.locator('.profile-card__badge')).toHaveText('Гід');
+    // The booking block comes before the stories.
+    const order = await page.evaluate(() => document.querySelector('#booking').compareDocumentPosition(document.querySelector('.profile-blog')));
+    expect(order & 4).toBeTruthy();
     await page.locator('.calendar__day--available').first().click();
-    const slot = page.locator('[data-slot]').first();
-    const slotId = await slot.getAttribute('data-slot');
-    await slot.click();
-    await page.fill('#b-name', 'E2E Тест');
-    await page.fill('#b-email', 'e2e@example.com');
+    await page.locator('[data-slot]').first().click();
+    const name = 'E2E Гість ' + Date.now().toString(36);
+    await page.fill('#b-name', name);
+    await page.fill('#b-email', 'e2e-guest@example.com');
     await page.locator('[data-booking-submit]').click();
-    await expect(page.locator('.booking__done')).toBeVisible();
-    const travellerId = href.split('/').pop();
-    const data = await (await request.get(`/api/v2/travellers/${travellerId}/booking`)).json();
-    expect(data.data.slots.find((s) => String(s.id) === slotId)).toBeUndefined();
-    // A second attempt on the same slot is refused.
-    const again = await request.post(`/api/v2/travellers/${travellerId}/bookings`, { data: { serviceId: data.data.services[0].id, slotId: Number(slotId), name: 'Second', email: 's@example.com' } });
-    expect(again.status()).toBe(409);
+    await expect(page).toHaveURL(/\/booking\/[0-9a-f]{32}$/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Бронювання отримано');
+    await expect(page.locator('[data-booking-status-label]')).toContainText('Нове');
+    await expect(page.locator('.confirm__details')).toContainText(name);
+    const confirmUrl = page.url();
+    const cancelUrl = await page.locator('[data-cancel-link]').getAttribute('href');
+
+    await adminLogin(page);
+    await page.goto('/admin/bookings?status=new');
+    await expect(page.locator('.tbl tbody tr', { hasText: name })).toBeVisible();
+
+    // One-time cancel link.
+    await page.goto(cancelUrl);
+    await page.locator('[data-cancel-form] [type=submit]').click();
+    await expect(page).toHaveURL(/cancelled=1/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Бронювання скасовано');
+    await page.goto(cancelUrl);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Посилання вже не діє');
+    await page.goto(confirmUrl);
+    await expect(page.locator('[data-booking-status-label]')).toHaveText('Скасовано');
+  });
+
+  test('guides filters update the list; the same slot cannot be booked twice', async ({ page, request }) => {
+    await page.goto('/guides');
+    const total = await page.locator('.guide-card').count();
+    await page.selectOption('#g-service', 'plan');
+    await expect(page).toHaveURL(/service=plan/);
+    await expect(page.locator('.guide-card .guide-card__kind', { hasText: 'Планування маршруту' }).first()).toBeVisible();
+    expect(await page.locator('.guide-card').count()).toBeLessThanOrEqual(total);
+    const g = (await (await request.get('/api/v2/guides?limit=1')).json()).data.guides[0];
+    const b = (await (await request.get('/api/v2/travellers/' + g.id + '/booking')).json()).data;
+    const body = { serviceId: b.services[0].id, slotId: b.slots[0].id, name: 'Race One', email: 'r1@example.com' };
+    const first = await request.post('/api/v2/travellers/' + g.id + '/bookings', { data: body });
+    expect(first.status()).toBe(201);
+    expect((await first.json()).data.confirmUrl).toMatch(/^\/booking\/[0-9a-f]{32}$/);
+    const second = await request.post('/api/v2/travellers/' + g.id + '/bookings', { data: { ...body, name: 'Race Two' } });
+    expect(second.status()).toBe(409);
+  });
+
+  test('a story by a guide offers to book the author', async ({ page, request }) => {
+    const g = (await (await request.get('/api/v2/guides?limit=1')).json()).data.guides[0];
+    const s = (await (await request.get('/api/users/' + g.id + '?limit=1')).json()).data.stories[0];
+    await page.goto('/stories/' + s._id);
+    const cta = page.locator('[data-guide-cta]');
+    await expect(cta).toContainText('Хочете так само?');
+    await cta.getByRole('link').click();
+    await expect(page).toHaveURL(new RegExp('/travellers/' + g.id + '#booking$'));
   });
 });
 

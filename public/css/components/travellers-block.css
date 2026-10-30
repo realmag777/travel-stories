@@ -18,7 +18,8 @@
 .travellers-block__view-all { color: #fff; cursor: pointer; background-color: #4169e1; border: 1px solid #4169e1; border-radius: 8px; justify-content: center; align-items: center; font-size: 16px; font-weight: 500; text-decoration: none; transition: background-color .2s; display: inline-flex; }
 .travellers-block__view-all:hover, .travellers-block__view-all:focus { color: #000; background-color: #e8eeff; border: 1px solid #4169e1; }
 .travellers-block__view-all:active { color: #000; background-color: #7a96ea; border: 1px solid #4169e1; }
-.travellers-block__badge { display: inline-flex; align-items: center; gap: 4px; margin: -8px 0 12px; padding: 2px 8px; border-radius: 6px; background: var(--color-white); font-size: 12px; font-weight: 600; color: var(--color-royal-blue-dark); }
+.travellers-block__badge { position: absolute; top: 20px; right: 20px; padding: 2px 10px; border-radius: 6px; background: var(--color-royal-blue); color: var(--color-white); font-size: 12px; font-weight: 700; letter-spacing: .02em; }
+.travellers-block__card { position: relative; }
 
 @media screen and (min-width: 768px) {
   .travellers-block__container { gap: 48px; max-width: 768px; }

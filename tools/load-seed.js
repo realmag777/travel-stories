@@ -188,40 +188,92 @@ async function loadDemo({ now = new Date() } = {}) {
   return { travellers: travellers.length, stories: n, tIds };
 }
 
-/** Booking demo: every 5th demo traveller is a guide with two services and slots for 6 weeks. */
+// Service catalogue for demo guides: uk / en / es titles, duration, price range in euros.
+const SERVICE_CATALOG = [
+  { key: 'call30', kind: 'call', min: 30, price: [15, 25], uk: 'Онлайн-консультація, 30 хв', en: 'Online consultation, 30 min', es: 'Consulta en línea, 30 min',
+    description: 'Коротко відповім на питання про маршрут, сезон і бюджет' },
+  { key: 'call60', kind: 'call', min: 60, price: [30, 45], uk: 'Онлайн-консультація, 60 хв', en: 'Online consultation, 60 min', es: 'Consulta en línea, 60 min',
+    description: 'Детально розберемо поїздку: транспорт, житло, що подивитися' },
+  { key: 'tour', kind: 'tour', min: 150, price: [40, 80], uk: 'Пішохідна екскурсія', en: 'Walking tour', es: 'Visita guiada a pie',
+    description: 'Прогулянка місцями з моїх історій' },
+  { key: 'plan', kind: 'plan', min: 90, price: [35, 60], uk: 'Планування маршруту', en: 'Route planning', es: 'Planificación de la ruta',
+    description: 'Складу маршрут по днях із бронюваннями та запасними варіантами' },
+];
+const DEMO_GUIDES = 25;
+const SLOT_DAYS = 30;
+// Weekly schedules (Kyiv time) so guides differ: weekdays, evenings, weekends.
+const SCHEDULES = [
+  { days: [1, 2, 3, 4, 5], times: ['10:00', '14:00', '18:30'] },
+  { days: [1, 3, 5], times: ['09:00', '12:00', '16:00'] },
+  { days: [2, 4, 6], times: ['11:00', '15:00'] },
+  { days: [5, 6, 0], times: ['10:00', '13:00', '17:00'] },
+  { days: [1, 2, 3, 4], times: ['19:00', '20:30'] },
+];
+
+/**
+ * Booking demo: ~25 generated travellers (never imported ones) become guides with 1–3 services
+ * and free slots for the next 30 days; a handful of demo bookings fill the admin.
+ */
 async function loadBookingDemo(tIds, { now = new Date() } = {}) {
-  const keys = Object.keys(tIds).filter((k, i) => i % 5 === 0);
+  const keys = Object.keys(tIds).sort((a, b) => hash('guide:' + a) - hash('guide:' + b)).slice(0, DEMO_GUIDES);
   let slots = 0;
   for (const key of keys) {
     const userId = tIds[key];
-    await db('users').where({ id: userId }).update({ accepts_bookings: true });
-    const existing = await db('services').where({ user_id: userId }).first();
-    if (!existing) {
-      const h = hash(key);
-      await db('services').insert([
-        { user_id: userId, kind: 'call', title: 'Консультація-созвон: маршрут під вас', title_en: 'Video call: a route made for you', title_es: 'Videollamada: una ruta a tu medida', description: 'Відповім на питання і складу план поїздки', duration_min: 45, price_label: `€${20 + (h % 4) * 5}`, sort: 0 },
-        { user_id: userId, kind: 'tour', title: 'Екскурсія з автором історій', title_en: 'Guided walk with the author', title_es: 'Paseo guiado con el autor', description: 'Прогулянка місцями з моїх історій', duration_min: 180, price_label: `€${45 + (h % 5) * 10}`, sort: 1 },
-      ]);
+    const h = hash(key);
+    // Main place = latest story in the guide's most frequent country (same rule as the /guides card).
+    const top = await db('stories').where({ owner_id: userId }).whereNotNull('country_code').groupBy('country_code')
+      .select('country_code').count({ n: '*' }).orderBy([{ column: 'n', order: 'desc' }, { column: 'country_code' }]).first();
+    const main = top ? await db('stories').where({ owner_id: userId, country_code: top.country_code }).whereNotNull('region').orderBy('date', 'desc').first('region') : null;
+    await db('users').where({ id: userId }).update({
+      accepts_bookings: true,
+      booking_intro: main ? `Допоможу спланувати поїздку і покажу місця, про які пишу. Найкраще знаю: ${main.region}.` : null,
+    });
+    if (!(await db('services').where({ user_id: userId }).first())) {
+      const count = 1 + (h % 3);
+      const picked = [...SERVICE_CATALOG].sort((a, b) => hash(key + a.key) - hash(key + b.key)).slice(0, count)
+        .sort((a, b) => SERVICE_CATALOG.indexOf(a) - SERVICE_CATALOG.indexOf(b));
+      await db('services').insert(picked.map((s, i) => {
+        const price = s.price[0] + Math.round(((hash(key + s.key + 'p') % 100) / 100) * (s.price[1] - s.price[0]) / 5) * 5;
+        const tourWhere = s.kind === 'tour' && main ? `: ${main.region}` : '';
+        return {
+          user_id: userId, kind: s.kind, title: (s.uk + tourWhere).slice(0, 120), title_en: s.en, title_es: s.es,
+          description: s.description, duration_min: s.min, price_label: `€${price}`, sort: i,
+        };
+      }));
     }
-    const from = new Date(now.getTime() + 86400000);
+    const sched = SCHEDULES[h % SCHEDULES.length];
     const rows = [];
-    for (let i = 0; i < 42; i++) {
-      const d = new Date(from.getTime() + i * 86400000);
-      const dow = d.getUTCDay();
-      if (dow === 0) continue;
+    for (let i = 1; i <= SLOT_DAYS; i++) {
+      const d = new Date(now.getTime() + i * 86400000);
+      if (!sched.days.includes(d.getUTCDay())) continue;
       const ymd = d.toISOString().slice(0, 10);
-      for (const tm of dow === 6 ? ['11:00'] : ['10:00', '14:00', '18:30']) rows.push({ user_id: userId, starts_at: kyivToUtc(ymd, tm), duration_min: 60 });
+      for (const tm of sched.times) rows.push({ user_id: userId, starts_at: kyivToUtc(ymd, tm), duration_min: 60 });
     }
     const ins = await db('slots').insert(rows).onConflict(['user_id', 'starts_at']).ignore().returning('id');
     slots += ins.length;
   }
-  // A few demo bookings so the admin has something to confirm.
-  const [svc] = await db('services').where({ kind: 'call' }).limit(1);
-  if (svc && !(await db('bookings').first())) {
-    const free = await db('slots').where({ user_id: svc.user_id }).orderBy('starts_at').limit(3);
-    const people = [['Олена Гребенюк', 'olena@example.com', 'Хочу маршрут на 5 днів з дитиною'], ['Marco Rossi', 'marco@example.com', 'Planning a trip in spring'], ['Ірина Савчук', 'iryna@example.com', '']];
-    for (let i = 0; i < free.length; i++) {
-      await db('bookings').insert({ slot_id: free[i].id, service_id: svc.id, user_id: svc.user_id, name: people[i][0], email: people[i][1], message: people[i][2], status: i === 1 ? 'confirmed' : 'new' });
+  // Demo bookings in different states so the admin has something to confirm.
+  if (!(await db('bookings').first())) {
+    const crypto = require('crypto');
+    const token = () => crypto.randomBytes(16).toString('hex');
+    const people = [
+      ['Олена Гребенюк', 'olena@example.com', 'Хочу маршрут на 5 днів з дитиною', 'new'],
+      ['Marco Rossi', 'marco@example.com', 'Planning a trip in spring', 'confirmed'],
+      ['Ірина Савчук', 'iryna@example.com', '', 'new'],
+      ['Андрій Мельник', 'andrii@example.com', 'Цікавлять гори і недорогі ночівлі', 'new'],
+      ['Sofía Martín', 'sofia@example.com', '¿Qué ver en tres días?', 'confirmed'],
+      ['Тарас Бондар', 'taras@example.com', '', 'cancelled'],
+    ];
+    for (let i = 0; i < people.length; i++) {
+      const userId = tIds[keys[i % keys.length]];
+      const svc = await db('services').where({ user_id: userId }).orderBy('sort').first();
+      const slot = await db('slots').where({ user_id: userId }).orderBy('starts_at').offset(i).first();
+      if (!svc || !slot) continue;
+      const [name, email, message, status] = people[i];
+      await db('bookings').insert({
+        slot_id: slot.id, service_id: svc.id, user_id: userId, name, email, message, status, locale: email.startsWith('sofia') ? 'es' : 'uk',
+        public_token: token(), cancel_token: status === 'cancelled' ? null : token(), cancelled_at: status === 'cancelled' ? db.fn.now() : null,
+      });
     }
   }
   return { guides: keys.length, slots };

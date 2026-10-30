@@ -22,6 +22,16 @@
       <div class="story__body">
         {% if story.fallback %}<p data-extra class="story__note" lang="{{ locale }}">{{ t('story.notTranslated') }}</p>{% endif %}
         <p class="story__article"{% if story.fallback %} lang="uk"{% endif %}>{{ story.article }}</p>
+        {% if guide %}
+        <aside class="guide-cta" data-extra data-guide-cta>
+          <img class="guide-cta__avatar" src="{{ guide.avatar.src }}" alt="" width="72" height="72" loading="lazy">
+          <div class="guide-cta__body">
+            <h2 class="guide-cta__title">{{ t('story.guideCtaTitle') }}</h2>
+            <p class="guide-cta__text">{{ t('story.guideCtaText', { name: guide.name }) }}{% if guide.priceFrom %} {{ t('story.guidePrice', { price: guide.priceFrom }) }}{% endif %}</p>
+          </div>
+          <a class="action" href="{{ url('/travellers/' + guide.id) }}#booking">{{ t('story.guideCtaButton') }}</a>
+        </aside>
+        {% endif %}
         {% if facts.length %}
         <div data-extra class="story-facts" aria-label="{{ t('story.facts') }}">
           {% for f in facts %}<a class="story-facts__item" href="{{ f.href }}">{{ f.label }}</a>{% endfor %}

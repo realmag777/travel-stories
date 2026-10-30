@@ -1,0 +1,18 @@
+{# Guide card: avatar, name, place, nearest free slot, "від …" price, book button. `g` from services/guides. #}
+<article class="guide-card" data-guide-card="{{ g.id }}">
+  <a class="guide-card__photo" href="{{ url('/travellers/' + g.id) }}" tabindex="-1" aria-hidden="true">
+    <img class="guide-card__avatar" src="{{ g.avatar.large }}" alt="" width="112" height="112" loading="lazy" decoding="async">
+  </a>
+  <span class="guide-card__badge">{{ t('booking.badge') }}</span>
+  <h3 class="guide-card__name"><a href="{{ url('/travellers/' + g.id) }}">{{ g.name }}</a></h3>
+  {% if g.place %}<p class="guide-card__place"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="/sprite.svg#icon-place"></use></svg>{{ g.place }}</p>{% endif %}
+  <ul class="guide-card__facts">
+    <li class="guide-card__fact">
+      <svg class="icon" width="18" height="18" aria-hidden="true"><use href="/sprite.svg#icon-calendar"></use></svg>
+      {% if g.nextSlot %}<span>{{ t('guides.nextSlot') }}: <time datetime="{{ g.nextSlot.iso }}"><b>{{ g.nextSlot.iso | slotLabel(locale) }}</b></time></span>{% else %}<span>{{ t('guides.noSlots') }}</span>{% endif %}
+    </li>
+    {% if g.priceFrom %}<li class="guide-card__fact guide-card__fact--price">{{ t('guides.priceFrom', { price: g.priceFrom }) }}</li>{% endif %}
+  </ul>
+  <p class="guide-card__kinds">{% for k in g.kinds %}<span class="guide-card__kind">{{ t('booking.kind_' + k) }}</span>{% endfor %}</p>
+  <a class="guide-card__book" href="{{ url('/travellers/' + g.id) }}#booking">{{ t('guides.book') }}</a>
+</article>

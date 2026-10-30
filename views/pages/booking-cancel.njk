@@ -1,0 +1,21 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="confirm">
+  <div class="confirm__card">
+    <span class="confirm__icon confirm__icon--cancel"><svg width="28" height="28" aria-hidden="true"><use href="/sprite.svg#icon-close"></use></svg></span>
+    {% if valid %}
+    <h1 class="confirm__title">{{ t('confirm.cancelTitle') }}</h1>
+    <p class="confirm__lead">{{ t('confirm.cancelLead', { service: b.service, guide: b.guide.name, when: b.dateLabel + ', ' + b.time }) }}</p>
+    <form method="post" action="{{ url('/booking/' + b.token + '/cancel') }}" class="confirm__actions" data-cancel-form>
+      <input type="hidden" name="key" value="{{ key }}">
+      <button class="action" type="submit">{{ t('confirm.cancelConfirm') }}</button>
+      <a class="action action--ghost" href="{{ url('/booking/' + b.token) }}">{{ t('confirm.keep') }}</a>
+    </form>
+    {% else %}
+    <h1 class="confirm__title">{{ t('confirm.linkInvalidTitle') }}</h1>
+    <p class="confirm__lead">{{ t('confirm.linkInvalid') }}</p>
+    <div class="confirm__actions"><a class="action" href="{{ url('/booking/' + b.token) }}">{{ t('confirm.toBooking') }}</a></div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

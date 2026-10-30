@@ -13,6 +13,7 @@ const facets = require('../services/facets');
 const nlsearch = require('../services/nlsearch');
 const bookingService = require('../services/booking');
 const affiliate = require('../services/affiliate');
+const guides = require('../services/guides');
 const content = require('../content');
 const { LOCALES } = require('../../core/i18n');
 
@@ -144,6 +145,14 @@ function register(app) {
     }));
   }));
 
+  // Guides with the nearest free slot and the lowest price. Filters: country, service, date.
+  r.get('/guides', asyncRoute(async (req, res) => {
+    const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 12, 1), 50);
+    const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
+    const result = await guides.list(req.query, { offset, limit, locale: localeOf(req) });
+    ok(res, 200, 'Successfully found guides', { guides: result.rows, total: result.total, offset, limit, hasNextPage: offset + limit < result.total, facets: result.facets });
+  }));
+
   // Booking: services and free slots of a traveller.
   r.get('/travellers/:id/booking', asyncRoute(async (req, res) => {
     const u = await db('users').where({ id: req.params.id, hidden: false }).first();
@@ -167,7 +176,10 @@ function register(app) {
     }
     try {
       const b = await bookingService.create({ travellerId: req.params.id, ...parsed.data, locale: localeOf(req) });
-      ok(res, 201, 'Booking created', { id: b.id, status: b.status, startsAt: new Date(b.slot.starts_at).toISOString(), service: b.service.title });
+      ok(res, 201, 'Booking created', {
+        id: b.id, status: b.status, startsAt: new Date(b.slot.starts_at).toISOString(), service: b.service.title,
+        confirmUrl: bookingService.confirmPath(b), cancelUrl: bookingService.cancelPath(b),
+      });
     } catch (e) {
       if (e instanceof bookingService.BookingError) return res.status(e.status).json({ status: e.status, message: e.message, code: e.code });
       throw e;

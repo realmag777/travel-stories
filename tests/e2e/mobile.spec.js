@@ -31,8 +31,24 @@ test.describe('mobile 375', () => {
     await expect(page.locator('.traveller-card')).toHaveCount(16);
   });
 
+  test('guide profile shows a sticky book button that leads to the booking block', async ({ page, request }) => {
+    const g = (await (await request.get('/api/v2/guides?limit=1')).json()).data.guides[0];
+    await page.goto('/travellers/' + g.id);
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    const sticky = page.locator('[data-booking-sticky]');
+    await expect(sticky).toBeInViewport();
+    await sticky.getByRole('link').click();
+    await expect(page.locator('#booking')).toBeInViewport();
+  });
+
+  test('burger menu has the guides item', async ({ page }) => {
+    await page.goto('/');
+    await page.locator('[data-burger]').click();
+    await expect(page.locator('.nav__list').getByRole('link', { name: 'Гіди', exact: true })).toBeVisible();
+  });
+
   test('no horizontal scroll on main pages', async ({ page }) => {
-    for (const p of ['/', '/stories', '/travellers', '/map', '/stories/68498236a100312bea07901c']) {
+    for (const p of ['/', '/stories', '/travellers', '/guides', '/map', '/stories/68498236a100312bea07901c']) {
       await page.goto(p);
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
       expect(overflow, p).toBeLessThanOrEqual(1);

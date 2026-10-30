@@ -42,7 +42,7 @@ describe('booking', () => {
   });
 
   it('the database itself refuses a second live booking (unique partial index)', async () => {
-    await expect(db('bookings').insert({ slot_id: slotId, service_id: serviceId, user_id: userId, name: 'Raw', email: 'r@example.com', status: 'new' }))
+    await expect(db('bookings').insert({ slot_id: slotId, service_id: serviceId, user_id: userId, name: 'Raw', email: 'r@example.com', status: 'new', public_token: 'a'.repeat(32) }))
       .rejects.toMatchObject({ code: '23505' });
   });
 
@@ -52,6 +52,22 @@ describe('booking', () => {
     await db('users').where({ id: userId }).update({ accepts_bookings: false });
     await expect(booking.create({ travellerId: userId, serviceId, slotId, name: 'X', email: 'x@example.com' })).rejects.toMatchObject({ code: 'not_bookable' });
     await db('users').where({ id: userId }).update({ accepts_bookings: true });
+  });
+
+  it('issues a confirmation token and a one-time cancel link', async () => {
+    const [{ id: s2 }] = await db('slots').insert({ user_id: userId, starts_at: new Date(Date.now() + 5 * 86400000) }).returning('id');
+    const b = await booking.create({ travellerId: userId, serviceId, slotId: s2, name: 'Token', email: 't@example.com', locale: 'en' });
+    expect(b.public_token).toMatch(/^[0-9a-f]{32}$/);
+    expect(booking.confirmPath(b)).toBe('/en/booking/' + b.public_token);
+    expect(booking.cancelPath(b)).toContain('/cancel?key=' + b.cancel_token);
+    const view = await booking.getByToken(b.public_token);
+    expect(view).toMatchObject({ id: b.id, service_title: 'Test call', status: 'new' });
+    await expect(booking.cancelByToken(b.public_token, 'f'.repeat(32))).rejects.toMatchObject({ code: 'link_invalid' });
+    const done = await booking.cancelByToken(b.public_token, b.cancel_token);
+    expect(done.status).toBe('cancelled');
+    expect(done.cancel_token).toBeNull();
+    await expect(booking.cancelByToken(b.public_token, b.cancel_token)).rejects.toMatchObject({ code: 'link_invalid' });
+    expect((await booking.freeSlots(userId)).some((s) => s.id === s2)).toBe(true);
   });
 
   it('converts Kyiv wall-clock time across DST', () => {

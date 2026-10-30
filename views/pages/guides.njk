@@ -1,0 +1,47 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<div class="travellers-page" data-guides-page>
+  <div class="travellers-page__main">
+    <section>
+      <h1 class="travellers-page__title">{{ t('guides.title') }}</h1>
+      <p class="guides__intro">{{ t('guides.intro') }}</p>
+
+      {# Works without JS as a GET form; the script swaps results in place. #}
+      <form class="guides__filters" action="{{ url('/guides') }}" method="get" data-guides-form>
+        <div class="field">
+          <label class="field__label" for="g-country">{{ t('guides.country') }}</label>
+          <select class="field__select" id="g-country" name="country">
+            <option value="">{{ t('guides.anyCountry') }}</option>
+            {% for c in facets.country %}<option value="{{ c.value }}"{% if c.selected %} selected{% endif %}>{{ c.label }} ({{ c.count }})</option>{% endfor %}
+          </select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="g-service">{{ t('guides.service') }}</label>
+          <select class="field__select" id="g-service" name="service">
+            <option value="">{{ t('guides.anyService') }}</option>
+            {% for k in facets.service %}<option value="{{ k.value }}"{% if k.selected %} selected{% endif %}{% if not k.count and not k.selected %} disabled{% endif %}>{{ t('booking.kind_' + k.value) }} ({{ k.count }})</option>{% endfor %}
+          </select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="g-date">{{ t('guides.date') }}</label>
+          <input class="field__input" id="g-date" name="date" type="date" value="{{ filters.date }}" min="{{ dateMin }}" max="{{ dateMax }}">
+        </div>
+        <div class="guides__filter-actions">
+          <button class="action action--small no-js-only" type="submit">{{ t('guides.apply') }}</button>
+          <a class="action action--small action--ghost" href="{{ resetUrl }}" data-guides-reset>{{ t('filters.reset') }}</a>
+        </div>
+      </form>
+
+      <p class="guides__count" data-guides-count>{{ totalLabel }}</p>
+      <ul class="guide-list" data-guide-list>
+        {% include "partials/guide-items.njk" %}
+      </ul>
+      <div class="empty-state guides__empty" data-guides-empty{% if guides.length %} hidden{% endif %}>
+        <p class="empty-state__message">{{ t('guides.empty') }}</p>
+        <a class="action" href="{{ resetUrl }}" data-guides-reset>{{ t('filters.reset') }}</a>
+      </div>
+      <a class="travellers-page__more" href="{{ nextUrl }}" data-load-more-guides rel="next"{% if not hasMore %} hidden{% endif %}>{{ t('stories.showMore') }}</a>
+    </section>
+  </div>
+</div>
+{% endblock %}

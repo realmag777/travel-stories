@@ -93,6 +93,20 @@ const paths = {
   '/api/v2/stories/{storyId}/travel-links': {
     get: { tags: ['v2 Booking'], summary: 'Where to stay / how to get there links', parameters: [{ name: 'storyId', in: 'path', required: true, schema: { $ref: '#/components/schemas/MongoObjectId' } }], responses: { 200: json(envelope({ type: 'object' }, 'Successfully built links')), 404: err('Story not found') } },
   },
+  '/api/v2/guides': {
+    get: {
+      tags: ['v2 Booking'], summary: 'Guides with the nearest free slot and the lowest price',
+      parameters: [
+        { name: 'country', in: 'query', schema: { type: 'string', example: 'IT' } },
+        { name: 'service', in: 'query', schema: { type: 'string', enum: ['call', 'tour', 'plan'] } },
+        { name: 'date', in: 'query', description: 'Free slot on this day (Kyiv time)', schema: { type: 'string', format: 'date' } },
+        { name: 'offset', in: 'query', schema: { type: 'integer', minimum: 0 } },
+        { name: 'limit', in: 'query', schema: { type: 'integer', minimum: 1, maximum: 50, default: 12 } },
+        { name: 'lang', in: 'query', schema: { type: 'string', enum: ['uk', 'en', 'es'] } },
+      ],
+      responses: { 200: json(envelope({ type: 'object', properties: { guides: { type: 'array', items: { type: 'object' } }, total: { type: 'integer' }, hasNextPage: { type: 'boolean' }, facets: { type: 'object' } } }, 'Successfully found guides')) },
+    },
+  },
   '/api/v2/travellers/{id}/booking': {
     get: {
       tags: ['v2 Booking'], summary: 'Services and free slots of a guide', parameters: [{ name: 'id', in: 'path', required: true, schema: { $ref: '#/components/schemas/MongoObjectId' } }],
@@ -105,7 +119,7 @@ const paths = {
       description: 'Double booking is impossible: the slot row is locked in a transaction and a partial unique index allows one live booking per slot.',
       parameters: [{ name: 'id', in: 'path', required: true, schema: { $ref: '#/components/schemas/MongoObjectId' } }],
       requestBody: { required: true, content: { 'application/json': { schema: { $ref: '#/components/schemas/BookingRequest' } } } },
-      responses: { 201: json(envelope({ type: 'object', properties: { id: { type: 'integer' }, status: { type: 'string' }, startsAt: { type: 'string' }, service: { type: 'string' } } }, 'Booking created')), 400: err('Invalid request data'), 404: err('Service or slot not found'), 409: err('Slot is already booked') },
+      responses: { 201: json(envelope({ type: 'object', properties: { id: { type: 'integer' }, status: { type: 'string' }, startsAt: { type: 'string' }, service: { type: 'string' }, confirmUrl: { type: 'string', description: 'Confirmation page with details' }, cancelUrl: { type: 'string', description: 'One-time cancel link' } } }, 'Booking created')), 400: err('Invalid request data'), 404: err('Service or slot not found'), 409: err('Slot is already booked') },
     },
   },
 };

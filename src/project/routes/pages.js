@@ -14,6 +14,8 @@ const facets = require('../services/facets');
 const nlsearch = require('../services/nlsearch');
 const bookingService = require('../services/booking');
 const affiliate = require('../services/affiliate');
+const guides = require('../services/guides');
+const { sameOrigin } = require('./api-v2');
 const content = require('../content');
 
 const STORIES_PER_PAGE = 9;
@@ -170,16 +172,18 @@ function router() {
 
   r.get('/', asyncRoute(async (req, res) => {
     const locale = req.locale;
-    const [popularRows, travellerRows, d] = await Promise.all([
+    const [popularRows, travellerRows, d, topGuides] = await Promise.all([
       content.storyBase().where('s.hidden', false).orderBy([{ column: 's.favorite_count', order: 'desc' }, { column: 's.date', order: 'desc' }]).limit(4),
       db('users as u').where('u.hidden', false).orderBy('u.id').limit(4),
       content.dicts(),
+      guides.list({}, { limit: 4, locale }),
     ]);
     stats.track(req, { kind: 'home' });
     res.render('pages/home.njk', {
       isHome: true,
       popular: popularRows.map((r0) => content.storyCard(r0, d, locale)),
       travellers: travellerRows.map((u) => content.travellerCard(u, locale)),
+      guides: topGuides.rows,
       preloadImage: { href: '/build/hero-768.webp' },
       seo: seo(req, {
         title: req.t('seo.homeTitle'),
@@ -290,11 +294,13 @@ function router() {
     const d = await content.dicts();
     const card = content.storyCard(row, d, locale);
     const loc = content.localizeStory(row, locale);
-    const [popularRows, travel] = await Promise.all([
+    const owner = await db('users').where({ id: row.owner_id }).first('accepts_bookings');
+    const [popularRows, travel, guide] = await Promise.all([
       content.storyBase().where('s.hidden', false).orderBy([{ column: 's.favorite_count', order: 'desc' }, { column: 's.date', order: 'desc' }]).limit(4),
       row.country_code || row.region ? affiliate.linksFor({
         place: row.region_en || row.region, country: d.countryByCode[row.country_code]?.name_en, lat: row.lat, lng: row.lng,
       }) : null,
+      owner && owner.accepts_bookings ? guides.forTraveller(row.owner_id, locale) : null,
     ]);
     const country = d.countryByCode[row.country_code];
     const regionLabel = (locale !== 'uk' && row[`region_${locale}`]) || row.region;
@@ -319,6 +325,7 @@ function router() {
     res.render('pages/story.njk', {
       story: { ...card, article: loc.article, fallback: loc.fallback, lat: row.lat, lng: row.lng },
       facts,
+      guide,
       travel: travel ? { ...travel, place: [regionLabel, country && content.countryName(country, locale)].filter(Boolean).join(', ') } : null,
       credit: row.cover_author || row.cover_license ? { author: row.cover_author, license: row.cover_license, licenseUrl: row.cover_license_url, sourceUrl: row.cover_source_url } : null,
       popular: popularRows.map((r0) => content.storyCard(r0, d, locale)),
@@ -436,10 +443,117 @@ function router() {
     });
   }));
 
+  // Guides: travellers who accept bookings. Filters: country, service kind, date.
+  r.get('/guides', asyncRoute(async (req, res) => {
+    const f = guides.parseFilters(req.query);
+    const limit = Math.min(24, Math.max(1, parseInt(req.query.limit, 10) || 12));
+    const offset = Math.max(0, Math.min(10000, parseInt(req.query.offset, 10) || 0));
+    const result = await guides.list(f, { offset, limit, locale: req.locale });
+    const qs = (extra) => {
+      const p = new URLSearchParams();
+      for (const [k, v] of Object.entries({ ...f, ...extra })) if (v !== '' && v !== undefined && v !== null) p.set(k, v);
+      const str = p.toString();
+      return req.url_('/guides') + (str ? '?' + str : '');
+    };
+    const today = new Date().toISOString().slice(0, 10);
+    const ctx = {
+      filters: f,
+      guides: result.rows,
+      total: result.total,
+      facets: result.facets,
+      hasMore: offset + limit < result.total,
+      nextUrl: qs({ offset: offset + limit, limit }),
+      resetUrl: req.url_('/guides'),
+      dateMin: today,
+      dateMax: new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10),
+      totalLabel: req.t('guides.found', { n: result.total, word: i18n.plural(result.total, req.t('guides.forms'), req.locale) }),
+    };
+    if (req.get('x-partial')) {
+      const html = await renderPartials(res, ['guide-items'], ctx);
+      return res.json({ html: html['guide-items'], hasMore: ctx.hasMore, nextUrl: ctx.nextUrl, total: ctx.total, totalLabel: ctx.totalLabel, url: qs({}) });
+    }
+    stats.track(req, { kind: 'guides' });
+    const first = result.rows[0];
+    res.render('pages/guides.njk', {
+      ...ctx,
+      mainClass: 'page--tint',
+      seo: seo(req, {
+        title: req.t('seo.guidesTitle'),
+        description: req.t('seo.guidesDescription', { n: result.total }),
+        image: first ? first.avatar.large : null,
+        noindex: Boolean(f.country || f.service || f.date || offset),
+        jsonld: [{
+          '@context': 'https://schema.org', '@type': 'ItemList', name: req.t('guides.title'), numberOfItems: result.total,
+          itemListElement: result.rows.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: SITE_URL() + req.url_('/travellers/' + g.id), name: g.name })),
+        }, breadcrumbs(req, [{ name: req.t('nav.home'), path: '/' }, { name: req.t('nav.guides'), path: '/guides' }])],
+      }),
+    });
+  }));
+
+  // Booking confirmation page (opened after the form and from the e-mail) and one-time cancellation.
+  r.get('/booking/:token', asyncRoute(async (req, res, next) => {
+    const b = await bookingService.getByToken(req.params.token);
+    if (!b) return next();
+    res.set('Cache-Control', 'no-store');
+    res.render('pages/booking-confirm.njk', {
+      b: bookingView(req, b), justCancelled: req.query.cancelled === '1',
+      seo: seo(req, { title: req.t('confirm.title'), description: req.t('confirm.title'), noindex: true }),
+    });
+  }));
+  r.get('/booking/:token/cancel', asyncRoute(async (req, res, next) => {
+    const b = await bookingService.getByToken(req.params.token);
+    if (!b) return next();
+    res.set('Cache-Control', 'no-store');
+    const key = String(req.query.key || '');
+    const valid = Boolean(b.cancel_token) && b.cancel_token === key && b.status !== 'cancelled';
+    res.render('pages/booking-cancel.njk', {
+      b: bookingView(req, b), valid, key,
+      seo: seo(req, { title: req.t('confirm.cancelTitle'), description: req.t('confirm.cancelTitle'), noindex: true }),
+    });
+  }));
+  r.post('/booking/:token/cancel', sameOrigin, asyncRoute(async (req, res, next) => {
+    const b = await bookingService.getByToken(req.params.token);
+    if (!b) return next();
+    try {
+      await bookingService.cancelByToken(req.params.token, String((req.body && req.body.key) || ''));
+    } catch (e) {
+      if (!(e instanceof bookingService.BookingError)) throw e;
+      return res.status(410).render('pages/booking-cancel.njk', {
+        b: bookingView(req, b), valid: false, seo: seo(req, { title: req.t('confirm.cancelTitle'), description: '', noindex: true }),
+      });
+    }
+    res.redirect(303, req.url_('/booking/' + b.public_token + '?cancelled=1'));
+  }));
+
   r.get('/auth/login', (req, res) => authPage(req, res, 'login'));
   r.get('/auth/register', (req, res) => authPage(req, res, 'register'));
 
   return r;
+}
+
+/** Template view-model of a booking for the confirmation and cancel pages. */
+function bookingView(req, b) {
+  const locale = req.locale;
+  const when = bookingService.kyivParts(new Date(b.starts_at));
+  const fmt = new Intl.DateTimeFormat(locale === 'uk' ? 'uk-UA' : locale, { timeZone: 'Europe/Kyiv', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const [user, domain] = String(b.email).split('@');
+  return {
+    id: b.id,
+    token: b.public_token,
+    status: b.status,
+    service: (locale !== 'uk' && b['service_title_' + locale]) || b.service_title,
+    kind: b.service_kind,
+    duration: b.service_duration || b.slot_duration,
+    price: b.price_label,
+    guide: { id: b.user_id, name: locale === 'uk' ? b.traveller_name : b.traveller_name_en || b.traveller_name, avatar: avatarImage(b) },
+    dateLabel: fmt.format(new Date(b.starts_at)),
+    time: when.time,
+    name: b.name,
+    emailMasked: user.slice(0, 2) + '•••@' + domain,
+    message: b.message,
+    cancelUrl: b.cancel_token && b.status !== 'cancelled' ? req.url_('/booking/' + b.public_token + '/cancel?key=' + b.cancel_token) : null,
+    past: new Date(b.starts_at) <= new Date(),
+  };
 }
 
 function editorialEmail() {
@@ -477,9 +591,9 @@ function register(app) {
     res.locals.languageLinks = i18n.LOCALES.map((l) => ({
       code: l, short: l.toUpperCase(), name: i18n.t('lang.name', l), current: l === locale, href: i18n.lurl(rest, l) + qs,
     }));
-    const navDefs = [['/', 'nav.home'], ['/stories', 'nav.stories'], ['/travellers', 'nav.travellers'], ['/saved', 'nav.saved', true]];
-    res.locals.navItems = navDefs.map(([p, key, savedOnly]) => ({
-      href: req.url_(p), label: t(key), savedOnly: Boolean(savedOnly), current: p === '/' ? rest === '/' : rest.startsWith(p),
+    const navDefs = [['/', 'nav.home'], ['/stories', 'nav.stories'], ['/travellers', 'nav.travellers'], ['/guides', 'nav.guides', false, true], ['/saved', 'nav.saved', true]];
+    res.locals.navItems = navDefs.map(([p, key, savedOnly, extra]) => ({
+      href: req.url_(p), label: t(key), savedOnly: Boolean(savedOnly), extra: Boolean(extra), current: p === '/' ? rest === '/' : rest.startsWith(p),
     }));
     res.locals.clientI18n = i18n.t('client', locale);
     res.locals.seo = { title: t('site.name'), description: '', alternates: [], jsonld: [] };

@@ -34,6 +34,8 @@ function setup(app) {
   env.addFilter('shortDay', (v) => { const [, m, d] = String(v).split('-'); return `${d}.${m}`; });
   // Booking times are shown in the guide's time zone.
   env.addFilter('kyiv', (v) => (v ? new Intl.DateTimeFormat('uk-UA', { timeZone: 'Europe/Kyiv', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(v)) : ''));
+  // Nearest slot label in the visitor's language, Kyiv time: "пн, 3 лист., 10:00".
+  env.addFilter('slotLabel', (iso, locale = 'uk') => (iso ? new Intl.DateTimeFormat(locale === 'uk' ? 'uk-UA' : locale, { timeZone: 'Europe/Kyiv', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso)) : ''));
   env.addFilter('ymd', (v) => (v ? new Date(v).toISOString().slice(0, 10) : ''));
   app.set('view engine', 'njk');
   return env;
