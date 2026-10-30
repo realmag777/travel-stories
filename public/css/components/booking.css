@@ -1,0 +1,60 @@
+/* "Забронювати" block on a traveller profile: service, slot calendar, form. */
+.booking { background-color: #f7f9ff; padding: 0 20px 32px; }
+@media (min-width: 768px) { .booking { padding: 0 32px 32px; } }
+@media (min-width: 1440px) { .booking { padding: 0 64px 48px; } }
+.booking__card { max-width: 1312px; margin: 0 auto; background: var(--color-white); border: 1px solid var(--opacity-neutral-darkest-10); border-radius: 24px; padding: 24px 20px; display: flex; flex-direction: column; gap: 24px; }
+@media (min-width: 768px) { .booking__card { padding: 32px; } }
+@media (min-width: 1440px) { .booking__card { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; padding: 40px 48px; } }
+.booking__head { display: flex; flex-direction: column; gap: 8px; }
+@media (min-width: 1440px) { .booking__head { grid-column: 1 / -1; } }
+.booking__title { font-family: var(--second-family); letter-spacing: -.01em; font-size: 24px; line-height: 1.2; }
+@media (min-width: 768px) { .booking__title { font-size: 32px; } }
+.booking__intro { font-size: 16px; line-height: 1.5; color: var(--color-neutral-dark); }
+.booking__step { display: flex; flex-direction: column; gap: 12px; }
+.booking__step-title { font-family: var(--font-family); font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.booking__step-num { width: 24px; height: 24px; border-radius: 50%; background: var(--color-royal-blue); color: #fff; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; }
+
+.service-list { display: flex; flex-direction: column; gap: 8px; }
+.service { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1px solid var(--opacity-neutral-darkest-15); border-radius: 12px; cursor: pointer; transition: border-color .2s, background-color .2s; }
+.service:hover { border-color: var(--color-royal-blue); }
+.service input { margin-top: 4px; accent-color: var(--color-royal-blue); width: 18px; height: 18px; }
+.service--selected { border-color: var(--color-royal-blue); background: var(--color-royal-blue-lightest); }
+.service__body { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.service__title { font-weight: 700; }
+.service__meta { font-size: 14px; color: var(--color-neutral-dark); }
+.service__price { font-weight: 700; white-space: nowrap; }
+
+.calendar { display: flex; flex-direction: column; gap: 12px; }
+.calendar__nav { display: flex; align-items: center; justify-content: space-between; }
+.calendar__month { font-weight: 700; text-transform: capitalize; }
+.calendar__arrow { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--opacity-neutral-darkest-15); background: var(--color-white); display: inline-flex; align-items: center; justify-content: center; }
+.calendar__arrow:hover:not(:disabled) { background: var(--color-royal-blue); color: #fff; border-color: transparent; }
+.calendar__arrow:disabled { opacity: .3; cursor: default; }
+.calendar__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.calendar__dow { text-align: center; font-size: 12px; color: var(--color-neutral); padding: 4px 0; }
+.calendar__day { aspect-ratio: 1; border-radius: 8px; border: 1px solid transparent; background: none; font-size: 14px; color: var(--color-neutral-light); display: flex; align-items: center; justify-content: center; cursor: default; }
+.calendar__day--available { color: var(--color-neutral-darkest); background: var(--color-royal-blue-lighter); cursor: pointer; font-weight: 600; }
+.calendar__day--available:hover { border-color: var(--color-royal-blue); }
+.calendar__day--selected { background: var(--color-royal-blue); color: #fff; }
+.calendar__times { display: flex; flex-wrap: wrap; gap: 8px; }
+.calendar__time { padding: 6px 12px; border-radius: 8px; border: 1px solid var(--opacity-neutral-darkest-15); background: var(--color-white); font-size: 15px; font-variant-numeric: tabular-nums; }
+.calendar__time:hover { border-color: var(--color-royal-blue); }
+.calendar__time--selected { background: var(--color-royal-blue); color: #fff; border-color: var(--color-royal-blue); }
+.calendar__empty, .calendar__tz { font-size: 13px; color: var(--color-neutral-dark); }
+
+/* Form fields — copied from the original story form (input/textarea/error message). */
+.form { display: flex; flex-direction: column; gap: 4px; }
+.field { flex-direction: column; display: flex; position: relative; }
+.field__label { color: #000; margin-bottom: 8px; font-family: var(--font-family); font-size: 16px; font-weight: 400; line-height: 1.5; display: block; }
+.field__input, .field__textarea, .field__select { color: #000; background-color: #fff0; border: 1px solid #00000026; border-radius: 8px; width: 100%; padding: 8px; font-size: 16px; font-weight: 400; line-height: 1.5; transition: border-color .2s; }
+.field__input, .field__select { height: 40px; }
+.field__textarea { min-height: 120px; padding: 12px; resize: vertical; font-family: var(--font-family); }
+.field__input::placeholder, .field__textarea::placeholder { color: #0009; }
+.field__input:focus, .field__input:hover, .field__textarea:focus, .field__textarea:hover, .field__select:focus, .field__select:hover { border: 1px solid #4169e1; outline: none; }
+.field__error { color: #b00101; visibility: hidden; height: 24px; margin-top: 4px; font-family: var(--font-family); font-size: 12px; font-weight: 400; line-height: 1.5; display: block; overflow: hidden; }
+.field--error .field__input, .field--error .field__textarea, .field--error .field__select { border-color: #b00101; }
+.field--error .field__error { visibility: visible; }
+.field__hint { font-size: 12px; color: var(--color-neutral-dark); margin-top: 4px; }
+.booking__summary { padding: 12px 14px; border-radius: 12px; background: var(--color-royal-blue-lighter); font-size: 15px; line-height: 1.5; }
+.booking__done { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; padding: 24px; border-radius: 16px; background: var(--color-success-bg); }
+.booking__done-title { font-family: var(--second-family); font-size: 22px; color: var(--color-success); }

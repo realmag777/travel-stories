@@ -1,0 +1,105 @@
+{% extends "admin/layout.njk" %}
+{% from "admin/macros.njk" import field, area %}
+{% block title %}{{ 'Нова історія' if isNew else story.title }}{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ asset('map.css') }}">{% endblock %}
+{% block content %}
+<header class="adm-head">
+  <div>
+    <a class="adm-back" href="/admin/stories">← Усі історії</a>
+    <h1 class="adm-head__title">{{ 'Нова історія' if isNew else 'Редагування історії' }}</h1>
+    {% if not isNew %}<p class="adm-head__sub">ID {{ story.id }} · джерело: {{ story.source }} · переглядів: {{ story.views }}</p>{% endif %}
+  </div>
+  {% if not isNew %}<div class="adm-head__actions">
+    <a class="action action--ghost action--small" href="/stories/{{ story.id }}" target="_blank">Відкрити на сайті</a>
+    <button class="action action--ghost action--small adm-danger" type="button" data-delete="/admin/stories/{{ story.id }}/delete" data-confirm-title="Видалити історію?" data-confirm-text="Історію буде видалено назавжди разом з обкладинкою.">Видалити</button>
+  </div>{% endif %}
+</header>
+
+<form class="adm-form" method="post" action="{{ '/admin/stories' if isNew else '/admin/stories/' + story.id }}?_csrf={{ csrf }}" enctype="multipart/form-data" data-adm-form="story" novalidate>
+  <div class="adm-form__main">
+    <section class="adm-card">
+      <h2 class="adm-card__title">Обкладинка</h2>
+      <div class="cover-upload" data-cover-upload>
+        <img class="cover-upload__preview" src="{{ cover.large if cover else '/images/placeholderImage.webp' }}" alt="Превʼю обкладинки" width="640" height="427" data-cover-preview>
+        <label class="action action--ghost action--small cover-upload__btn">Завантажити фото<input type="file" name="cover" accept="image/jpeg,image/png,image/webp" hidden data-cover-input></label>
+        <span class="field__hint">JPEG, PNG або WEBP до 8 МБ. Автоматично створюються варіанти 400–1280 px у WebP та OG-зображення.</span>
+        <span class="field__error" data-error-for="cover"></span>
+      </div>
+      <div class="adm-row">
+        {{ field('cover_author', 'Автор фото', story.cover_author) }}
+        {{ field('cover_license', 'Ліцензія', story.cover_license) }}
+      </div>
+      <div class="adm-row">
+        {{ field('cover_license_url', 'URL ліцензії', story.cover_license_url) }}
+        {{ field('cover_source_url', 'Джерело (Wikimedia Commons)', story.cover_source_url) }}
+      </div>
+    </section>
+
+    <section class="adm-card">
+      <div class="tabs" role="tablist">
+        <button class="tabs__tab tabs__tab--active" type="button" role="tab" data-tab="uk" aria-selected="true">Українська *</button>
+        <button class="tabs__tab" type="button" role="tab" data-tab="en" aria-selected="false">English</button>
+        <button class="tabs__tab" type="button" role="tab" data-tab="es" aria-selected="false">Español</button>
+      </div>
+      <div data-tab-panel="uk">
+        {{ field('title', 'Заголовок', story.title, { max: 80, required: true }) }}
+        {{ area('article', 'Текст історії', story.article, { max: 2500, rows: 14, required: true }) }}
+      </div>
+      {% for l in ['en', 'es'] %}
+      <div data-tab-panel="{{ l }}" hidden>
+        {% if not isNew %}<div class="adm-translate"><button class="action action--small" type="button" data-translate="{{ l }}" data-story="{{ story.id }}">✨ Перекласти з української ({{ l | upper }})</button><span class="field__hint">Через LLM з налаштувань; без ключа сайт показує українську версію з позначкою.</span></div>{% endif %}
+        {{ field('title_' + l, 'Заголовок (' + l | upper + ')', story['title_' + l], { max: 120 }) }}
+        {{ area('article_' + l, 'Текст (' + l | upper + ')', story['article_' + l], { max: 5000, rows: 14 }) }}
+      </div>
+      {% endfor %}
+    </section>
+
+    <section class="adm-card">
+      <h2 class="adm-card__title">Місце на карті</h2>
+      <p class="field__hint">Клікніть по карті або перетягніть маркер. Координати також можна ввести вручну.</p>
+      <div class="adm-map" data-pick-map data-lat="{{ story.lat }}" data-lng="{{ story.lng }}"></div>
+      <div class="adm-row">
+        {{ field('lat', 'Широта', story.lat, { type: 'number', step: 'any' }) }}
+        {{ field('lng', 'Довгота', story.lng, { type: 'number', step: 'any' }) }}
+      </div>
+    </section>
+  </div>
+
+  <aside class="adm-form__side">
+    <section class="adm-card">
+      <h2 class="adm-card__title">Публікація</h2>
+      <div class="field" data-field="category_id"><label class="field__label" for="category_id">Категорія *</label>
+        <select class="field__select" id="category_id" name="category_id" required><option value="">—</option>{% for c in d.categories %}<option value="{{ c.id }}"{% if story.category_id == c.id %} selected{% endif %}>{{ c.name }}</option>{% endfor %}</select>
+        <span class="field__error" data-error-for="category_id"></span></div>
+      <div class="field" data-field="owner_id"><label class="field__label" for="owner_id">Автор *</label>
+        <select class="field__select" id="owner_id" name="owner_id" required><option value="">—</option>{% for o in owners %}<option value="{{ o.id }}"{% if story.owner_id == o.id %} selected{% endif %}>{{ o.name }}{% if o.is_demo %} (демо){% endif %}</option>{% endfor %}</select>
+        <span class="field__error" data-error-for="owner_id"></span></div>
+      <div class="adm-row">
+        {{ field('date', 'Дата публікації', story.date, { type: 'date', required: true }) }}
+        {{ field('favorite_count', 'Збереження', story.favorite_count, { type: 'number', min: 0 }) }}
+      </div>
+      <label class="check"><input type="checkbox" name="is_demo"{% if story.is_demo %} checked{% endif %}> Демо-контент</label>
+      <button class="action action--block" type="submit" data-submit>{{ 'Створити історію' if isNew else 'Зберегти зміни' }}</button>
+    </section>
+
+    <section class="adm-card">
+      <h2 class="adm-card__title">Поля фільтра</h2>
+      <div class="field" data-field="country_code"><label class="field__label" for="country_code">Країна</label>
+        <select class="field__select" id="country_code" name="country_code"><option value="">—</option>{% for c in d.countries %}<option value="{{ c.code }}"{% if story.country_code == c.code %} selected{% endif %}>{{ c.name_uk }} ({{ c.code }})</option>{% endfor %}</select>
+        <span class="field__error" data-error-for="country_code"></span></div>
+      {{ field('region', 'Регіон (uk)', story.region, { max: 80 }) }}
+      <div class="adm-row">{{ field('region_en', 'Регіон (en)', story.region_en, { max: 80 }) }}{{ field('region_es', 'Регіон (es)', story.region_es, { max: 80 }) }}</div>
+      <fieldset class="adm-fieldset"><legend class="field__label">Сезон</legend>
+        <div class="checks">{% for v in facets.season %}<label class="check"><input type="checkbox" name="seasons" value="{{ v.slug }}"{% if v.slug in (story.seasons or []) %} checked{% endif %}> {{ v.label_uk }}</label>{% endfor %}</div></fieldset>
+      <div class="adm-row">
+        <div class="field"><label class="field__label" for="budget">Бюджет</label><select class="field__select" id="budget" name="budget"><option value="">—</option>{% for v in facets.budget %}<option value="{{ v.slug }}"{% if story.budget == v.slug %} selected{% endif %}>{{ v.label_uk }}</option>{% endfor %}</select><span class="field__error"></span></div>
+        <div class="field"><label class="field__label" for="trip_type">Тип поїздки</label><select class="field__select" id="trip_type" name="trip_type"><option value="">—</option>{% for v in facets.trip %}<option value="{{ v.slug }}"{% if story.trip_type == v.slug %} selected{% endif %}>{{ v.label_uk }}</option>{% endfor %}</select><span class="field__error"></span></div>
+      </div>
+      {{ field('duration_days', 'Тривалість, днів', story.duration_days, { type: 'number', min: 1 }) }}
+      <fieldset class="adm-fieldset"><legend class="field__label">Теги</legend>
+        <div class="checks checks--tags">{% for v in facets.tags %}<label class="check"><input type="checkbox" name="tags" value="{{ v.slug }}"{% if v.slug in (story.tags or []) %} checked{% endif %}> {{ v.label_uk }}</label>{% endfor %}</div></fieldset>
+    </section>
+  </aside>
+</form>
+{% endblock %}
+{% block scripts %}<script src="{{ asset('map.js') }}" defer></script>{% endblock %}

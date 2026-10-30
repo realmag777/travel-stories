@@ -1,0 +1,10 @@
+node_modules
+.git
+.env
+uploads
+reference-engine
+res
+tools/reference
+test-results
+playwright-report
+*.log

@@ -1,0 +1,204 @@
+{
+  "stories": [
+    {
+      "key": "s-4-021",
+      "travellerKey": "t-4-05",
+      "category": "Грузія",
+      "title": { "uk": "Вардзія: печерне місто цариці Тамари", "en": "Vardzia: Queen Tamar's cave city" },
+      "article": {
+        "uk": "Про Вардзію я колись читала в старому географічному журналі і вирізала фотографію, яка потім багато років висіла в моєму кабінеті географії. Цієї осені ми з двома подругами-вчительками поїхали до Грузії, і Вардзія стала головною метою.\n\nЗ Тбілісі ми їхали маршруткою до Ахалцихе, три з половиною години за 20 ларі, а там домовилися з таксистом: він возив нас цілий день за 120 ларі на трьох, з зупинками біля фортеці Хертвісі над Курою. Дорога йде вздовж річки ущелиною, і осінні тополі там жовті, як свічки.\n\nВардзію вирубали в скелі гори Ерушеті наприкінці XII століття, за царя Георгія III і його доньки, цариці Тамари. Колись тут було понад шість тисяч приміщень на тринадцяти ярусах: келії, трапезні, винні погреби, аптека і навіть система водогону. Землетрус 1283 року обвалив зовнішню частину скелі, і печери відкрилися, як соти у вулику. Квиток коштує 15 ларі, близько п’яти євро.\n\nНайцінніше — церква Успіння Богородиці з фресками, де збереглося зображення самої Тамари. У ній досі служать ченці, тож треба вдягнути хустку і спідницю, їх видають біля входу. Ми довго стояли перед портретом цариці, і я розповідала подругам, як вона об’єднала країну.\n\nТепер порада для людей мого віку. Маршрут печерами — це сходи, вузькі тунелі й місця без поручнів. Одна з моїх подруг дійшла лише до середини, і це нормально. Ідіть повільно, беріть воду й ліхтарик. Мінус — мало закладів поруч: ми обідали в єдиному кафе біля входу, де замовляли форель із річки за 25 ларі. Смачно, але вибору майже немає. А ночували в гостьовому будинку в Ахалцихе за 35 євро на трьох.",
+        "en": "I once read about Vardzia in an old travel magazine and cut out a photograph that then hung in my geography classroom for many years. This autumn two teacher friends and I went to Georgia, and Vardzia became our main goal.\n\nFrom Tbilisi we took a marshrutka to Akhaltsikhe, three and a half hours for 20 lari, and there we made a deal with a taxi driver: he drove us around all day for 120 lari for the three of us, with stops at the Khertvisi fortress above the Mtkvari river. The road follows the river through a gorge, and the autumn poplars there are yellow like candles.\n\nVardzia was carved into the rock of Mount Erusheti at the end of the 12th century, under King George III and his daughter, Queen Tamar. There were once more than six thousand rooms on thirteen levels: cells, refectories, wine cellars, a pharmacy and even a water supply system. The earthquake of 1283 brought down the outer part of the rock, and the caves opened up like cells in a honeycomb. A ticket costs 15 lari, about five euros.\n\nThe most precious part is the Church of the Dormition with its frescoes, where a portrait of Tamar herself has survived. Monks still serve there, so you need to put on a headscarf and a skirt, which are handed out at the entrance. We stood a long time before the queen's portrait, and I told my friends how she united the country.\n\nNow some advice for people my age. The cave route means stairs, narrow tunnels and places without handrails. One of my friends only got halfway, and that is fine. Walk slowly and take water and a torch. The downside is the lack of places nearby: we had lunch at the only cafe by the entrance and ordered trout from the river for 25 lari. Tasty, but there is almost no choice. We stayed in a guest house in Akhaltsikhe for 35 euros for the three of us."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Самцхе-Джавахеті", "en": "Samtskhe-Javakheti", "es": "Samtskhe-Javakheti" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 3,
+      "tripType": "friends",
+      "tags": ["history", "architecture", "culture"],
+      "lat": 41.3814,
+      "lng": 43.2847,
+      "photoQuery": "Vardzia"
+    },
+    {
+      "key": "s-4-022",
+      "travellerKey": "t-4-06",
+      "category": "Грузія",
+      "title": { "uk": "Тушетія: перевал Абано і вежі Омало", "en": "Tusheti: the Abano Pass and the towers of Omalo" },
+      "article": {
+        "uk": "До Тушетії веде одна дорога, і вона заслужено вважається однією з найнебезпечніших у світі: 72 кілометри ґрунтовки від Пшавелі до Омало через перевал Абано, 2850 метрів. Відкрита вона лише з червня до жовтня. Ми з двома друзями сіли в позашляховик у Телаві о сьомій ранку, місце коштувало 70 ларі з людини, і чотири години я дивився у вікно на урвище без жодного відбійника. Водій Гела тим часом курив і розповідав анекдоти.\n\nОмало — головне село Тушетії, з кам’яними оборонними вежами Кесело XIII століття над верхнім кварталом. Ми зупинилися в гостьовому будинку за 70 ларі з людини з вечерею і сніданком: тушетський сир, хінкалі з бараниною, кутабі і чай з чебрецю.\n\nОсновний маршрут — Омало, Дартло, Чешо, Парсма, Гіреві і далі через перевал Атсунта, 3431 метр, до Шатілі в Хевсуреті. Це близько 80 кілометрів і п’ять-шість днів. Ми пройшли спрощений варіант до Гіреві і назад: чотири дні, 60 кілометрів, загальний набір близько 2500 метрів. Дартло — найгарніше село, яке я бачив на Кавказі: шиферні дахи, вежі, річка Піріката-Алазані і жодної машини. На ніч ставили намет біля прикордонної застави в Гіреві, там треба показати паспорт, бо кордон поруч.\n\nВажливо: зв’язку майже немає, банкоматів немає взагалі, тож готівку беріть з собою. Вода з джерел чиста, але я все одно фільтрував. На шляху є вівчарки, які охороняють отари. Не підходьте близько, тримайте трекінгові палиці і чекайте пастуха.\n\nМінус — та сама дорога. Якщо піде дощ, її можуть закрити на кілька днів, і ви застрягнете в горах. Ми мали запасний день і використали його: зливою перевал закрило на добу. Тому плануйте Тушетію без жорстких дат повернення.",
+        "en": "Only one road leads to Tusheti, and it is rightly considered one of the most dangerous in the world: 72 kilometres of dirt track from Pshaveli to Omalo over the Abano Pass at 2,850 metres. It is open only from June to October. My two friends and I got into a 4x4 in Telavi at seven in the morning, a seat cost 70 lari each, and for four hours I stared out of the window at a drop with no guardrail at all. Meanwhile our driver Gela smoked and told jokes.\n\nOmalo is the main village of Tusheti, with the 13th-century Keselo defensive stone towers above the upper quarter. We stayed in a guest house for 70 lari per person with dinner and breakfast: Tushetian cheese, mutton khinkali, kutabi and thyme tea.\n\nThe main route is Omalo, Dartlo, Chesho, Parsma, Girevi and on over the Atsunta Pass at 3,431 metres to Shatili in Khevsureti. That is about 80 kilometres and five or six days. We did a shorter version to Girevi and back: four days, 60 kilometres and about 2,500 metres of total gain. Dartlo is the most beautiful village I have seen in the Caucasus: slate roofs, towers, the Pirikiti Alazani river and not a single car. For the night we pitched the tent near the border post in Girevi, where you have to show your passport because the border is close.\n\nImportant: there is almost no signal and no cash machines at all, so bring cash. Spring water is clean, but I filtered it anyway. On the trail there are sheepdogs guarding flocks. Don't get close, hold your trekking poles and wait for the shepherd.\n\nThe downside is that same road. If it rains, it can be closed for several days and you will be stuck in the mountains. We had a spare day and used it: a downpour closed the pass for twenty-four hours. So plan Tusheti without fixed return dates."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Кахеті, Тушеті", "en": "Kakheti, Tusheti", "es": "Kajetia, Tusheti" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 7,
+      "tripType": "friends",
+      "tags": ["hiking", "nature", "camping", "history"],
+      "lat": 42.371,
+      "lng": 45.634,
+      "photoQuery": "Omalo"
+    },
+    {
+      "key": "s-4-023",
+      "travellerKey": "t-4-07",
+      "category": "Пустелі",
+      "title": { "uk": "Джайсалмер: золота фортеця і ніч у пустелі Тар", "en": "Jaisalmer: the golden fort and a night in the Thar Desert" },
+      "article": {
+        "uk": "Під час семестру по обміну в Делі я мала тиждень вільних днів і вирішила поїхати якнайдалі на захід, майже до кордону. Нічний потяг до Джайсалмера в плацкарті класу sleeper коштував 7 євро і йшов вісімнадцять годин. Я їла самосу з вікна, пила чай із глиняних чашечок, а сусіди по купе вчили мене рахувати на гінді. Найкращі вісімнадцять годин мого семестру!\n\nДжайсалмер називають Золотим містом, бо все тут збудовано з жовтого пісковику. Фортеця XII століття стоїть на пагорбі, і всередині неї досі живуть люди: там вузькі вулички, храми джайнів, корови і хостели. Я жила просто у фортеці, в кімнаті з видом на дахи, за 6 євро на ніч. На світанку піднімалася на дах і дивилася, як стіни з жовтих стають медовими.\n\nОбов’язково зайдіть у хавелі Патвон-кі — п’ять купецьких будинків з різьбленими балконами, наче мереживо з каменю. Вхід — кілька євро, зі студентським дешевше.\n\nГоловна пригода — сафарі на верблюдах. У хостелі продавали тур з ночівлею в дюнах за 18 євро: джип до села, дві години на верблюді, вечеря біля вогнища і сон просто неба на розкладачках. Моя верблюдиця звалася Лакшмі й постійно намагалася з’їсти мою хустку. Вночі небо над Таром було неймовірне, а вранці погонич Рафік спік нам чапаті в піску.\n\nЧесний мінус: дюни Сам, куди возять більшість туристів, — це шум, джипи, музика і ятки. Просіть тур у віддалені дюни, як ми. І ще: у січні вночі в пустелі холодно, до п’яти градусів, а в мене був лише тонкий спальник. Я спала в усіх светрах одразу і все одно тремтіла. Беріть теплі речі!",
+        "en": "During an exchange semester in Delhi I had a week off and decided to go as far west as possible, almost to the border. The night train to Jaisalmer in sleeper class cost 7 euros and took eighteen hours. I ate samosas through the window, drank chai from clay cups, and my compartment neighbours taught me to count in Hindi. The best eighteen hours of my semester!\n\nJaisalmer is called the Golden City because everything here is built of yellow sandstone. The 12th-century fort stands on a hill, and people still live inside it: narrow lanes, Jain temples, cows and hostels. I stayed right in the fort, in a room overlooking the rooftops, for 6 euros a night. At dawn I went up to the roof and watched the walls turn from yellow to honey.\n\nBe sure to visit Patwon Ki Haveli, five merchant houses with carved balconies like stone lace. Entry costs a few euros, less with a student card.\n\nThe main adventure is a camel safari. The hostel sold a tour with a night in the dunes for 18 euros: a jeep to a village, two hours on a camel, dinner by a fire and sleeping under the open sky on camp beds. My camel was called Lakshmi and kept trying to eat my scarf. At night the sky over the Thar was incredible, and in the morning our camel driver Rafiq baked chapati for us in the sand.\n\nThe honest downside: the Sam dunes, where most tourists are taken, mean noise, jeeps, music and stalls. Ask for a tour to remote dunes, as we did. And also: in January nights in the desert are cold, down to five degrees, and I only had a thin sleeping bag. I slept in all my jumpers at once and still shivered. Take warm clothes!"
+      },
+      "country": { "code": "IN", "uk": "Індія", "en": "India", "es": "India" },
+      "region": { "uk": "Раджастхан", "en": "Rajasthan", "es": "Rajastán" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 5,
+      "tripType": "solo",
+      "tags": ["desert", "backpacking", "train", "culture"],
+      "lat": 26.9157,
+      "lng": 70.9083,
+      "photoQuery": "Jaisalmer Fort"
+    },
+    {
+      "key": "s-4-024",
+      "travellerKey": "t-4-08",
+      "category": "Грузія",
+      "title": { "uk": "Боржомі: десять днів води, лісу і тиші", "en": "Borjomi: ten days of water, forest and silence" },
+      "article": {
+        "uk": "Боржомі ми знали лише як назву на пляшці. А виявилося, що це маленьке курортне містечко в ущелині Кури, з дерев’яними віллами XIX століття, парком і хвойними горами довкола. Ми з Романом приїхали в травні й зняли квартиру з балконом на річку за 30 євро на ніч. Плани були прості: ходити пішки, читати й нікуди не поспішати.\n\nЗ Тбілісі ми їхали старим електричним потягом, який повзе майже п’ять годин і коштує кілька ларі. Можна маршруткою за дві години, але ми свідомо обрали потяг: він зупиняється на кожній станції, у вагоні продають хачапурі, а за вікном тече Кура.\n\nКожен ранок у нас починався однаково. Ми йшли в Центральний парк до джерела і набирали теплу мінеральну воду з тим самим солонуватим присмаком. Потім підіймалися вище, до сірчаних басейнів просто в лісі: вода близько 33 градусів, купання коштує кілька ларі. Найкраще приходити о дев’ятій ранку, поки не приїхали екскурсії.\n\nБоржомсько-Харагаульський національний парк — один з найбільших у Європі. Ми пройшли кілька маршрутів з візит-центру в Ліканах, найдовший — двадцять кілометрів буковим лісом. На шляху не зустріли жодної людини, лише кіз і олениці. Перед виходом треба зареєструватися, це безкоштовно.\n\nВечорами ми їли вдома: на ринку купували сир, зелень, гарячий хліб з тоне і молоде вино у пластиковій пляшці. Сусідка Мзія приносила нам варення з шишок, яке тут вважають ліками від кашлю.\n\nМінус для нас — вихідні. У суботу приїжджають автобуси з Тбілісі, канатна дорога і парк заповнюються, у кафе черги. Тож ми в ці дні йшли в ліс. А ще в травні часто дощить: з десяти днів чотири були мокрими.",
+        "en": "We knew Borjomi only as a name on a bottle. It turned out to be a small spa town in the Mtkvari gorge, with 19th-century wooden villas, a park and pine-covered mountains all around. Roman and I came in May and rented a flat with a balcony over the river for 30 euros a night. Our plans were simple: walk, read and hurry nowhere.\n\nFrom Tbilisi we took an old electric train that crawls for almost five hours and costs a few lari. A marshrutka takes two hours, but we chose the train on purpose: it stops at every station, khachapuri is sold in the carriage and the Mtkvari flows past the window.\n\nEvery morning for us began the same way. We walked into the Central Park to the spring and filled up with warm mineral water with that same slightly salty taste. Then we climbed higher, to the sulphur pools right in the forest: the water is about 33 degrees and a swim costs a few lari. It is best to come at nine in the morning, before the tour groups arrive.\n\nBorjomi-Kharagauli National Park is one of the largest in Europe. We walked several trails from the visitor centre in Likani, the longest being twenty kilometres through beech forest. On the way we didn't meet a single person, only goats and a doe. You have to register before setting out, it is free.\n\nIn the evenings we ate at home: at the market we bought cheese, herbs, hot tone bread and young wine in a plastic bottle. Our neighbour Mzia brought us pine cone jam, which is considered a cough remedy here.\n\nThe downside for us was weekends. On Saturday the coaches from Tbilisi arrive, the cable car and park fill up and there are queues in the cafes. So on those days we went to the forest. Also, it often rains in May: four of our ten days were wet."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Самцхе-Джавахеті", "en": "Samtskhe-Javakheti", "es": "Samtskhe-Javakheti" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 10,
+      "tripType": "couple",
+      "tags": ["slow-travel", "nature", "hiking", "train"],
+      "lat": 41.839,
+      "lng": 43.379,
+      "photoQuery": "Borjomi"
+    },
+    {
+      "key": "s-4-025",
+      "travellerKey": "t-4-09",
+      "category": "Грузія",
+      "title": { "uk": "Кахетія під час ртвелі: квеврі, саперави і Сігнахі", "en": "Kakheti during rtveli: qvevri, Saperavi and Sighnaghi" },
+      "article": {
+        "uk": "Грузія — колиска виноробства, і це не маркетинг: археологи знайшли тут сліди вина віком близько восьми тисяч років. Тому на ртвелі, збір винограду, я давно мріяв потрапити саме в Кахетію. Ми з трьома друзями-сомельє приїхали наприкінці вересня, взяли машину з водієм на шість днів за 80 євро на день і оселилися в Сігнахі.\n\nСігнахі — місто на пагорбі з мурами XVIII століття і видом на Алазанську долину та Великий Кавказ. Звідси зручно їздити по всіх винарнях регіону. Найбільше враження справили маленькі сімейні марані, винні погреби з квеврі — глиняними глечиками, закопаними в землю. У квеврі вино бродить разом зі шкірками і кісточками, і біле виходить бурштиновим, з танінами, як у червоного. Ркацителі від квеврі з нотами сушеного абрикоса, айви і горіха — це вино, яке я привіз додому шість пляшок.\n\nНа одній винарні в селі Велісцихе господар Ніко запросив нас допомогти давити виноград ногами в дерев’яному чані, саткхелі. Потім була супра: шашлик на лозі, хачапурі, пхалі, сир і тамада, який виголосив тостів двадцять. Саперави з квеврі, густий і чорнильний, до баранини — ідеальне поєднання.\n\nНе пропустіть Алавердський монастир з винним погребом ченців, музей у Цинандалі, садибі князів Чавчавадзе, де роблять вино з 1886 року, і чачу — виноградну горілку. Дегустація в невеликих винарнях коштує 10–25 ларі, у великих маєтках — до 30 євро.\n\nЧесний мінус: грузинська гостинність. Відмовитися від келиха тут майже неможливо, а дегустацій за день буває чотири. Плануйте не більше двох господарств на день, пийте воду і завжди майте тверезого водія. А ще у вересні в Сігнахі багато туристів, тож житло бронюйте заздалегідь.",
+        "en": "Georgia is the cradle of winemaking, and that is not marketing: archaeologists found traces of wine here about eight thousand years old. So I had long dreamed of getting to Kakheti for rtveli, the grape harvest. Three sommelier friends and I arrived at the end of September, hired a car with a driver for six days at 80 euros a day and settled in Sighnaghi.\n\nSighnaghi is a hilltop town with 18th-century walls and a view of the Alazani Valley and the Greater Caucasus. From here it is easy to reach all the wineries in the region. The biggest impression came from small family marani, wine cellars with qvevri, clay jars buried in the ground. In a qvevri the wine ferments together with the skins and seeds, and white wine comes out amber, with tannins like a red. A qvevri Rkatsiteli with notes of dried apricot, quince and walnut is the wine I brought home six bottles of.\n\nAt one winery in the village of Velistsikhe the owner Niko invited us to help tread grapes in a wooden trough called a satskhali. Then came a supra: shashlik grilled over vine cuttings, khachapuri, pkhali, cheese and a tamada who gave about twenty toasts. A qvevri Saperavi, dense and inky, with lamb is the perfect match.\n\nDon't miss Alaverdi Monastery with the monks' wine cellar, the museum at Tsinandali, the estate of the Chavchavadze princes, where wine has been made since 1886, and chacha, grape brandy. A tasting at small wineries costs 10 to 25 lari, at big estates up to 30 euros.\n\nThe honest downside: Georgian hospitality. Refusing a glass here is almost impossible, and there can be four tastings a day. Plan no more than two estates a day, drink water and always have a sober driver. Also, in September Sighnaghi is full of tourists, so book accommodation ahead."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Кахеті", "en": "Kakheti", "es": "Kajetia" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "friends",
+      "tags": ["wine", "food", "festivals", "culture"],
+      "lat": 41.6197,
+      "lng": 45.922,
+      "photoQuery": "Sighnaghi"
+    },
+    {
+      "key": "s-4-026",
+      "travellerKey": "t-4-10",
+      "category": "Грузія",
+      "title": { "uk": "Гудаурі: лижі, фрирайд і хачапурі на висоті 3000 метрів", "en": "Gudauri: skis, freeride and khachapuri at 3,000 metres" },
+      "article": {
+        "uk": "Колеги з Мюнхена не повірили, що я їду кататися на лижах у Грузію. Я показав їм таблицю: денний скіпас у Гудаурі — близько 30 євро, в Альпах — понад 70. Квартира на чотирьох — 60 євро на ніч. Обід на схилі — 10 євро. Аргумент спрацював, і в лютому ми вчотирьох полетіли до Тбілісі.\n\nТрансфер до Гудаурі — 120 кілометрів Військово-Грузинською дорогою, дві години. Курорт розташований на висоті 2200 метрів, найвища точка підйомників — близько 3270 метрів. Траси широкі, переважно червоні, понад 75 кілометрів. Підйомники сучасні, крісла з підігрівом сидінь, черг майже немає в будні дні.\n\nГоловна причина їхати сюди — фрирайд. Курорт лежить вище за межу лісу, все відкрите, і після снігопаду цілі схили лишаються незайманими. Ми взяли гіда на два дні за 150 євро на день на групу. Він перевіряв лавинний прогноз, видав датчики і лопати, і ми спускалися в долину Кобі. Окремо раджу хелі-скі, але це вже 400 євро з людини, тому ми лише подивилися на вертоліт.\n\nНа схилі є кафе, де готують хачапурі по-мегрельськи і гарячий глінтвейн. Увечері ми ходили в ресторан у Новому Гудаурі: хінкалі, суп харчо і саперави. Апре-скі тут немає в австрійському сенсі, тож я рано лягав спати. Для мене це плюс.\n\nМінуси. Перше — вітер: два дні з семи верхні підйомники були закриті. Друге — дорога: під час снігопаду перевал Джварі закривають, і ми одного разу чекали трансфер чотири години. Третє — інфраструктура: архітектура курорту хаотична, багато будівництва. Але за співвідношенням ціни і снігу Гудаурі для мене зараз номер один.",
+        "en": "My colleagues from Munich didn't believe I was going skiing in Georgia. I showed them a spreadsheet: a day pass in Gudauri is about 30 euros, in the Alps over 70. A flat for four is 60 euros a night. Lunch on the slope is 10 euros. The argument worked, and in February four of us flew to Tbilisi.\n\nThe transfer to Gudauri is 120 kilometres along the Georgian Military Road, two hours. The resort sits at 2,200 metres, and the highest lift point is about 3,270 metres. The pistes are wide, mostly red, over 75 kilometres in total. The lifts are modern, chairs with heated seats, and on weekdays there are almost no queues.\n\nThe main reason to come here is freeride. The resort is above the tree line, everything is open, and after a snowfall whole slopes stay untouched. We hired a guide for two days for 150 euros a day per group. He checked the avalanche forecast, handed out transceivers and shovels, and we skied down into the Kobi valley. I can also recommend heli-skiing, but that is 400 euros per person, so we only looked at the helicopter.\n\nOn the slope there is a cafe that makes Megrelian khachapuri and hot mulled wine. In the evening we went to a restaurant in New Gudauri: khinkali, kharcho soup and Saperavi. There is no apres-ski here in the Austrian sense, so I went to bed early. For me that is a plus.\n\nDownsides. First, wind: on two days out of seven the upper lifts were closed. Second, the road: during snowfall the Jvari Pass is closed, and once we waited four hours for our transfer. Third, infrastructure: the resort architecture is chaotic, with a lot of construction. But for the ratio of price to snow, Gudauri is number one for me right now."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Мцхета-Мтіанеті", "en": "Mtskheta-Mtianeti", "es": "Mtsjeta-Mtianeti" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 7,
+      "tripType": "friends",
+      "tags": ["skiing", "nature", "food"],
+      "lat": 42.4778,
+      "lng": 44.48,
+      "photoQuery": "Gudauri"
+    },
+    {
+      "key": "s-4-027",
+      "travellerKey": "t-4-11",
+      "category": "Африка",
+      "title": { "uk": "Санту-Антан: зелений острів Кабо-Верде", "en": "Santo Antão: the green island of Cape Verde" },
+      "article": {
+        "uk": "На Кабо-Верде говорять португальською і креольською, і для мене це було як повернутися в дитинство, тільки з теплим океаном. Ми з моїм хлопцем Максимом прилетіли навесні на острів Сан-Вісенте, у місто Мінделу, а звідти поромом за годину перепливли на Санту-Антан. Квиток на пором коштував близько восьми євро, і половину дороги нас гойдало так, що Максим мовчав аж до берега.\n\nСанту-Антан — зовсім не пляжний острів. Це гори, вулканічні кратери, глибокі зелені долини з терасами цукрової тростини, бананів і кави. Ми жили в долині Паул у гостьовому будинку пані Марії за 40 євро на ніч з вечерею. Щовечора вона готувала качупу, національну страву з кукурудзи, квасолі, овочів і риби, а її син грав на кавакінью морни — сумні пісні, схожі на наше фаду.\n\nНайкращий маршрут — з кратера Кова до долини Паул: близько семи кілометрів униз по кам’яній стежці, яку колись проклали ще за португальців. Починаєш у хмарі на висоті тисячі метрів, а закінчуєш серед мангових дерев. Інший маршрут — уздовж скель від Понта-ду-Сол до села Фонтаінас, яке ніби приклеєне до гори. Ми йшли повільно, і кожен зустрічний казав нам «бон діа».\n\nОбов’язково спробуйте грог, місцевий ром з цукрової тростини, і козячий сир. А в Мінделу перед відльотом сходіть увечері в будь-який бар з живою музикою: там співають так, ніби Сезарія Евора досі поруч.\n\nЧесний мінус — транспорт. Між селами їздять лише аллугери, маленькі вантажівки-маршрутки, і розкладу немає: вони вирушають, коли набирається достатньо людей. Іноді ми чекали годину. А купатися на Санту-Антан майже ніде, тож пляжі лишайте для острова Сал.",
+        "en": "In Cape Verde they speak Portuguese and Creole, and for me it was like going back to my childhood, only with a warm ocean. My boyfriend Maksym and I flew in spring to the island of São Vicente, to the town of Mindelo, and from there crossed to Santo Antão by ferry in an hour. The ferry ticket cost about eight euros, and for half the crossing we rocked so much that Maksym stayed silent all the way to shore.\n\nSanto Antão is not a beach island at all. It is mountains, volcanic craters and deep green valleys with terraces of sugar cane, bananas and coffee. We stayed in the Paul valley in Dona Maria's guest house for 40 euros a night with dinner. Every evening she cooked cachupa, the national dish of maize, beans, vegetables and fish, and her son played mornas on the cavaquinho, sad songs that resemble our fado.\n\nThe best route is from the Cova crater down to the Paul valley: about seven kilometres downhill along a stone path laid back in Portuguese times. You start in a cloud at a thousand metres and finish among mango trees. Another route runs along the cliffs from Ponta do Sol to the village of Fontainhas, which looks as if it were glued to the mountain. We walked slowly, and everyone we passed said bom dia to us.\n\nBe sure to try grogue, the local sugar cane rum, and goat's cheese. And in Mindelo before you fly out, go in the evening to any bar with live music: they sing there as if Cesária Évora were still around.\n\nThe honest downside is transport. Between villages there are only aluguers, small pickup minibuses, and there is no timetable: they leave when enough people have gathered. Sometimes we waited an hour. And there is almost nowhere to swim on Santo Antão, so leave the beaches for the island of Sal."
+      },
+      "country": { "code": "CV", "uk": "Кабо-Верде", "en": "Cape Verde", "es": "Cabo Verde" },
+      "region": { "uk": "Санту-Антан", "en": "Santo Antão", "es": "Santo Antão" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 9,
+      "tripType": "couple",
+      "tags": ["hiking", "islands", "nature", "culture"],
+      "lat": 17.07,
+      "lng": -25.17,
+      "photoQuery": "Santo Antão"
+    },
+    {
+      "key": "s-4-028",
+      "travellerKey": "t-4-12",
+      "category": "Пустелі",
+      "title": { "uk": "Долина Смерті: найнижча точка Америки за кермом", "en": "Death Valley: America's lowest point behind the wheel" },
+      "article": {
+        "uk": "Після робочої конференції в Лас-Вегасі в мене було чотири дні, і я не вагався: орендував Jeep Wrangler за 95 доларів на добу і поїхав у Долину Смерті. Від Вегаса до Фернес-Крік — 200 кілометрів, дві години доброю дорогою. У березні тут ще не пекло, вдень близько 28 градусів, і це найкращий сезон.\n\nУ парку майже все асфальтоване, але найцікавіше — на ґрунтових дорогах, для яких і потрібен позашляховик. Перший день: Забріскі-Пойнт на світанку, золоті й смугасті пагорби, потім Бедвотер — соляне плесо на 86 метрів нижче рівня моря, найнижча точка Північної Америки. Ходиш по білих шестикутниках солі й не віриш, що це не сніг. Повертаючись, проїхав Артистс-Драйв, одностороннє коло через кольорові скелі.\n\nДругий день — гравій. Дорога до Рейстрек-Плайя — 43 кілометри гострого вулканічного каміння, шість годин туди й назад. Там знаходяться «камені, що рухаються»: валуни, які зимовими ночами повзуть по висохлому озеру, лишаючи сліди. Тиск у шинах я тримав нормальним, а не зниженим, бо на гострому камінні шини простіше пробити боковиною. Все одно одне колесо я пробив. Запаска і компресор — обов’язково, а рейнджери прямо пишуть: евакуатор звідси коштує понад тисячу доларів.\n\nЗаправка є у Фернес-Крік і Стовпайп-Веллс, бензин там дорожчий, ніж у Вегасі, приблизно на півтора долара за галон. Я заливав повний бак перед в’їздом. Ночував у мотелі в Стовпайп-Веллс за 170 доларів, бо інших варіантів поблизу майже немає.\n\nМінус — ціни і відстані. Парк величезний, і від однієї пам’ятки до іншої буває по сто кілометрів. Зв’язку немає на більшій частині території, тож завантажте офлайн-карти. І не їдьте сюди влітку: у липні тут під п’ятдесят градусів, машини закипають.",
+        "en": "After a work conference in Las Vegas I had four days, and I didn't hesitate: I rented a Jeep Wrangler for 95 dollars a day and drove to Death Valley. From Vegas to Furnace Creek is 200 kilometres, two hours on a good road. In March it isn't hell yet, about 28 degrees in the daytime, and that is the best season.\n\nAlmost everything in the park is paved, but the most interesting parts are on dirt roads, which is what you need a 4x4 for. Day one: Zabriskie Point at sunrise, golden and striped hills, then Badwater, a salt flat 86 metres below sea level, the lowest point in North America. You walk on white hexagons of salt and can't believe it isn't snow. On the way back I drove Artists Drive, a one-way loop through coloured rocks.\n\nDay two was gravel. The road to Racetrack Playa is 43 kilometres of sharp volcanic stone, six hours there and back. That is where the sailing stones are: boulders that creep across the dry lake on winter nights, leaving tracks. I kept the tyre pressure normal rather than lowered, because on sharp stone it is easier to puncture a sidewall. I still punctured one tyre. A spare and a compressor are a must, and the rangers state plainly that a tow truck from here costs over a thousand dollars.\n\nThere is fuel at Furnace Creek and Stovepipe Wells, about a dollar and a half per gallon more expensive than in Vegas. I filled the tank before entering. I spent the nights at a motel in Stovepipe Wells for 170 dollars, because there are almost no other options nearby.\n\nThe downside is prices and distances. The park is enormous, and from one sight to the next can be a hundred kilometres. There is no signal over most of it, so download offline maps. And don't come here in summer: in July it is close to fifty degrees and cars boil over."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Каліфорнія", "en": "California", "es": "California" },
+      "seasons": ["spring"],
+      "budget": "high",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["road-trip", "national-parks", "desert"],
+      "lat": 36.25,
+      "lng": -116.825,
+      "photoQuery": "Badwater Basin"
+    },
+    {
+      "key": "s-4-029",
+      "travellerKey": "t-4-13",
+      "category": "Африка",
+      "title": { "uk": "Андасібе: спів індрі в тропічному лісі Мадагаскару", "en": "Andasibe: the song of the indri in Madagascar's rainforest" },
+      "article": {
+        "uk": "Мадагаскар відокремився від Африки близько 160 мільйонів років тому, і майже вся його фауна ендемічна. Для біологині це як потрапити на іншу планету. У жовтні я полетіла до Антананаріву, а звідти приватний водій за 60 євро довіз мене до Андасібе — 140 кілометрів, але через ями і вантажівки дорога забрала чотири години.\n\nНаціональний парк Андасібе-Мантадія — це вологий гірський ліс, де живе найбільший з лемурів, індрі. Вони не виживають у неволі, тож побачити їх можна лише тут. Вхід — близько 15 євро, плюс обов’язковий гід, приблизно 20 євро за маршрут. Моя гідиня Ноеліна знала кожну родину індрі на ім’я. Близько восьмої ранку група над нами почала співати, і це звук, який я не забуду ніколи: протяжний, схожий на китовий спів, що чути за два кілометри.\n\nЗа три дні я бачила дев’ять видів лемурів, зокрема діадемового сифаку з помаранчевими лапами, а вночі на окремій прогулянці — мишачого лемура, найменшого примата світу, розміром з долоню. Ще були хамелеони Парсона завдовжки з мою руку, листохвості гекони, яких неможливо відрізнити від кори, і жаби мантели, яскраві, як іграшки.\n\nЖила я в простому лоджі біля входу в парк за 30 євро на ніч. Їжа — рис з усім: з куркою, з зеленню, з квасолею, плюс свіжі банани й лічі.\n\nНагадую: лемурів не годуємо і не беремо на руки, навіть якщо в приватних заповідниках вам це пропонують. Тепер про мінус. Ліс довкола парку вирубують під вугілля і рисові поля, і по дорозі видно голі пагорби. Це боляче бачити. І ще: тут вологий клімат, тож п’явки і дощовик — частина пакета.",
+        "en": "Madagascar split from Africa about 160 million years ago, and almost all of its fauna is endemic. For a biologist it is like landing on another planet. In October I flew to Antananarivo, and from there a private driver took me to Andasibe for 60 euros: 140 kilometres, but because of potholes and lorries the drive took four hours.\n\nAndasibe-Mantadia National Park is a humid montane forest, home to the largest of the lemurs, the indri. They do not survive in captivity, so you can only see them here. Entry is about 15 euros, plus a compulsory guide, roughly 20 euros per trail. My guide Noelina knew every indri family by name. At around eight in the morning a group above us started to sing, and it is a sound I will never forget: long and drawn out, like whale song, audible two kilometres away.\n\nIn three days I saw nine species of lemurs, including the diademed sifaka with orange legs, and on a separate night walk a mouse lemur, the smallest primate in the world, the size of a palm. There were also Parson's chameleons as long as my arm, leaf-tailed geckos impossible to tell from the bark, and mantella frogs as bright as toys.\n\nI stayed in a simple lodge by the park entrance for 30 euros a night. The food was rice with everything: with chicken, with greens, with beans, plus fresh bananas and lychees.\n\nA reminder: we don't feed lemurs and don't pick them up, even if private reserves offer it. Now the downside. The forest around the park is being cut down for charcoal and rice fields, and along the road you see bare hills. It hurts to see. And also: the climate here is humid, so leeches and a raincoat are part of the package."
+      },
+      "country": { "code": "MG", "uk": "Мадагаскар", "en": "Madagascar", "es": "Madagascar" },
+      "region": { "uk": "Алаутра-Мангуру", "en": "Alaotra-Mangoro", "es": "Alaotra-Mangoro" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 8,
+      "tripType": "solo",
+      "tags": ["wildlife", "nature", "national-parks", "hiking"],
+      "lat": -18.9333,
+      "lng": 48.4167,
+      "photoQuery": "Andasibe-Mantadia National Park"
+    },
+    {
+      "key": "s-4-030",
+      "travellerKey": "t-4-14",
+      "category": "Африка",
+      "title": { "uk": "Лалібела: кам’яні церкви і Різдво Генна", "en": "Lalibela: rock-hewn churches and Genna Christmas" },
+      "article": {
+        "uk": "Ефіопська церква живе за власним календарем, і Різдво, Генна, тут святкують 7 січня. Саме тоді я вирішив потрапити в Лалібелу, місто, яке називають Новим Єрусалимом. Летів з Аддис-Абеби внутрішнім рейсом, година в повітрі, і ще сорок хвилин серпантином з аеропорту в гори, на висоту 2500 метрів.\n\nЛегенда приписує ці церкви царю Лалібелі з династії Загве, який наприкінці XII — на початку XIII століття нібито хотів збудувати другий Єрусалим після того, як Саладин узяв справжній. Одинадцять храмів не збудовані, а вирубані згори вниз у червоному вулканічному туфі, тобто майстри йшли від даху до підлоги, вибираючи камінь навколо майбутніх стін. Найдосконаліший — Бете-Гійоргіс, церква святого Георгія у формі хреста, що стоїть окремо в глибокій ямі. Дивишся на неї згори, з краю, і розумієш, що жоден камінь не принесли сюди ззовні.\n\nКвиток на всі церкви — близько 50 доларів і діє кілька днів. Гіда варто взяти обов’язково: тунелі між храмами темні, а без пояснень не зрозумієш символіки. Взуття знімають на вході, тож шкарпетки беріть товсті.\n\nНіч перед Генною я провів на краю урвища над церквою Бете-Мар’ям. Тисячі паломників у білому, свічки, барабани, систри і спів священників, який тривав до світанку. Звучала давня мова гєез, якою вже ніхто не говорить у побуті. Я ніколи не відчував так ясно, що історія — не те, що минуло, а те, що досі триває.\n\nЖив я в гостьовому будинку за 35 доларів на ніч, але на свята ціни зростають утричі, а житло розкуповують за місяці. Це мінус. Другий — дорожнеча квитків для іноземців і наполегливі «помічники», що нав’язуються в гіди. Домовляйтеся лише з офіційними гідами з асоціації.",
+        "en": "The Ethiopian Church lives by its own calendar, and Christmas, Genna, is celebrated here on the 7th of January. That is exactly when I decided to reach Lalibela, the town called the New Jerusalem. I flew from Addis Ababa on a domestic flight, an hour in the air, and then forty minutes of switchbacks from the airport up into the mountains, to 2,500 metres.\n\nLegend attributes these churches to King Lalibela of the Zagwe dynasty, who at the end of the 12th and beginning of the 13th century supposedly wanted to build a second Jerusalem after Saladin took the real one. The eleven churches were not built but carved from the top down into red volcanic tuff, so the masons worked from roof to floor, removing the rock around the future walls. The most perfect is Bete Giyorgis, the Church of Saint George in the shape of a cross, standing alone in a deep pit. You look at it from above, from the edge, and realise that not a single stone was brought here from outside.\n\nA ticket for all the churches costs about 50 dollars and is valid for several days. Hiring a guide is a must: the tunnels between the churches are dark, and without explanations you won't understand the symbolism. Shoes come off at the entrance, so bring thick socks.\n\nI spent the night before Genna on the edge of the cliff above the church of Bete Maryam. Thousands of pilgrims in white, candles, drums, sistra and the chanting of priests that lasted until dawn. It was in the ancient Ge'ez language, which nobody speaks in daily life any more. I have never felt so clearly that history is not what has passed but what is still going on.\n\nI stayed in a guest house for 35 dollars a night, but during the holidays prices triple and rooms are sold out months ahead. That is a downside. The second is expensive tickets for foreigners and pushy 'helpers' who try to become your guide. Deal only with official guides from the association."
+      },
+      "country": { "code": "ET", "uk": "Ефіопія", "en": "Ethiopia", "es": "Etiopía" },
+      "region": { "uk": "Амхара", "en": "Amhara", "es": "Amhara" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "solo",
+      "tags": ["history", "architecture", "festivals", "culture"],
+      "lat": 12.0317,
+      "lng": 39.0411,
+      "photoQuery": "Church of Saint George Lalibela"
+    }
+  ]
+}

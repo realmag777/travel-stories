@@ -1,0 +1,83 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="profile-head">
+  <div class="profile-card">
+    <img class="profile-card__avatar" src="{{ traveller.avatar.large }}" alt="{{ traveller.name }}" width="199" height="199" fetchpriority="high">
+    <div class="profile-card__text">
+      <h2 class="profile-card__name">{{ traveller.name }}</h2>
+      <p class="profile-card__description">{{ traveller.description }}</p>
+    </div>
+  </div>
+</section>
+
+{% if booking %}
+<section data-extra class="booking" id="booking" data-booking data-traveller="{{ traveller.id }}" data-lang="{{ locale }}" data-script="{{ asset('booking.js') }}">
+  <div class="booking__card">
+    <div class="booking__head">
+      <h2 class="booking__title">{{ t('booking.title') }}</h2>
+      <p class="booking__intro">{{ booking.intro or t('booking.intro', { name: traveller.name }) }}</p>
+    </div>
+    <div class="booking__step">
+      <h3 class="booking__step-title"><span class="booking__step-num">1</span>{{ t('booking.stepService') }}</h3>
+      <div class="service-list" role="radiogroup" aria-label="{{ t('booking.stepService') }}">
+        {% for s in booking.services %}
+        <label class="service{% if loop.first %} service--selected{% endif %}">
+          <input type="radio" name="serviceId" value="{{ s.id }}" form="booking-form"{% if loop.first %} checked{% endif %} data-duration="{{ s.durationMin }}" data-title="{{ s.title }}" data-price="{{ s.price }}">
+          <span class="service__body">
+            <span class="service__title">{{ s.title }}</span>
+            <span class="service__meta">{{ t('booking.kind_' + s.kind) }} · {{ t('booking.minutes', { n: s.durationMin }) }}{% if s.description %} · {{ s.description }}{% endif %}</span>
+          </span>
+          <span class="service__price">{{ s.price }}</span>
+        </label>
+        {% endfor %}
+      </div>
+      <h3 class="booking__step-title"><span class="booking__step-num">2</span>{{ t('booking.stepSlot') }}</h3>
+      <div class="calendar" data-calendar>
+        <div class="spinner-wrap"><div class="spinner" aria-label="{{ t('common.loading') }}"></div></div>
+        <noscript><p class="calendar__empty">{{ t('booking.needJs') }}</p></noscript>
+      </div>
+    </div>
+    <div class="booking__step">
+      <h3 class="booking__step-title"><span class="booking__step-num">3</span>{{ t('booking.stepForm') }}</h3>
+      <form class="form" id="booking-form" data-booking-form novalidate>
+        <input type="hidden" name="slotId" value="" data-slot-input>
+        <p class="booking__summary" data-booking-summary>{{ t('booking.pickSlot') }}</p>
+        <div class="field" data-field="name">
+          <label class="field__label" for="b-name">{{ t('booking.name') }}*</label>
+          <input class="field__input" id="b-name" name="name" type="text" maxlength="80" autocomplete="name" required>
+          <span class="field__error" data-error-for="name"></span>
+        </div>
+        <div class="field" data-field="email">
+          <label class="field__label" for="b-email">{{ t('booking.email') }}*</label>
+          <input class="field__input" id="b-email" name="email" type="email" maxlength="120" autocomplete="email" required>
+          <span class="field__error" data-error-for="email"></span>
+        </div>
+        <div class="field" data-field="message">
+          <label class="field__label" for="b-message">{{ t('booking.message') }}</label>
+          <textarea class="field__textarea" id="b-message" name="message" maxlength="1000"></textarea>
+          <span class="field__error" data-error-for="message"></span>
+        </div>
+        <button class="action action--block" type="submit" data-booking-submit disabled>{{ t('booking.submit') }}</button>
+        <p class="field__hint">{{ t('booking.noPayment') }}</p>
+      </form>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="profile-blog">
+  <div class="profile-blog__container">
+    <h1 class="profile-blog__title">{{ t('traveller.storiesTitle') }}</h1>
+    <div>
+      {% if stories.length %}
+      <ul class="story-list" data-story-list data-mobile-limit="4" data-total="{{ total }}">
+        {% for s in stories %}<li class="story-list__item">{% include "partials/story-card.njk" %}</li>{% endfor %}
+      </ul>
+      {% if hasMore %}<a class="profile-blog__more" href="{{ nextUrl }}" data-load-more rel="next">{{ t('stories.showMore') }}</a>{% endif %}
+      {% else %}
+      <div class="empty-state"><p class="empty-state__message">{{ t('traveller.empty') }}</p></div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

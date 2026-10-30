@@ -1,0 +1,366 @@
+{
+  "travellers": [
+    {
+      "key": "t-4-01",
+      "gender": "female",
+      "name": { "uk": "Олена Ковальчук", "en": "Olena Kovalchuk" },
+      "description": {
+        "uk": "Привіт! Я Олена, фотографиня з Житомира. Подорожую з двома камерами й старим штативом, полюю на світло о п’ятій ранку і щиро вірю, що найкращий кадр завжди за наступним поворотом. Пишу про місця, де варто зупинитися і почекати.",
+        "en": "Hi! I'm Olena, a photographer from Zhytomyr. I travel with two cameras and an old tripod, chase the light at five in the morning and honestly believe the best shot is always around the next corner. I write about places worth stopping and waiting in."
+      },
+      "style": "Photographer: precise technical notes (lens, time of day, light), visual descriptions, calm and observant, practical tips on shooting spots."
+    },
+    {
+      "key": "t-4-02",
+      "gender": "male",
+      "name": { "uk": "Тарас Бондар", "en": "Taras Bondar" },
+      "description": {
+        "uk": "Привіт! Я Тарас. Їжджу з одним рюкзаком, ночую там, де дешевше, і завжди торгуюся, навіть коли не треба. Пишу чесно й трохи з іронією: якщо мене обдурили на ринку, ви про це дізнаєтеся першими.",
+        "en": "Hi! I'm Taras. I travel with one backpack, sleep wherever is cheapest and always haggle, even when I don't need to. I write honestly and with a bit of irony: if I got ripped off at a market, you'll be the first to know."
+      },
+      "style": "Ironic budget backpacker: self-deprecating humour, exact prices, short punchy sentences, openly admits his mistakes."
+    },
+    {
+      "key": "t-4-03",
+      "gender": "female",
+      "name": { "uk": "Ірина Литвиненко", "en": "Iryna Lytvynenko" },
+      "description": {
+        "uk": "Привіт! Я Ірина, кухарка-аматорка з Полтави. Країну я пізнаю через ринок, вуличну їжу й кухню чужої бабусі. З кожної поїздки везу спеції, рецепти і зайві два кілограми, про які анітрохи не шкодую.",
+        "en": "Hi! I'm Iryna, an amateur cook from Poltava. I get to know a country through its market, its street food and somebody's grandmother's kitchen. From every trip I bring back spices, recipes and two extra kilos I don't regret one bit."
+      },
+      "style": "Foodie: sensory descriptions of dishes, local dish names, food prices, cooking classes, warm and enthusiastic."
+    },
+    {
+      "key": "t-4-04",
+      "gender": "male",
+      "name": { "uk": "Микола Гнатюк", "en": "Mykola Hnatiuk" },
+      "description": {
+        "uk": "Привіт! Я Микола, тато двох непосидючих дітей, Марка й Соломії. Ми подорожуємо родиною вже вісім років, і я знаю все про перекуси в машині, дитячі крісла в прокаті та готелі з басейном. Пишу спокійно і по ділу.",
+        "en": "Hi! I'm Mykola, dad of two restless kids, Marko and Solomiia. We have been travelling as a family for eight years, and I know everything about car snacks, rental child seats and hotels with a pool. I write calmly and to the point."
+      },
+      "style": "Calm family dad: logistics, children's reactions, safety, measured tone, practical advice for parents."
+    },
+    {
+      "key": "t-4-05",
+      "gender": "female",
+      "name": { "uk": "Галина Шевчук", "en": "Halyna Shevchuk" },
+      "description": {
+        "uk": "Привіт! Я Галина, тридцять років викладала географію в школі у Вінниці. Тепер, на пенсії, нарешті бачу на власні очі те, про що розповідала учням. Подорожую з колишніми колегами і завжди беру із собою записник.",
+        "en": "Hi! I'm Halyna, and for thirty years I taught geography at a school in Vinnytsia. Now, retired, I finally see with my own eyes what I used to tell my pupils about. I travel with former colleagues and always take a notebook."
+      },
+      "style": "Retired geography teacher: gentle, slightly old-fashioned, historical and geographical facts, kind advice on comfort and pace for older travellers."
+    },
+    {
+      "key": "t-4-06",
+      "gender": "male",
+      "name": { "uk": "Андрій Кушнір", "en": "Andrii Kushnir" },
+      "description": {
+        "uk": "Привіт! Я Андрій, гірський інструктор з Івано-Франківська. Рахую перепади висот, кілометри й літри води, а відпочинок для мене — це коли гудуть ноги. Розповідаю про маршрути так, щоб ви могли пройти їх самі.",
+        "en": "Hi! I'm Andrii, a mountain instructor from Ivano-Frankivsk. I count elevation gain, kilometres and litres of water, and rest for me is when my legs ache. I describe routes so that you can walk them yourself."
+      },
+      "style": "Mountain trekker: numbers (altitude, km, hours), route details, gear, dry humour, respect for local guides."
+    },
+    {
+      "key": "t-4-07",
+      "gender": "female",
+      "name": { "uk": "Софія Мельничук", "en": "Sofiia Melnychuk" },
+      "description": {
+        "uk": "Привіт! Я Софія, студентка-філологиня з Києва. Подорожую лоукостами, живу в хостелах і маю безмежний ентузіазм. Доводжу, що побачити світ можна навіть зі студентським бюджетом, якщо не боятися нічних автобусів.",
+        "en": "Hi! I'm Sofiia, a philology student from Kyiv. I fly low-cost, stay in hostels and have endless enthusiasm. I'm proving that you can see the world even on a student budget, as long as you're not afraid of night buses."
+      },
+      "style": "Enthusiastic student on a tight budget: exclamations, hostels, buses, cheap food, new friends, lively and youthful."
+    },
+    {
+      "key": "t-4-08",
+      "gender": "female",
+      "name": { "uk": "Марта Яремчук", "en": "Marta Yaremchuk" },
+      "description": {
+        "uk": "Привіт! Я Марта. Ми з чоловіком Романом подорожуємо повільно: живемо на одному місці по два тижні, ходимо на той самий ринок і впізнаємо сусідів. Пишу про ритм місця, а не про список пам’яток.",
+        "en": "Hi! I'm Marta. My husband Roman and I travel slowly: we stay in one place for two weeks, go to the same market and get to know the neighbours. I write about the rhythm of a place, not a list of sights."
+      },
+      "style": "Slow-travel couple: writes 'we', unhurried and reflective, daily routines, rentals, neighbours, small rituals."
+    },
+    {
+      "key": "t-4-09",
+      "gender": "male",
+      "name": { "uk": "Богдан Ткачук", "en": "Bohdan Tkachuk" },
+      "description": {
+        "uk": "Привіт! Я Богдан, сомельє з Одеси. Для мене кожна країна має смак: у келиху, у льоху чи в дубовій бочці. Їжджу туди, де роблять вино, і розповідаю, що варто покуштувати й привезти додому.",
+        "en": "Hi! I'm Bohdan, a sommelier from Odesa. For me every country has a taste: in a glass, in a cellar or in an oak barrel. I go where wine is made and tell you what is worth tasting and bringing home."
+      },
+      "style": "Sommelier: grape varieties, cellar visits, food pairing, light wine vocabulary, confident and convivial."
+    },
+    {
+      "key": "t-4-10",
+      "gender": "male",
+      "name": { "uk": "Лукас Вебер", "en": "Lukas Weber" },
+      "description": {
+        "uk": "Привіт! Я Лукас, німець, який уже шість років живе в Києві й працює інженером. Українську вчив з книжок і серіалів, тож пишу просто. Люблю точні плани, таблиці витрат і місця, де ці плани все одно ламаються.",
+        "en": "Hi! I'm Lukas, a German who has lived in Kyiv for six years and works as an engineer. I learned Ukrainian from books and TV series, so I write simply. I love precise plans, expense spreadsheets and places where those plans break anyway."
+      },
+      "style": "German engineer living in Kyiv: precise, structured, dry self-irony, compares with Germany, numbers and schedules, simple sentences."
+    },
+    {
+      "key": "t-4-11",
+      "gender": "female",
+      "name": { "uk": "Ана Феррейра", "en": "Ana Ferreira" },
+      "description": {
+        "uk": "Привіт! Я Ана, португалка з Порту, викладаю мови у Львові. У подорожах шукаю музику, океан і людей, з якими можна до ночі розмовляти на кухні. Пишу більше про зустрічі, ніж про пам’ятки.",
+        "en": "Hi! I'm Ana, a Portuguese woman from Porto who teaches languages in Lviv. On my travels I look for music, the ocean and people to talk with in the kitchen until late at night. I write more about encounters than about sights."
+      },
+      "style": "Portuguese language teacher living in Lviv: warm, people-focused, music and languages, compares with Portugal."
+    },
+    {
+      "key": "t-4-12",
+      "gender": "male",
+      "name": { "uk": "Віктор Мороз", "en": "Viktor Moroz" },
+      "description": {
+        "uk": "Привіт! Я Віктор, і моя найкраща попутниця — машина. Проїхав десятки тисяч кілометрів за кермом орендованих позашляховиків. Розповідаю про дороги, заправки, проколоті шини й краєвиди, заради яких варто їхати.",
+        "en": "Hi! I'm Viktor, and my best travel companion is a car. I have driven tens of thousands of kilometres behind the wheel of rented 4x4s. I write about roads, fuel stations, punctured tyres and the views worth driving for."
+      },
+      "style": "Road-tripper: cars, distances, fuel, road surfaces, gravel, practical and a bit gruff, softens at landscapes."
+    },
+    {
+      "key": "t-4-13",
+      "gender": "female",
+      "name": { "uk": "Христина Гаврилюк", "en": "Khrystyna Havryliuk" },
+      "description": {
+        "uk": "Привіт! Я Христина, біологиня і дайверка з Чернівців. Мене цікавить усе, що плаває, повзає чи сидить на гілці. Їжджу туди, де природа ще жива, і завжди нагадую: на тварин дивимося, але не чіпаємо.",
+        "en": "Hi! I'm Khrystyna, a biologist and diver from Chernivtsi. I'm interested in everything that swims, crawls or sits on a branch. I go where nature is still alive and always remind you: we look at animals, we don't touch them."
+      },
+      "style": "Biologist and diver: species names, ecological notes, responsible tourism, enthusiastic yet scientific."
+    },
+    {
+      "key": "t-4-14",
+      "gender": "male",
+      "name": { "uk": "Юрій Савчук", "en": "Yurii Savchuk" },
+      "description": {
+        "uk": "Привіт! Я Юрій, історик за освітою і мандрівник за покликанням. Мене тягне до руїн, монастирів і старих міст, де кожен камінь має свою дату. Пишу неспішно, з відступами в минуле.",
+        "en": "Hi! I'm Yurii, a historian by training and a traveller by calling. I'm drawn to ruins, monasteries and old towns where every stone has its own date. I write unhurriedly, with detours into the past."
+      },
+      "style": "Historian: essayistic, dates and dynasties, architecture, reflective, longer sentences."
+    },
+    {
+      "key": "t-4-15",
+      "gender": "female",
+      "name": { "uk": "Наталія Олійник", "en": "Nataliia Oliinyk" },
+      "description": {
+        "uk": "Привіт! Я Наталія, мама дванадцятирічної Даринки. Ми мандруємо удвох відтоді, як їй виповнилося вісім, і давно домовилися: кожна поїздка — це пригода, яку обираємо разом. Пишу про безпеку, комфорт і дитячий захват.",
+        "en": "Hi! I'm Nataliia, mum of twelve-year-old Darynka. We have been travelling together since she turned eight and agreed long ago that every trip is an adventure we choose together. I write about safety, comfort and a child's delight."
+      },
+      "style": "Mother travelling with her daughter: practical, safety tips, quotes and reactions of the daughter, warm tone."
+    },
+    {
+      "key": "t-4-16",
+      "gender": "male",
+      "name": { "uk": "Остап Дорошенко", "en": "Ostap Doroshenko" },
+      "description": {
+        "uk": "Привіт! Я Остап, астроном-аматор. Їжджу туди, де немає ліхтарів, мобільного зв’язку і зайвих слів. Беру намет, телескоп і термос. Пишу коротко, бо в пустелі багато говорити не хочеться.",
+        "en": "Hi! I'm Ostap, an amateur astronomer. I go where there are no street lights, no mobile signal and no unnecessary words. I take a tent, a telescope and a thermos. I write briefly, because in the desert you don't feel like talking much."
+      },
+      "style": "Amateur astronomer and minimalist camper: short sentences, silence, night sky, gear, temperatures."
+    }
+  ],
+  "stories": [
+    {
+      "key": "s-4-001",
+      "travellerKey": "t-4-01",
+      "category": "Африка",
+      "title": { "uk": "Шефшауен: синє місто в ранковому світлі", "en": "Chefchaouen: the blue town in morning light" },
+      "article": {
+        "uk": "До Шефшауена я їхала автобусом CTM з Танжера: майже три години серпантином через гори Риф, квиток коштував близько 60 дирхамів, тобто приблизно шість євро. Місто тулиться до схилу, і вже з автостанції видно, як синя фарба стікає вуличками вниз, до площі Утаа-ель-Хаммам.\n\nГоловне правило тут просте: знімати треба до дев’ятої ранку. Потім вулиці заповнюються туристами з селфі-палицями, а сонце стає жорстким і вибілює синій до блідо-блакитного. Я виходила о пів на сьому, працювала об’єктивом 35 мм і майже не брала ширококутника: вулички вузькі, і на ширококутнику перспектива перетворюється на карикатуру. Найкращі двері й сходи — у старому кварталі Суйка, а коти там позують краще за моделей.\n\nНа захід сонця я піднімалася до Іспанської мечеті, це хвилин двадцять пішки стежкою. Звідти все місто видно як на долоні, і за годину до заходу світло стає теплим, синій набуває глибини, а гори Риф — фіолетового відтінку. Штатив знадобився для синьої години, коли запалюються ліхтарі.\n\nЖила я в маленькому ріаді за 35 євро на ніч зі сніданком: м’ятний чай, хліб хобз, оливки й мед. Вечеряла таджином з куркою та лимоном у кафе біля площі за 50 дирхамів.\n\nЧесний мінус: деякі мешканці втомилися від камер, і це зрозуміло. Двічі мене просили не знімати будинок, а один чоловік вимагав грошей за фото своїх дверей. Тож я питаю дозволу, коли в кадрі людина, і не заходжу в чужі під’їзди. Місто тут живе, а не позує.",
+        "en": "I got to Chefchaouen by CTM bus from Tangier: almost three hours of switchbacks through the Rif Mountains, and the ticket cost about 60 dirhams, roughly six euros. The town clings to the hillside, and already from the bus station you can see the blue paint running down the alleys towards Outa el Hammam square.\n\nThe main rule here is simple: shoot before nine in the morning. After that the streets fill with tourists holding selfie sticks, and the sun turns harsh and bleaches the blue to a washed-out pale. I went out at half past six, worked with a 35 mm lens and hardly touched the wide angle: the alleys are narrow, and on a wide lens the perspective turns into a caricature. The best doors and staircases are in the old Souika quarter, and the cats there pose better than models.\n\nFor sunset I climbed to the Spanish Mosque, about twenty minutes on foot along a path. From there the whole town lies in the palm of your hand, and an hour before sunset the light turns warm, the blue gains depth and the Rif turns violet. The tripod came in handy for the blue hour, when the street lamps come on.\n\nI stayed in a small riad for 35 euros a night with breakfast: mint tea, khobz bread, olives and honey. Dinner was a chicken and lemon tagine at a cafe near the square for 50 dirhams.\n\nAn honest downside: some residents are tired of cameras, and that is understandable. Twice I was asked not to photograph a house, and one man demanded money for a picture of his door. So I ask permission when there is a person in the frame, and I don't wander into other people's entrances. The town lives here, it doesn't pose."
+      },
+      "country": { "code": "MA", "uk": "Марокко", "en": "Morocco", "es": "Marruecos" },
+      "region": { "uk": "Гори Риф", "en": "Rif Mountains", "es": "Rif" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["photography", "architecture", "culture"],
+      "lat": 35.1688,
+      "lng": -5.2636,
+      "photoQuery": "Chefchaouen"
+    },
+    {
+      "key": "s-4-002",
+      "travellerKey": "t-4-02",
+      "category": "Пустелі",
+      "title": { "uk": "Мерзуга: ніч у Сахарі за ціною піци", "en": "Merzouga: a night in the Sahara for the price of a pizza" },
+      "article": {
+        "uk": "Усі тури в Сахару з Марракеша продають однаково: три дні, джипи, верблюди, «справжній берберський табір». Ціна — від 80 євро, якщо торгуєшся, як я. Ми з двома друзями вирішили, що розумніші за систему, і поїхали до Мерзуги нічним автобусом Supratours за 230 дирхамів. Тринадцять годин, кондиціонер у режимі «Антарктида» і сусід, який хропів басом. Розумність має свою ціну.\n\nУ Мерзузі все виявилося простіше. Хостел на краю дюн Ерг-Шеббі коштував 10 євро з людини, а ночівлю в таборі з верблюдами господар запропонував за 30 євро з вечерею і сніданком. Я, звісно, збив до 25 і дуже собою пишався, поки не дізнався, що німці з сусідньої кімнати заплатили 22.\n\nВерблюд — це не транспорт, а випробування. Півтори години погойдування, і ти розумієш, що м’язи бувають там, де ти їх навіть не підозрював. Але коли караван переходить гребінь дюни, а пісок на заході сонця стає мідним, усі жарти закінчуються. Найвищі дюни тут сягають 150 метрів, і ми видерлися на одну босоніж. Увечері пісок ще теплий, а вранці холодний, як підлога в гуртожитку.\n\nУ таборі нам приготували таджин, а погоничі грали на барабанах і співали. Потім вимкнули генератор, і небо раптом виявилося набитим зорями, як мішок рисом. Спали ми в наметі під ковдрами з верблюжої вовни, і жовтневої ночі вони таки знадобилися.\n\nЧесний мінус — пісок. Він був у рюкзаку, у вухах, у телефоні й, здається, досі живе в моїх кросівках. Беріть хустку на обличчя і пакет для техніки. І торгуйтеся, але не шкодуйте пари євро на чай погоничу, який пів ночі розповідав нам про своїх верблюдів.",
+        "en": "All Sahara tours from Marrakech are sold the same way: three days, jeeps, camels, a 'real Berber camp'. The price starts at 80 euros if you haggle like I do. My two friends and I decided we were smarter than the system and took the Supratours night bus to Merzouga for 230 dirhams. Thirteen hours, air conditioning set to Antarctica and a neighbour snoring in a bass voice. Being smart has its price.\n\nIn Merzouga everything turned out simpler. A hostel on the edge of the Erg Chebbi dunes cost 10 euros per person, and the owner offered a night in a camel camp for 30 euros with dinner and breakfast. Of course I knocked it down to 25 and was very proud of myself until I found out that the Germans from the next room had paid 22.\n\nA camel is not transport, it is a trial. An hour and a half of swaying and you discover muscles in places you never suspected. But when the caravan crosses the crest of a dune and the sand turns copper at sunset, all the jokes stop. The highest dunes here reach 150 metres, and we climbed one barefoot. In the evening the sand is still warm, and in the morning it is as cold as a dormitory floor.\n\nIn the camp they cooked us a tagine, and the camel drivers played drums and sang. Then they switched off the generator, and the sky suddenly turned out to be stuffed with stars like a sack of rice. We slept in a tent under camel wool blankets, and on an October night we really needed them.\n\nThe honest downside is sand. It was in my backpack, in my ears, in my phone, and I think it still lives in my trainers. Bring a scarf for your face and a bag for your electronics. And haggle, but don't begrudge a couple of euros as a tip for the camel driver who spent half the night telling us about his camels."
+      },
+      "country": { "code": "MA", "uk": "Марокко", "en": "Morocco", "es": "Marruecos" },
+      "region": { "uk": "Драа-Тафілальт", "en": "Draa-Tafilalet", "es": "Drâa-Tafilalet" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 5,
+      "tripType": "friends",
+      "tags": ["desert", "backpacking", "camping"],
+      "lat": 31.0802,
+      "lng": -4.0134,
+      "photoQuery": "Erg Chebbi"
+    },
+    {
+      "key": "s-4-003",
+      "travellerKey": "t-4-03",
+      "category": "Африка",
+      "title": { "uk": "Марокко на смак: вечори на площі Джемаа-ель-Фна", "en": "Morocco on a plate: evenings on Jemaa el-Fnaa" },
+      "article": {
+        "uk": "Ми з чоловіком прилетіли до Марракеша в січні, і перше, що я зробила після заселення, — пішла на площу Джемаа-ель-Фна. Удень там заклиначі змій, продавці апельсинового соку по 4 дирхами за склянку і жінки, що малюють хною. А ввечері площа перетворюється на величезну кухню просто неба: сотні яток, дим від грилю і хлопці-зазивали, які знають «привіт» українською.\n\nНайкраще, що я там скуштувала, — танжія, марракеське м’ясо, яке цілу ніч томиться в глиняному глечику в попелі хаммаму. Її подають у крихітних закладах біля ринку, тарілка з хлібом коштувала 60 дирхамів, близько 5,50 євро. Ще одна знахідка — суп харіра з нутом і сочевицею: його їдять з фініками, і порція коштує якихось 10 дирхамів. На ятці номер 14 нам смажили сардини й баклажани, а на десерт ми брали шебакію, медове печиво з кунжутом.\n\nДругого дня я пішла на кулінарний майстер-клас у ріаді за 40 євро. Ми ходили на ринок по спеції, вчилися змішувати рас-ель-ханут і готували таджин з ягнятиною, чорносливом і мигдалем. Шеф Фатіма сміялася з моєї арабської, а я записувала кожну пропорцію.\n\nЗі суків я привезла шафран, кмин, сушені пелюстки троянд і солоні лимони. Порада: торгуйтеся спокійно й усміхаючись, нормальна ціна часто вдвічі нижча за першу.\n\nМінус один, але відчутний: на площі вас тягнуть за руку до кожної ятки, а деякі кухарі «забувають» віддати решту. Домовляйтеся про ціну заздалегідь і просіть меню з цінами. А ще в січні вечорами холодно, до шести градусів, тож теплий светр обов’язковий.",
+        "en": "My husband and I flew to Marrakech in January, and the first thing I did after checking in was go to Jemaa el-Fnaa square. By day there are snake charmers, orange juice sellers at 4 dirhams a glass and women painting henna. In the evening the square turns into a huge open-air kitchen: hundreds of stalls, smoke from the grills and touts who know how to say hello in Ukrainian.\n\nThe best thing I tasted there was tanjia, Marrakech meat slow-cooked all night in a clay jar in the ashes of a hammam furnace. It is served in tiny places near the market, and a plate with bread cost 60 dirhams, about 5.50 euros. Another find was harira soup with chickpeas and lentils: you eat it with dates, and a bowl costs a mere 10 dirhams. At stall number 14 they fried sardines and aubergines for us, and for dessert we had chebakia, honey biscuits with sesame.\n\nOn the second day I went to a cooking class in a riad for 40 euros. We went to the market for spices, learned to blend ras el hanout and cooked a lamb tagine with prunes and almonds. Chef Fatima laughed at my Arabic while I wrote down every proportion.\n\nFrom the souks I brought back saffron, cumin, dried rose petals and preserved lemons. A tip: haggle calmly and with a smile, the fair price is often half the first one.\n\nThere is one downside, but a noticeable one: on the square you get pulled by the arm towards every stall, and some cooks 'forget' to give you your change. Agree on the price in advance and ask for a menu with prices. Also, January evenings are cold, down to six degrees, so a warm jumper is a must."
+      },
+      "country": { "code": "MA", "uk": "Марокко", "en": "Morocco", "es": "Marruecos" },
+      "region": { "uk": "Марракеш-Сафі", "en": "Marrakesh-Safi", "es": "Marrakech-Safí" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "couple",
+      "tags": ["food", "markets", "culture", "city-break"],
+      "lat": 31.6258,
+      "lng": -7.9891,
+      "photoQuery": "Jemaa el-Fnaa"
+    },
+    {
+      "key": "s-4-004",
+      "travellerKey": "t-4-04",
+      "category": "Африка",
+      "title": { "uk": "Крюгер з дітьми: дванадцять днів у сафарі-авто", "en": "Kruger with kids: twelve days in a safari car" },
+      "article": {
+        "uk": "Цього літа ми з дружиною Оленою, Марком (десять років) і Соломією (шість) полетіли до Йоганнесбурга, а звідти орендованим седаном поїхали до національного парку Крюгер. Дорога до воріт Малелане зайняла близько п’яти годин. У Південній Африці лівосторонній рух, тож перші пів години я їхав дуже повільно і просив усіх мовчати.\n\nУ парку ми жили в кемпах Скукуза, Лоуер-Сабі й Сатара. Це огороджені табори з будиночками, кухнею і мангалом, ночівля для чотирьох коштувала 90–120 євро. Для сімей це ідеально: увечері паркан, вогнище і повна безпека, а з тераси в Лоуер-Сабі ми бачили бегемотів у річці просто під час вечері. Вхід до парку для іноземців недешевий, тож ми купили річну картку Wild Card, і за дванадцять днів вона окупилася.\n\nУсю «велику п’ятірку» ми побачили за чотири дні. Леопарда першою помітила Соломія: він лежав на гілці дерева марула, і вона прошепотіла «котик» так, що ми всі завмерли. Діти вели журнал тварин і змагалися, хто більше назве. Марко записав сорок два види, включно з птахами-носорогами.\n\nПорада батькам: виїжджайте одразу після відкриття воріт, о пів на шосту. Найбільше тварин видно рано-вранці й перед заходом сонця, а вдень діти можуть відпочити біля басейну в кемпі. Беріть перекуси, воду й бінокль кожному, інакше буде сварка. Виходити з машини поза кемпами заборонено.\n\nЧесно про мінус: довгі переїзди. Швидкість у парку — 50 км/год на асфальті й 40 на ґрунтівках, і бувають дні, коли п’ять годин бачиш переважно імпал. Соломія тоді засинала, а Марко питав, коли вже слон. Але коли слони нарешті перейшли дорогу перед нами, всі втомливі години забулися.",
+        "en": "This summer my wife Olena, Marko (ten) and Solomiia (six) and I flew to Johannesburg and from there drove a rented saloon car to Kruger National Park. The drive to Malelane Gate took about five hours. South Africa drives on the left, so for the first half hour I drove very slowly and asked everyone to keep quiet.\n\nIn the park we stayed at Skukuza, Lower Sabie and Satara camps. These are fenced camps with chalets, a kitchen and a braai, and a night for four cost 90 to 120 euros. For families it is ideal: in the evening there is a fence, a fire and complete safety, and from the terrace at Lower Sabie we watched hippos in the river right during dinner. Park entry for foreigners is not cheap, so we bought an annual Wild Card, and over twelve days it paid for itself.\n\nWe saw the whole Big Five in four days. Solomiia was the first to spot a leopard: it was lying on a branch of a marula tree, and she whispered 'kitty' in a way that made us all freeze. The kids kept an animal log and competed over who could name more. Marko recorded forty-two species, hornbills included.\n\nA tip for parents: leave right after the gates open, at half past five. Most animals are seen early in the morning and before sunset, and during the day the kids can rest by the camp pool. Bring snacks, water and binoculars for everyone, otherwise there will be a fight. Getting out of the car outside the camps is forbidden.\n\nHonestly about the downside: long drives. The speed limit in the park is 50 km/h on tarmac and 40 on gravel, and there are days when for five hours you mostly see impalas. Solomiia would fall asleep then, and Marko kept asking when the elephant was coming. But when elephants finally crossed the road in front of us, all the tiring hours were forgotten."
+      },
+      "country": { "code": "ZA", "uk": "Південно-Африканська Республіка", "en": "South Africa", "es": "Sudáfrica" },
+      "region": { "uk": "Мпумаланга", "en": "Mpumalanga", "es": "Mpumalanga" },
+      "seasons": ["summer"],
+      "budget": "high",
+      "durationDays": 12,
+      "tripType": "family",
+      "tags": ["wildlife", "national-parks", "with-kids", "road-trip"],
+      "lat": -24.9948,
+      "lng": 31.5969,
+      "photoQuery": "Kruger National Park"
+    },
+    {
+      "key": "s-4-005",
+      "travellerKey": "t-4-05",
+      "category": "Африка",
+      "title": { "uk": "Луксор: найбільший музей просто неба", "en": "Luxor: the largest open-air museum" },
+      "article": {
+        "uk": "Про Карнак я розповідала учням тридцять років, показуючи пожовклу фотографію з підручника. І от минулої зими ми з трьома колишніми колегами нарешті полетіли до Єгипту. Летіли до Хургади, а звідти чотири години їхали трансфером до Луксора. Дорога пустелею спершу здалася нудною, а потім раптом з’явилася смуга зелені вздовж Нілу, і я зрозуміла, чому Геродот назвав Єгипет даром річки.\n\nКарнакський храм вражає масштабом. Гіпостильна зала має 134 колони, і найбільші з них заввишки понад двадцять метрів. Я стояла між ними, задерши голову, і почувалася першокласницею. Вхідний квиток коштував близько 12 євро. Радимо приходити о шостій ранку, поки не спекотно і ще немає автобусів з туристами.\n\nНа західний берег ми переправилися човном через Ніл і найняли водія на цілий день за 30 євро. Долина царів, храм цариці Хатшепсут, колоси Мемнона. У гробниці Рамзеса VI фарби такі яскраві, ніби художники пішли звідти вчора. За неї треба доплатити окремо, але не шкодуйте грошей. Луксорський храм краще оглядати ввечері, коли вмикають підсвітку.\n\nЖили ми в невеликому готелі на березі Нілу, номер на двох коштував 40 євро зі сніданком. Обідали в місцевих закладах: кошарі, фалафель, свіжі гранати. Шлунки берегли: пили лише воду в пляшках, і за вісім днів ніхто не захворів.\n\nОкремо скажу про наш вік: ходити доводиться багато, по камінню і на сонці. Беріть зручне взуття, капелюх і не плануйте більше двох великих пам’яток на день. А мінус — нав’язливі продавці й візники. Відповідайте ввічливо, але твердо, і не беріть нічого «в подарунок»: за такий подарунок потім попросять гроші.",
+        "en": "For thirty years I told my pupils about Karnak, showing them a yellowed photograph from the textbook. And last winter three former colleagues and I finally flew to Egypt. We flew to Hurghada and from there took a four-hour transfer to Luxor. The road through the desert seemed dull at first, and then suddenly a strip of green appeared along the Nile, and I understood why Herodotus called Egypt the gift of the river.\n\nKarnak Temple impresses with its scale. The Hypostyle Hall has 134 columns, and the largest of them are more than twenty metres tall. I stood between them with my head thrown back and felt like a first-grader. The entrance ticket cost about 12 euros. We recommend coming at six in the morning, while it is not hot and the tourist coaches have not arrived yet.\n\nWe crossed the Nile to the west bank by boat and hired a driver for the whole day for 30 euros. The Valley of the Kings, the temple of Queen Hatshepsut, the Colossi of Memnon. In the tomb of Ramesses VI the colours are so bright it is as if the painters left yesterday. You pay extra for it, but don't spare the money. Luxor Temple is best seen in the evening, when the lights come on.\n\nWe stayed in a small hotel on the bank of the Nile, a double room cost 40 euros with breakfast. We had lunch in local places: koshari, falafel, fresh pomegranates. We took care of our stomachs and drank only bottled water, and in eight days nobody fell ill.\n\nA separate word about our age: you have to walk a lot, over stones and in the sun. Take comfortable shoes and a hat, and don't plan more than two major sights a day. The downside is pushy sellers and carriage drivers. Answer politely but firmly and don't accept anything as a 'gift': for such a gift they will ask for money later."
+      },
+      "country": { "code": "EG", "uk": "Єгипет", "en": "Egypt", "es": "Egipto" },
+      "region": { "uk": "Луксор", "en": "Luxor", "es": "Lúxor" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 8,
+      "tripType": "friends",
+      "tags": ["history", "museums", "architecture"],
+      "lat": 25.7188,
+      "lng": 32.6573,
+      "photoQuery": "Karnak Temple"
+    },
+    {
+      "key": "s-4-006",
+      "travellerKey": "t-4-06",
+      "category": "Африка",
+      "title": { "uk": "Сім’єнські гори: трек над урвищами Ефіопії", "en": "Simien Mountains: a trek above Ethiopia's cliffs" },
+      "article": {
+        "uk": "Сім’єнський національний парк — це плато на висоті 3000–4500 метрів, яке обривається вниз кілометровими стінами. Ми з двома друзями дісталися туди з Аддис-Абеби: внутрішній рейс до Гондера, потім три години мікроавтобусом до містечка Дебарк, де розташований офіс парку. Без збройного скаута в парк не пускають, і це не формальність, а правило. Наш скаут Абебе мав старий карабін і найкращу усмішку на маршруті.\n\nМаршрут — шість днів, близько 85 кілометрів: Санкабер, Гич, Ченек, Амбіко і сходження на Рас-Дашен, найвищу вершину Ефіопії, 4550 метрів. Найважчий день — штурм вершини: старт о третій ночі, набір близько 1200 метрів і повернення до табору за десять годин. На висоті понад чотири тисячі я відчував кожен крок, хоча акліматизувався три дні.\n\nТварини тут неймовірні. Біля Гича ми сиділи посеред зграї гелад, мавп з червоною плямою на грудях, вони спокійно щипали траву за два метри від нас. Біля Ченека бачили на скелях ефіопських гірських козлів валія, а над урвищами кружляли бородачі.\n\nОрганізація: гід, скаут, кухар і мули для речей обійшлися нам приблизно в 450 євро на трьох за весь трек, плюс вхідні збори. Спали в наметах. Ночі холодні, до мінус трьох, тож спальник з комфортом до мінус п’яти обов’язковий. Їжа проста: інджера, сочевиця, макарони, чай з імбиром.\n\nМінус — побутові умови. Туалети в кемпах жахливі, вода лише з джерел, і її треба фільтрувати. А дорога до Дебарка така, що я двічі вдарився головою об стелю мікроавтобуса. Але схід сонця над урвищем біля оглядового майданчика Імет-Гого вартий кожного синця.",
+        "en": "Simien National Park is a plateau at 3,000 to 4,500 metres that drops away in kilometre-high walls. Two friends and I got there from Addis Ababa: a domestic flight to Gondar, then three hours by minibus to the small town of Debark, where the park office is. You are not allowed into the park without an armed scout, and that is not a formality but a rule. Our scout Abebe had an old carbine and the best smile on the route.\n\nThe route is six days and about 85 kilometres: Sankaber, Geech, Chenek, Ambiko and the ascent of Ras Dashen, Ethiopia's highest peak at 4,550 metres. The hardest day is the summit push: a start at three in the morning, about 1,200 metres of gain and a return to camp after ten hours. Above four thousand metres I felt every step, even though I had acclimatised for three days.\n\nThe animals here are incredible. Near Geech we sat in the middle of a troop of geladas, monkeys with a red patch on their chests, calmly grazing two metres from us. Near Chenek we saw Walia ibex on the rocks, and bearded vultures circled above the cliffs.\n\nLogistics: a guide, a scout, a cook and mules for the bags cost the three of us about 450 euros for the whole trek, plus entry fees. We slept in tents. The nights are cold, down to minus three, so a sleeping bag rated to minus five is a must. The food is simple: injera, lentils, pasta, ginger tea.\n\nThe downside is the basic conditions. The camp toilets are awful, water only comes from springs and has to be filtered. And the road to Debark is such that I hit my head on the minibus roof twice. But sunrise over the cliffs at the Imet Gogo viewpoint is worth every bruise."
+      },
+      "country": { "code": "ET", "uk": "Ефіопія", "en": "Ethiopia", "es": "Etiopía" },
+      "region": { "uk": "Амхара", "en": "Amhara", "es": "Amhara" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 10,
+      "tripType": "friends",
+      "tags": ["hiking", "national-parks", "wildlife", "camping"],
+      "lat": 13.235,
+      "lng": 38.067,
+      "photoQuery": "Simien Mountains"
+    },
+    {
+      "key": "s-4-007",
+      "travellerKey": "t-4-07",
+      "category": "Африка",
+      "title": { "uk": "Каїр і піраміди Гізи з наплічником", "en": "Cairo and the Giza pyramids with a backpack" },
+      "article": {
+        "uk": "Я знайшла квиток лоукостом до Каїра за 60 євро в обидва боки і вже за п’ять хвилин написала подругам: «Їдемо до пірамід!». Нас було троє, у кожної — наплічник, студентський квиток і бюджет до 300 євро на тиждень разом з усім.\n\nЖили ми в хостелі в центрі, біля площі Тахрір, за 9 євро з людини на ніч. Містом їздили на метро, квиток коштував буквально кілька гривень на наші гроші, а для жінок там є окремі вагони, і це, чесно, дуже зручно. До Гізи доїхали на таксі через застосунок за 4 євро на трьох.\n\nПіраміди! Я стільки разів бачила їх на картинках, що думала: нічого нового. А потім стала біля піраміди Хеопса, задерла голову і просто засміялася. Блоки сягають мені грудей, і їх тут понад два мільйони. Зі студентським квитком ISIC вхід коштував удвічі дешевше. Порада: йдіть пішки до панорамного майданчика, звідки видно всі дев’ять пірамід, і не беріть верблюда за «дуже спеціальною ціною».\n\nНаступного дня ми провели пів дня в Єгипетському музеї на Тахрірі, а ввечері блукали Ісламським Каїром, вулицею Аль-Муїзз з мечетями й ліхтарями. Їли кошарі, найкращу студентську їжу у світі: макарони, рис, сочевиця, смажена цибуля і томатний соус за півтора євро. І ще пили сік з цукрової тростини по 30 центів!\n\nМінус: Каїр шалено гучний. Машини сигналять без упину, перейти дорогу — окремий квест, а продавці біля пірамід бувають дуже наполегливими. Ми трималися разом, вдягалися скромно, із закритими плечима, і все було добре. Втомилися, але щасливі!",
+        "en": "I found a low-cost ticket to Cairo for 60 euros return and within five minutes texted my friends: 'We're going to the pyramids!' There were three of us, each with a backpack, a student card and a budget of up to 300 euros for the week, everything included.\n\nWe stayed in a hostel in the centre, near Tahrir Square, for 9 euros per person a night. We got around the city by metro, the ticket cost literally a few hryvnias in our money, and there are women-only carriages, which, honestly, is very convenient. We got to Giza by app taxi for 4 euros for the three of us.\n\nThe pyramids! I had seen them in pictures so many times that I thought there would be nothing new. And then I stood next to the Pyramid of Khufu, threw my head back and just laughed. The blocks come up to my chest, and there are more than two million of them. With an ISIC student card the entrance was half price. A tip: walk to the panorama viewpoint, from where you can see all nine pyramids, and don't take a camel at a 'very special price'.\n\nThe next day we spent half a day in the Egyptian Museum on Tahrir, and in the evening we wandered through Islamic Cairo, along Al-Muizz Street with its mosques and lanterns. We ate koshari, the best student food in the world: pasta, rice, lentils, fried onions and tomato sauce for one and a half euros. And we drank sugar cane juice for 30 cents!\n\nThe downside: Cairo is insanely loud. Cars honk non-stop, crossing the road is a quest of its own, and the sellers near the pyramids can be very persistent. We stuck together, dressed modestly with our shoulders covered, and everything was fine. Tired, but happy!"
+      },
+      "country": { "code": "EG", "uk": "Єгипет", "en": "Egypt", "es": "Egipto" },
+      "region": { "uk": "Каїр і Гіза", "en": "Cairo and Giza", "es": "El Cairo y Guiza" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 6,
+      "tripType": "friends",
+      "tags": ["history", "museums", "backpacking", "city-break"],
+      "lat": 29.9792,
+      "lng": 31.1342,
+      "photoQuery": "Giza pyramid complex"
+    },
+    {
+      "key": "s-4-008",
+      "travellerKey": "t-4-08",
+      "category": "Африка",
+      "title": { "uk": "Занзібар повільно: Стоун-Таун і Джамбіані", "en": "Zanzibar slowly: Stone Town and Jambiani" },
+      "article": {
+        "uk": "Ми з Романом не любимо курортних готелів з браслетами, тож на Занзібарі зняли дві квартири: тиждень у Стоун-Тауні й тиждень у рибальському селі Джамбіані на східному узбережжі. Прилетіли в лютому з пересадкою, квитки обійшлися приблизно в 600 євро на людину.\n\nСтоун-Таун — це лабіринт вузьких вулиць, де кожні треті двері різьблені, з мідними шипами. Ми жили на другому поверсі старого будинку за 45 євро на ніч, і щоранку нас будив азан з мечеті, а потім — дзвінки велосипедів. За кілька днів ми вже знали продавчиню хліба на розі й чоловіка, який смажив нам самсу. Увечері ходили в сади Фородгані: там на грилі готують морепродукти і «занзібарську піцу» — тонкий млинець з яйцем і фаршем. Головне — домовитися про ціну до того, як продавець усе наріже.\n\nУ Джамбіані ритм інший. Відплив тут такий, що океан відступає на кілометр, і жінки вирощують водорості на мілководді. Ми гуляли з ними і вчили кілька слів суахілі: «джамбо», «асанте», «поле-поле» — тобто повільно-повільно. Це стало нашим девізом. Будиночок на пляжі коштував 55 євро на ніч, ми самі готували рибу з ринку й купалися, коли вода поверталася.\n\nОдного дня ми взяли екскурсію на ферму спецій за 25 євро: куштували свіжу кору кориці, гвоздику, мускатний горіх і лемонграс. А ще з’їздили в ліс Джозані подивитися на червоних колобусів, мавп, які живуть лише тут.\n\nМінус для нас — пляжні продавці, яких тут називають «біч-бойз». Вони пропонують екскурсії по двадцять разів на день. Ми навчилися усміхатися і казати «таяри» — вже маємо. А ще в лютому спекотно, до тридцяти двох градусів, і без кондиціонера спати важко.",
+        "en": "Roman and I don't like resort hotels with wristbands, so on Zanzibar we rented two flats: a week in Stone Town and a week in the fishing village of Jambiani on the east coast. We flew in February with a connection, and the tickets came to about 600 euros per person.\n\nStone Town is a maze of narrow streets where every third door is carved and studded with brass spikes. We lived on the first floor of an old house for 45 euros a night, and every morning we were woken by the call to prayer from the mosque and then by bicycle bells. Within a few days we knew the bread seller on the corner and the man who fried samosas for us. In the evenings we went to Forodhani Gardens: they grill seafood there and make 'Zanzibar pizza', a thin pancake with egg and minced meat. The main thing is to agree on the price before the seller has cut everything up.\n\nIn Jambiani the rhythm is different. The tide goes out so far that the ocean retreats a kilometre, and women farm seaweed in the shallows. We walked with them and learned a few words of Swahili: jambo, asante, pole pole, which means slowly, slowly. It became our motto. A beach cottage cost 55 euros a night, we cooked fish from the market ourselves and swam when the water came back.\n\nOne day we took a spice farm tour for 25 euros: we tasted fresh cinnamon bark, cloves, nutmeg and lemongrass. We also went to Jozani Forest to see red colobus monkeys, which live only here.\n\nThe downside for us was the beach sellers known here as beach boys. They offer excursions twenty times a day. We learned to smile and say tayari, meaning we already have one. Also, February is hot, up to thirty-two degrees, and sleeping without air conditioning is hard."
+      },
+      "country": { "code": "TZ", "uk": "Танзанія", "en": "Tanzania", "es": "Tanzania" },
+      "region": { "uk": "Занзібар", "en": "Zanzibar", "es": "Zanzíbar" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 14,
+      "tripType": "couple",
+      "tags": ["islands", "beach", "slow-travel", "food"],
+      "lat": -6.163,
+      "lng": 39.188,
+      "photoQuery": "Stone Town Zanzibar"
+    },
+    {
+      "key": "s-4-009",
+      "travellerKey": "t-4-09",
+      "category": "Африка",
+      "title": { "uk": "Стелленбос: вина Західного Капу біля Столової гори", "en": "Stellenbosch: Western Cape wines near Table Mountain" },
+      "article": {
+        "uk": "Південна Африка давно була в моєму списку: тут вирощують виноград з XVII століття, а піно-таж, схрещення піно нуару і сенсо, взагалі народився саме тут. У березні, якраз під кінець збору врожаю, ми з дружиною прилетіли до Кейптауна, провели там три дні, а потім переїхали до Стелленбоса, за п’ятдесят кілометрів.\n\nУ Кейптауні ми, звісно, піднялися канатною дорогою на Столову гору, квиток туди й назад коштував близько 25 євро. Порада: стежте за прогнозом, бо гору часто накриває хмара, яку тут називають скатертиною. Увечері вечеряли на набережній Вотерфронт: устриці з Найсни і келих шенен блану.\n\nСтелленбос — старе університетське місто з білими будинками в капсько-голландському стилі й понад півтори сотні виноробень довкола. Ми орендували машину, але на дегустації їздили з водієм, а у Франсхук — винним трамваєм. Дегустація п’яти вин коштувала від 8 до 15 євро. Найбільше вразили піно-таж з нотою копченої вишні, мінеральний шенен блан зі старих лоз і бордоські купажі з-під гори Сімонсберг. Багато господарств пропонують поєднання вина з шоколадом чи біл-тонгом, в’яленим м’ясом, і це несподівано смачно.\n\nВечеряли в ресторанах при виноробнях: дегустаційне меню з вином — близько 70 євро на людину, що як на такий рівень дуже гуманно. Додому привезли шість пляшок, і на митниці питань не виникло.\n\nЧесний мінус — дорогий переліт і великі відстані. Без машини або водія тут нічого не вийде, а пити й сідати за кермо точно не варіант. І ще: у Кейптауні не варто гуляти ввечері безлюдними вулицями, місцеві самі радять викликати таксі.",
+        "en": "South Africa had long been on my list: grapes have been grown here since the 17th century, and Pinotage, a cross of Pinot Noir and Cinsault, was actually born right here. In March, just at the end of the harvest, my wife and I flew to Cape Town, spent three days there and then moved to Stellenbosch, fifty kilometres away.\n\nIn Cape Town we of course took the cable car up Table Mountain, and a return ticket cost about 25 euros. A tip: watch the forecast, because the mountain is often covered by a cloud locals call the tablecloth. In the evening we had dinner on the V&A Waterfront: oysters from Knysna and a glass of Chenin Blanc.\n\nStellenbosch is an old university town with white Cape Dutch houses and more than a hundred and fifty wineries around it. We rented a car, but went to tastings with a driver, and to Franschhoek on the wine tram. A tasting of five wines cost from 8 to 15 euros. The biggest impressions were a Pinotage with a note of smoked cherry, a mineral old-vine Chenin Blanc and Bordeaux blends from the slopes of Simonsberg. Many estates offer pairings with chocolate or biltong, dried meat, and it is unexpectedly delicious.\n\nWe had dinner at winery restaurants: a tasting menu with wine was about 70 euros per person, which is very reasonable for that level. We brought six bottles home, and customs had no questions.\n\nThe honest downside is the expensive flight and the long distances. Without a car or a driver nothing works here, and drinking and then driving is definitely not an option. One more thing: in Cape Town you should not walk empty streets in the evening, locals themselves advise calling a taxi."
+      },
+      "country": { "code": "ZA", "uk": "Південно-Африканська Республіка", "en": "South Africa", "es": "Sudáfrica" },
+      "region": { "uk": "Західний Кап", "en": "Western Cape", "es": "Cabo Occidental" },
+      "seasons": ["spring"],
+      "budget": "high",
+      "durationDays": 9,
+      "tripType": "couple",
+      "tags": ["wine", "food", "nature"],
+      "lat": -33.9321,
+      "lng": 18.8602,
+      "photoQuery": "Table Mountain"
+    },
+    {
+      "key": "s-4-010",
+      "travellerKey": "t-4-10",
+      "category": "Пустелі",
+      "title": { "uk": "Оаза Лива: на краю пустелі Руб-ель-Халі", "en": "Liwa Oasis: on the edge of the Empty Quarter" },
+      "article": {
+        "uk": "Я давно хотів побачити Руб-ель-Халі, найбільшу піщану пустелю світу. У грудні в мене було чотири вільні дні між робочими зустрічами в Абу-Дабі, тож я орендував позашляховик і поїхав на південь, до оази Лива. Дорога — 230 кілометрів ідеального асфальту, дві з половиною години. Оренда Nissan Patrol коштувала 120 євро на день. Дорого, але звичайне авто сюди брати не раджу.\n\nЛива — це не одна оаза, а дуга з кількох десятків селищ з фініковими гаями вздовж краю пустелі. Далі на південь — лише пісок, аж до Саудівської Аравії. Я жив у готелі, стилізованому під фортецю, за 180 євро на ніч. Для Німеччини це дорого, для Еміратів — нормально.\n\nГоловна мета — дюна Морееб, одна з найвищих у світі, близько 300 метрів. До неї веде асфальтова дорога, і ти раптом бачиш піщану стіну, на яку вечорами джипи змагаються, хто вище заїде. Я туди не ліз. Я взяв гіда-бедуїна на пів дня за 150 євро, і він навчив мене їздити по піску: знизити тиск у шинах до 15 psi, не гальмувати різко на гребені, не зупинятися на підйомі. За три години я застряг лише один раз, і він назвав це хорошим результатом.\n\nНайкращий час — схід сонця. О сьомій ранку дюни мають кольори від рожевого до помаранчевого, повітря холодне, близько 12 градусів, і стоїть абсолютна тиша. Я фотографував на телефон, бо камеру забув у Києві. Типова для мене помилка: план був ідеальний, а сумку я не перевірив.\n\nМінус: тут дуже мало людей і ще менше вечірнього життя. Поїсти можна майже лише в готелі. Також без досвіду не їдьте в дюни самі: зв’язку немає, а пісок не прощає. Але як на мене, це найкращий спосіб чотири дні не думати про роботу.",
+        "en": "I had long wanted to see the Rub' al Khali, the largest sand desert in the world. In December I had four free days between work meetings in Abu Dhabi, so I rented a 4x4 and drove south to Liwa Oasis. The road is 230 kilometres of perfect tarmac, two and a half hours. Renting a Nissan Patrol cost 120 euros a day. Expensive, but I don't recommend bringing an ordinary car here.\n\nLiwa is not one oasis but an arc of several dozen villages with date groves along the edge of the desert. Further south there is only sand, all the way to Saudi Arabia. I stayed in a hotel styled as a fortress for 180 euros a night. For Germany that is expensive, for the Emirates it is normal.\n\nThe main goal was Moreeb Dune, one of the highest in the world, about 300 metres. A tarmac road leads to it, and suddenly you see a wall of sand that jeeps race up in the evenings to see who gets higher. I didn't go up there. I hired a Bedouin guide for half a day for 150 euros, and he taught me to drive on sand: lower the tyre pressure to 15 psi, don't brake hard on the crest, don't stop on a climb. In three hours I got stuck only once, and he called that a good result.\n\nThe best time is sunrise. At seven in the morning the dunes go from pink to orange, the air is cold, about 12 degrees, and there is absolute silence. I took photos on my phone because I forgot my camera in Kyiv. A typical mistake for me: the plan was perfect, but I didn't check the bag.\n\nThe downside: there are very few people here and even less evening life. You can eat almost only at the hotel. Also, without experience don't drive into the dunes alone: there is no signal, and the sand does not forgive. But for me it is the best way to spend four days not thinking about work."
+      },
+      "country": { "code": "AE", "uk": "Об’єднані Арабські Емірати", "en": "United Arab Emirates", "es": "Emiratos Árabes Unidos" },
+      "region": { "uk": "Абу-Дабі", "en": "Abu Dhabi", "es": "Abu Dabi" },
+      "seasons": ["winter"],
+      "budget": "high",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["desert", "road-trip", "nature"],
+      "lat": 23.133,
+      "lng": 53.77,
+      "photoQuery": "Liwa Oasis"
+    }
+  ]
+}

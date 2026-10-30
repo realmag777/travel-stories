@@ -1,0 +1,40 @@
+/* "Наші Мандрівники" block on the home page. */
+.travellers-block { background-color: #f7f9ff; padding: 64px 20px; }
+.travellers-block__container { flex-direction: column; gap: 48px; width: 100%; margin: 0 auto; display: flex; }
+.travellers-block__header { flex-direction: column; width: 100%; display: flex; }
+.travellers-block__title { color: #000; text-align: left; width: 335px; height: 34px; font-size: 28px; font-weight: 700; line-height: 1.2; }
+.travellers-block__content { flex-direction: column; align-items: center; gap: 32px; display: flex; }
+.travellers-block__list { flex-direction: column; align-items: center; gap: 24px; margin: 0; padding: 0; list-style: none; display: flex; }
+.travellers-block__card { text-align: left; background: #e8eeff; border-radius: 12px; flex-direction: column; align-items: flex-start; width: 335px; max-width: 340px; padding: 24px; display: flex; box-shadow: 0 4px 12px #0000000d; }
+.travellers-block__photo { border-radius: 50%; flex-shrink: 0; width: 112px; height: 112px; margin-bottom: 24px; position: relative; overflow: hidden; }
+.travellers-block__avatar { object-fit: cover; width: 100%; height: 100%; }
+.travellers-block__body { flex-direction: column; flex-grow: 1; justify-content: space-between; align-items: flex-start; width: 100%; display: flex; }
+.travellers-block__name { opacity: 1; text-align: left; color: #000; width: 100%; height: 27px; margin-bottom: 16px; font-size: 18px; font-weight: 600; font-family: var(--font-family); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.travellers-block__text { color: #000; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; width: 100%; margin-bottom: 16px; font-size: 16px; line-height: 150%; display: -webkit-box; overflow: hidden; }
+.travellers-block__button { color: #000; cursor: pointer; background-color: #0000000d; border: 1px solid #00000026; border-radius: 8px; justify-content: center; align-items: center; width: 100%; height: 48px; font-weight: 500; text-decoration: none; transition: background-color .2s; display: inline-flex; }
+.travellers-block__button:hover, .travellers-block__button:focus { color: #fff; background-color: #4169e1; border: 1px solid #fff0; }
+.travellers-block__button:active { color: #fff; background-color: #1a2a5a; border: 1px solid #fff0; }
+.travellers-block__more { display: none; }
+.travellers-block__view-all { color: #fff; cursor: pointer; background-color: #4169e1; border: 1px solid #4169e1; border-radius: 8px; justify-content: center; align-items: center; font-size: 16px; font-weight: 500; text-decoration: none; transition: background-color .2s; display: inline-flex; }
+.travellers-block__view-all:hover, .travellers-block__view-all:focus { color: #000; background-color: #e8eeff; border: 1px solid #4169e1; }
+.travellers-block__view-all:active { color: #000; background-color: #7a96ea; border: 1px solid #4169e1; }
+.travellers-block__badge { display: inline-flex; align-items: center; gap: 4px; margin: -8px 0 12px; padding: 2px 8px; border-radius: 6px; background: var(--color-white); font-size: 12px; font-weight: 600; color: var(--color-royal-blue-dark); }
+
+@media screen and (min-width: 768px) {
+  .travellers-block__container { gap: 48px; max-width: 768px; }
+  .travellers-block { padding: 64px 32px; }
+  .travellers-block__title { width: 100%; max-width: 704px; height: 53px; font-size: 44px; font-weight: 700; }
+  .travellers-block__list { grid-template-columns: repeat(2, 1fr); gap: 24px; display: grid; }
+  .travellers-block__card { width: 340px; height: 363px; padding: 24px; }
+  .travellers-block__more { justify-content: center; width: 100%; display: flex; }
+  .travellers-block__view-all { width: 156px; height: 48px; white-space: nowrap; padding: 6px 12px; font-size: 16px; font-weight: 500; line-height: 150%; }
+}
+@media screen and (min-width: 1440px) {
+  .travellers-block__container { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 64px; }
+  .travellers-block { padding: 72px 0; }
+  .travellers-block__header { max-width: 1312px; }
+  .travellers-block__title { letter-spacing: -.01em; width: 100%; max-width: 100%; height: 62px; font-size: 52px; line-height: 1.2; }
+  .travellers-block__list { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .travellers-block__card { max-width: 310px; min-height: 384px; }
+  .travellers-block__view-all { width: 173px; height: 48px; }
+}

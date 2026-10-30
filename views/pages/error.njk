@@ -1,0 +1,14 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="message-page">
+  <div class="message-page__box">
+    <p class="message-page__code" aria-hidden="true">{{ code }}</p>
+    <h1 class="message-page__title">{{ t('errors.' + code + 'Title') }}</h1>
+    <p class="message-page__text">{{ t('errors.' + code + 'Text') }}</p>
+    <div class="message-page__actions">
+      <a class="action" href="{{ url('/') }}">{{ t('errors.home') }}</a>
+      <a class="action action--ghost" href="{{ url('/stories') }}">{{ t('errors.stories') }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

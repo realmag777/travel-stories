@@ -1,0 +1,46 @@
+{% extends "admin/layout.njk" %}
+{% block title %}Історії{% endblock %}
+{% block content %}
+<header class="adm-head">
+  <div><h1 class="adm-head__title">Історії</h1><p class="adm-head__sub">Знайдено: {{ total }}</p></div>
+  <a class="action" href="/admin/stories/new">+ Нова історія</a>
+</header>
+<form class="adm-filters" method="get" action="/admin/stories" data-autosubmit>
+  <input class="field__input adm-filters__search" type="search" name="q" value="{{ q }}" placeholder="Пошук: назва, автор, регіон або ID">
+  <select class="field__select" name="category" aria-label="Категорія"><option value="">Усі категорії</option>{% for c in categories %}<option value="{{ c.id }}"{% if f.category == c.id %} selected{% endif %}>{{ c.name }}</option>{% endfor %}</select>
+  <select class="field__select" name="demo" aria-label="Демо"><option value="">Демо + реальні</option><option value="1"{% if f.demo == '1' %} selected{% endif %}>Тільки демо</option><option value="0"{% if f.demo == '0' %} selected{% endif %}>Без демо</option></select>
+  <select class="field__select" name="hidden" aria-label="Видимість"><option value="">Будь-яка видимість</option><option value="0"{% if f.hidden == '0' %} selected{% endif %}>Опубліковані</option><option value="1"{% if f.hidden == '1' %} selected{% endif %}>Приховані</option></select>
+  <select class="field__select" name="source" aria-label="Джерело"><option value="">Усі джерела</option>{% for s in [['original','Оригінал (імпорт)'],['demo','Згенеровані'],['local','Створені в адмінці'],['api','Через API']] %}<option value="{{ s[0] }}"{% if f.source == s[0] %} selected{% endif %}>{{ s[1] }}</option>{% endfor %}</select>
+  <select class="field__select" name="sort" aria-label="Сортування">{% for s in [['date','Нові'],['favorite_count','Збереження'],['views','Перегляди'],['title','Назва']] %}<option value="{{ s[0] }}"{% if sort == s[0] %} selected{% endif %}>{{ s[1] }}</option>{% endfor %}</select>
+  <button class="action action--small" type="submit">Знайти</button>
+</form>
+<div class="adm-card adm-card--flush">
+  <div class="tbl-wrap">
+  <table class="tbl">
+    <thead><tr><th></th><th>Назва</th><th>Категорія</th><th>Автор</th><th>Дата</th><th class="num">★</th><th class="num">Перегляди</th><th>Статус</th><th></th></tr></thead>
+    <tbody>
+      {% for s in rows %}
+      <tr>
+        <td><img class="tbl__thumb" src="{{ s.cover.src }}" alt="" width="64" height="43" loading="lazy"></td>
+        <td><a class="tbl__title" href="/admin/stories/{{ s.id }}">{{ s.title }}</a>
+          <div class="tbl__langs">{% if s.title_en %}<span class="tag">EN</span>{% endif %}{% if s.title_es %}<span class="tag">ES</span>{% endif %}{% if s.is_demo %}<span class="tag tag--demo">демо</span>{% endif %}{% if s.source == 'original' %}<span class="tag tag--orig">оригінал</span>{% endif %}</div></td>
+        <td>{{ s.category or '—' }}</td>
+        <td>{{ s.owner_name }}</td>
+        <td class="nowrap">{{ s.date }}</td>
+        <td class="num">{{ s.favorite_count }}</td>
+        <td class="num">{{ s.views }}</td>
+        <td><button class="pill {{ 'pill--muted' if s.hidden else 'pill--ok' }}" data-toggle-hidden="{{ s.id }}" data-hidden="{{ '1' if s.hidden else '0' }}">{{ 'Приховано' if s.hidden else 'Опубліковано' }}</button></td>
+        <td class="nowrap">
+          <a class="icon-btn" href="/stories/{{ s.id }}" target="_blank" title="Відкрити на сайті" aria-label="Відкрити на сайті"><svg width="18" height="18"><use href="/sprite.svg#icon-eye"></use></svg></a>
+          <button class="icon-btn icon-btn--danger" data-delete="/admin/stories/{{ s.id }}/delete" data-confirm-title="Видалити історію?" data-confirm-text="«{{ s.title }}» буде видалено назавжди разом з обкладинкою." title="Видалити" aria-label="Видалити"><svg width="18" height="18"><use href="/sprite.svg#icon-close"></use></svg></button>
+        </td>
+      </tr>
+      {% else %}
+      <tr><td colspan="9" class="adm-empty">Нічого не знайдено.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+{% include "admin/pager.njk" %}
+{% endblock %}

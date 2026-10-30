@@ -1,0 +1,366 @@
+{
+  "travellers": [
+    {
+      "key": "t-5-01",
+      "gender": "male",
+      "name": { "uk": "Тарас Гнатюк", "en": "Taras Hnatiuk" },
+      "description": {
+        "uk": "Привіт! Я Тарас. Інженер-електрик з Івано-Франківська, а у відпустках — альпініст-аматор. Збираю вершини понад п’ять тисяч метрів і пишу коротко: висота, час, спорядження, що спрацювало, а що ні.",
+        "en": "Hi! I'm Taras. An electrical engineer from Ivano-Frankivsk and an amateur mountaineer on holidays. I collect peaks above five thousand metres and write briefly: altitude, timing, gear, what worked and what didn't."
+      },
+      "style": "Terse adventure climber: short sentences, altitudes and times, gear notes, dry humour, practical acclimatisation tips."
+    },
+    {
+      "key": "t-5-02",
+      "gender": "female",
+      "name": { "uk": "Соломія Кравець", "en": "Solomiia Kravets" },
+      "description": {
+        "uk": "Привіт! Я Соломія, фотографка з Ужгорода. Полюю на світанки в горах і на полярне сяйво. У кожній історії ділюся налаштуваннями камери, найкращими точками зйомки і тим, скільки разів довелося вставати о четвертій ранку.",
+        "en": "Hi! I'm Solomiia, a photographer from Uzhhorod. I hunt for mountain sunrises and the northern lights. In every story I share camera settings, the best viewpoints and how many times I had to get up at four in the morning."
+      },
+      "style": "Landscape photographer: light and hours, lenses, apertures, tripod notes; poetic about colour but technically precise."
+    },
+    {
+      "key": "t-5-03",
+      "gender": "male",
+      "name": { "uk": "Андрій Бойчук", "en": "Andrii Boichuk" },
+      "description": {
+        "uk": "Привіт! Я Андрій, тато двох дітей — Марка (9) і Злати (6). Живемо в Рівному. Подорожуємо всією родиною, тож пишу про маршрути, які під силу дітям, про ціни, ночівлі і про те, як не загубити ні настрою, ні шапки.",
+        "en": "Hi! I'm Andrii, dad of two, Marko (9) and Zlata (6). We live in Rivne. We travel as a whole family, so I write about routes children can manage, prices, places to stay and how not to lose either your good mood or your hat."
+      },
+      "style": "Calm family dad: measured and practical, kids' reactions and quotes, logistics and costs for a family of four."
+    },
+    {
+      "key": "t-5-04",
+      "gender": "female",
+      "name": { "uk": "Ірина Савчук", "en": "Iryna Savchuk" },
+      "description": {
+        "uk": "Привіт! Я Ірина Петрівна, сорок років викладала географію в школі в Хмельницькому. Тепер на пенсії і нарешті бачу на власні очі те, про що розповідала учням. Люблю фортеці, річки й старі вулиці.",
+        "en": "Hi! I'm Iryna, and for forty years I taught geography at a school in Khmelnytskyi. Now I'm retired and finally see with my own eyes what I used to tell my pupils about. I love fortresses, rivers and old streets."
+      },
+      "style": "Retired geography teacher: unhurried, explains geology and history, gentle teacherly asides, mentions buses, trains and pensioner prices."
+    },
+    {
+      "key": "t-5-05",
+      "gender": "male",
+      "name": { "uk": "Максим Литвин", "en": "Maksym Lytvyn" },
+      "description": {
+        "uk": "Привіт! Я Макс, студент-біолог із Києва. Подорожую з наплічником, вівсянкою і бюджетом, якого вистачає хіба на квиток і газовий балон. Пишу чесно, з іронією і з підрахунком кожної гривні.",
+        "en": "Hi! I'm Max, a biology student from Kyiv. I travel with a backpack, a bag of oats and a budget that barely covers a ticket and a gas canister. I write honestly, with irony and with every hryvnia counted."
+      },
+      "style": "Ironic budget backpacker: self-deprecating jokes, counts every hryvnia, night trains and tents, biology asides."
+    },
+    {
+      "key": "t-5-06",
+      "gender": "female",
+      "name": { "uk": "Наталія Романюк", "en": "Nataliia Romaniuk" },
+      "description": {
+        "uk": "Привіт! Я Наталія. Ми з чоловіком Ігорем — пара, яка не вміє поспішати. Обираємо одне місце і живемо там тиждень чи два, ходимо пішки, купуємо на ринку і розмовляємо з місцевими. Пишу від імені нас обох.",
+        "en": "Hi! I'm Nataliia. My husband Ihor and I are a couple who can't rush. We pick one place and live there for a week or two, walk everywhere, shop at the market and chat with locals. I write on behalf of us both."
+      },
+      "style": "Slow-travel couple, writes as 'we': warm and observant, daily rhythm, rented flats, markets, small talk with locals."
+    },
+    {
+      "key": "t-5-07",
+      "gender": "male",
+      "name": { "uk": "Дмитро Ковальчук", "en": "Dmytro Kovalchuk" },
+      "description": {
+        "uk": "Привіт! Я Дмитро, лижник і трохи сноубордист із Тернополя. Зиму міряю не місяцями, а кількістю днів на схилі. Пишу про траси, скі-паси, сніг і про те, де найкраще пообідати після катання.",
+        "en": "Hi! I'm Dmytro, a skier and part-time snowboarder from Ternopil. I measure winter not in months but in days on the slopes. I write about pistes, ski passes, snow and where to have the best lunch after skiing."
+      },
+      "style": "Energetic skier: lively and enthusiastic, snow conditions, lift pass prices, piste colours, après-ski food."
+    },
+    {
+      "key": "t-5-08",
+      "gender": "female",
+      "name": { "uk": "Христина Мельничук", "en": "Khrystyna Melnychuk" },
+      "description": {
+        "uk": "Привіт! Я Христина, кухарка за фахом і гурманка за покликанням. Живу у Львові. Для мене подорож — це насамперед ринок, кухня і розмова з тим, хто приготував мені обід. Решта — гарний бонус.",
+        "en": "Hi! I'm Khrystyna, a cook by trade and a foodie by calling. I live in Lviv. For me a trip is first of all the market, the kitchen and a chat with whoever cooked my lunch. Everything else is a nice bonus."
+      },
+      "style": "Foodie chef: sensory descriptions, ingredients and cooking methods, names of local dishes, meal prices, markets."
+    },
+    {
+      "key": "t-5-09",
+      "gender": "male",
+      "name": { "uk": "Богдан Шевчук", "en": "Bohdan Shevchuk" },
+      "description": {
+        "uk": "Привіт! Я Богдан, логіст із Луцька, і найбільше в житті люблю кермо та дорогу. Рахую кілометри, ціни на пальне і повороти серпантинів. Якщо маршрут можна проїхати машиною, я його проїду.",
+        "en": "Hi! I'm Bohdan, a logistics manager from Lutsk, and what I love most in life is a steering wheel and the open road. I count kilometres, fuel prices and hairpin bends. If a route can be driven, I'll drive it."
+      },
+      "style": "Road-trip driver: kilometres, fuel and toll prices, road surfaces, car rental tips; matter-of-fact with a soft spot for hairpins."
+    },
+    {
+      "key": "t-5-10",
+      "gender": "female",
+      "name": { "uk": "Мар’яна Ткачук", "en": "Mariana Tkachuk" },
+      "description": {
+        "uk": "Привіт! Я Мар’яна, бухгалтерка з Вінниці. До тридцяти років найвищою моєю вершиною була п’ятиповерхівка. Тепер ходжу в гори і чесно пишу, як це — бути новачкою: що болить, що тішить і чому я повертаюся знову.",
+        "en": "Hi! I'm Mariana, an accountant from Vinnytsia. Until thirty, my highest summit was a five-storey block of flats. Now I go to the mountains and write honestly about being a beginner: what hurts, what delights and why I keep coming back."
+      },
+      "style": "Beginner hiker: humorous and honest about fatigue, sore legs and mistakes, encouraging to other beginners."
+    },
+    {
+      "key": "t-5-11",
+      "gender": "male",
+      "name": { "uk": "Лукас Бреннер", "en": "Lukas Brenner" },
+      "description": {
+        "uk": "Привіт! Я Лукас, австрієць із Зальцбурга. Уже вісім років живу у Львові, викладаю німецьку і вчу українську. Показую друзям Альпи свого дитинства, а сам відкриваю для себе замки й гори України.",
+        "en": "Hi! I'm Lukas, an Austrian from Salzburg. I have lived in Lviv for eight years, teaching German and learning Ukrainian. I show my friends the Alps of my childhood and discover Ukraine's castles and mountains for myself."
+      },
+      "style": "Austrian resident of Lviv: polite, slightly formal, compares Austria and Ukraine, precise about timetables, gentle humour."
+    },
+    {
+      "key": "t-5-12",
+      "gender": "female",
+      "name": { "uk": "Клер Дюбуа", "en": "Claire Dubois" },
+      "description": {
+        "uk": "Привіт! Я Клер, француженка з Тулузи, вже шість років живу в Києві і викладаю французьку. Піренеї — мої домашні гори, тож щоліта вожу туди українських друзів і вчу їх любити овечий сир.",
+        "en": "Hi! I'm Claire, a Frenchwoman from Toulouse. I have lived in Kyiv for six years and teach French. The Pyrenees are my home mountains, so every summer I take Ukrainian friends there and teach them to love sheep's cheese."
+      },
+      "style": "French resident of Kyiv: enthusiastic and talkative, compares French and Spanish sides, village life, cheese and local words."
+    },
+    {
+      "key": "t-5-13",
+      "gender": "male",
+      "name": { "uk": "Юрій Марченко", "en": "Yurii Marchenko" },
+      "description": {
+        "uk": "Привіт! Я Юрій, орнітолог-аматор із Житомира. Їжджу туди, де птахів більше, ніж людей. У рюкзаку — бінокль, польовий визначник і термос. Пишу про стежки, птахів і погоду, яка завжди вносить свої корективи.",
+        "en": "Hi! I'm Yurii, an amateur ornithologist from Zhytomyr. I go where there are more birds than people. In my backpack are binoculars, a field guide and a thermos. I write about trails, birds and the weather, which always has its own plans."
+      },
+      "style": "Birdwatcher naturalist: patient and quiet, names species, weather and binoculars, understated humour, respect for nature."
+    },
+    {
+      "key": "t-5-14",
+      "gender": "female",
+      "name": { "uk": "Вікторія Гриценко", "en": "Viktoriia Hrytsenko" },
+      "description": {
+        "uk": "Привіт! Я Віка з Дніпра, і в нашій компанії саме я бронюю, рахую і будю всіх зранку. Подорожуємо вчотирьох або вп’ятьох, тож пишу про логістику для друзів: як поділити витрати, де жити і що не пропустити.",
+        "en": "Hi! I'm Vika from Dnipro, and in our group I'm the one who books, counts and wakes everyone up in the morning. We travel as four or five, so I write about logistics for friends: how to split costs, where to stay and what not to miss."
+      },
+      "style": "Group organiser: energetic, logistics and cost splitting, schedules, funny anecdotes about her friends."
+    },
+    {
+      "key": "t-5-15",
+      "gender": "male",
+      "name": { "uk": "Сергій Поліщук", "en": "Serhii Polishchuk" },
+      "description": {
+        "uk": "Привіт! Я Сергій, програміст і астроном-любитель із Черкас. Шукаю місця з найтемнішим небом: туди, де видно Чумацький Шлях і полярне сяйво. Пишу про ночі, телескопи і прогнози хмарності.",
+        "en": "Hi! I'm Serhii, a programmer and amateur astronomer from Cherkasy. I look for places with the darkest skies, where you can see the Milky Way and the northern lights. I write about nights, telescopes and cloud forecasts."
+      },
+      "style": "Amateur astronomer: night skies, cloud forecasts, Bortle scale, Milky Way and aurora, calm and a bit nerdy."
+    },
+    {
+      "key": "t-5-16",
+      "gender": "female",
+      "name": { "uk": "Галина Остапенко", "en": "Halyna Ostapenko" },
+      "description": {
+        "uk": "Привіт! Я Галина, мені 67, я колишня медсестра з Полтави. Подорожую з онукою Софійкою, яка вчиться в університеті і перекладає мені меню. Ходимо повільно, зате все помічаємо.",
+        "en": "Hi! I'm Halyna, I'm 67 and a retired nurse from Poltava. I travel with my granddaughter Sofiika, who is at university and translates menus for me. We walk slowly, but we notice everything."
+      },
+      "style": "Grandmother travelling with granddaughter: warm and gentle, notes comfort, steps and benches, pensioner prices, family feeling."
+    }
+  ],
+  "stories": [
+    {
+      "key": "s-5-001",
+      "travellerKey": "t-5-01",
+      "category": "Гори",
+      "title": { "uk": "Кіліманджаро: сім днів маршрутом Мачаме", "en": "Kilimanjaro: seven days on the Machame route" },
+      "article": {
+        "uk": "Летіли через Стамбул до аеропорту Кіліманджаро, звідти трансфер до Моші. Тур на сім днів маршрутом Мачаме з місцевою агенцією обійшовся у 2300 євро на людину, більша частина — паркові збори. Нас було троє, плюс гід, помічник гіда, кухар і дев’ять носіїв. Звучить як експедиція. Так воно і є.\n\nПерші два дні — тропічний ліс і вересові пустки, висота з 1800 до 3800 метрів. Іти легко, головне — повільно. Гіди повторюють «поле-поле», тобто «потихеньку». Це не ввічливість, а стратегія акліматизації. Третій день — підйом до Лава-Тауер, 4600 метрів, і спуск на ночівлю на 3900. Класичне «йди високо, спи низько». Голова боліла в усіх трьох, але до ранку минуло.\n\nСтіна Барранко виглядає страшно, а насправді це легке лазіння, руки потрібні в кількох місцях. Табір Барафу на 4673 метрах — вітер, каміння і ранній сон. Вихід на вершину о 23:30. Шість годин у темряві під налобником, мінус п’ятнадцять, вода в пляшці замерзла, бо я поклав її в бічну кишеню. Помилка новачка, хоча я не новачок. Термос — у рюкзак, пляшку — під куртку.\n\nНа Стелла-Пойнт вийшли зі світанком, до піку Ухуру, 5895 метрів, ще година гребенем уздовж льодовиків. Льоду поменшало, гід показував, де він був десять років тому. На вершині пробули хвилин п’ятнадцять: фото біля таблички, чай, униз.\n\nЧесний мінус: черги. На Мачаме в сезон сотні людей, біля стіни Барранко стояли в заторі хвилин сорок. Порада: беріть восьмиденний варіант, додатковий день акліматизації вартий своїх грошей. І закладіть чайові команді, тут це частина бюджету, близько 250 євро з групи.",
+        "en": "We flew via Istanbul to Kilimanjaro airport, then took a transfer to Moshi. A seven-day Machame route tour with a local agency cost 2,300 euros per person, most of it park fees. There were three of us, plus a guide, an assistant guide, a cook and nine porters. Sounds like an expedition. That's exactly what it is.\n\nThe first two days are rainforest and heath, from 1,800 to 3,800 metres. Walking is easy, the key is going slowly. The guides keep repeating pole pole, meaning slowly. It's not politeness, it's an acclimatisation strategy. Day three is a climb to Lava Tower at 4,600 metres and a descent to sleep at 3,900. Classic climb high, sleep low. All three of us had headaches, but they were gone by morning.\n\nThe Barranco Wall looks scary, but in reality it's easy scrambling, you need your hands in a few places. Barafu camp at 4,673 metres is wind, stones and an early night. Summit push at 23:30. Six hours in the dark under a headlamp, minus fifteen, and the water in my bottle froze because I'd put it in a side pocket. A beginner's mistake, though I'm no beginner. Thermos in the pack, bottle under the jacket.\n\nWe reached Stella Point at sunrise, and Uhuru Peak at 5,895 metres was another hour along the ridge beside the glaciers. There's less ice now, and the guide showed where it was ten years ago. We stayed on top about fifteen minutes: photo by the sign, tea, down.\n\nThe honest downside: queues. In season there are hundreds of people on Machame, and we stood in a jam at the Barranco Wall for about forty minutes. Tip: take the eight-day version, the extra acclimatisation day is worth the money. And budget for tips for the crew, here they are part of the cost, around 250 euros per group."
+      },
+      "country": { "code": "TZ", "uk": "Танзанія", "en": "Tanzania", "es": "Tanzania" },
+      "region": { "uk": "Кіліманджаро", "en": "Kilimanjaro", "es": "Kilimanjaro" },
+      "seasons": ["winter"],
+      "budget": "high",
+      "durationDays": 10,
+      "tripType": "friends",
+      "tags": ["hiking", "camping", "national-parks", "nature"],
+      "lat": -3.0674,
+      "lng": 37.3556,
+      "photoQuery": "Mount Kilimanjaro"
+    },
+    {
+      "key": "s-5-002",
+      "travellerKey": "t-5-01",
+      "category": "Гори",
+      "title": { "uk": "Базовий табір Евересту: шістнадцять днів у Кхумбу", "en": "Everest Base Camp: sixteen days in the Khumbu" },
+      "article": {
+        "uk": "Найнервовіша частина трекінгу до базового табору Евересту — не висота, а літак до Лукли. Злітна смуга завдовжки п’ятсот метрів, з одного боку скеля, з другого урвище. Наш рейс із Катманду переносили двічі через туман, тож закладайте в план два запасні дні. Я заклав три і використав два.\n\nДалі все просто: щодня п’ять-сім годин ходьби, ночівля в лоджах. Кімната коштує символічно, 3–5 євро, але вас годують у тому ж лоджі, і саме на їжі тут заробляють. Дал-бгат — рис, сочевична юшка й овочі — 6–9 євро, і добавку дають безкоштовно. Вище за Намче ціни ростуть разом із висотою: зарядити телефон — 3 євро, гарячий душ — 5, пляшка води в Горак-Шепі — понад 4.\n\nНамче-Базар, 3440 метрів, — день акліматизації. Піднявся на пагорб над селищем і вперше побачив вершину: чорну піраміду з білим прапором хмари. Монастир Тенгбоче, ранкова молитва ченців, Ама-Даблам над головою — найкрасивіша гора маршруту, як на мене, гарніша за сам Еверест.\n\nВід Лобуче до Горак-Шепа — морена й каміння, дихати важко, в голові гуде. Сам базовий табір восени — це купа каменів, молитовні прапорці та льодопад Кхумбу. Наметів експедицій немає, вони приходять навесні. Значно кращий вид із Кала-Паттхара, 5644 метри: виходив о п’ятій ранку, мінус дванадцять, зате на світанку Еверест горить помаранчевим.\n\nМінус: кашель Кхумбу. Сухе холодне повітря й пил, і половина трекерів кашляє вже до Дінгбоче. Бафф на обличчя і льодяники рятують частково. Загалом шістнадцять днів від Катманду до Катманду, близько 1400 євро без перельоту з дому.",
+        "en": "The most nerve-racking part of the Everest Base Camp trek isn't the altitude but the flight to Lukla. The runway is five hundred metres long, with a cliff on one side and a drop on the other. Our flight from Kathmandu was postponed twice because of fog, so build two spare days into your plan. I built in three and used two.\n\nAfter that it's simple: five to seven hours of walking a day, nights in lodges. A room costs next to nothing, 3 to 5 euros, but you eat in the same lodge, and that's where they make their money. Dal bhat, rice with lentil soup and vegetables, costs 6 to 9 euros, and refills are free. Above Namche prices rise with altitude: charging a phone is 3 euros, a hot shower 5, a bottle of water in Gorak Shep over 4.\n\nNamche Bazaar, 3,440 metres, is an acclimatisation day. I climbed the hill above the village and saw the summit for the first time: a black pyramid with a white flag of cloud. Tengboche monastery, the monks' morning prayer, Ama Dablam overhead, the most beautiful mountain of the route in my opinion, prettier than Everest itself.\n\nFrom Lobuche to Gorak Shep it's moraine and rocks, breathing is hard and your head hums. Base camp itself in autumn is a pile of stones, prayer flags and the Khumbu Icefall. There are no expedition tents, they come in spring. The view from Kala Patthar at 5,644 metres is much better: I set out at five in the morning, minus twelve, but at sunrise Everest glows orange.\n\nThe downside: the Khumbu cough. Dry cold air and dust, and half of the trekkers are coughing before Dingboche. A buff over your face and lozenges help only partly. In total, sixteen days from Kathmandu back to Kathmandu, about 1,400 euros without the flight from home."
+      },
+      "country": { "code": "NP", "uk": "Непал", "en": "Nepal", "es": "Nepal" },
+      "region": { "uk": "Кхумбу", "en": "Khumbu", "es": "Khumbu" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 16,
+      "tripType": "solo",
+      "tags": ["hiking", "backpacking", "culture", "national-parks"],
+      "lat": 28.0026,
+      "lng": 86.8528,
+      "photoQuery": "Ama Dablam"
+    },
+    {
+      "key": "s-5-003",
+      "travellerKey": "t-5-01",
+      "category": "Гори",
+      "title": { "uk": "Казбек: п’ять тисяч метрів над Степанцмінда", "en": "Kazbek: five thousand metres above Stepantsminda" },
+      "article": {
+        "uk": "Казбек часто називають легким п’ятитисячником. Легкий він тільки на папері. Ми вчотирьох полетіли до Тбілісі, маршруткою за 30 ларі доїхали до Степанцмінди і того ж вечора зареєструвалися в рятувальній службі. Реєстрація обов’язкова і безкоштовна, там же дають свіжий прогноз.\n\nПерший день — підйом повз церкву Святої Трійці в Гергеті до льодовика. Рюкзак 22 кілограми, бо несли намети й газ. Можна найняти коня, який довезе речі до перевалу, — наступного разу так і зроблю. Ночували на метеостанції, 3650 метрів: старий будинок, нари, місце коштує близько 25 євро. Хто з наметом — ставиться поруч дешевше.\n\nДва дні акліматизації: виходи на 4000 і 4400 метрів. Тут уже йдемо в зв’язці, бо на льодовику є тріщини, і щороку хтось туди потрапляє. Кішки, льодоруб, страхувальна система — обов’язково. Хто думає, що це просто довга прогулянка, той повертається з першої ж тріщини.\n\nШтурм — вихід о другій ночі. Плато, потім крутий схил під вершиною, градусів сорок, останні сто метрів ішли по льоду з двома льодорубами. На вершині, 5054 метри, були о дев’ятій ранку, вітер такий, що стояли навколішки. Звідти видно сніжні хребти до самого горизонту і зелену долину далеко внизу.\n\nСпуск — найнебезпечніша частина: втомлені ноги, розм’якший сніг. До метеостанції повернулися о третій дня. Мінус: метеостанція влітку переповнена, туалет — дерев’яна будка над проваллям. Порада: беріть гіда, якщо немає досвіду на льодовику, це близько 600 євро за групу. І святкуйте вже внизу: хачапурі по-аджарськи після гір смакує особливо.",
+        "en": "Kazbek is often called an easy five-thousander. It's easy only on paper. Four of us flew to Tbilisi, took a minibus for 30 lari to Stepantsminda and registered with the rescue service the same evening. Registration is mandatory and free, and they give you a fresh forecast there too.\n\nDay one is the climb past the Holy Trinity Church at Gergeti up to the glacier. My pack weighed 22 kilos because we carried tents and gas. You can hire a horse to take your gear up to the pass, and next time that's what I'll do. We slept at the old weather station at 3,650 metres: an old building, bunks, about 25 euros a place. People with tents pitch next to it for less.\n\nTwo acclimatisation days: outings to 4,000 and 4,400 metres. From here on we walk roped up, because the glacier has crevasses and every year somebody falls into one. Crampons, ice axe, harness, all mandatory. Whoever thinks this is just a long walk turns back at the first crevasse.\n\nSummit push: departure at two in the morning. A plateau, then a steep slope below the summit, around forty degrees, and the last hundred metres we climbed on ice with two axes. We were on the 5,054-metre summit at nine in the morning, with wind so strong we stayed on our knees. From there you see snowy ridges right to the horizon and a green valley far below.\n\nThe descent is the most dangerous part: tired legs, softened snow. We were back at the weather station at three in the afternoon. The downside: in summer the station is overcrowded and the toilet is a wooden shed above a drop. Tip: hire a guide if you have no glacier experience, around 600 euros per group. And celebrate down in the valley: Adjarian khachapuri tastes special after the mountains."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Мцхета-Мтіанеті", "en": "Mtskheta-Mtianeti", "es": "Mtskheta-Mtianeti" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 8,
+      "tripType": "friends",
+      "tags": ["hiking", "camping", "nature"],
+      "lat": 42.6977,
+      "lng": 44.5182,
+      "photoQuery": "Gergeti Trinity Church"
+    },
+    {
+      "key": "s-5-004",
+      "travellerKey": "t-5-01",
+      "category": "Гори",
+      "title": { "uk": "Бен-Невіс: найвища гора Британії в тумані", "en": "Ben Nevis: Britain's highest peak in the fog" },
+      "article": {
+        "uk": "Після п’ятитисячників Бен-Невіс із його 1345 метрами здавався мені розминкою. Шотландія швидко поставила мене на місце. Летів до Единбурга, звідти потягом через Глазго до Форт-Вільяма. Лінія West Highland — окремий привід поїхати: озера, болота, віадуки, квиток в один бік близько 45 євро, якщо брати заздалегідь.\n\nСтежка Mountain Track починається від візит-центру в долині Глен-Невіс. Широка, кам’яна, у вихідні на ній тисячі людей. Перша половина — зигзаги над долиною, потім сідловина з озером, і далі довгий серпантин по камінню. Набір висоти майже 1300 метрів, бо стартуєш практично з рівня моря. Для порівняння: на Говерлу від Заросляка — трохи більше 800.\n\nНа висоті 900 метрів зайшли в хмару і більше з неї не виходили. Видимість метрів двадцять, вітер, у травні — мокрий сніг. На вершинному плато шлях позначено кам’яними турами, і це не прикраса: з північного боку обриви на сотні метрів, і в тумані люди звертають не туди. Я тримав курс за компасом і GPS-треком, як радять місцеві рятувальники.\n\nНа вершині — руїни старої обсерваторії, крихітний притулок, тригонометричний пункт і нульова видимість. Чай із термоса, бутерброд, униз. Загалом сім годин із поверненням.\n\nМінус: погода. Кажуть, вершина відкрита в середньому лише кілька днів на місяць. Плюс: увечері в пабі у Форт-Вільямі хагіс із пюре з бруквою і пінта місцевого елю, все разом близько 25 євро. Якщо пощастить із погодою, ідіть гребенем Карн-Мор-Дерг — кажуть, це одна з найкращих гребеневих стежок Британії. Я ще повернуся заради неї.",
+        "en": "After five-thousanders, Ben Nevis with its 1,345 metres seemed like a warm-up to me. Scotland quickly put me in my place. I flew to Edinburgh and took the train via Glasgow to Fort William. The West Highland Line is a reason to go in itself: lochs, moors, viaducts, and a one-way ticket costs about 45 euros if you book ahead.\n\nThe Mountain Track starts at the visitor centre in Glen Nevis. It's wide and rocky, with thousands of people on it at weekends. The first half zigzags above the glen, then comes a saddle with a small loch, and after that a long series of switchbacks over stones. The height gain is almost 1,300 metres because you start practically at sea level. For comparison, Hoverla from Zaroslyak is a little over 800.\n\nAt 900 metres we walked into the cloud and never came out. Visibility about twenty metres, wind, and in May, wet snow. On the summit plateau the way is marked with cairns, and they are not decoration: on the north side there are cliffs hundreds of metres high, and in fog people turn the wrong way. I kept my bearing by compass and GPS track, as the local rescuers advise.\n\nOn top there are the ruins of the old observatory, a tiny shelter, a trig point and zero visibility. Tea from the thermos, a sandwich, down. Seven hours in total, there and back.\n\nThe downside: the weather. They say the summit is clear only a few days a month on average. The upside: in the evening, in a pub in Fort William, haggis with mashed swede and a pint of local ale, around 25 euros altogether. If you're lucky with the weather, take the Carn Mor Dearg Arete, which is said to be one of the best ridge walks in Britain. I'll come back for it."
+      },
+      "country": { "code": "GB", "uk": "Велика Британія", "en": "United Kingdom", "es": "Reino Unido" },
+      "region": { "uk": "Шотландія", "en": "Scotland", "es": "Escocia" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["hiking", "train", "nature"],
+      "lat": 56.7969,
+      "lng": -5.0036,
+      "photoQuery": "Ben Nevis"
+    },
+    {
+      "key": "s-5-005",
+      "travellerKey": "t-5-02",
+      "category": "Гори",
+      "title": { "uk": "Лофотени: світанок над Рейне з Рейнебрінгена", "en": "Lofoten: sunrise over Reine from Reinebringen" },
+      "article": {
+        "uk": "На Лофотени я їхала заради одного кадру: село Рейне з червоними будиночками-рорбу на тлі гострих піків, зняте згори. Летіла до Буде, звідти поромом до Москенеса, три з половиною години хитавиці. Кінець вересня — ідеальний компроміс: уже темні ночі для полярного сяйва, ще немає снігу на стежках і майже немає туристів.\n\nРейнебрінген — лише 448 метрів, але підйом крутий: майже дві тисячі кам’яних сходинок, які виклали шерпи з Непалу. Вийшла о 5:20 з налобником, на вершині була за 45 хвилин, із рюкзаком на вісім кілограмів. Штатив, повнокадрова камера, ширококутний 16–35 і телевик 70–200. Схід сонця о 7:10, але найкраще світло — за пів години до нього, коли небо рожевіє, а вода у фіорді ще синя.\n\nТехнічно: f/11, ISO 100, брекетинг на три кроки, бо різниця між небом і тінню в долині величезна. Вітер на вершині сильний, тож штатив опустила низько і повісила рюкзак на гачок. Телевиком на 135 мм ловила момент, коли сонце торкається найвищого піку, — це секунд сорок рожевого золота.\n\nЖила в рорбу в Гамнеї, старій рибальській хатинці на палях, 160 євро за ніч. Дорого, як і все в Норвегії: кава 5 євро, вечеря від 35. Купувала продукти в супермаркеті і готувала сама. Дві ночі з семи було полярне сяйво, зелене й рухливе, знімала просто з порога: 14 мм, f/2.8, 6 секунд, ISO 3200.\n\nЧесний мінус: погода змінюється щогодини. Три світанки з семи — суцільна хмара, і я марно підіймалася. Закладайте запас днів і дивіться прогноз хмарності на різних висотах. І не йдіть на Рейнебрінген у дощ: мокрі сходинки небезпечні.",
+        "en": "I went to Lofoten for one shot: the village of Reine with its red rorbu cabins against sharp peaks, photographed from above. I flew to Bodø and took the ferry to Moskenes, three and a half hours of rolling. Late September is the perfect compromise: the nights are already dark enough for the aurora, there's no snow on the trails yet and hardly any tourists.\n\nReinebringen is only 448 metres, but the climb is steep: almost two thousand stone steps laid by Sherpas from Nepal. I set off at 5:20 with a headlamp and was on top in 45 minutes, carrying an eight-kilo pack. Tripod, full-frame camera, a 16-35 wide angle and a 70-200 telephoto. Sunrise was at 7:10, but the best light comes half an hour earlier, when the sky turns pink and the water in the fjord is still blue.\n\nTechnically: f/11, ISO 100, three-stop bracketing, because the difference between the sky and the shadow in the valley is huge. The wind on top is strong, so I set the tripod low and hung my pack on the hook. With the telephoto at 135 mm I caught the moment the sun touches the highest peak, about forty seconds of rosy gold.\n\nI stayed in a rorbu in Hamnøy, an old fisherman's cabin on stilts, for 160 euros a night. Expensive, like everything in Norway: coffee 5 euros, dinner from 35. I bought groceries at the supermarket and cooked myself. Two nights out of seven had the aurora, green and restless, and I shot it right from the doorstep: 14 mm, f/2.8, 6 seconds, ISO 3200.\n\nThe honest downside: the weather changes every hour. Three sunrises out of seven were solid cloud, and I climbed for nothing. Leave spare days and check cloud forecasts at different altitudes. And don't climb Reinebringen in the rain: wet steps are dangerous."
+      },
+      "country": { "code": "NO", "uk": "Норвегія", "en": "Norway", "es": "Noruega" },
+      "region": { "uk": "Лофотенські острови", "en": "Lofoten", "es": "Lofoten" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 7,
+      "tripType": "solo",
+      "tags": ["photography", "hiking", "islands", "nature"],
+      "lat": 67.9325,
+      "lng": 13.0899,
+      "photoQuery": "Reine Lofoten"
+    },
+    {
+      "key": "s-5-006",
+      "travellerKey": "t-5-02",
+      "category": "Гори",
+      "title": { "uk": "Доломіти: Тре-Чіме-ді-Лаваредо на заході сонця", "en": "Dolomites: Tre Cime di Lavaredo at sunset" },
+      "article": {
+        "uk": "Три зубці Тре-Чіме — найвідоміший силует Доломітів. Ми з чоловіком прилетіли до Венеції, взяли машину напрокат і за три години були в Ауронцо. Платна дорога до притулку Ауронцо в липні коштує 30 євро за авто. Паркування тут же, але в серпні його закривають уже о дев’ятій ранку, бо місць немає. Ми приїхали о третій дня — саме по-фотографськи.\n\nСтежка навколо трьох веж — кільце близько десяти кілометрів, набір висоти помірний, проходиться за чотири години. Ми йшли проти годинникової стрілки до притулку Локателлі, бо саме звідти відкривається класичний кадр: три північні стіни поруч, високі й темні. Там і заночували, ліжко в кімнаті на чотирьох із вечерею і сніданком — 85 євро з людини. Бронювати треба ще навесні.\n\nЗахід сонця — головна подія. О 20:15 стіни стали червоно-помаранчевими, це явище тут називають енросадірою. Знімала з невеликого пагорба над притулком: 24–70 на 35 мм, f/8, ISO 100, з поляризаційним фільтром до заходу і без нього після. Порада: на передній план беріть скелі з печерами і тунелями Першої світової, вони тут повсюди.\n\nУночі вийшла знімати Чумацький Шлях над вежами — місяця не було, небо чорне. 14 мм, f/2.8, 20 секунд, ISO 6400, і ще серія кадрів для стекінгу. О пів на шосту ранку вже знімала світанок з іншого боку.\n\nМінус: натовп. Удень біля Ауронцо сотні людей, автобуси, дрони. Але після сьомої вечора лишаються тільки ті, хто ночує в притулках, і тоді Доломіти стають тихими. І ще: вечеря в притулку — паста й штрудель, смачно, але воду доведеться купувати, 4 євро за пляшку.",
+        "en": "The three teeth of Tre Cime are the most famous silhouette of the Dolomites. My husband and I flew into Venice, rented a car and were in Auronzo in three hours. The toll road to Rifugio Auronzo costs 30 euros per car in July. Parking is right there, but in August it closes as early as nine in the morning because it's full. We arrived at three in the afternoon, which is just right for a photographer.\n\nThe trail around the three towers is a loop of about ten kilometres with moderate height gain, done in four hours. We walked anticlockwise to Rifugio Locatelli, because that's where the classic view opens: the three north faces side by side, tall and dark. We stayed the night there, a bed in a four-person room with dinner and breakfast for 85 euros each. You need to book back in spring.\n\nSunset is the main event. At 20:15 the walls turned red-orange, a phenomenon they call enrosadira here. I shot from a small hill above the hut: 24-70 at 35 mm, f/8, ISO 100, with a polariser before sunset and without it afterwards. Tip: use the rocks with First World War caves and tunnels as foreground, they're everywhere here.\n\nAt night I went out to photograph the Milky Way over the towers. There was no moon and the sky was black. 14 mm, f/2.8, 20 seconds, ISO 6400, plus a series of frames for stacking. By half past five in the morning I was already shooting the sunrise from the other side.\n\nThe downside: crowds. During the day there are hundreds of people, buses and drones near Auronzo. But after seven in the evening only those staying in the huts remain, and then the Dolomites go quiet. One more thing: dinner at the hut is pasta and strudel, tasty, but you'll have to buy water, 4 euros a bottle."
+      },
+      "country": { "code": "IT", "uk": "Італія", "en": "Italy", "es": "Italia" },
+      "region": { "uk": "Венето", "en": "Veneto", "es": "Véneto" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "couple",
+      "tags": ["photography", "hiking", "road-trip", "nature"],
+      "lat": 46.6186,
+      "lng": 12.3047,
+      "photoQuery": "Tre Cime di Lavaredo"
+    },
+    {
+      "key": "s-5-007",
+      "travellerKey": "t-5-02",
+      "category": "Гори",
+      "title": { "uk": "Чорногора: три дні хребтом до Білого слона", "en": "Chornohora: three days along the ridge to the White Elephant" },
+      "article": {
+        "uk": "Чорногірський хребет — найвищий в Україні, і пройти його від Говерли до Попа Івана я мріяла років п’ять. Нас було четверо: я з камерою і троє друзів, які несли більшу частину провіанту в обмін на портрети. Нічним потягом до Ворохти, далі таксі до Заросляка, 600 гривень на всіх, плюс вхід до нацпарку.\n\nПерший день — Говерла, 2061 метр, потім хребтом на Бребенескул. Ідеш полониною: ліворуч Закарпаття, праворуч Прикарпаття, і все в рудому вересневому кольорі. Найкраще світло — після п’ятої вечора, коли тіні від хмар біжать схилами. Знімала телевиком 70–200 стиснуті плани хребтів, що тонуть один в одному, як театральні декорації.\n\nНочували біля озера Бребенескул, найвисокогірнішого в Україні. Вода крижана, але поруч є джерело. О 6:30 туман лежав у долині, а над ним стирчали скелясті вершини. Тут знадобилися штатив і довга витримка, щоб туман став гладким, як молоко: дві секунди, f/11, нейтральний фільтр.\n\nДругий день — Менчул, Дземброня, вивітрені скелі під вершиною і нарешті сам Піп Іван, 2028 метрів, з обсерваторією, яку всі називають Білим слоном. Будівлю 1938 року відновлюють, усередині чергують рятувальники. Звідти — захід сонця над Мармароськими горами. Третій день — спуск до Дземброні, де нас чекав бус.\n\nМінус: вода. На хребті джерел мало, після Бребенескула до самого Попа Івана практично нічого, тож несли по три літри. І погода: у вересні о другій дня може налетіти гроза, а ховатися на хребті ніде. Виходьте рано і стежте за прогнозом.",
+        "en": "The Chornohora ridge is the highest in Ukraine, and I'd dreamed of walking it from Hoverla to Pip Ivan for about five years. There were four of us: me with the camera and three friends who carried most of the food in exchange for portraits. Night train to Vorokhta, then a taxi to Zaroslyak, 600 hryvnias for all of us, plus the national park entry fee.\n\nDay one: Hoverla, 2,061 metres, then along the ridge to Brebeneskul. You walk across the high meadows with Zakarpattia on your left and Prykarpattia on your right, all in rusty September colours. The best light is after five in the evening, when cloud shadows run down the slopes. With the 70-200 telephoto I shot compressed layers of ridges fading into each other like stage scenery.\n\nWe camped by Lake Brebeneskul, the highest lake in Ukraine. The water is icy, but there's a spring nearby. At 6:30 fog lay in the valley with rocky peaks sticking out above it. Here I needed the tripod and a long exposure to make the fog smooth as milk: two seconds, f/11, a neutral density filter.\n\nDay two: Menchul, Dzembronia, weathered rocks below the summit and finally Pip Ivan itself, 2,028 metres, with the observatory everyone calls the White Elephant. The 1938 building is being restored, and rescuers are on duty inside. From there, a sunset over the Marmarosh mountains. Day three was the descent to Dzembronia, where a minibus was waiting for us.\n\nThe downside: water. There are few springs on the ridge, and after Brebeneskul there's practically nothing until Pip Ivan, so we each carried three litres. And the weather: in September a thunderstorm can roll in at two in the afternoon, and there's nowhere to hide on the ridge. Start early and watch the forecast."
+      },
+      "country": { "code": "UA", "uk": "Україна", "en": "Ukraine", "es": "Ucrania" },
+      "region": { "uk": "Івано-Франківська область", "en": "Ivano-Frankivsk Oblast", "es": "Óblast de Ivano-Frankivsk" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 4,
+      "tripType": "friends",
+      "tags": ["hiking", "camping", "photography", "nature"],
+      "lat": 48.0467,
+      "lng": 24.6278,
+      "photoQuery": "Pip Ivan"
+    },
+    {
+      "key": "s-5-008",
+      "travellerKey": "t-5-02",
+      "category": "Європа",
+      "title": { "uk": "Фарерські острови: маяк Каллур на Кальсої", "en": "Faroe Islands: Kallur lighthouse on Kalsoy" },
+      "article": {
+        "uk": "Кадр із маяком Каллур, що стоїть на зеленому гребені над океаном, я бачила тисячу разів у мережі. Але жоден знімок не передає вітру. На Фарери летіла через Копенгаген, рейси щодня. Орендувала маленьку машину на шість днів за 400 євро: дороги тут ідеальні, а тунелі під морем з’єднують більшість островів.\n\nКальсой — довгий вузький острів, на нього можна потрапити тільки поромом із Клаксвіка, 20 хвилин. Ставати в чергу на пором треба за годину, бо машин він бере мало. Далі однією дорогою через чотири тунелі до села Трелланес, де живе кілька десятків людей. Стежка до маяка йде приватною землею, плата за вхід — 200 данських крон, близько 27 євро. Спершу я обурилася, потім зрозуміла: фермерам набридло, що туристи витоптують пасовища.\n\nДо маяка — 40 хвилин травою й багнюкою. Найкраще світло в червні — пізно ввечері, сонце сідає близько одинадцятої. Я була на гребені о 21:30. Класична точка — трохи вище за маяком, на краю. Обережно: праворуч обрив, вітер поривчастий. Штатив тримала руками, знімала 16–35 на 18 мм, f/9, витримка 1/250, щоб трава не розмазувалася. Окремо телевиком — скелі сусіднього острова в серпанку.\n\nФарерська погода — головний персонаж. Двічі я приїжджала на пором, а Кальсой ховався в хмарі, і я розверталася. Лише на третій день небо відкрилося. Ще з вражень: суп із баранини в Торсгавні за 25 євро і сушена баранина скерпікьот, яку я так і не змогла полюбити.\n\nМінус: ціни і погода. Плюс: вівці, водоспади з кожного схилу і відчуття краю світу. Біля маяка є пам’ятний камінь Джеймсу Бонду — тут знімали фінал одного з фільмів. Тільки не відходьте заради кадру ближче до краю.",
+        "en": "I'd seen the shot of Kallur lighthouse on a green ridge above the ocean a thousand times online. But no photo conveys the wind. I flew to the Faroes via Copenhagen, with flights every day. I rented a small car for six days for 400 euros: the roads here are perfect, and undersea tunnels connect most of the islands.\n\nKalsoy is a long narrow island you can reach only by ferry from Klaksvík, 20 minutes. You have to queue for the ferry an hour ahead, because it takes few cars. Then a single road through four tunnels to the village of Trøllanes, home to a few dozen people. The trail to the lighthouse crosses private land, and the entry fee is 200 Danish kroner, about 27 euros. At first I was indignant, then I understood: the farmers got tired of tourists trampling their pastures.\n\nThe walk to the lighthouse is 40 minutes over grass and mud. The best light in June is late in the evening, with sunset around eleven. I was on the ridge at 21:30. The classic spot is a bit above the lighthouse, on the edge. Careful: there's a drop on the right and the wind comes in gusts. I held the tripod with my hands and shot the 16-35 at 18 mm, f/9, 1/250 to keep the grass from blurring. Separately, with the telephoto, the cliffs of the neighbouring island in the haze.\n\nFaroese weather is the main character. Twice I drove to the ferry while Kalsoy was hidden in cloud and turned back. Only on the third day did the sky open. Other impressions: lamb soup in Tórshavn for 25 euros and the dried lamb skerpikjøt, which I never managed to like.\n\nThe downside: prices and weather. The upside: sheep, waterfalls off every slope and a feeling of the edge of the world. Near the lighthouse there's a memorial stone to James Bond, because the finale of one of the films was shot here. Just don't step closer to the edge for the sake of a shot."
+      },
+      "country": { "code": "FO", "uk": "Фарерські острови", "en": "Faroe Islands", "es": "Islas Feroe" },
+      "region": { "uk": "Кальсой", "en": "Kalsoy", "es": "Kalsoy" },
+      "seasons": ["summer"],
+      "budget": "high",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["islands", "photography", "hiking", "road-trip"],
+      "lat": 62.3580,
+      "lng": -6.7960,
+      "photoQuery": "Kallur Lighthouse"
+    },
+    {
+      "key": "s-5-009",
+      "travellerKey": "t-5-03",
+      "category": "Гори",
+      "title": { "uk": "Синевир із дітьми: озеро, ведмеді й банош", "en": "Synevyr with kids: the lake, the bears and banosh" },
+      "article": {
+        "uk": "Синевир ми обрали як першу справжню гірську подорож для дітей: озеро, до якого можна дійти без важкого підйому, ведмеді, ліс і смачна їжа. Їхали з Рівного своєю машиною, близько 500 кілометрів, з ночівлею у Львові. Останні сорок кілометрів від Міжгір’я дорога звивиста, Злату трохи закачало, тож робили дві зупинки.\n\nЖили в садибі в селі Синевирська Поляна, 1400 гривень за ніч за кімнату на чотирьох зі сніданком. Господиня зранку пекла млинці з чорницями, і Марко потім два дні розповідав про них більше, ніж про озеро. До озера від садиби — хвилин п’ятнадцять машиною, квиток до нацпарку для дорослого близько ста гривень, для дітей дешевше.\n\nСаме озеро лежить на висоті 989 метрів, оточене смереками, а посередині — острівець. Стежка навколо — кілька кілометрів, з дерев’яними містками, для шестирічної дитини якраз. Я розповідав легенду про Синь і Вира, кохання пастуха і графської доньки, а Злата питала, чи можна в озері плавати. Не можна: купатися заборонено.\n\nНайбільше дітям сподобався Центр реабілітації бурих ведмедів. Там живуть ведмеді, яких урятували з неволі, з ресторанів і пересувних звіринців. Вольєри великі, лісові, звірі ходять серед дерев. Вхід недорогий, а гроші йдуть на утримання. Марко нарахував дев’ять ведмедів і дав кожному ім’я.\n\nМінус: туристична частина біля озера людна, сувеніри однакові, а в колибу черга. Банош із бринзою і шкварками там був смачний, але чекали ми сорок хвилин. Порада: приїжджайте до озера о восьмій ранку, тоді на березі тільки туман і качки.",
+        "en": "We chose Synevyr as the children's first real mountain trip: a lake you can reach without a hard climb, bears, forest and tasty food. We drove from Rivne in our own car, about 500 kilometres, with a night in Lviv. The last forty kilometres from Mizhhiria are winding, Zlata got a bit carsick, so we made two stops.\n\nWe stayed at a guesthouse in the village of Synevyrska Poliana, 1,400 hryvnias a night for a room for four with breakfast. In the mornings the landlady baked blueberry pancakes, and for two days afterwards Marko talked about them more than about the lake. From the guesthouse to the lake is about fifteen minutes by car, and a national park ticket costs around a hundred hryvnias for adults, less for children.\n\nThe lake itself lies at 989 metres, surrounded by spruces, with a little island in the middle. The trail around it is a couple of kilometres with wooden bridges, just right for a six-year-old. I told the legend of Syn and Vyr, the love of a shepherd and a count's daughter, and Zlata asked whether you can swim in the lake. You can't: swimming is forbidden.\n\nWhat the kids liked most was the Brown Bear Rehabilitation Centre. It's home to bears rescued from captivity, from restaurants and travelling menageries. The enclosures are big and wooded, and the animals walk among the trees. Entry is cheap and the money goes to their upkeep. Marko counted nine bears and gave each a name.\n\nThe downside: the touristy area by the lake is crowded, the souvenirs are all the same and there's a queue at the wooden restaurant. The banosh with brynza and cracklings was delicious, but we waited forty minutes for it. Tip: come to the lake at eight in the morning, when there's nothing on the shore but mist and ducks."
+      },
+      "country": { "code": "UA", "uk": "Україна", "en": "Ukraine", "es": "Ucrania" },
+      "region": { "uk": "Закарпатська область", "en": "Zakarpattia Oblast", "es": "Óblast de Zakarpatia" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 4,
+      "tripType": "family",
+      "tags": ["with-kids", "lakes", "national-parks", "wildlife"],
+      "lat": 48.6172,
+      "lng": 23.6844,
+      "photoQuery": "Synevyr Lake"
+    },
+    {
+      "key": "s-5-010",
+      "travellerKey": "t-5-03",
+      "category": "Гори",
+      "title": { "uk": "Морське Око: польські Татри для всієї родини", "en": "Morskie Oko: the Polish Tatras for the whole family" },
+      "article": {
+        "uk": "Морське Око — найвідоміше озеро польських Татр, і до нього веде асфальтова дорога, тож я вирішив, що це ідеальний маршрут для дітей. Наполовину так і вийшло. Їхали з Рівного через Краків до Закопаного, два дні дороги з ночівлею. Жили в апартаментах у Закопаному, 280 злотих за ніч, тобто близько 65 євро на всіх.\n\nПаркування біля Палениці-Бялчанської треба бронювати онлайн заздалегідь, близько 45 злотих на день. Від парковки до озера — дев’ять кілометрів асфальтом, набір висоти 400 метрів. Можна їхати кінним возом, але ми пішли пішки: черги до возів довгі, і нам із дружиною не подобається, як там працюють коні. Квиток до Татранського національного парку — близько 10 злотих з дорослого, дітям знижка.\n\nДорогою — водоспад Вудогжмоти Міцкевича, де Злата отримала свою першу гірську медаль, тобто шоколадку. Через дві з половиною години перед нами відкрилося озеро: темна вода, гранітні стіни, у жовтні вже сніг на вершинах. На березі стоїть старий притулок, де дають гарячий суп і пироги. Журек за 20 злотих діти з’їли за хвилину.\n\nМарко захотів вище, до Чорного Ставу. Це ще двісті метрів круто вгору кам’яними сходами. Злата з мамою лишилися на березі, а ми із сином за пів години вийшли до другого озера, ще суворішого, під стіною гори Риси. Стояли мовчки. Таке не часто трапляється з дев’ятирічним хлопцем.\n\nМінус: натовп і відстань. Вісімнадцять кілометрів туди й назад для шестирічної — забагато, назад вона частину шляху їхала в мене на плечах. Порада: виходьте до восьмої ранку, беріть термос, запасні шкарпетки і щось солодке для мотивації.",
+        "en": "Morskie Oko is the most famous lake in the Polish Tatras, and an asphalt road leads to it, so I decided it was the ideal route for children. Half of that turned out true. We drove from Rivne via Kraków to Zakopane, two days on the road with an overnight stop. We rented a flat in Zakopane for 280 zloty a night, about 65 euros for all of us.\n\nParking at Palenica Białczańska has to be booked online in advance, about 45 zloty a day. From the car park to the lake it's nine kilometres of asphalt with 400 metres of height gain. You can ride a horse cart, but we walked: the queues for the carts are long, and my wife and I don't like how hard the horses work there. A Tatra National Park ticket is about 10 zloty for adults, with a discount for kids.\n\nOn the way there's the Wodogrzmoty Mickiewicza waterfall, where Zlata received her first mountain medal, a chocolate bar. After two and a half hours the lake opened up in front of us: dark water, granite walls and, in October, snow already on the peaks. On the shore stands an old mountain hut serving hot soup and pies. The kids finished their żurek, 20 zloty, in a minute.\n\nMarko wanted to go higher, to Czarny Staw. That's another two hundred metres steeply up stone steps. Zlata stayed on the shore with her mum, and in half an hour my son and I reached the second lake, even sterner, beneath the wall of Rysy. We stood in silence. That doesn't often happen with a nine-year-old boy.\n\nThe downside: crowds and distance. Eighteen kilometres there and back is too much for a six-year-old, and on the way back she rode part of it on my shoulders. Tip: set off before eight in the morning and bring a thermos, spare socks and something sweet for motivation."
+      },
+      "country": { "code": "PL", "uk": "Польща", "en": "Poland", "es": "Polonia" },
+      "region": { "uk": "Малопольське воєводство", "en": "Lesser Poland", "es": "Pequeña Polonia" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "family",
+      "tags": ["with-kids", "hiking", "lakes", "national-parks"],
+      "lat": 49.1971,
+      "lng": 20.0702,
+      "photoQuery": "Morskie Oko"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+/* /auth/login and /auth/register: original tabs and headings; the form is replaced by the
+   editorial notice because publishing goes through the editors. */
+.auth { padding: 64px 0 87px; }
+.auth__container { max-width: 375px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+@media only screen and (min-width: 768px) { .auth__container { max-width: 768px; padding-left: 62px; padding-right: 62px; } }
+@media only screen and (min-width: 1440px) { .auth__container { max-width: 1440px; padding-left: 398px; padding-right: 398px; } }
+.auth__tabs { width: 100%; margin-bottom: 32px; display: flex; }
+.auth__tab { color: #000; border-bottom: 1px solid #0000; flex: 1; justify-content: center; align-items: center; padding: 12px 16px; font-family: var(--font-family); font-size: 16px; font-weight: 400; line-height: 1.5; display: flex; }
+@media only screen and (min-width: 1440px) { .auth__tab { font-size: 18px; } }
+.auth__tab--active { border-bottom: 1px solid #00000026; }
+.auth__title { letter-spacing: -.01em; text-align: center; color: #000; margin-bottom: 24px; font-family: var(--font-inter), sans-serif; font-size: 28px; font-weight: 700; line-height: 1.2; }
+@media only screen and (min-width: 768px) { .auth__title { font-size: 44px; } }
+@media only screen and (min-width: 1440px) { .auth__title { font-size: 52px; } }
+.auth__subtitle { text-align: center; color: #000; margin-bottom: 32px; font-family: var(--font-family); font-size: 16px; font-weight: 400; line-height: 1.5; }
+@media only screen and (min-width: 1440px) { .auth__subtitle { font-size: 20px; } }
+
+.notice { background-color: var(--color-scheme-2-foreground); border-radius: 24px; padding: 24px 20px; display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 768px) { .notice { padding: 40px 32px; } }
+.notice__title { font-family: var(--second-family); letter-spacing: -.01em; font-size: 18px; line-height: 1.4; }
+@media (min-width: 1440px) { .notice__title { font-size: 26px; } }
+.notice__text { font-family: var(--font-family); font-size: 16px; line-height: 1.5; }
+@media (min-width: 1440px) { .notice__text { font-size: 18px; } }
+.notice__list { display: flex; flex-direction: column; gap: 8px; padding-left: 20px; list-style: disc; font-size: 16px; line-height: 1.5; }
+.notice__actions { display: flex; flex-direction: column; gap: 12px; }
+@media (min-width: 768px) { .notice__actions { flex-direction: row; } }
+
+/* Simple centered pages: 404/500, create-story notice, saved. */
+.message-page { flex: 1; display: flex; align-items: center; justify-content: center; padding: 64px 20px 80px; background: var(--color-royal-blue-lightest); }
+.message-page__box { max-width: 640px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.message-page__code { font-family: var(--second-family); font-size: 96px; line-height: 1; letter-spacing: -.02em; color: var(--color-royal-blue); }
+@media (min-width: 768px) { .message-page__code { font-size: 160px; } }
+.message-page__title { font-family: var(--second-family); font-size: 28px; line-height: 1.2; letter-spacing: -.01em; }
+@media (min-width: 768px) { .message-page__title { font-size: 44px; } }
+.message-page__text { font-size: 16px; line-height: 1.5; }
+@media (min-width: 1440px) { .message-page__text { font-size: 20px; } }
+.message-page__actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }

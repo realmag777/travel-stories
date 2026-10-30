@@ -1,0 +1,32 @@
+{# Story card. `s` is a view-model from content.storyCard(); `eager` for above-the-fold images. #}
+<article class="story-card{% if fluid %} story-card--fluid{% endif %}" data-story-card="{{ s.id }}">
+  <img class="story-card__image" src="{{ s.cover.src }}"{% if s.cover.srcset %} srcset="{{ s.cover.srcset }}" sizes="(min-width: 1440px) 421px, (min-width: 768px) 340px, 335px"{% endif %}
+    alt="{{ t('card.coverAlt', { title: s.title }) }}" width="335" height="223"{% if eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
+  <div class="story-card__info">
+    <header class="story-card__main">
+      <p class="story-card__category">{{ s.category or t('card.noCategory') }}</p>
+      <h3 class="story-card__title">{{ s.title }}</h3>
+      <p class="story-card__description">{{ s.excerpt }}</p>
+    </header>
+    <footer class="story-card__details">
+      <img class="story-card__author-image" src="{{ s.owner.avatar.src }}" alt="{{ t('card.authorAlt', { name: s.owner.name }) }}" width="48" height="48" loading="lazy" decoding="async">
+      <div>
+        <a class="story-card__author-name" href="{{ url('/travellers/' + s.owner.id) }}">{{ s.owner.name }}</a>
+        <div class="story-card__line">
+          <time class="story-card__date" datetime="{{ s.date }}">{{ s.dateLabel }}</time>
+          <span class="story-card__dot" aria-hidden="true"></span>
+          <span class="story-card__favorite" title="{{ t('card.saves') }}">
+            <span class="story-card__favorite-count" data-fav-count="{{ s.id }}">{{ s.favoriteCount }}</span>
+            <svg width="16" height="16" aria-hidden="true" focusable="false"><use href="/sprite.svg#icon-bookmark"></use></svg>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <div class="story-card__actions">
+      <a class="story-card__button story-card__button--wide" href="{{ url('/stories/' + s.id) }}">{{ t('card.view') }}</a>
+      <button type="button" class="story-card__button story-card__button--square" data-save="{{ s.id }}" aria-pressed="false" aria-label="{{ t('card.save') }}" data-label-save="{{ t('card.save') }}" data-label-saved="{{ t('card.unsave') }}">
+        <svg width="24" height="24" aria-hidden="true" focusable="false"><use href="/sprite.svg#icon-bookmark"></use></svg>
+      </button>
+    </div>
+  </div>
+</article>

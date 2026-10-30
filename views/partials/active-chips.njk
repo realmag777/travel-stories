@@ -1,0 +1,7 @@
+{% for c in chips %}
+<a class="chip{% if c.ai %} chip--ai{% endif %}" href="{{ c.href }}" data-facet="{{ c.facet }}" data-value="{{ c.value }}" rel="nofollow" aria-label="{{ t('filters.removeChip', { label: c.label }) }}">
+  {% if c.ai %}<svg class="chip__x" aria-hidden="true"><use href="/sprite.svg#icon-sparkle"></use></svg>{% endif %}{{ c.label }}
+  <svg class="chip__x" aria-hidden="true"><use href="/sprite.svg#icon-close"></use></svg>
+</a>
+{% endfor %}
+{% if chips.length > 1 %}<a class="chip chip--clear" href="{{ url('/stories') }}" data-reset-all>{{ t('filters.clearAll') }}</a>{% endif %}

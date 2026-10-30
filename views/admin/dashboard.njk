@@ -1,0 +1,74 @@
+{% extends "admin/layout.njk" %}
+{% block title %}Дашборд{% endblock %}
+{% block content %}
+<header class="adm-head">
+  <div>
+    <h1 class="adm-head__title">Дашборд</h1>
+    <p class="adm-head__sub">Власна статистика сайту за 30 днів — без зовнішніх сервісів.</p>
+  </div>
+  <a class="action" href="/admin/stories/new">+ Нова історія</a>
+</header>
+
+<section class="kpis" aria-label="Ключові показники">
+  {% set k = kpi %}
+  {% for item in [['Перегляди (30 днів)', k.views30, ''], ['Відвідувачі (30 днів)', k.visitors30, ''], ['Історій', k.stories, k.demo_stories + ' демо · ' + k.hidden_stories + ' приховано'], ['Мандрівників', k.travellers, k.guides + ' гідів'], ['Нові бронювання', k.new_bookings, ''], ['Збережень усього', k.saves, '']] %}
+  <div class="kpi"><span class="kpi__label">{{ item[0] }}</span><span class="kpi__value">{{ item[1] | number }}</span>{% if item[2] %}<span class="kpi__note">{{ item[2] }}</span>{% endif %}</div>
+  {% endfor %}
+</section>
+
+<section class="adm-card">
+  <div class="adm-card__head"><h2 class="adm-card__title">Перегляди сторінок по днях</h2>
+    <span class="legend"><i class="legend__dot legend__dot--views"></i>перегляди <i class="legend__dot legend__dot--visitors"></i>унікальні</span></div>
+  {% set max = 1 %}{% for d in viewsDaily %}{% if d.views > max %}{% set max = d.views %}{% endif %}{% endfor %}
+  <div class="chart" role="img" aria-label="Графік переглядів за 30 днів">
+    {% for d in viewsDaily %}
+    <div class="chart__col" title="{{ d.day }}: {{ d.views }} переглядів, {{ d.visitors }} унікальних">
+      <span class="chart__bar" style="height: {{ (d.views / max * 100) | round(1) }}%"></span>
+      <span class="chart__bar chart__bar--alt" style="height: {{ (d.visitors / max * 100) | round(1) }}%"></span>
+      {% if loop.index0 % 5 == 0 or loop.last %}<span class="chart__x">{{ d.day | shortDay }}</span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% if kpi.views30 == 0 %}<p class="adm-empty">Ще немає переглядів: лічильник рахує реальні візити (боти й автотести не враховуються).</p>{% endif %}
+</section>
+
+<div class="adm-grid">
+  <section class="adm-card">
+    <div class="adm-card__head"><h2 class="adm-card__title">Топ історій</h2><a href="/admin/stories?sort=views">усі</a></div>
+    <table class="tbl tbl--compact"><thead><tr><th>Історія</th><th class="num">30 дн.</th><th class="num">Усього</th><th class="num">★</th></tr></thead><tbody>
+      {% for s in topStories %}<tr><td><a href="/admin/stories/{{ s.id }}">{{ s.title }}</a></td><td class="num">{{ s.views30 }}</td><td class="num">{{ s.views }}</td><td class="num">{{ s.favorite_count }}</td></tr>{% endfor %}
+    </tbody></table>
+  </section>
+  <section class="adm-card">
+    <div class="adm-card__head"><h2 class="adm-card__title">Нові бронювання</h2><a href="/admin/bookings?status=new">усі</a></div>
+    {% if newBookings.length %}
+    <ul class="adm-list">
+      {% for b in newBookings %}
+      <li class="adm-list__item"><div><b>{{ b.name }}</b> → {{ b.traveller_name }}<br><span class="muted">{{ b.service_title }} · {{ b.starts_at | kyiv }}</span></div>
+        <div class="adm-list__actions">
+          <button class="pill pill--ok" data-booking-status="{{ b.id }}" data-status="confirmed">Підтвердити</button>
+          <button class="pill pill--danger" data-booking-status="{{ b.id }}" data-status="cancelled">Скасувати</button>
+        </div></li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="adm-empty">Нових бронювань немає.</p>{% endif %}
+  </section>
+  <section class="adm-card">
+    <div class="adm-card__head"><h2 class="adm-card__title">Популярні пошукові запити</h2></div>
+    {% if searches.length %}
+    <table class="tbl tbl--compact"><thead><tr><th>Запит</th><th class="num">Разів</th><th class="num">Сер. результатів</th></tr></thead><tbody>
+      {% for s in searches %}<tr><td><a href="/stories/search?q={{ s.q | urlencode }}" target="_blank">{{ s.q }}</a></td><td class="num">{{ s.n }}</td><td class="num">{{ s.avg_results }}</td></tr>{% endfor %}
+    </tbody></table>
+    {% else %}<p class="adm-empty">Запитів поки немає.</p>{% endif %}
+  </section>
+  <section class="adm-card">
+    <div class="adm-card__head"><h2 class="adm-card__title">Популярні фільтри</h2></div>
+    {% if filters.length %}
+    {% set fmax = filters[0].n %}
+    <ul class="bars">{% for f in filters %}<li class="bars__row"><span class="bars__label">{{ f.key }}</span><span class="bars__track"><span class="bars__fill" style="width: {{ (f.n / fmax * 100) | round }}%"></span></span><span class="bars__n">{{ f.n }}</span></li>{% endfor %}</ul>
+    {% else %}<p class="adm-empty">Фільтрами ще не користувались.</p>{% endif %}
+    {% if sources.length %}<h3 class="adm-card__sub">Джерела переходів</h3>
+    <ul class="bars">{% for s in sources %}<li class="bars__row"><span class="bars__label">{{ s.referrer_host }}</span><span class="bars__n">{{ s.n }}</span></li>{% endfor %}</ul>{% endif %}
+  </section>
+</div>
+{% endblock %}

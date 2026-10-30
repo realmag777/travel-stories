@@ -1,0 +1,19 @@
+{# Natural-language search. Works without JS: the form submits to /stories/search, which
+   parses the query and redirects to the shareable filter URL. #}
+<div class="nl-search" data-nl-search data-extra>
+  <form class="nl-search__form" action="{{ url('/stories/search') }}" method="get" role="search" data-nl-form>
+    <div class="nl-search__field">
+      <svg class="nl-search__icon" aria-hidden="true"><use href="/sprite.svg#icon-search"></use></svg>
+      <label class="visually-hidden" for="nl-q">{{ t('search.label') }}</label>
+      <input class="nl-search__input" id="nl-q" name="q" type="search" value="{{ state.q }}" maxlength="200" autocomplete="off"
+        placeholder="{{ t('search.placeholder') }}" data-nl-input>
+      <button type="button" class="nl-search__clear" data-nl-clear aria-label="{{ t('search.clear') }}"{% if not state.q %} hidden{% endif %}>
+        <svg width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-close"></use></svg>
+      </button>
+    </div>
+    <button class="action nl-search__submit" type="submit">{{ t('search.submit') }}</button>
+  </form>
+  <p class="nl-search__hint">{{ t('search.examplesLabel') }}
+    {% for ex in searchExamples %}<button type="button" data-nl-example>{{ ex }}</button>{% if not loop.last %}, {% endif %}{% endfor %}
+  </p>
+</div>

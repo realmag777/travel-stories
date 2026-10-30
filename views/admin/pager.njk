@@ -1,0 +1,7 @@
+{% if pages > 1 %}
+<nav class="pager" aria-label="Сторінки">
+  {% if page > 1 %}<a class="pager__link" href="?{{ query }}&page={{ page - 1 }}" rel="prev">← Назад</a>{% endif %}
+  <span class="pager__info">Сторінка {{ page }} з {{ pages }}</span>
+  {% if page < pages %}<a class="pager__link" href="?{{ query }}&page={{ page + 1 }}" rel="next">Далі →</a>{% endif %}
+</nav>
+{% endif %}

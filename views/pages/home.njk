@@ -1,0 +1,85 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title" id="hero-title">{{ t('home.heroTitle1') }}<br class="hero__br-tablet"> {{ t('home.heroTitle2') }}<br class="hero__br-desktop"> {{ t('home.heroTitle3') }}</h1>
+      <p class="hero__text">{{ t('home.heroText1') }}<br class="hero__br-mobile"> {{ t('home.heroText2') }}</p>
+      <a class="hero__join" href="{{ url('/auth/register') }}">{{ t('home.join') }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about__container">
+    <div class="about__header">
+      <h2 class="about__title">{{ t('home.aboutTitle') }}</h2>
+      <p class="about__description">{{ t('home.aboutText') }}</p>
+    </div>
+    <div class="about__features">
+      {% for f in [['icon-wand-stars', 'mission'], ['icon-luggage', 'authentic'], ['icon-communication', 'community']] %}
+      <div class="about__feature">
+        <div class="about__feature-heading">
+          <svg class="about__icon" aria-hidden="true"><use href="/sprite.svg#{{ f[0] }}"></use></svg>
+          <h3 class="about__feature-title">{{ t('home.' + f[1] + 'Title') }}</h3>
+        </div>
+        <p class="about__feature-text">{{ t('home.' + f[1] + 'Text') }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="popular">
+  <div class="popular__container">
+    <h2 class="popular__title">{{ t('home.popular') }}</h2>
+    <ul class="popular__list">
+      {% for s in popular %}
+      <li class="popular__item">{% include "partials/story-card.njk" %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <a class="popular__link" href="{{ url('/stories') }}?sort=popular">{{ t('home.viewAll') }}</a>
+</section>
+
+<section class="travellers-block">
+  <div class="travellers-block__container">
+    <div class="travellers-block__header">
+      <h2 class="travellers-block__title">{{ t('home.travellers') }}</h2>
+    </div>
+    <div class="travellers-block__content">
+      <ul class="travellers-block__list">
+        {% for u in travellers %}
+        <li class="travellers-block__card">
+          <div class="travellers-block__photo">
+            <img class="travellers-block__avatar" src="{{ u.avatar.large }}" alt="{{ u.name }}" width="112" height="112" loading="lazy" decoding="async">
+          </div>
+          <div class="travellers-block__body">
+            <h3 class="travellers-block__name">{{ u.name }}</h3>
+            <p class="travellers-block__text">{{ u.description }}</p>
+            <a class="travellers-block__button" href="{{ url('/travellers/' + u.id) }}">{{ t('travellers.viewProfile') }}</a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="travellers-block__more">
+      <a class="travellers-block__view-all" href="{{ url('/travellers') }}">{{ t('home.viewAllTravellers') }}</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="join">
+    <div class="join__card">
+      <img class="join__bg" src="/build/join-704.webp" srcset="/build/join-704.webp 704w, /build/join-1312.webp 1312w, /build/join-2624.webp 2624w" sizes="(min-width: 1440px) 1312px, (min-width: 768px) 704px, 335px"
+        alt="{{ t('home.joinAlt') }}" width="1312" height="436" loading="lazy" decoding="async">
+      <div class="join__content">
+        <h2 class="join__title">{{ t('home.joinTitle') }}</h2>
+        <p class="join__text">{{ t('home.joinText') }}</p>
+        <a class="join__button" href="{{ url('/auth/register') }}">{{ t('home.joinButton') }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

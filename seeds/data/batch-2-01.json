@@ -1,0 +1,318 @@
+{
+  "travellers": [
+    {
+      "key": "t-2-01",
+      "gender": "female",
+      "name": { "uk": "Олена Коваленко", "en": "Olena Kovalenko" },
+      "description": { "uk": "Привіт! Я Олена, кондитерка з Києва. Подорожую шлунком: спершу знаходжу ринок і вуличні кухні, а вже потім музеї. Записую рецепти, ціни на страви й адреси лотків, куди хочеться повернутися.", "en": "Hi! I'm Olena, a pastry chef from Kyiv. I travel with my stomach: first I find the market and the street kitchens, and only then the museums. I write down recipes, dish prices and the addresses of stalls I want to return to." },
+      "style": "Foodie: sensory taste and texture details, dish names and exact prices, warm and chatty, ends with what she tried to cook at home."
+    },
+    {
+      "key": "t-2-02",
+      "gender": "male",
+      "name": { "uk": "Андрій Бондар", "en": "Andrii Bondar" },
+      "description": { "uk": "Привіт! Я Андрій, пейзажний фотограф із Дніпра. Їжджу туди, де світло буває особливим, і чесно розповідаю, які об'єктиви, налаштування та години справді спрацювали, а які кадри виявилися листівковими.", "en": "Hi! I'm Andrii, a landscape photographer from Dnipro. I go where the light gets special and honestly tell you which lenses, settings and hours really worked, and which shots turned out to be postcard clichés." },
+      "style": "Photographer: technical notes (focal lengths, shutter, ISO, sunrise times), precise and slightly perfectionist, counts frames kept for the portfolio."
+    },
+    {
+      "key": "t-2-03",
+      "gender": "female",
+      "name": { "uk": "Ірина Шевчук", "en": "Iryna Shevchuk" },
+      "description": { "uk": "Привіт! Я Ірина зі Львова, мама Мирослави та Остапа. Доводжу, що з дітьми можна їхати далеко: просто треба більше перекусів, менше переїздів і план Б на кожен день. Пишу практичні поради для таких самих батьків.", "en": "Hi! I'm Iryna from Lviv, mum to Myroslava and Ostap. I'm proving you can go far with kids: you just need more snacks, fewer transfers and a plan B for every day. I write practical tips for parents like me." },
+      "style": "Family mum: practical, logistics for kids (ages, naps, snacks, distances), gentle humour about the children, always a tip for parents."
+    },
+    {
+      "key": "t-2-04",
+      "gender": "male",
+      "name": { "uk": "Тарас Мороз", "en": "Taras Moroz" },
+      "description": { "uk": "Привіт! Я Тарас із Харкова. Рюкзак на сорок літрів, хостели, нічні автобуси й постійна самоіронія. Рахую кожну купюру, гублю зарядки й чесно пишу, де мене обдурили, а де пощастило.", "en": "Hi! I'm Taras from Kharkiv. A forty-litre backpack, hostels, night buses and constant self-irony. I count every banknote, lose chargers and honestly write about where I got ripped off and where I got lucky." },
+      "style": "Ironic backpacker: short punchy sentences, self-deprecating jokes, very low budget figures, debunks hype."
+    },
+    {
+      "key": "t-2-05",
+      "gender": "female",
+      "name": { "uk": "Марта Лисенко", "en": "Marta Lysenko" },
+      "description": { "uk": "Привіт! Я Марта, студентка-сходознавиця, вчу корейську та японську. Подорожую на стипендію й підробітки, тож знаю, як жити в мегаполісах Азії за копійки й не пропустити найцікавішого.", "en": "Hi! I'm Marta, an Oriental studies student learning Korean and Japanese. I travel on a scholarship and part-time jobs, so I know how to live in Asian megacities on pennies and still not miss the best bits." },
+      "style": "Enthusiastic student: lively, lots of local words she is learning, budget breakdowns, convenience-store food, pop culture references."
+    },
+    {
+      "key": "t-2-06",
+      "gender": "male",
+      "name": { "uk": "Віктор Гнатюк", "en": "Viktor Hnatiuk" },
+      "description": { "uk": "Привіт! Я Віктор, учитель історії на пенсії з Вінниці. Сорок років розповідав школярам про давні цивілізації, а тепер разом із дружиною Галиною їду подивитися на них власними очима.", "en": "Hi! I'm Viktor, a retired history teacher from Vinnytsia. For forty years I told schoolchildren about ancient civilisations, and now my wife Halyna and I go to see them with our own eyes." },
+      "style": "Retired history teacher: measured, dates and dynasties, explains context like a lesson, polite, mentions wife Halyna, comfortable pace."
+    },
+    {
+      "key": "t-2-07",
+      "gender": "female",
+      "name": { "uk": "Софія Ткаченко", "en": "Sofiia Tkachenko" },
+      "description": { "uk": "Привіт! Я Софія з Одеси. Ми з чоловіком Максимом подорожуємо повільно: оселяємося на тижні, знайомимося з сусідами, ходимо на той самий ринок і пишемо про місця, коли вони вже трохи стали нашими.", "en": "Hi! I'm Sofiia from Odesa. My husband Maksym and I travel slowly: we settle in for weeks, get to know the neighbours, go to the same market and write about places once they have become a little bit ours." },
+      "style": "Slow-travel couple: unhurried, reflective, daily routines and small rituals, uses 'we', notices people more than sights."
+    },
+    {
+      "key": "t-2-08",
+      "gender": "male",
+      "name": { "uk": "Дмитро Савчук", "en": "Dmytro Savchuk" },
+      "description": { "uk": "Привіт! Я Дмитро з Івано-Франківська. Гори, перевали, висота. Пишу коротко й по суті: маршрут, акліматизація, спорядження, ціни в гірських хатинках. Якщо хочете романтики, вона буде між рядками.", "en": "Hi! I'm Dmytro from Ivano-Frankivsk. Mountains, passes, altitude. I write short and to the point: route, acclimatisation, gear, prices in mountain huts. If you want romance, it's between the lines." },
+      "style": "Terse climber: compact sentences, altitudes in metres, day-by-day route, gear and permits, dry understatement."
+    },
+    {
+      "key": "t-2-09",
+      "gender": "female",
+      "name": { "uk": "Наталія Поліщук", "en": "Nataliia Polishchuk" },
+      "description": { "uk": "Привіт! Я Наталія, архітекторка з Києва. У кожному місті дивлюся вгору: на куполи, балки, фасади й те, як будівлі працюють зі світлом. Розповідаю, чому старі майстри будували саме так.", "en": "Hi! I'm Nataliia, an architect from Kyiv. In every city I look up: at domes, beams, facades and the way buildings work with light. I explain why the old masters built exactly the way they did." },
+      "style": "Architect: notes on structure, materials, proportions and light, names of builders and dates, thoughtful and precise."
+    },
+    {
+      "key": "t-2-10",
+      "gender": "male",
+      "name": { "uk": "Юрій Кравчук", "en": "Yurii Kravchuk" },
+      "description": { "uk": "Привіт! Я Юрій із Полтави. Подорожуємо всією родиною: дружина Оксана, син Марк і донька Віра. Я відповідаю за маршрут і квитки, тому пишу спокійно, детально й з думкою про те, як усім чотирьом було добре.", "en": "Hi! I'm Yurii from Poltava. We travel as a whole family: my wife Oksana, our son Mark and our daughter Vira. I'm in charge of routes and tickets, so I write calmly, in detail, and thinking about how all four of us got on." },
+      "style": "Calm family dad: methodical logistics, bookings and timings, kids' reactions, reassuring tone, small dad jokes."
+    },
+    {
+      "key": "t-2-11",
+      "gender": "male",
+      "name": { "uk": "Люка Моро", "en": "Lucas Moreau" },
+      "description": { "uk": "Привіт! Я Люка, кухар із Ліона, з 2015 року живу в Києві. Українська стала моєю другою мовою, а борщ — другою батьківщиною на тарілці. Подорожую Азією, щоб вчитися в місцевих кухарів і ринкових бабусь.", "en": "Hi! I'm Lucas, a chef from Lyon who has lived in Kyiv since 2015. Ukrainian became my second language, and borshch my second homeland on a plate. I travel around Asia to learn from local cooks and market grannies." },
+      "style": "French chef living in Kyiv: compares with French and Ukrainian food, cooking techniques, playful outsider remarks, travels with partner Olha."
+    },
+    {
+      "key": "t-2-12",
+      "gender": "female",
+      "name": { "uk": "Ганна Олійник", "en": "Hanna Oliinyk" },
+      "description": { "uk": "Привіт! Я Ганна з Миколаєва, інструкторка з дайвінгу. Під водою мені спокійніше, ніж на суші. Пишу про течії, видимість, мант і корали, а також про те, як пірнати відповідально й не шкодити рифам.", "en": "Hi! I'm Hanna from Mykolaiv, a diving instructor. I feel calmer underwater than on land. I write about currents, visibility, mantas and corals, and about how to dive responsibly without harming the reefs." },
+      "style": "Dive instructor: marine life names, depth, visibility and currents, safety advice, eco-conscious, dives with husband Ihor or her dive club."
+    },
+    {
+      "key": "t-2-13",
+      "gender": "female",
+      "name": { "uk": "Емма Кларк", "en": "Emma Clarke" },
+      "description": { "uk": "Привіт! Я Емма, англійка, викладаю англійську у Львові вже вісім років. Моє хобі — птахи: з біноклем і блокнотом я об'їздила пів Азії. Пишу українською, яку дуже люблю, тож пробачте мені зайві коми.", "en": "Hi! I'm Emma, an Englishwoman who has been teaching English in Lviv for eight years. My hobby is birds: with binoculars and a notebook I've travelled half of Asia. I write in Ukrainian, which I love dearly, so forgive me the odd extra comma." },
+      "style": "British birdwatcher living in Lviv: understated humour, species lists, patient early mornings, polite, compares with English countryside."
+    },
+    {
+      "key": "t-2-14",
+      "gender": "male",
+      "name": { "uk": "Богдан Мельничук", "en": "Bohdan Melnychuk" },
+      "description": { "uk": "Привіт! Я Богдан із Чернівців. Подорожую тільки компанією: четверо-п'ятеро друзів, орендована машина, намети й вогнище. Люблю дороги, де закінчується асфальт, і вечори, коли всі розповідають історії.", "en": "Hi! I'm Bohdan from Chernivtsi. I only travel with a crew: four or five friends, a rental car, tents and a campfire. I love roads where the asphalt ends and evenings when everyone tells stories." },
+      "style": "Jovial friends-trip organiser: 'we' and friends' names, road conditions, camping, shared costs split per person, campfire anecdotes."
+    },
+    {
+      "key": "t-2-15",
+      "gender": "male",
+      "name": { "uk": "Олег Захарченко", "en": "Oleh Zakharchenko" },
+      "description": { "uk": "Привіт! Я Олег, розробник, працюю віддалено. Кілька місяців на рік живу там, де є стабільний інтернет і цікаво після робочого дня. Оцінюю міста за швидкістю вайфаю, кавою та тим, куди можна втекти на вихідні.", "en": "Hi! I'm Oleh, a software developer working remotely. For a few months a year I live wherever there's stable internet and something interesting after work. I rate cities by Wi-Fi speed, coffee and where you can escape to at weekends." },
+      "style": "Remote developer: dry humour, Wi-Fi speeds and coworking prices, work-life balance, weekend escapes, matter-of-fact."
+    },
+    {
+      "key": "t-2-16",
+      "gender": "female",
+      "name": { "uk": "Леся Романюк", "en": "Lesia Romaniuk" },
+      "description": { "uk": "Привіт! Я Леся з Ужгорода. Виросла в Карпатах і тепер збираю вершини та гірські озера по всьому світу. Ранні підйоми, дешеві ночівлі, термос із чаєм і неймовірна радість, коли нарешті бачиш хмари під ногами.", "en": "Hi! I'm Lesia from Uzhhorod. I grew up in the Carpathians and now I collect peaks and mountain lakes all over the world. Early starts, cheap overnights, a thermos of tea and incredible joy when you finally see the clouds beneath your feet." },
+      "style": "Energetic hiker: exclamations, early alarm times, compares with the Carpathians, budget overnights, emotional summit moments."
+    }
+  ],
+  "stories": [
+    {
+      "key": "s-2-001",
+      "travellerKey": "t-2-01",
+      "category": "Азія",
+      "title": { "uk": "Бангкок на смак: вулична їжа від світанку до ночі", "en": "Bangkok by taste: street food from dawn till midnight" },
+      "article": {
+        "uk": "До Бангкока я летіла з однією метою — їсти. Квиток із Варшави через Дубай коштував близько 520 євро в обидва боки, а житло я взяла в старому районі Банглампху, за 25 євро на ніч, щоб до вуличних кухонь було кілька кроків. Першого ж ранку зрозуміла: сніданок тут починається о шостій, коли ченці ще йдуть по милостиню, а на розі вже шкварчить вок.\n\nНайкраще, що я з'їла за тиждень, — пад кра пао зі святим базиліком і смаженим яйцем за 60 батів, тобто трохи більше як півтора євро. Яйце тут смажать у глибокій олії, краї хрусткі, як мереживо, а жовток лишається рідким. На ринку Ор Тор Кор я вперше спробувала справжнє манго з клейким рисом: рис теплий, просочений кокосовим молоком із дрібкою солі, і саме ця сіль робить усю магію. Коштує задоволення 120 батів, дорожче, ніж деінде, бо ринок вважають найчистішим у місті.\n\nВечорами я ходила в Чайнатаун на вулицю Яоварат. Після заходу сонця вона перетворюється на одну велику кухню: черги до лотка з локшиною у свинячому бульйоні, крабовий омлет, смажені каштани, свіжий сік із цукрової тростини. Порада: беріть маленькі порції в різних місцях, бо шлунок не гумовий, а спокус десятки. Воду пийте тільки з пляшок, а лід у кав'ярнях безпечний, він фабричний, із дірочкою посередині.\n\nЧесний мінус — спека й задуха. Навіть у грудні опівдні було тридцять два градуси, і я ховалася в торгових центрах із кондиціонерами, де, до речі, теж чудові фудкорти. Ще одна дрібниця: гостроту тут розуміють інакше. «Трохи гостро» для тайця означає два-три стручки чилі, а для мене це був справжній вогонь. Кажіть «маі пхет», тобто без гостроти, і навіть тоді будьте напоготові.\n\nЗа шість днів я витратила на їжу менше ніж сто євро, а враження зібрала на цілий зошит рецептів. Удома вже двічі пробувала відтворити пад кра пао, і щоразу бракує того самого запаху вулиці.",
+        "en": "I flew to Bangkok with one goal: to eat. A return ticket from Warsaw via Dubai cost about 520 euros, and I stayed in the old Banglamphu district for 25 euros a night so the street kitchens were just a few steps away. On the very first morning I realised that breakfast here starts at six, when the monks are still walking their alms round and a wok is already sizzling on the corner.\n\nThe best thing I ate all week was pad kra pao with holy basil and a fried egg for 60 baht, a little over one and a half euros. They deep-fry the egg here, so the edges are crisp like lace while the yolk stays runny. At Or Tor Kor market I tried real mango sticky rice for the first time: the rice is warm, soaked in coconut milk with a pinch of salt, and that salt is what makes the magic. It costs 120 baht, more than elsewhere, because the market is considered the cleanest in the city.\n\nIn the evenings I went to Chinatown, to Yaowarat Road. After sunset it turns into one huge kitchen: queues for noodles in pork broth, crab omelette, roasted chestnuts, fresh sugarcane juice. My tip: take small portions in different places, because your stomach is not made of rubber and there are dozens of temptations. Drink only bottled water, but the ice in cafes is safe, it's factory-made with a little hole in the middle.\n\nThe honest downside is the heat and humidity. Even in December it was thirty-two degrees at noon, and I hid in air-conditioned shopping malls, which, by the way, have excellent food courts too. Another small thing: spiciness is understood differently here. A little spicy for a Thai means two or three chillies, and for me that was pure fire. Say mai phet, meaning not spicy, and even then be prepared.\n\nIn six days I spent less than a hundred euros on food and collected enough impressions for a whole notebook of recipes. At home I've tried to recreate pad kra pao twice already, and each time that same smell of the street is missing."
+      },
+      "country": { "code": "TH", "uk": "Таїланд", "en": "Thailand", "es": "Tailandia" },
+      "region": { "uk": "Бангкок", "en": "Bangkok", "es": "Bangkok" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["food", "city-break", "markets", "nightlife"],
+      "lat": 13.7563,
+      "lng": 100.5018,
+      "photoQuery": "Wat Arun"
+    },
+    {
+      "key": "s-2-002",
+      "travellerKey": "t-2-02",
+      "category": "Азія",
+      "title": { "uk": "В'єтнам: світанок над затокою Халонг", "en": "Vietnam: sunrise over Ha Long Bay" },
+      "article": {
+        "uk": "Халонг я знімав у жовтні, коли сезон дощів уже минув, а туман ще тримається зранку. До Ханоя прилетів через Стамбул, далі шатл-автобусом до пристані Туан Чау, приблизно три з половиною години дороги. Взяв круїз на дві ночі за 210 євро: невелике судно на дванадцять кают, яке ходить у затоку Лан Ха, де менше туристичних кораблів.\n\nТехнічна частина для своїх. Брав дві камери: ширококутник 16–35 і телевик 70–200. Для Халонгу саме телевик виявився головним: він стискає плани, і вапнякові скелі вишиковуються одна за одною, як декорації в театрі. Світанок о 5:40, найкраще світло тривало хвилин двадцять. Штатив на палубі марний, бо судно погойдується, тож я знімав з рук на 1/250 і ISO 400. Поляризаційний фільтр раджу: він прибирає відблиски з води й підкреслює смарагдовий колір.\n\nНайсильніший кадр вийшов із каяка. О сьомій ранку ми з гідом пропливли під низькою аркою в лагуну, де вода стояла, як дзеркало, і скелі відбивалися в ній без жодної брижі. Тут я обійшовся ширококутником і камерою в гермомішку. Ще варто зайти в печеру Сунгшот: усередині темно й людно, але на широкому куті з ISO 3200 виходять цікаві текстури сталактитів.\n\nЧесний мінус — сміття. У деяких бухтах біля берега плавають пластикові пляшки й пінопласт від поплавців рибних ферм, і ракурс доводиться добирати дуже ретельно. Ще одне: до головних точок усі кораблі приходять одночасно, тому, якщо хочете безлюдних кадрів, обирайте маршрут через Лан Ха або Байтулонг і домовляйтеся з капітаном про ранній вихід.\n\nЗа чотири дні я привіз близько двох тисяч кадрів, до портфоліо пішли одинадцять. Для Халонгу це хороший відсоток: туман і скелі прощають багато, але стандартних листівкових знімків звідси вже мільйон, і хочеться чогось свого.",
+        "en": "I shot Ha Long in October, when the rainy season had already passed but the fog still lingers in the mornings. I flew to Hanoi via Istanbul, then took a shuttle bus to Tuan Chau pier, about three and a half hours on the road. I booked a two-night cruise for 210 euros: a small boat with twelve cabins that sails into Lan Ha Bay, where there are fewer tourist ships.\n\nThe technical part for fellow photographers. I took two cameras: a 16–35 wide-angle and a 70–200 telephoto. For Ha Long the telephoto turned out to be the main tool: it compresses the planes, and the limestone karsts line up one behind another like theatre scenery. Sunrise was at 5:40, and the best light lasted about twenty minutes. A tripod on deck is useless because the boat rocks, so I shot handheld at 1/250 and ISO 400. I recommend a polarising filter: it removes reflections from the water and brings out the emerald colour.\n\nThe strongest frame came from a kayak. At seven in the morning my guide and I paddled under a low arch into a lagoon where the water stood like a mirror and the rocks were reflected without a single ripple. Here I managed with the wide-angle and a camera in a dry bag. Sung Sot cave is also worth a visit: it's dark and crowded inside, but at a wide angle with ISO 3200 you get interesting stalactite textures.\n\nThe honest downside is rubbish. In some coves near the shore plastic bottles and polystyrene from fish-farm floats drift about, and you have to choose your angle very carefully. One more thing: all the boats arrive at the main spots at the same time, so if you want empty frames, pick a route through Lan Ha or Bai Tu Long and arrange an early departure with the captain.\n\nIn four days I brought back about two thousand frames, and eleven went into my portfolio. For Ha Long that is a good ratio: fog and karsts forgive a lot, but there are already a million standard postcard shots from here, and you want something of your own."
+      },
+      "country": { "code": "VN", "uk": "В'єтнам", "en": "Vietnam", "es": "Vietnam" },
+      "region": { "uk": "Куангнінь", "en": "Quang Ninh", "es": "Quang Ninh" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["photography", "nature", "islands"],
+      "lat": 20.9101,
+      "lng": 107.1839,
+      "photoQuery": "Ha Long Bay"
+    },
+    {
+      "key": "s-2-003",
+      "travellerKey": "t-2-03",
+      "category": "Азія",
+      "title": { "uk": "Чеджу з дітьми: вулкани, цитрусові та пірнальниці хенйо", "en": "Jeju with kids: volcanoes, citrus and haenyeo divers" },
+      "article": {
+        "uk": "На Чеджу ми полетіли у квітні, коли Мирославі було дев'ять, а Остапу шість. Із Сеула на острів літаки ходять майже щопівгодини, переліт триває годину, квитки на чотирьох обійшлися приблизно в 140 євро. В аеропорту взяли машину напрокат: потрібні міжнародні права, а навігацію краще ставити Naver або Kakao, бо Google у Кореї маршрути для авто не прокладає.\n\nПершого ж ранку ми піднялися на Сонсан Ільчхульбон, вулканічний кратер просто біля моря. Підйом займає хвилин двадцять п'ять сходами, Остап скаржився рівно до половини, а нагорі забув про втому, бо внизу виднівся величезний зелений вінок кратера. Біля підніжжя щодня виступають хенйо — жінки-пірнальниці, яким часто за сімдесят. Вони без аквалангів пірнають по молюсків і морських їжаків, і діти дивилися на них, роззявивши роти.\n\nСправжнім хітом стала лавова печера Манджангуль. Ідеш кілометр підземним тунелем, який колись проклала розпечена лава, а температура всередині тримається близько дванадцяти градусів. Порада батькам: візьміть кофтинки й ліхтарик, бо світло там приглушене. Ще ми збирали цитрусові на фермі: квітень — уже не сезон мандаринів, але продають халлабон, великі солодкі плоди з кумедним «носиком». Кошик коштував близько семи євро, і діти носилися з ним увесь вечір.\n\nЧесний мінус — погода. Чеджу недарма називають островом вітру: двічі нам довелося змінювати план через дощ і пориви, від яких пляжний день перетворювався на холодний. План Б у нас був — музей плюшевих ведмедиків і акваріум, тож обійшлося без сліз. Ще врахуйте, що ресторани з чорною свининою на грилі часто мають гострі закуски, просіть для дітей окремо без перцю.\n\nМи жили у квартирі з кухнею за 70 євро на ніч, а найбільше діти згадують поля жовтого ріпаку біля узбережжя. Вісім днів — ідеальний ритм: одна велика справа зранку, відпочинок, а ввечері море.",
+        "en": "We flew to Jeju in April, when Myroslava was nine and Ostap was six. Planes from Seoul to the island leave almost every half hour, the flight takes an hour, and tickets for four cost about 140 euros. At the airport we rented a car: you need an international licence, and it's better to use Naver or Kakao for navigation, because Google doesn't plot driving routes in Korea.\n\nOn the very first morning we climbed Seongsan Ilchulbong, a volcanic crater right by the sea. The climb takes about twenty-five minutes up the stairs; Ostap complained exactly until halfway, and at the top he forgot he was tired, because the huge green ring of the crater lay below. At its foot the haenyeo perform every day, women divers who are often over seventy. They dive without scuba gear for shellfish and sea urchins, and the children watched them open-mouthed.\n\nThe real hit was the Manjanggul lava tube. You walk a kilometre through an underground tunnel once carved by molten lava, and the temperature inside stays around twelve degrees. A tip for parents: bring jumpers and a torch, because the light is dim. We also picked citrus at a farm: April is no longer tangerine season, but they sell hallabong, large sweet fruit with a funny little nose. A basket cost about seven euros, and the kids carried it around all evening.\n\nThe honest downside is the weather. Jeju is not called the island of wind for nothing: twice we had to change plans because of rain and gusts that turned a beach day into a cold one. We had a plan B, a teddy bear museum and an aquarium, so there were no tears. Also keep in mind that black pork barbecue restaurants often serve spicy side dishes, so ask for the children's portions without chilli.\n\nWe lived in a flat with a kitchen for 70 euros a night, and what the kids remember most are the fields of yellow rapeseed along the coast. Eight days is the perfect rhythm: one big thing in the morning, a rest, and the sea in the evening."
+      },
+      "country": { "code": "KR", "uk": "Південна Корея", "en": "South Korea", "es": "Corea del Sur" },
+      "region": { "uk": "Чеджу", "en": "Jeju", "es": "Jeju" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 8,
+      "tripType": "family",
+      "tags": ["with-kids", "nature", "beach", "islands"],
+      "lat": 33.4580,
+      "lng": 126.9425,
+      "photoQuery": "Seongsan Ilchulbong"
+    },
+    {
+      "key": "s-2-004",
+      "travellerKey": "t-2-04",
+      "category": "Азія",
+      "title": { "uk": "Лаос: чотири тисячі островів і жодного будильника", "en": "Laos: four thousand islands and not a single alarm clock" },
+      "article": {
+        "uk": "Чотири тисячі островів — це маркетинг. Насправді більшість із них у сухий сезон є кущем посеред Меконгу, на якому сидить одна задумлива чапля. Але три острови, де живуть люди, — Дондет, Донкхон і Донкхонг — варті того, щоб застрягнути там на тиждень. Що я й зробив.\n\nДобирався з Паксе комбінованим квитком: автобус на дві з половиною години, потім човен на п'ятнадцять хвилин. Усе разом коштувало близько трьох євро. Бунгало з гамаком на березі на Дондеті — ще три євро за ніч. Вентилятор працює, коли є світло, а світло є, коли йому хочеться. Велосипед напрокат — євро на день, і на ньому через старий французький залізничний міст можна заїхати на Донкхон.\n\nНа Донкхоні — водоспади Лі Пхі. Місцеві кажуть, що там застрягають злі духи. Я застряг тільки шльопанцем між каменями. А от водоспад Кхонпхапхенг на материку справді вражає: за об'ємом води він найбільший у Південно-Східній Азії, і реве так, що думки вимикаються. Ще тут водяться іраваддійські дельфіни. Я заплатив за човен і дві години дивився на річку. Бачив дві темні спини. Або це були колоди. Вирішив вірити в дельфінів.\n\nЇжа проста й чудова: лаап із м'ятою, клейкий рис у бамбуковому кошику, риба з Меконгу на грилі, і все це за два-три євро. Мінуси чесно: удень спека така, що з гамака не хочеться вставати взагалі, комарі працюють у дві зміни, а інтернет живе на одному роутері на весь острів. Банкомата на Дондеті немає, тож готівку беріть заздалегідь, інакше доведеться пливти на материк.\n\nЗа сім днів я витратив менше ніж шістдесят євро разом із дельфінами-колодами. Будильник жодного разу не ставив. Будив півень. Він, здається, взагалі не знає, котра година.",
+        "en": "Four thousand islands is marketing. In reality, most of them in the dry season are a bush in the middle of the Mekong with one pensive heron sitting on it. But the three inhabited islands, Don Det, Don Khon and Don Khong, are worth getting stuck on for a week. Which is what I did.\n\nI got there from Pakse on a combined ticket: a bus for two and a half hours, then a boat for fifteen minutes. All together it cost about three euros. A bungalow with a hammock on the riverbank on Don Det was another three euros a night. The fan works when there's electricity, and there's electricity when it feels like it. A rental bike is a euro a day, and on it you can ride across the old French railway bridge to Don Khon.\n\nOn Don Khon there are the Li Phi falls. Locals say evil spirits get trapped there. All I trapped was my flip-flop between the rocks. But the Khone Phapheng falls on the mainland are truly impressive: by volume of water they are the largest in Southeast Asia, and they roar so loudly your thoughts switch off. Irrawaddy dolphins live here too. I paid for a boat and spent two hours staring at the river. I saw two dark backs. Or they were logs. I decided to believe in dolphins.\n\nThe food is simple and wonderful: larb with mint, sticky rice in a bamboo basket, grilled Mekong fish, all for two or three euros. Honest downsides: during the day the heat is such that you never want to get out of the hammock, the mosquitoes work in two shifts, and the internet lives on one router for the whole island. There's no ATM on Don Det, so bring cash in advance, or you'll have to sail to the mainland.\n\nIn seven days I spent less than sixty euros, dolphin-logs included. I never set an alarm once. The rooster woke me. He doesn't seem to know what time it is at all."
+      },
+      "country": { "code": "LA", "uk": "Лаос", "en": "Laos", "es": "Laos" },
+      "region": { "uk": "Тямпасак", "en": "Champasak", "es": "Champasak" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 7,
+      "tripType": "solo",
+      "tags": ["backpacking", "islands", "slow-travel", "nature"],
+      "lat": 13.9780,
+      "lng": 105.9510,
+      "photoQuery": "Khone Phapheng Falls"
+    },
+    {
+      "key": "s-2-005",
+      "travellerKey": "t-2-05",
+      "category": "Азія",
+      "title": { "uk": "Сеул на стипендію: палаци, кімбап і нічні прогулянки", "en": "Seoul on a scholarship: palaces, gimbap and night walks" },
+      "article": {
+        "uk": "Я три роки вчу корейську, тож коли нарешті назбирала на квиток до Сеула, плакала прямо в аеропорту Інчхон. Переліт через Стамбул коштував 610 євро, і далі кожну вону я рахувала. Жила в хостелі в районі Хонде. Ліжко в кімнаті на чотирьох — 18 євро за ніч, зате поруч університет мистецтв, вуличні музиканти й купа дешевих кафешок.\n\nПерше, що треба купити, — транспортну картку T-money. Метро в Сеулі ідеальне, поїздка коштує близько вісімдесяти центів. Друге — ханбок напрокат. Я взяла його за 15 тисяч вон, це приблизно десять євро на чотири години, і в традиційному вбранні вхід у палац Кьонбоккун безкоштовний. Встигла на зміну варти о десятій ранку, а потім гуляла селом ханоків Пукчхон. Тільки тихо: там живуть люди, і на кожному розі таблички з проханням не шуміти.\n\nМоя любов — корейські цілодобові магазинчики. Трикутний кімбап за 1200 вон, бананове молоко, рамьон, який можна заварити прямо там на спеціальній машинці, і столик біля вікна. На ринку Кванджан я їла пінде-тток — хрусткий млинець із тертої квасолі, 5000 вон за величезний шматок. А ввечері ми з дівчатами з хостелу взяли смажену курку й пиво на березі річки Хан. Це називається чхімек, і це найкращий вечір у місті, присягаюся.\n\nЧесні мінуси: кава тут дорога, як у Європі, чотири євро за лате в модній кав'ярні. Сеул дуже горбистий, ноги гудуть від сходів. А ще всі ввічливо переходять на англійську, щойно чують мій акцент, і це трохи ранило мою гордість студентки.\n\nЗа десять днів я витратила близько 450 євро на місці разом із житлом. Повернулася з блокнотом нових слів і твердим планом приїхати на обмін на цілий семестр.",
+        "en": "I've been learning Korean for three years, so when I finally saved up for a ticket to Seoul, I cried right there in Incheon airport. The flight via Istanbul cost 610 euros, and from then on I counted every won. I stayed in a hostel in Hongdae: a bed in a four-person room was 18 euros a night, but there's an art university nearby, street musicians and loads of cheap little cafes.\n\nThe first thing to buy is a T-money transport card. The Seoul metro is perfect, and a ride costs about eighty cents. The second is a hanbok rental. I got one for 15,000 won, about ten euros for four hours, and in traditional dress entry to Gyeongbokgung Palace is free. I made it to the changing of the guard at ten in the morning, then wandered around Bukchon Hanok Village. Just keep quiet: people live there, and on every corner there are signs asking you not to make noise.\n\nMy love is Korean convenience stores. A triangle gimbap for 1,200 won, banana milk, ramyeon you can cook right there on a special machine, and a table by the window. At Gwangjang Market I ate bindae-tteok, a crispy pancake made of ground mung beans, 5,000 won for a huge piece. And in the evening the girls from the hostel and I got fried chicken and beer on the bank of the Han River. It's called chimaek, and it's the best evening in the city, I swear.\n\nHonest downsides: coffee is as expensive as in Europe, four euros for a latte in a trendy cafe. Seoul is very hilly, and my legs ached from the stairs. And everyone politely switches to English as soon as they hear my accent, which wounded my student pride a little.\n\nIn ten days I spent about 450 euros on the ground, accommodation included. I came back with a notebook full of new words and a firm plan to come on an exchange for a whole semester."
+      },
+      "country": { "code": "KR", "uk": "Південна Корея", "en": "South Korea", "es": "Corea del Sur" },
+      "region": { "uk": "Сеул", "en": "Seoul", "es": "Seúl" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 10,
+      "tripType": "solo",
+      "tags": ["city-break", "food", "culture", "nightlife"],
+      "lat": 37.5796,
+      "lng": 126.9770,
+      "photoQuery": "Gyeongbokgung"
+    },
+    {
+      "key": "s-2-006",
+      "travellerKey": "t-2-06",
+      "category": "Азія",
+      "title": { "uk": "Самарканд: блакитні куполи Великого шовкового шляху", "en": "Samarkand: the blue domes of the Great Silk Road" },
+      "article": {
+        "uk": "Про Самарканд я розповідав учням, мабуть, сорок разів, а побачив його лише цієї весни. Ми з Галиною прилетіли до Ташкента, а звідти швидкісним потягом «Афросіаб» за дві години десять хвилин доїхали до Самарканда. Квиток у бізнес-класі коштував близько 25 євро, і це, повірте, найкомфортніший потяг, яким я їздив.\n\nРегістан спершу просто приголомшує. Три медресе стоять на площі з трьох боків: найстаріша, медресе Улугбека, збудована в 1417–1420 роках, навпроти неї Шердор з левами, що женуться за ланями, всупереч забороні зображати живих істот, а посередині Тіллякарі з позолоченим інтер'єром мечеті. Квиток коштує близько семи євро, і раджу прийти двічі: вдень, щоб роздивитися мозаїку, і ввечері, коли площу підсвічують.\n\nНайбільше мене зворушив мавзолей Гур-Емір, де похований Тимур, що помер 1405 року. Надгробок із темно-зеленого нефриту, а над ним ребристий купол, який потім надихав будівничих Тадж-Махалу. А ще обсерваторія Улугбека: від неї лишилася підземна частина гігантського секстанта, на якому онук Тимура в 1420-х роках склав каталог понад тисячі зірок. Учений-правитель — рідкісне явище в будь-яку епоху, і я довго стояв там мовчки.\n\nПід вечір ми ходили на базар Сіаб. Самаркандський коржик-нон важкий, щільний, із візерунком посередині, і, кажуть, не черствіє тижнями. Галина накупила кураги й мигдалю на подарунки, торгуватися тут належить. Плов у чайхані на двох із салатом і чаєм обійшовся у вісім євро.\n\nЧесно скажу про мінус: багато пам'яток реставрували в другій половині ХХ століття так ретельно, що вони виглядають надто новими, і частина автентичності втрачена. Та й сувенірні крамниці всередині медресе трохи заважають уявити собі студентів, які колись тут вчилися. Утім, Шахі-Зінда з її вузькою вулицею мавзолеїв це повністю компенсувала.",
+        "en": "I must have told my pupils about Samarkand forty times, but I only saw it this spring. Halyna and I flew to Tashkent, and from there the high-speed Afrosiyob train took us to Samarkand in two hours and ten minutes. A business-class ticket cost about 25 euros, and believe me, it's the most comfortable train I've ever travelled on.\n\nThe Registan simply stuns you at first. Three madrasas stand on three sides of the square: the oldest, the Ulugbek Madrasa, was built in 1417–1420; opposite it is Sher-Dor with lions chasing deer, despite the ban on depicting living creatures; and in the middle is Tilya-Kori with the gilded interior of its mosque. A ticket costs about seven euros, and I advise coming twice: in the daytime to study the mosaics, and in the evening when the square is lit up.\n\nWhat moved me most was the Gur-e-Amir mausoleum, where Timur, who died in 1405, is buried. The tombstone is made of dark green jade, and above it rises a ribbed dome that later inspired the builders of the Taj Mahal. And then there's Ulugbek's observatory: what remains is the underground part of a gigantic sextant, with which Timur's grandson compiled a catalogue of over a thousand stars in the 1420s. A scholar-ruler is a rare thing in any era, and I stood there in silence for a long time.\n\nTowards evening we went to the Siyob Bazaar. Samarkand non bread is heavy and dense, with a pattern in the middle, and they say it doesn't go stale for weeks. Halyna bought dried apricots and almonds as presents; haggling is expected here. Plov for two in a teahouse with a salad and tea came to eight euros.\n\nI'll be honest about the downside: many monuments were restored in the second half of the twentieth century so thoroughly that they look too new, and some of the authenticity is lost. And the souvenir shops inside the madrasas make it a little hard to imagine the students who once studied there. Still, Shah-i-Zinda with its narrow street of mausoleums made up for it completely."
+      },
+      "country": { "code": "UZ", "uk": "Узбекистан", "en": "Uzbekistan", "es": "Uzbekistán" },
+      "region": { "uk": "Самаркандська область", "en": "Samarkand Region", "es": "Región de Samarcanda" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "couple",
+      "tags": ["history", "architecture", "culture", "markets"],
+      "lat": 39.6547,
+      "lng": 66.9758,
+      "photoQuery": "Registan"
+    },
+    {
+      "key": "s-2-007",
+      "travellerKey": "t-2-07",
+      "category": "Азія",
+      "title": { "uk": "Луанґпхабанґ: два тижні в ритмі Меконгу", "en": "Luang Prabang: two weeks to the rhythm of the Mekong" },
+      "article": {
+        "uk": "До Луанґпхабанґа ми з Максимом приїхали новим потягом із В'єнтьяна: дві години замість цілого дня серпантинами, квиток близько двадцяти євро. Планували тиждень, лишилися на два. Так у нас буває з містами, де ніхто нікуди не поспішає, а Луанґпхабанґ, здається, і не знає, що таке поспіх.\n\nНаш день швидко склався в ритуал. О пів на шосту ми виходили на головну вулицю, де ченці в шафранових накидках мовчки йдуть по милостиню, тхак бат. Ми не брали участі, просто стояли осторонь, без спалахів і розмов. Потім кава на березі Меконгу, де та сама жінка вже на третій день приносила нам лаоську каву зі згущеним молоком, не питаючи. Далі ринок, сієста, а ввечері нічний ринок, де вегетаріанський шведський стіл коштує менше від євро.\n\nНа водоспад Куангсі ми поїхали тук-туком, тридцять кілометрів, близько п'ятнадцяти євро на двох туди й назад, якщо поторгуватися. Бірюзові каскади виглядають неправдоподібно, як фотографія з посиленою насиченістю. Приїжджайте до дев'ятої, поки немає груп. Біля входу є центр порятунку ведмедів, і ми довго дивилися, як вони гойдаються в гамаках.\n\nЛаоська кухня тиха й трав'яна: суп кхао сой із томатною пастою, ковбаски з лемонграсом, кайпхен — сушені річкові водорості з кунжутом. Максим тепер просить її щоранку замість чипсів. Гостинність усюди спокійна, без нав'язливості, і саме цим місто й чарує.\n\nЧесний мінус: на гору Пхусі на захід сонця сходиться пів міста, і на вершині не протиснутися. Ми піднялися туди на світанку, всі 355 сходинок, і були самі. А ще місто засинає рано, о двадцять третій усе зачиняється. Нам це подобалося, але тим, хто шукає нічного життя, тут буде нудно.",
+        "en": "Maksym and I arrived in Luang Prabang on the new train from Vientiane: two hours instead of a whole day on hairpin roads, and a ticket of about twenty euros. We planned a week and stayed two. That happens to us in cities where nobody is in a hurry, and Luang Prabang doesn't seem to know what hurry is.\n\nOur day quickly settled into a ritual. At half past five we went out onto the main street, where monks in saffron robes silently walk their alms round, tak bat. We didn't take part, we just stood aside, with no flash and no talking. Then coffee on the bank of the Mekong, where by the third day the same woman was bringing us Lao coffee with condensed milk without asking. Then the market, a siesta, and in the evening the night market, where a vegetarian buffet costs less than a euro.\n\nWe went to Kuang Si falls by tuk-tuk, thirty kilometres, about fifteen euros for the two of us there and back if you haggle. The turquoise cascades look unreal, like a photo with the saturation turned up. Get there before nine, before the groups. Near the entrance there's a bear rescue centre, and we spent a long time watching the bears swinging in hammocks.\n\nLao cuisine is quiet and herbal: khao soi soup with tomato paste, lemongrass sausages, kaipen, dried river weed with sesame. Maksym now asks for it every morning instead of crisps. Hospitality everywhere is calm, never pushy, and that's exactly what makes the town so charming.\n\nThe honest downside: half the town gathers on Mount Phousi for sunset, and at the top you can't squeeze through. We climbed it at dawn, all 355 steps, and had it to ourselves. Also, the town goes to sleep early, and by eleven at night everything closes. We liked that, but those looking for nightlife will be bored here."
+      },
+      "country": { "code": "LA", "uk": "Лаос", "en": "Laos", "es": "Laos" },
+      "region": { "uk": "Луанґпхабанґ", "en": "Luang Prabang", "es": "Luang Prabang" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 14,
+      "tripType": "couple",
+      "tags": ["slow-travel", "culture", "history", "nature"],
+      "lat": 19.8856,
+      "lng": 102.1347,
+      "photoQuery": "Kuang Si Falls"
+    },
+    {
+      "key": "s-2-008",
+      "travellerKey": "t-2-08",
+      "category": "Гори",
+      "title": { "uk": "Навколо Аннапурни: перевал Торонг-Ла на 5416 метрах", "en": "Around Annapurna: Thorong La pass at 5,416 metres" },
+      "article": {
+        "uk": "Трек навколо Аннапурни. Шістнадцять днів, жовтень, найкращий сезон: сухо, видимість ідеальна. Старт у Бесісахарі, туди дев'ять годин автобусом із Катманду. Перша частина маршруту тепер іде вздовж дороги, тож до Чаме ми під'їхали джипом. Відтоді лише ногами.\n\nДозволи. ACAP коштує 3000 рупій, близько двадцяти євро. З 2023 року іноземцям обов'язково потрібен ліцензований гід. Мій гід Біну брав 25 євро на день і знав кожну чайну на маршруті. Без нього можна було б, але з ним спокійніше на перевалі.\n\nПрофіль такий: Чаме 2670 м, Пісанг 3200, Манаг 3540. У Манагу день акліматизації, обов'язково. Я ходив до Льодового озера на 4600 і спав нижче. Далі Як-Харка 4050, Торонг-Феді 4450, Хай-Кемп 4880. Головна ніч — перед перевалом. Підйом о четвертій, мінус дванадцять, ліхтарик, повільний крок. На Торонг-Ла, 5416 метрів, я був о восьмій. Прапорці, вітер, легкий головний біль. Потім 1600 метрів спуску до Муктінатха. Коліна запам'ятали кожен.\n\nЖиття в чайних. Кімната від 500 до 1000 рупій, а часто безкоштовно, якщо вечеряєш там же. Дал-бхат від 600 рупій унизу до 1200 нагорі, з добавкою. Гарячий душ платний, і чим вище, тим холодніший. Спорядження: пуховик, спальник до мінус десяти, палиці, сонцезахисний крем, таблетки для очищення води. Пляшкову воду не купуйте, гори — не смітник.\n\nМінуси. Нижня частина маршруту пилюжна через будівництво дороги, джипи ковтають кілометри, які колись були стежкою. І гід помітно збільшує бюджет. Але Манаг, озера й світанок на перевалі все виправдали. Загалом за шістнадцять днів витратив близько 750 євро на місці, гід включно.",
+        "en": "The Annapurna Circuit. Sixteen days in October, the best season: dry, perfect visibility. The start is in Besisahar, nine hours by bus from Kathmandu. The first part of the route now follows the road, so we got to Chame by jeep. From then on, only on foot.\n\nPermits. The ACAP costs 3,000 rupees, about twenty euros. Since 2023 foreigners must have a licensed guide. My guide Binu charged 25 euros a day and knew every teahouse on the route. You could manage without him, but with him the pass felt safer.\n\nThe profile goes like this: Chame 2,670 m, Pisang 3,200, Manang 3,540. In Manang there's an acclimatisation day, mandatory. I walked up to Ice Lake at 4,600 and slept lower. Then Yak Kharka 4,050, Thorong Phedi 4,450, High Camp 4,880. The key night is the one before the pass. Wake-up at four, minus twelve, head torch, slow steps. I was on Thorong La, 5,416 metres, at eight. Prayer flags, wind, a slight headache. Then 1,600 metres of descent to Muktinath. My knees remembered every one of them.\n\nTeahouse life. A room costs 500 to 1,000 rupees, and is often free if you eat dinner there. Dal bhat goes from 600 rupees lower down to 1,200 higher up, with refills. Hot showers cost extra, and the higher you go, the colder they get. Gear: down jacket, sleeping bag rated to minus ten, poles, sunscreen, water purification tablets. Don't buy bottled water, the mountains aren't a rubbish bin.\n\nDownsides. The lower part of the route is dusty because of road construction, and jeeps swallow kilometres that used to be a trail. And a guide noticeably raises the budget. But Manang, the lakes and the sunrise on the pass justified everything. In total I spent about 750 euros on the ground over sixteen days, guide included."
+      },
+      "country": { "code": "NP", "uk": "Непал", "en": "Nepal", "es": "Nepal" },
+      "region": { "uk": "Гандакі", "en": "Gandaki", "es": "Gandaki" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 16,
+      "tripType": "solo",
+      "tags": ["hiking", "backpacking", "nature", "photography"],
+      "lat": 28.7930,
+      "lng": 83.9380,
+      "photoQuery": "Thorong La"
+    },
+    {
+      "key": "s-2-009",
+      "travellerKey": "t-2-09",
+      "category": "Азія",
+      "title": { "uk": "Стамбул очима архітекторки: куполи Сінана", "en": "Istanbul through an architect's eyes: the domes of Sinan" },
+      "article": {
+        "uk": "У Стамбул я приїхала у квітні, коли в парках цвітуть тюльпани, а повітря ще не розпечене. П'ять днів, один район на день і жодних спроб побачити все. Жила в Султанахметі, у маленькому готелі за 70 євро на ніч, із вікна якого видно мінарети Блакитної мечеті.\n\nСвята Софія для архітектора — як іспит, який людство склало в 537 році. Купол діаметром понад тридцять метрів спирається на чотири вітрила, а біля його основи сорок вікон. Світло, що проходить крізь них, розриває візуальний зв'язок купола зі стінами, і здається, ніби він висить на ланцюгу з неба. Сьогодні це діюча мечеть, туристи заходять окремим входом на верхню галерею, квиток коштує 25 євро. Черга була година, але погляд згори на простір того вартий.\n\nНаступного дня я йшла слідами Мімара Сінана, головного архітектора імперії XVI століття. Мечеть Сулейманіє, збудована в 1550–1557 роках, — це його відповідь Святій Софії: схема та сама, але простір чистіший, конструкція прихована, усе підпорядковане пропорції. А маленька мечеть Рюстема-паші поблизу Єгипетського базару вкрита ізнікською плиткою від підлоги до куполу. Тюльпани, гвоздики, глибокий червоний колір, який майстри пізніше так і не змогли повторити.\n\nЦистерна Базиліка — ще одна лекція: 336 колон, зібраних із різних старих будівель, тому капітелі різні, а дві колони стоять на головах Медузи. Ну і порада не лише для архітекторів: купіть картку Istanbulkart і перепливіть на пороні з Еміньоню в Кадикьой. Це близько євро, а вид на силует старого міста з води найкращий.\n\nЧесний мінус — натовпи й підйоми. Стамбул дуже горбистий, ноги гудуть уже після обіду, а біля головних пам'яток настирливо пропонують екскурсії й килими. Виходьте рано: о восьмій ранку площа Султанахмет майже порожня і розповідає про себе сама.",
+        "en": "I came to Istanbul in April, when tulips bloom in the parks and the air isn't scorching yet. Five days, one district a day and no attempt to see everything. I stayed in Sultanahmet, in a small hotel for 70 euros a night with a view of the minarets of the Blue Mosque from the window.\n\nFor an architect, Hagia Sophia is like an exam that humanity passed in 537. A dome over thirty metres across rests on four pendentives, and at its base there are forty windows. The light coming through them breaks the visual link between the dome and the walls, and it seems to hang on a chain from the sky. Today it's a working mosque; tourists enter through a separate entrance to the upper gallery, and the ticket costs 25 euros. The queue took an hour, but the view of the space from above is worth it.\n\nThe next day I followed in the footsteps of Mimar Sinan, the chief architect of the sixteenth-century empire. The Süleymaniye Mosque, built in 1550–1557, is his answer to Hagia Sophia: the same scheme, but the space is purer, the structure is hidden, and everything is subordinate to proportion. And the small Rüstem Pasha Mosque near the Spice Bazaar is covered in Iznik tiles from floor to dome. Tulips, carnations and a deep red colour that craftsmen later never managed to reproduce.\n\nThe Basilica Cistern is another lecture: 336 columns gathered from various old buildings, so the capitals differ, and two columns stand on Medusa heads. And a tip not only for architects: buy an Istanbulkart and take the ferry from Eminönü to Kadıköy. It costs about a euro, and the view of the old city's skyline from the water is the best there is.\n\nThe honest downside is crowds and climbs. Istanbul is very hilly, your legs ache by the afternoon, and around the main sights people persistently offer tours and carpets. Go out early: at eight in the morning Sultanahmet Square is almost empty and tells its own story."
+      },
+      "country": { "code": "TR", "uk": "Туреччина", "en": "Turkey", "es": "Turquía" },
+      "region": { "uk": "Стамбул", "en": "Istanbul", "es": "Estambul" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "solo",
+      "tags": ["architecture", "history", "city-break", "museums"],
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "photoQuery": "Hagia Sophia"
+    },
+    {
+      "key": "s-2-010",
+      "travellerKey": "t-2-10",
+      "category": "Азія",
+      "title": { "uk": "Шрі-Ланка з дітьми: потяг із Канді до Елли", "en": "Sri Lanka with kids: the train from Kandy to Ella" },
+      "article": {
+        "uk": "Поїздку на Шрі-Ланку ми планували на січень, коли в горах сухо, а на південному узбережжі тепле море. Головною подією для Марка й Віри мав стати потяг із Канді до Елли, і він не підвів. Квитки в другий клас із резервуванням я купив онлайн рівно за тридцять днів до поїздки: місця розлітаються за лічені години. На чотирьох вийшло близько двадцяти євро.\n\nПотяг іде приблизно сім годин, і це сім годин найкращого кіно. Спершу джунглі й рисові тераси, потім нескінченні чайні плантації, де жінки з кошиками за спиною збирають листя. Найвідоміше фото — пасажир, що висить у відчинених дверях вагона. Марк, звісно, хотів так само. Домовилися, що він стоїть у дверях, а я тримаю його за рюкзак. Віра натомість махала дітям на станціях, і ті махали у відповідь.\n\nЕлла — маленьке містечко серед гір. Зранку ми пішли на Маленький пік Адама: підйом сорок п'ять хвилин, Віра пройшла сама, лише двічі зупинялася по воду й банан. На Дев'ятиарковий міст варто приходити за розкладом потягів, бо головне видовище — коли синій поїзд повільно повзе по арках над ущелиною. Ще біля дороги є водоспад Равана, де діти бризкалися у прохолодному басейні.\n\nЇли ми в основному рис і карі: десяток мисочок з овочами, дал, кокосовий самбол. Для дітей просили менш гостро, і кухарі завжди йшли назустріч. Найбільше Марк і Віра полюбили коту-роті, нарізаний коржик зі смаженими овочами, і хопери — хрусткі млинці-мисочки з яйцем усередині.\n\nЧесний мінус: потяг запізнився на дві години, туалети у вагоні краще не описувати, а в дверях на популярних ділянках товкотнеча. Беріть із собою воду, перекуси й вологі серветки. Загалом ми провели в країні дванадцять днів, і цей переїзд потягом діти досі називають найкращим днем відпустки.",
+        "en": "We planned our trip to Sri Lanka for January, when it's dry in the hills and the sea on the south coast is warm. The main event for Mark and Vira was to be the train from Kandy to Ella, and it didn't disappoint. I bought reserved second-class tickets online exactly thirty days before the trip: the seats sell out in a matter of hours. For four of us it came to about twenty euros.\n\nThe train takes about seven hours, and those are seven hours of the best cinema. First jungle and rice terraces, then endless tea plantations where women with baskets on their backs pick the leaves. The most famous photo is a passenger hanging out of the open carriage door. Mark, of course, wanted to do the same. We agreed that he would stand in the doorway while I held him by his backpack. Vira, meanwhile, waved to children at the stations, and they waved back.\n\nElla is a small town among the hills. In the morning we went up Little Adam's Peak: forty-five minutes of climbing, and Vira walked it herself, stopping only twice for water and a banana. It's worth coming to the Nine Arch Bridge according to the train timetable, because the main show is when the blue train slowly crawls across the arches above the gorge. There's also Ravana Falls by the road, where the kids splashed in a cool pool.\n\nWe mostly ate rice and curry: a dozen little bowls of vegetables, dal and coconut sambol. We asked for less spice for the children, and the cooks always obliged. What Mark and Vira loved most was kottu roti, chopped flatbread fried with vegetables, and hoppers, crispy bowl-shaped pancakes with an egg inside.\n\nThe honest downside: the train was two hours late, the toilets on board are better left undescribed, and on the popular stretches it gets crowded around the doors. Bring water, snacks and wet wipes. Overall we spent twelve days in the country, and the kids still call that train ride the best day of the holiday."
+      },
+      "country": { "code": "LK", "uk": "Шрі-Ланка", "en": "Sri Lanka", "es": "Sri Lanka" },
+      "region": { "uk": "Ува", "en": "Uva Province", "es": "Provincia de Uva" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 12,
+      "tripType": "family",
+      "tags": ["with-kids", "train", "nature", "food"],
+      "lat": 6.8768,
+      "lng": 81.0608,
+      "photoQuery": "Nine Arch Bridge"
+    }
+  ]
+}

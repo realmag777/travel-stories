@@ -1,0 +1,63 @@
+name: podorozhnyky-plus
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-podorozhnyky}
+      POSTGRES_USER: ${POSTGRES_USER:-podorozhnyky}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:${POSTGRES_HOST_PORT:-5440}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      target: runtime
+    image: podorozhnyky-plus:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgres://${POSTGRES_USER:-podorozhnyky}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-podorozhnyky}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${APP_PORT:-8350}:3000"
+    volumes:
+      - uploads:/app/uploads
+
+  # Test runner with dev dependencies: `docker compose --profile test run --rm test`
+  test:
+    profiles: ["test"]
+    build:
+      context: .
+      target: test
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-podorozhnyky}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-podorozhnyky}
+      APP_URL: http://app:3000
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  uploads:
+
+# Explicit subnet: works even when Docker's default address pools are exhausted.
+# Override with COMPOSE_SUBNET if it clashes with your network.
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${COMPOSE_SUBNET:-10.77.31.0/24}

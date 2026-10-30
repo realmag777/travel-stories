@@ -1,0 +1,318 @@
+{
+  "travellers": [
+    {
+      "key": "t-1-01",
+      "gender": "female",
+      "name": { "uk": "Марта Ковальчук", "en": "Marta Kovalchuk" },
+      "description": { "uk": "Привіт! Я Марта, кондитерка зі Львова. Подорожую шлунком: спершу ринок, потім кав'ярні, а вже тоді музеї. Записую рецепти в блокнот і везу додому сири, спеції та історії людей, які їх готують.", "en": "Hi! I'm Marta, a pastry chef from Lviv. I travel with my stomach: the market first, then the cafés, and only then the museums. I jot recipes in a notebook and bring home cheeses, spices and the stories of the people who make them." },
+      "style": "Foodie pastry chef from Lviv: sensory, warm, names dishes and their prices, chats with vendors, compares with her own recipes, mild humour."
+    },
+    {
+      "key": "t-1-02",
+      "gender": "male",
+      "name": { "uk": "Андрій Бондар", "en": "Andrii Bondar" },
+      "description": { "uk": "Привіт! Я Андрій, інженер із Вінниці й тато двох непосид — Софійки та Марка. Плануємо подорожі так, щоб дорослим було цікаво, а дітям не нудно. Пишу чесно про логістику, ціни та про те, де знайти туалет у найпотрібніший момент.", "en": "Hi! I'm Andrii, an engineer from Vinnytsia and dad of two fidgets, Sofiika and Marko. We plan trips so that adults are interested and kids are not bored. I write honestly about logistics, prices and where to find a toilet at the most crucial moment." },
+      "style": "Calm, practical family dad: logistics, timings, car rental, prices, kids' reactions as the real review, gentle humour."
+    },
+    {
+      "key": "t-1-03",
+      "gender": "female",
+      "name": { "uk": "Ірина Савчук", "en": "Iryna Savchuk" },
+      "description": { "uk": "Привіт! Я Ірина, фотографиня з Києва. Їжджу туди, де світло творить дива: фіорди, скелі, гори на світанку. У своїх історіях ділюся точками зйомки, налаштуваннями камери і тим, скільки разів довелося вставати о четвертій ранку.", "en": "Hi! I'm Iryna, a photographer from Kyiv. I go where light works miracles: fjords, cliffs, mountains at dawn. In my stories I share shooting spots, camera settings and how many times I had to get up at four in the morning." },
+      "style": "Landscape photographer: technical notes (lenses, aperture, ISO, filters), light and hours, visual descriptions, early alarms, weather obsession."
+    },
+    {
+      "key": "t-1-04",
+      "gender": "male",
+      "name": { "uk": "Тарас Гнатюк", "en": "Taras Hnatiuk" },
+      "description": { "uk": "Привіт! Я Тарас, бекпекер з Івано-Франківська. Мій рюкзак важить сім кілограмів, а бюджет на день рідко перевищує тридцять євро. Люблю хостели, маршрутки й міста, про які друзі питають: «А що там робити?».", "en": "Hi! I'm Taras, a backpacker from Ivano-Frankivsk. My backpack weighs seven kilos and my daily budget rarely goes over thirty euros. I love hostels, minibuses and cities my friends ask about: 'What is there to do?'" },
+      "style": "Ironic budget backpacker: self-deprecating jokes, hostels and minibuses, counts every euro, meets locals, colloquial but literate."
+    },
+    {
+      "key": "t-1-05",
+      "gender": "female",
+      "name": { "uk": "Галина Дмитрук", "en": "Halyna Dmytruk" },
+      "description": { "uk": "Привіт! Я Галина Миколаївна, тридцять п'ять років викладала історію в школі в Житомирі. На пенсії нарешті їду туди, про що розповідала учням. Подорожую неспішно, читаю перед поїздкою і завжди шукаю в містах людські історії.", "en": "Hi! I'm Halyna, and for thirty-five years I taught history at a school in Zhytomyr. Retired, I am finally going to the places I told my pupils about. I travel slowly, read before every trip and always look for human stories in cities." },
+      "style": "Retired history teacher: gentle, educational, dates and names, reflective, a little old-fashioned, mentions grandchildren, practical advice on comfort."
+    },
+    {
+      "key": "t-1-06",
+      "gender": "male",
+      "name": { "uk": "Богдан Литвин", "en": "Bohdan Lytvyn" },
+      "description": { "uk": "Привіт! Я Богдан, альпініст-аматор та інструктор зі скелелазіння з Дніпра. Мене цікавлять вершини, перевали й хребтові маршрути. Пишу коротко й по ділу: перепад висот, час на маршрут, спорядження і де погода може зіпсувати плани.", "en": "Hi! I'm Bohdan, an amateur mountaineer and climbing instructor from Dnipro. I care about summits, passes and ridge routes. I write short and to the point: elevation gain, route times, gear and where the weather can ruin your plans." },
+      "style": "Terse climber: short sentences, numbers (metres, hours), gear lists, safety, weather windows, dry humour."
+    },
+    {
+      "key": "t-1-07",
+      "gender": "female",
+      "name": { "uk": "Соломія Кравець", "en": "Solomiia Kravets" },
+      "description": { "uk": "Привіт! Я Соломія, студентка-філологиня з Чернівців. Подорожую з Interrail-пасом, нічними потягами й буханцем хліба в рюкзаку. Доводжу, що Європу можна побачити навіть зі студентським бюджетом, якщо не боятися пересадок.", "en": "Hi! I'm Solomiia, a philology student from Chernivtsi. I travel with an Interrail pass, night trains and a loaf of bread in my backpack. I'm proving that you can see Europe even on a student budget if you are not afraid of changing trains." },
+      "style": "Enthusiastic student: trains and budget hacks, supermarket meals, youthful energy, small literary references, honest about discomfort."
+    },
+    {
+      "key": "t-1-08",
+      "gender": "male",
+      "name": { "uk": "Максим Ткаченко", "en": "Maksym Tkachenko" },
+      "description": { "uk": "Привіт! Я Максим, а поруч завжди моя дружина Леся. Ми обоє ІТ-шники з Харкова й давно вирішили: краще тиждень в одному селі, ніж десять міст за десять днів. Любимо виноробні, ранкову каву на терасі й розмови з місцевими.", "en": "Hi! I'm Maksym, and my wife Lesia is always by my side. We both work in IT in Kharkiv and decided long ago: better a week in one village than ten cities in ten days. We love wineries, morning coffee on the terrace and talks with locals." },
+      "style": "Slow-travel couple, writes as 'Lesia and I': relaxed, reflective, wine tasting notes, hosts' names, unhurried rhythm."
+    },
+    {
+      "key": "t-1-09",
+      "gender": "female",
+      "name": { "uk": "Наталія Романюк", "en": "Nataliia Romaniuk" },
+      "description": { "uk": "Привіт! Я Наталія, архітекторка з Одеси. У кожному місті дивлюся вгору: на фасади, дахи, балкони і на те, як люди користуються простором. Мої історії — про будинки, площі й квартали, до яких хочеться повертатися.", "en": "Hi! I'm Nataliia, an architect from Odesa. In every city I look up: at facades, roofs, balconies and at how people use space. My stories are about buildings, squares and neighbourhoods you want to come back to." },
+      "style": "Architect: precise terms (Mudéjar, Baroque, modernism), architects and dates, proportion and light, sketchbook at dawn, measured tone."
+    },
+    {
+      "key": "t-1-10",
+      "gender": "male",
+      "name": { "uk": "Дмитро Шевчук", "en": "Dmytro Shevchuk" },
+      "description": { "uk": "Привіт! Я Дмитро, і мій найкращий друг — старенька «Шкода Октавія». Їжджу Європою машиною: серпантини, придорожні кафе, ночівлі в незнайомих містечках. Пишу про маршрути, ціни на пальне, паркування і дороги, від яких перехоплює подих.", "en": "Hi! I'm Dmytro, and my best friend is an old Škoda Octavia. I drive around Europe: hairpin bends, roadside cafés, nights in unfamiliar small towns. I write about routes, fuel prices, parking and roads that take your breath away." },
+      "style": "Road-tripper: kilometres, fuel and parking prices, road conditions, his car as a character, travels with a friend, straightforward and cheerful."
+    },
+    {
+      "key": "t-1-11",
+      "gender": "male",
+      "name": { "uk": "Лукас Беккер", "en": "Lukas Becker" },
+      "description": { "uk": "Привіт! Я Лукас, німець із Гамбурга, вже вісім років живу в Києві й працюю розробником. Українська — моя третя мова, тож вибачте за суворість формулювань. Подорожую з таблицею витрат і чесно пишу, що працює, а що ні.", "en": "Hi! I'm Lukas, a German from Hamburg who has lived in Kyiv for eight years and works as a developer. Ukrainian is my third language, so forgive the stern wording. I travel with a spreadsheet of expenses and write honestly about what works and what does not." },
+      "style": "German expat developer: dry humour, precision, spreadsheet of costs, punctuality jokes, short ironic remarks, compares with Germany and Kyiv."
+    },
+    {
+      "key": "t-1-12",
+      "gender": "female",
+      "name": { "uk": "Юлія Мороз", "en": "Yuliia Moroz" },
+      "description": { "uk": "Привіт! Я Юлія, мама трьох дітей і бухгалтерка з Полтави. Наші сімейні подорожі — це п'ятеро людей, чотири валізи й одна мета: щоб відпочили всі. Розповідаю, як подорожувати з малечею без нервів і зайвих витрат.", "en": "Hi! I'm Yuliia, a mum of three and an accountant from Poltava. Our family trips mean five people, four suitcases and one goal: everyone gets a rest. I share how to travel with little ones without stress or extra spending." },
+      "style": "Mum of three: warm, funny about family chaos, kid-friendly tips, careful budget math, names of kids (Ivas, Dana, little Myroslava), husband Oleh."
+    },
+    {
+      "key": "t-1-13",
+      "gender": "male",
+      "name": { "uk": "Ярослав Остапчук", "en": "Yaroslav Ostapchuk" },
+      "description": { "uk": "Привіт! Я Ярослав, дайвер і яхтсмен-аматор з Миколаєва. Без моря довго не можу: шукаю острови, бухти й підводні печери. У розповідях — про видимість під водою, температуру, дайв-центри та найкращі пляжі без натовпів.", "en": "Hi! I'm Yaroslav, a diver and amateur sailor from Mykolaiv. I can't last long without the sea: I look for islands, coves and underwater caves. My stories cover underwater visibility, water temperature, dive centres and the best uncrowded beaches." },
+      "style": "Sea lover and diver: water temperature, visibility, depths, boats and winds, salty humour, short vivid scenes."
+    },
+    {
+      "key": "t-1-14",
+      "gender": "female",
+      "name": { "uk": "Камій Дюбуа", "en": "Camille Dubois" },
+      "description": { "uk": "Привіт! Я Камій, француженка зі Страсбурга. Уже шість років викладаю французьку в Києві й закохалася в українські вареники. Пишу про Францію очима місцевої та про Балкани очима здивованої туристки.", "en": "Hi! I'm Camille, a Frenchwoman from Strasbourg. For six years I've been teaching French in Kyiv, and I fell in love with Ukrainian varenyky. I write about France through a local's eyes and about the Balkans through the eyes of an amazed tourist." },
+      "style": "French expat teacher: charming, compares France, Ukraine and the place visited, cultural nuances, markets and family memories, occasional French word."
+    },
+    {
+      "key": "t-1-15",
+      "gender": "male",
+      "name": { "uk": "Віктор Захарченко", "en": "Viktor Zakharchenko" },
+      "description": { "uk": "Привіт! Я Віктор, звукорежисер із Запоріжжя. Подорожую з друзями туди, де звучить музика: фестивалі, джаз-клуби, вуличні концерти. Сплю мало, танцюю багато і завжди знаю, де найсмачніша нічна їжа.", "en": "Hi! I'm Viktor, a sound engineer from Zaporizhzhia. I travel with friends to places where music plays: festivals, jazz clubs, street concerts. I sleep little, dance a lot and always know where to find the tastiest late-night food." },
+      "style": "Energetic sound engineer: music and sound details, nightlife, group of friends, late-night food, lively rhythm, light slang."
+    },
+    {
+      "key": "t-1-16",
+      "gender": "female",
+      "name": { "uk": "Олена Гриценко", "en": "Olena Hrytsenko" },
+      "description": { "uk": "Привіт! Я Олена, психологиня з Черкас. Подорожую сама, бо в дорозі найкраще чую себе. Обираю місця з вітром, морем і тишею, довго ходжу пішки, веду щоденник. Мої історії — про краєвиди і про те, що вони роблять з нами.", "en": "Hi! I'm Olena, a psychologist from Cherkasy. I travel alone, because on the road I hear myself best. I choose places with wind, sea and silence, walk for hours and keep a journal. My stories are about landscapes and what they do to us." },
+      "style": "Introspective solo traveller: lyrical but concrete, long walks, journaling, silence, feelings tied to landscape, calm practical tips."
+    }
+  ],
+  "stories": [
+    {
+      "key": "s-1-001",
+      "travellerKey": "t-1-01",
+      "category": "Європа",
+      "title": { "uk": "Лісабон на смак: паштел-де-ната і ринок Рібейра", "en": "Lisbon to taste: pastéis de nata and the Ribeira market" },
+      "article": {
+        "uk": "Ми з подругами прилетіли до Лісабона з Кракова пізно ввечері, і перше, що я зробила наступного ранку, — пішла в Белен по ті самі паштел-де-ната. Черга в Pastéis de Belém тягнулася вздовж кварталу, але рухалася швидко: тістечко коштує 1,40 євро, а всередині зала на кількасот місць. Тісто шарудить, як осіннє листя, крем теплий, ледь солонуватий. Я посипала його корицею й цукровою пудрою, як роблять місцеві, і зрозуміла, що мій львівський рецепт треба переписувати.\n\nДругий день ми присвятили ринку Рібейра, тобто Time Out Market. Половина зали — фуд-корт із шефами, друга половина — справжній старий ринок, де зранку продають рибу, зелень і квіти. Раджу саме ранок: бабусі з кошиками, сардини на льоду по 6 євро за кілограм і жодних туристичних черг. На обід ми взяли біфану, свинячий сендвіч з часниковим соусом, за 4 євро і келих зеленого вина вінью верде.\n\nУвечері гуляли Алфамою. Тут вузькі вулички, білизна на балконах, і з кожних других дверей лунає фаду. У маленькій таверні нам принесли смажені сардини, варену картоплю й салат з печеним перцем, а господиня співала між подачею страв. Вечеря на трьох з вином вийшла 55 євро, і це був найкращий вечір поїздки.\n\nЧесно про мінус: Лісабон стоїть на пагорбах, а бруківка тут слизька навіть у суху погоду. Мої улюблені сандалі не пережили третього дня. Беріть взуття з нормальною підошвою і не плануйте більше двох районів на день. А ще трамвай 28 зранку набитий так, що краще пройтися пішки й зазирнути по дорозі в кожну пастелярію.",
+        "en": "My friends and I flew into Lisbon from Kraków late at night, and the first thing I did the next morning was head to Belém for those famous pastéis de nata. The queue at Pastéis de Belém stretched along the block, but it moved fast: a tart costs 1.40 euros, and inside there is a hall with several hundred seats. The pastry rustles like autumn leaves, the custard is warm and faintly salty. I sprinkled it with cinnamon and icing sugar the way locals do and realised my Lviv recipe needs rewriting.\n\nWe gave the second day to the Ribeira market, also known as Time Out Market. Half of the hall is a food court with chefs, the other half is a real old market selling fish, greens and flowers in the morning. I recommend the morning: grannies with baskets, sardines on ice for 6 euros a kilo and no tourist queues. For lunch we had a bifana, a pork sandwich with garlic sauce, for 4 euros, and a glass of green vinho verde.\n\nIn the evening we wandered through Alfama. Narrow lanes, laundry on the balconies, and fado drifting out of every other doorway. In a tiny tavern they brought us grilled sardines, boiled potatoes and a salad of roasted peppers, while the owner sang between courses. Dinner for three with wine came to 55 euros, and it was the best evening of the trip.\n\nAn honest downside: Lisbon sits on hills, and the cobblestones are slippery even in dry weather. My favourite sandals did not survive day three. Bring shoes with proper soles and do not plan more than two neighbourhoods a day. Also, tram 28 in the morning is so packed that you are better off walking and popping into every pastelaria along the way."
+      },
+      "country": { "code": "PT", "uk": "Португалія", "en": "Portugal", "es": "Portugal" },
+      "region": { "uk": "Лісабон", "en": "Lisbon", "es": "Lisboa" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "friends",
+      "tags": ["food", "markets", "city-break", "culture"],
+      "lat": 38.7223,
+      "lng": -9.1393,
+      "photoQuery": "Belém Tower"
+    },
+    {
+      "key": "s-1-002",
+      "travellerKey": "t-1-02",
+      "category": "Європа",
+      "title": { "uk": "Майорка з дітьми: десять днів у бухті Алькудії", "en": "Mallorca with kids: ten days by Alcúdia bay" },
+      "article": {
+        "uk": "Майорку ми обрали з простої причини: прямий рейс з Варшави до Пальми триває менше трьох годин, а діти восьми й п'яти років стільки ще витримують. В аеропорту взяли машину з двома дитячими кріслами — 380 євро за десять днів разом зі страховкою. Жили в апартаментах в Алькудії на півночі острова за 120 євро за ніч, з кухнею і басейном, який Марко називав своїм особистим морем.\n\nГоловне, заради чого варто їхати сюди з дітьми, — пляж Алькудії. Дно пологе, і за п'ятдесят метрів від берега вода сягає дорослому лише до колін. Ми з дружиною вперше за багато років читали книжки, поки діти будували замки й ловили крабів. Поруч є тінь під соснами, кафе з морозивом по 3 євро і, що важливо, безкоштовні туалети.\n\nЗ екскурсій найбільше сподобалися печери Драх. Квиток для дорослого коштує близько 25 євро, для дитини — дешевше, бронювати треба онлайн на конкретний час. Усередині підземне озеро, а наприкінці музиканти грають класику просто з човнів. Софійка сиділа з відкритим ротом усі десять хвилин, і для мене це найкраща рецензія. А от поїздку на мис Форментор я радив би лише без малечі: серпантин такий, що ми двічі зупинялися через заколисування.\n\nМінуси теж є. У липні спека трималася на позначці 34 градуси, тож з дванадцятої до четвертої ми ховалися в апартаментах. Парковки біля популярних бухт заповнюються до десятої ранку і коштують 5–8 євро. Наша порада: виїжджати рано, брати з собою пляжний намет від сонця і воду, а ввечері гуляти старим містом Алькудії, коли стіни вже не пашать жаром.",
+        "en": "We chose Mallorca for a simple reason: the direct flight from Warsaw to Palma takes under three hours, and kids aged eight and five can still cope with that. At the airport we picked up a car with two child seats, 380 euros for ten days including insurance. We stayed in an apartment in Alcúdia in the north of the island for 120 euros a night, with a kitchen and a pool that Marko called his personal sea.\n\nThe main reason to come here with children is Alcúdia beach. The bottom slopes gently, and fifty metres from the shore the water only reaches an adult's knees. For the first time in years my wife and I read books while the kids built castles and caught crabs. There is shade under the pines nearby, cafés with ice cream for 3 euros and, importantly, free toilets.\n\nOf the excursions, we liked the Drach Caves most. An adult ticket costs about 25 euros, a child's is cheaper, and you have to book online for a specific time slot. Inside there is an underground lake, and at the end musicians play classical pieces right from boats. Sofiika sat with her mouth open for all ten minutes, and for me that is the best review. But I would only recommend the drive to Cap de Formentor without little ones: the hairpins are so tight that we stopped twice because of motion sickness.\n\nThere are downsides too. In July the heat held at 34 degrees, so from noon to four we hid in the apartment. Car parks at the popular coves fill up by ten in the morning and cost 5 to 8 euros. Our advice: set off early, bring a beach sun tent and water, and in the evening walk around Alcúdia's old town when the walls no longer radiate heat."
+      },
+      "country": { "code": "ES", "uk": "Іспанія", "en": "Spain", "es": "España" },
+      "region": { "uk": "Балеарські острови", "en": "Balearic Islands", "es": "Islas Baleares" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 10,
+      "tripType": "family",
+      "tags": ["beach", "islands", "with-kids", "nature"],
+      "lat": 39.8530,
+      "lng": 3.1210,
+      "photoQuery": "Cap de Formentor"
+    },
+    {
+      "key": "s-1-003",
+      "travellerKey": "t-1-03",
+      "category": "Європа",
+      "title": { "uk": "Лофотени взимку: полювання на світло в Рейне", "en": "Lofoten in winter: chasing the light in Reine" },
+      "article": {
+        "uk": "На Лофотени я летіла в лютому, бо саме тоді сонце повертається після полярної ночі, але ще стоїть низько над горизонтом. Маршрут такий: Осло, далі місцевий рейс до Буде і пором до Москенеса, який іде близько трьох з половиною годин. На поромі зніміть хоча б кілька кадрів, бо стіна гір, що виростає з моря, з палуби виглядає просто нереально.\n\nЖила я в рорбу — червоному рибальському будиночку на палях у Рейне, за 140 євро за ніч. З вікна видно гору Ольстінд, і це, мабуть, найзручніша точка зйомки, яку я мала в житті. Золота година тут триває майже весь короткий день: о десятій ранку світло вже тепле й бокове, о третій — рожеве. Я працювала на Sony A7 IV з об'єктивами 16–35 f/4 та 70–200: довгофокусний чудово стискає гори над містком у Гамнеї. Для води брала ND-фільтр на шість стопів і витримку 2–4 секунди, щоб хвилі ставали шовковими.\n\nПолярне сяйво з'явилося на третю ніч, о пів на дванадцяту. Samyang 14 мм на f/2.8, ISO 3200, вісім секунд — і зелені стрічки над затокою. Я стояла на морозі хвилин сорок і забула, що пальці вже не відчувають кнопки затвора. Порада: тримайте запасні батареї у внутрішній кишені, бо на холоді вони сідають за годину.\n\nЧесний мінус — погода. Вона змінюється кожні двадцять хвилин, вітер іноді сягав двадцяти метрів за секунду, і одного разу мій штатив просто впав разом з камерою. Дороги обмерзлі, без шипованої гуми їздити не можна, а стежка на Рейнебрінген узимку закрита через лавини. Їжа дорога: рибний суп коштує 22 євро. Але кадри, які я привезла, варті кожної крони.",
+        "en": "I flew to Lofoten in February, because that is when the sun returns after the polar night but still hangs low over the horizon. The route goes like this: Oslo, then a domestic flight to Bodø and a ferry to Moskenes that takes about three and a half hours. Shoot at least a few frames on the ferry, because the wall of mountains rising out of the sea looks simply unreal from the deck.\n\nI stayed in a rorbu, a red fisherman's cabin on stilts in Reine, for 140 euros a night. The window looked out on Mount Olstind, and it was probably the most convenient shooting spot I have ever had. Golden hour here lasts almost the entire short day: at ten in the morning the light is already warm and coming from the side, at three it turns pink. I worked with a Sony A7 IV and 16–35 f/4 and 70–200 lenses: the telephoto beautifully compresses the mountains above the bridge in Hamnøy. For the water I used a six-stop ND filter and 2–4 second exposures to turn the waves silky.\n\nThe northern lights appeared on the third night, at half past eleven. A Samyang 14 mm at f/2.8, ISO 3200, eight seconds, and green ribbons over the bay. I stood in the frost for about forty minutes and forgot that my fingers could no longer feel the shutter button. Tip: keep spare batteries in an inside pocket, because in the cold they die within an hour.\n\nThe honest downside is the weather. It changes every twenty minutes, the wind sometimes hit twenty metres per second, and once my tripod simply fell over with the camera on it. The roads are icy, you cannot drive without studded tyres, and the Reinebringen trail is closed in winter because of avalanches. Food is expensive: fish soup costs 22 euros. But the frames I brought home were worth every krone."
+      },
+      "country": { "code": "NO", "uk": "Норвегія", "en": "Norway", "es": "Noruega" },
+      "region": { "uk": "Лофотенські острови", "en": "Lofoten Islands", "es": "Islas Lofoten" },
+      "seasons": ["winter"],
+      "budget": "high",
+      "durationDays": 8,
+      "tripType": "solo",
+      "tags": ["photography", "nature", "islands", "road-trip"],
+      "lat": 67.9324,
+      "lng": 13.0889,
+      "photoQuery": "Reine"
+    },
+    {
+      "key": "s-1-004",
+      "travellerKey": "t-1-04",
+      "category": "Балкани",
+      "title": { "uk": "Берат: місто тисячі вікон за двадцять євро на день", "en": "Berat: the city of a thousand windows on twenty euros a day" },
+      "article": {
+        "uk": "До Берата я доїхав із Тирани фургоном — так тут називають маршрутки, — і розклад у нього один: рушає, коли заповниться. Квиток коштує близько п'яти євро, дорога триває дві з половиною години, а водій устиг випити дві кави й поговорити по телефону з половиною Албанії. Я сидів на мішку з картоплею, бо місць не вистачило, і, чесно кажучи, це було зручніше, ніж у деяких лоукостах.\n\nБерат називають містом тисячі вікон. Османські будинки кварталу Мангалем піднімаються схилом один над одним, і здається, що всі вони дивляться на тебе. Хостел у старому будинку коштував 12 євро зі сніданком, а господар Ілір щовечора наливав гостям домашньої ракії «для здоров'я». Здоров'я я, здається, підірвав, але друзів знайшов.\n\nФортеця Кала нагорі — не музей, а живий квартал: усередині досі мешкають люди, сушиться білизна і бігають коти. Вхід коштує кілька євро, а в церкві Успіння зібрані ікони Онуфрія, художника XVI століття, який умів робити червоний колір, що світиться й досі. Обідав я буреком за євро і тавою-косі — запеченою бараниною з йогуртом — за п'ять. Мій денний бюджет вийшов десь на двадцять євро разом з ракією.\n\nТепер про мінуси. Підйом до фортеці — це відполірована тисячами ніг бруківка під крутим кутом, а в липні ще й під пекельним сонцем. Я двічі ледь не сів на п'яту точку. Банкомати беруть комісію до шести євро за зняття, тож майте при собі готівку в леках. І не вірте Google Maps щодо автобусів: питайте на станції, там знають краще.",
+        "en": "I got to Berat from Tirana by furgon, which is what they call minibuses here, and it has only one timetable: it leaves when it is full. A ticket costs about five euros, the ride takes two and a half hours, and the driver managed to drink two coffees and talk on the phone with half of Albania. I sat on a sack of potatoes because there were not enough seats, and frankly it was more comfortable than some low-cost airlines.\n\nBerat is called the city of a thousand windows. The Ottoman houses of the Mangalem quarter climb the slope one above another, and it feels like they are all staring at you. A hostel in an old house cost 12 euros with breakfast, and every evening the owner, Ilir, poured his guests homemade raki 'for health'. I think I damaged my health, but I made friends.\n\nThe Kala fortress at the top is not a museum but a living neighbourhood: people still live inside, laundry dries and cats run around. Entry costs a few euros, and the Church of the Dormition holds icons by Onufri, a sixteenth-century painter who could make a red that still glows today. I had lunch of byrek for one euro and tavë kosi, baked lamb with yoghurt, for five. My daily budget came to about twenty euros, raki included.\n\nNow the downsides. The climb to the fortress is steep cobblestone polished by thousands of feet, and in July it is under a merciless sun as well. Twice I nearly landed on my backside. ATMs charge up to six euros per withdrawal, so carry cash in lek. And do not trust Google Maps on buses: ask at the station, they know better."
+      },
+      "country": { "code": "AL", "uk": "Албанія", "en": "Albania", "es": "Albania" },
+      "region": { "uk": "Берат", "en": "Berat", "es": "Berat" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["backpacking", "history", "architecture", "culture"],
+      "lat": 40.7058,
+      "lng": 19.9522,
+      "photoQuery": "Berat Castle"
+    },
+    {
+      "key": "s-1-005",
+      "travellerKey": "t-1-05",
+      "category": "Європа",
+      "title": { "uk": "Краків узимку: Вавель, Казімеж і Сукенниці", "en": "Kraków in winter: Wawel, Kazimierz and the Cloth Hall" },
+      "article": {
+        "uk": "До Кракова я поїхала автобусом зі Львова на початку грудня. Дорога забрала вісім годин, зате я встигла перечитати розділ про Ягеллонів, щоб не розповідати собі історію Вавеля навмання. Зупинилася в невеликому пансіонаті неподалік Старого міста за 45 євро за ніч зі сніданком.\n\nВавель заслуговує на цілий день. У катедрі поховані польські королі, а на дзвіниці висить дзвін Зигмунт, відлитий 1520 року. Кажуть, якщо доторкнутися лівою рукою до його серця, бажання здійсниться. Я доторкнулася, хоча в мої роки бажань небагато: щоб онуки читали книжки. Квитки до королівських покоїв беріть онлайн заздалегідь, бо взимку частина експозицій працює за скороченим графіком.\n\nНаступного дня я пішла до Колегіуму Маюс, найстаршої будівлі Ягеллонського університету, де навчався Коперник. Там зберігається глобус початку XVI століття, на якому вже позначена Америка. Потім був Казімеж — колишній єврейський квартал із синагогами, кав'ярнями й вузькими подвір'ями. Я довго стояла біля Старої синагоги і думала, скільки людських доль пам'ятають ці стіни.\n\nНа Ринку працював різдвяний ярмарок: глінтвейн, вироби з бурштину в Сукенницях і запах смаженої ковбаси. Журек у хлібі коштував близько 30 злотих, а вареники з капустою й грибами — трохи більше. Мінус один: о пів на четверту вже темно, а вологий холод пробирає до кісток навіть у теплому пальті. Беріть термос і зручні черевики, бо Краків найкраще пізнавати пішки.",
+        "en": "I went to Kraków by bus from Lviv at the beginning of December. The journey took eight hours, but I managed to reread the chapter on the Jagiellonians so as not to tell myself the story of Wawel at random. I stayed in a small guesthouse near the Old Town for 45 euros a night with breakfast.\n\nWawel deserves a whole day. Polish kings are buried in the cathedral, and the bell tower holds the Sigismund Bell, cast in 1520. They say that if you touch its clapper with your left hand, your wish will come true. I touched it, although at my age there are few wishes left: that my grandchildren read books. Book tickets to the royal chambers online in advance, because in winter some exhibitions keep shorter hours.\n\nThe next day I went to the Collegium Maius, the oldest building of the Jagiellonian University, where Copernicus studied. It keeps a globe from the early sixteenth century on which America is already marked. Then came Kazimierz, the former Jewish quarter with synagogues, cafés and narrow courtyards. I stood for a long time by the Old Synagogue and thought about how many human fates these walls remember.\n\nA Christmas market was running on the Main Square: mulled wine, amber in the Cloth Hall and the smell of grilled sausage. Żurek soup in a bread bowl cost about 30 złoty, and pierogi with cabbage and mushrooms a little more. One downside: it is dark by half past three, and the damp cold chills you to the bone even in a warm coat. Take a thermos and comfortable boots, because Kraków is best discovered on foot."
+      },
+      "country": { "code": "PL", "uk": "Польща", "en": "Poland", "es": "Polonia" },
+      "region": { "uk": "Малопольща", "en": "Lesser Poland", "es": "Pequeña Polonia" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "solo",
+      "tags": ["history", "museums", "architecture", "city-break", "markets"],
+      "lat": 50.0540,
+      "lng": 19.9354,
+      "photoQuery": "Wawel Castle"
+    },
+    {
+      "key": "s-1-006",
+      "travellerKey": "t-1-06",
+      "category": "Гори",
+      "title": { "uk": "Тріглав: на вершину Словенії через Кредаріцу", "en": "Triglav: to the top of Slovenia via Kredarica" },
+      "article": {
+        "uk": "Тріглав — 2864 метри, найвища точка Словенії і символ країни, він навіть є на гербі. Ми втрьох приїхали машиною в Мойстрану і залишили її в долині Крма, на висоті близько 900 метрів. Парковка — 10 євро за добу. Старт о шостій ранку.\n\nПерший день: Крма — хатина Кредаріца на 2515 метрах. Набір — понад 1600 метрів, у нас вийшло п'ять з половиною годин із перекусами. Стежка добре маркована червоно-білим колом, перші три години йде лісом, далі осипи й скелі. Ліжко в хатині коштує близько 35 євро, на вечерю — йота, квасоляний суп з кислою капустою, і чай. Місця бронювали за місяць.\n\nДругий день: штурм. Від Кредаріци до вершини півтори години, але це вже віа ферата: сталеві троси, скоби, провалля з обох боків. Шолом, страхувальна система й самостраховка для ферати обов'язкові. На вершині стоїть Альяжева вежа, маленька металева башта 1895 року, і всі фотографуються біля неї. Огляд на триста шістдесят градусів, у ясну погоду видно Адріатику.\n\nМінуси. У вихідні на тросах утворюється черга, люди без досвіду блокують рух у вузьких місцях. Ідіть у будній день і рано. У серпні після обіду майже щодня гроза, а на гребені зі сталевим тросом під рукою це не жарт. Ми повернулися на Кредаріцу до 13:00 і встигли. Спуск у долину тим самим шляхом — коліна подякують палицям.",
+        "en": "Triglav is 2,864 metres, the highest point of Slovenia and the country's symbol; it is even on the coat of arms. Three of us drove to Mojstrana and left the car in the Krma valley at about 900 metres. Parking is 10 euros per day. Start at six in the morning.\n\nDay one: Krma to the Kredarica hut at 2,515 metres. Elevation gain over 1,600 metres; it took us five and a half hours with snack breaks. The trail is well marked with a red and white circle, the first three hours go through forest, then scree and rock. A bed in the hut costs about 35 euros, dinner is jota, a bean and sauerkraut soup, plus tea. We booked a month ahead.\n\nDay two: the summit push. From Kredarica to the top is an hour and a half, but this is already a via ferrata: steel cables, iron rungs, drops on both sides. Helmet, harness and a via ferrata lanyard are mandatory. On top stands the Aljaž Tower, a small metal turret from 1895, and everyone takes photos next to it. The view is three hundred and sixty degrees; on a clear day you can see the Adriatic.\n\nDownsides. At weekends queues form on the cables, and inexperienced people block traffic at narrow spots. Go on a weekday and go early. In August there is a thunderstorm almost every afternoon, and on a ridge with a steel cable under your hand that is no joke. We were back at Kredarica by 13:00 and made it. Descent to the valley the same way; your knees will thank your poles."
+      },
+      "country": { "code": "SI", "uk": "Словенія", "en": "Slovenia", "es": "Eslovenia" },
+      "region": { "uk": "Юлійські Альпи", "en": "Julian Alps", "es": "Alpes Julianos" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 3,
+      "tripType": "friends",
+      "tags": ["hiking", "national-parks", "nature"],
+      "lat": 46.3783,
+      "lng": 13.8369,
+      "photoQuery": "Triglav"
+    },
+    {
+      "key": "s-1-007",
+      "travellerKey": "t-1-07",
+      "category": "Європа",
+      "title": { "uk": "Норвегія для студентки: Бергенська лінія і Фломська залізниця", "en": "Norway on a student budget: the Bergen Line and the Flåm Railway" },
+      "article": {
+        "uk": "Усі казали, що Норвегія — не для студентського бюджету, тож я, звісно, поїхала туди перевірити. Мій головний козир — глобальний Interrail-пас, який я купила зі знижкою для молоді. Він покриває поїзд Осло — Берген, але бронювання місця все одно треба доплатити, близько 7 євро.\n\nБергенська лінія — одна з найкрасивіших залізниць Європи, і це не перебільшення. Сім годин поїзд іде через плато Гардангервідда, і в липні за вікном лежав сніг, а в мене в рюкзаку були лише кеди. Я вийшла в Мюрдалі, на висоті 866 метрів, і пересіла на Фломську залізницю. Вона спускається до фіорду за годину: двадцять кілометрів і майже кілометр перепаду. На зупинці біля водоспаду К'юсфоссен з'являється дівчина в червоному, яка зображає лісову духиню Гульдру, і всі туристи завмирають із телефонами.\n\nТепер про гроші. На Фломську залізницю пас дає лише знижку, тож я доплатила ще близько 35 євро. Ночувала в кемпінгу у Фломі у власному наметі за 20 євро, а харчувалася із супермаркету: хліб, сир бруност — солодкуватий, карамельний, дуже дивний — і банани. Найдорожчою моєю покупкою стала кава за 5 євро, яку я пила дуже повільно, смакуючи кожен ковток.\n\nМінус — дощ. Він ішов чотири дні з п'яти, і мій намет перетворився на акваріум. Але коли останнього ранку хмари піднялися над Нерейфіордом, я зрозуміла, що Норвегія мені нічого не винна. Фіорд був такий тихий, що було чути, як падає вода з кожної скелі.",
+        "en": "Everyone said Norway is not for a student budget, so of course I went to check. My trump card was a Global Interrail Pass, which I bought with the youth discount. It covers the Oslo to Bergen train, but you still have to pay for a seat reservation, about 7 euros.\n\nThe Bergen Line is one of the most beautiful railways in Europe, and that is no exaggeration. For seven hours the train crosses the Hardangervidda plateau, and in July there was snow outside the window, while all I had in my backpack were sneakers. I got off at Myrdal, at 866 metres, and changed to the Flåm Railway. It descends to the fjord in an hour: twenty kilometres and almost a kilometre of drop. At the stop by the Kjosfossen waterfall a woman in red appears, playing the forest spirit Huldra, and all the tourists freeze with their phones.\n\nNow about money. On the Flåm Railway the pass only gives a discount, so I paid about 35 euros more. I slept at the campsite in Flåm in my own tent for 20 euros and ate from the supermarket: bread, brunost cheese, which is sweetish, caramel-like and very strange, and bananas. My most expensive purchase was a 5-euro coffee, which I drank very slowly, savouring every sip.\n\nThe downside is rain. It rained four days out of five, and my tent turned into an aquarium. But when on the last morning the clouds lifted over the Nærøyfjord, I understood that Norway owed me nothing. The fjord was so quiet that you could hear water falling from every cliff."
+      },
+      "country": { "code": "NO", "uk": "Норвегія", "en": "Norway", "es": "Noruega" },
+      "region": { "uk": "Вестланн", "en": "Vestland", "es": "Vestland" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 5,
+      "tripType": "solo",
+      "tags": ["train", "nature", "backpacking", "camping"],
+      "lat": 60.8630,
+      "lng": 7.1136,
+      "photoQuery": "Flåm Railway"
+    },
+    {
+      "key": "s-1-008",
+      "travellerKey": "t-1-08",
+      "category": "Європа",
+      "title": { "uk": "Долина Дору: тиждень серед виноградників Піняна", "en": "Douro Valley: a week among the vineyards of Pinhão" },
+      "article": {
+        "uk": "Ми з Лесею давно мріяли потрапити на вендиму — збір винограду в долині Дору. З Порту поїхали потягом від вокзалу Сан-Бенту до Піняна: дві з половиною години вздовж річки, квиток коштує близько 13 євро. Сідайте праворуч за ходом руху, бо саме там вікна виходять на воду й терасовані схили.\n\nСім ночей ми прожили на кінті, тобто родинній винарні, за 160 євро за ніч зі сніданком. Господар Жоакін — уже третє покоління, яке вирощує тут турігу насьонал і тінту рориш. Щоранку нас кликали різати грона разом зі збирачами, а одного вечора ми разом з усіма місили виноград ногами в кам'яному лагарі під акордеон. Ноги потім були фіолетові два дні, і це найкращий сувенір, який ми коли-небудь привозили.\n\nДору — про неспішність. Ми пили каву на терасі, дивилися, як туман сповзає з річки, а потім ішли пішки до сусідньої кінти на дегустацію. Двадцятирічний портвейн тоуні пахне горіхами й сушеними абрикосами, і за 15 євро вам наллють три-чотири келихи з розповіддю про кожен. Одного дня ми попливли на рабелу, традиційному плоскодонному човні, яким колись возили бочки до Порту.\n\nМінуси. Без машини тут складно: таксі до сусіднього містечка коштує 25 євро, а стежки між кінтами круті, і після дегустації ними краще не ходити. На початку вересня спека ще трималася на 32 градусах. Але ми вирішили, що наступного разу візьмемо авто і ще тиждень, бо поспішати в Дору — гріх.",
+        "en": "Lesia and I had long dreamed of catching the vindima, the grape harvest in the Douro Valley. From Porto we took the train from São Bento station to Pinhão: two and a half hours along the river, a ticket costs about 13 euros. Sit on the right-hand side in the direction of travel, because that is where the windows face the water and the terraced slopes.\n\nWe spent seven nights at a quinta, a family wine estate, for 160 euros a night with breakfast. The owner, Joaquim, is the third generation growing Touriga Nacional and Tinta Roriz here. Every morning we were invited to cut bunches alongside the pickers, and one evening we joined everyone treading grapes in a stone lagar to the sound of an accordion. Our feet stayed purple for two days, and it is the best souvenir we have ever brought home.\n\nThe Douro is about slowness. We drank coffee on the terrace, watched the fog slide off the river, and then walked to the neighbouring quinta for a tasting. A twenty-year-old tawny port smells of nuts and dried apricots, and for 15 euros they will pour you three or four glasses with a story about each. One day we sailed on a rabelo, the traditional flat-bottomed boat that once carried barrels down to Porto.\n\nDownsides. Without a car it is hard here: a taxi to the next town costs 25 euros, and the paths between quintas are steep and best avoided after a tasting. In early September the heat still held at 32 degrees. But we decided that next time we will take a car and another week, because rushing in the Douro is a sin."
+      },
+      "country": { "code": "PT", "uk": "Португалія", "en": "Portugal", "es": "Portugal" },
+      "region": { "uk": "Долина Дору", "en": "Douro Valley", "es": "Valle del Duero" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 7,
+      "tripType": "couple",
+      "tags": ["wine", "slow-travel", "nature", "food", "train"],
+      "lat": 41.1916,
+      "lng": -7.5457,
+      "photoQuery": "Douro Valley"
+    },
+    {
+      "key": "s-1-009",
+      "travellerKey": "t-1-09",
+      "category": "Європа",
+      "title": { "uk": "Севілья: мудехар, азулежу і дерев'яні «Гриби»", "en": "Seville: Mudéjar, azulejos and the wooden Mushrooms" },
+      "article": {
+        "uk": "Севілью я обирала як архітекторка: тут на кількох квадратних кілометрах уживаються ісламська різьба, готика, барокова надмірність і дерев'яна конструкція XXI століття. Летіла з Варшави до Малаги, а звідти дві години автобусом. Приїхала в березні — вже тепло, цвітуть апельсинові дерева, а туристів ще помірно.\n\nПочинати треба з Реал Алькасара. Палац короля Педро I будували мусульманські майстри в стилі мудехар, і це видно в кожному сантиметрі: ганчеве мереживо на стінах, кахлі азулежу з геометричними зірками, кедрові стелі. Квиток коштує близько 15 євро, беріть онлайн на ранній слот. Найкраще місце — Двір дів: витягнутий басейн і аркади, що віддзеркалюються у воді. Це урок пропорцій, якого не дасть жоден підручник.\n\nПлощу Іспанії збудували до Іберо-американської виставки 1929 року за проєктом Анібала Гонсалеса. Півколо фасаду ніби обіймає площу, а вздовж нього тягнуться керамічні ніші з гербами й мапами всіх провінцій. Потім я пішла до Метрополь Парасоль, яку місцеві називають «Грибами». Юрген Маєр збудував її 2011 року з клеєного дерева, і згори є прогулянкова стежка над дахами старого міста. Контраст старого й нового тут вражає.\n\nМінус Севільї — вулиці Санта-Крус. Вони гарні, але настільки вузькі й людні, що вдень не роздивишся жодного балкона. Я ходила туди о сьомій ранку з ескізником, і місто було моїм. Ще пам'ятайте про сієсту: з другої до п'ятої частина крамниць і церков зачинена. І обов'язково підніміться на Хіральду: там замість сходів 35 пандусів, щоб муедзин міг підніматися верхи.",
+        "en": "I chose Seville as an architect: within a few square kilometres Islamic carving, Gothic, Baroque excess and a twenty-first-century timber structure live side by side. I flew from Warsaw to Málaga and then took a two-hour bus. I arrived in March: already warm, orange trees in blossom, and tourists still in moderation.\n\nYou have to start with the Real Alcázar. King Pedro I's palace was built by Muslim craftsmen in the Mudéjar style, and you can see it in every centimetre: plaster lacework on the walls, azulejo tiles with geometric stars, cedar ceilings. A ticket costs about 15 euros; book an early slot online. The best place is the Courtyard of the Maidens: a long pool and arcades reflected in the water. It is a lesson in proportion no textbook will give you.\n\nThe Plaza de España was built for the 1929 Ibero-American Exposition to a design by Aníbal González. The semicircle of the facade seems to embrace the square, and along it run ceramic alcoves with the coats of arms and maps of every province. Then I went to the Metropol Parasol, which locals call the Mushrooms. Jürgen Mayer built it in 2011 from laminated timber, and on top there is a walkway above the roofs of the old town. The contrast of old and new here is striking.\n\nSeville's downside is the streets of Santa Cruz. They are beautiful but so narrow and crowded that during the day you cannot make out a single balcony. I went there at seven in the morning with my sketchbook, and the city was mine. Also remember the siesta: from two to five some shops and churches are closed. And do climb the Giralda: instead of stairs it has 35 ramps so that the muezzin could ride up on horseback."
+      },
+      "country": { "code": "ES", "uk": "Іспанія", "en": "Spain", "es": "España" },
+      "region": { "uk": "Андалусія", "en": "Andalusia", "es": "Andalucía" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["architecture", "history", "city-break", "culture"],
+      "lat": 37.3772,
+      "lng": -5.9869,
+      "photoQuery": "Plaza de España Seville"
+    },
+    {
+      "key": "s-1-010",
+      "travellerKey": "t-1-10",
+      "category": "Європа",
+      "title": { "uk": "Ірландія за кермом: Дорога Дикої Атлантики", "en": "Ireland behind the wheel: the Wild Atlantic Way" },
+      "article": {
+        "uk": "Цього разу моя «Октавія» лишилася вдома: ми з другом Сергієм прилетіли до Дубліна і взяли напрокат маленький «Фольксваген Поло». Перші двадцять кілометрів лівостороннього руху я так стискав кермо, що побіліли пальці. На кругових розв'язках Сергій уголос повторював: «Ліворуч, ліворуч, ліворуч», і це допомагало.\n\nМаршрут Дорогою Дикої Атлантики ми склали такий: Голвей, Коннемара, плато Беррен, скелі Мохер, півострів Дінгл і Кільце Керрі. За дев'ять днів вийшло близько 1100 кілометрів. Дороги на заході вузькі, з обох боків кам'яні огорожі, а назустріч може виїхати трактор чи туристичний автобус. Дзеркало ми таки подряпали об стіну, добре, що страховка була повна. Пальне коштувало близько 1,80 євро за літр.\n\nСкелі Мохер — двісті метрів прямовисного каменю над океаном, і на вітрі там важко стояти рівно. Вхід із парковкою коштує близько 12 євро, якщо купувати онлайн. Ми приїхали о восьмій вечора, коли автобуси вже поїхали, і мали скелі майже для себе. Ночували в B&B по 90 євро за кімнату на двох, а повний ірландський сніданок із кров'яною ковбасою тримав нас до вечора. У селі Дулін ми потрапили в паб, де за сусіднім столиком грали скрипаль і волинщик.\n\nМінус — дощ. Він тут не падає, а летить збоку, і за день може починатися й закінчуватися разів десять. А ще вівці на дорогах Коннемари принципово не поступаються дорогою. Зате дорога Слі-Гед на Дінглі з видом на острови Бласкет — одна з найкрасивіших, якими я коли-небудь їздив.",
+        "en": "This time my Octavia stayed at home: my friend Serhii and I flew to Dublin and rented a little Volkswagen Polo. For the first twenty kilometres of driving on the left I gripped the wheel so hard my knuckles went white. At roundabouts Serhii kept repeating out loud 'left, left, left', and it helped.\n\nWe planned our Wild Atlantic Way route like this: Galway, Connemara, the Burren plateau, the Cliffs of Moher, the Dingle Peninsula and the Ring of Kerry. In nine days that came to about 1,100 kilometres. The roads in the west are narrow, with stone walls on both sides, and a tractor or a tour coach may come at you. We did scratch a mirror on a wall; luckily the insurance was comprehensive. Fuel cost about 1.80 euros per litre.\n\nThe Cliffs of Moher are two hundred metres of sheer rock above the ocean, and in the wind it is hard to stand straight up there. Entry with parking costs about 12 euros if you buy online. We arrived at eight in the evening, when the coaches had left, and had the cliffs almost to ourselves. We slept in B&Bs at 90 euros a room for two, and a full Irish breakfast with black pudding kept us going until evening. In the village of Doolin we ended up in a pub where a fiddler and a piper were playing at the next table.\n\nThe downside is rain. Here it does not fall, it flies sideways, and in a day it can start and stop about ten times. And the sheep on the roads of Connemara refuse to give way on principle. But the Slea Head Drive on Dingle, with its view of the Blasket Islands, is one of the most beautiful roads I have ever driven."
+      },
+      "country": { "code": "IE", "uk": "Ірландія", "en": "Ireland", "es": "Irlanda" },
+      "region": { "uk": "Графство Клер", "en": "County Clare", "es": "Condado de Clare" },
+      "seasons": ["spring", "summer"],
+      "budget": "medium",
+      "durationDays": 9,
+      "tripType": "friends",
+      "tags": ["road-trip", "nature", "photography", "hiking"],
+      "lat": 52.9715,
+      "lng": -9.4309,
+      "photoQuery": "Cliffs of Moher"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<div class="notice">
+  <h2 class="notice__title">{{ t('editorial.title') }}</h2>
+  <p class="notice__text">{{ t('editorial.text') }}</p>
+  <ul class="notice__list">
+    <li>{{ t('editorial.point1') }}</li>
+    <li>{{ t('editorial.point2') }}</li>
+    <li>{{ t('editorial.point3') }}</li>
+  </ul>
+  <div class="notice__actions">
+    <a class="action" href="mailto:{{ editorialEmail }}?subject={{ t('editorial.mailSubject') | urlencode }}">{{ t('editorial.write') }}</a>
+    <a class="action action--ghost" href="{{ url('/stories') }}">{{ t('editorial.read') }}</a>
+  </div>
+</div>

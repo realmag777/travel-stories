@@ -1,0 +1,38 @@
+/* "Популярні історії" block (home page and story page). */
+.popular { background: var(--color-scheme-2-background); flex-direction: column; gap: 24px; padding: 64px 20px; display: flex; font-family: var(--font-family); font-size: 16px; font-weight: 400; line-height: 1.5; }
+@media (min-width: 768px) { .popular { padding: 64px 32px; } }
+@media (min-width: 1440px) { .popular { gap: 40px; padding: 72px 64px; } }
+.popular--plain { background: none; }
+.popular__container { flex-direction: column; gap: 24px; max-width: 335px; margin: auto; display: flex; width: 100%; }
+@media (min-width: 768px) { .popular__container { max-width: 704px; } }
+@media (min-width: 1440px) { .popular__container { gap: 40px; max-width: 1312px; } }
+.popular__title { font-family: var(--second-family); letter-spacing: -.01em; color: var(--color-scheme-1-text); font-size: 28px; font-weight: 700; line-height: 1.2; }
+@media (min-width: 768px) { .popular__title { font-size: 44px; } }
+@media (min-width: 1440px) { .popular__title { font-size: 52px; } }
+.popular__list { flex-direction: column; gap: 24px; display: flex; }
+@media (min-width: 768px) { .popular__list { flex-flow: wrap; } }
+@media (max-width: 767px), (min-width: 1440px) { .popular__item:nth-child(n+4) { display: none; } }
+.popular__link {
+  outline: 1px solid var(--color-royal-blue);
+  background: var(--color-royal-blue);
+  width: 147px;
+  height: 48px;
+  color: var(--color-white);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px;
+  font-weight: 500;
+  transition-property: background-color, outline, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  display: flex;
+}
+.popular__link:hover, .popular__link:focus { background-color: var(--color-royal-blue-lighter); outline: 1px solid var(--color-royal-blue); color: var(--color-scheme-2-text); }
+.popular__link:active { background-color: var(--color-royal-blue-light); outline: 1px solid var(--color-royal-blue); color: var(--color-scheme-2-text); }
+@media (max-width: 767px) { .popular__link { display: none; } }
+/* On the story page the section has its own paddings like the original. */
+.popular-wrap { padding: 64px 20px; }
+@media only screen and (min-width: 768px) { .popular-wrap { padding: 64px 32px; } }
+@media only screen and (min-width: 1440px) { .popular-wrap { padding: 72px 64px; } }

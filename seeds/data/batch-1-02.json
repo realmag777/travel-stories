@@ -1,0 +1,204 @@
+{
+  "stories": [
+    {
+      "key": "s-1-011",
+      "travellerKey": "t-1-11",
+      "category": "Європа",
+      "title": { "uk": "Нідерланди на велосипеді: тюльпани Кейкенгофа і Рейксмузеум", "en": "The Netherlands by bike: Keukenhof tulips and the Rijksmuseum" },
+      "article": {
+        "uk": "У моїй таблиці витрат Нідерланди мали окремий рядок «вітер», і я не жартую. Ми з подругою Катериною прилетіли з Варшави до Амстердама в середині квітня, щоб побачити тюльпани в Кейкенгофі. Готель біля Йордану коштував 190 євро за ніч. Це найдорожчий рядок таблиці, і він досі мене ображає.\n\nЛогіка така: у Кейкенгоф можна їхати автобусом разом із половиною світу, а можна велосипедом через поля. Ми взяли напрокат два велосипеди в Гарлемі, по 15 євро на день, і проїхали 25 кілометрів через Лісе. Поля смугасті, червоні, жовті, фіолетові, і пахнуть вони сильніше, ніж я очікував. Квиток до парку коштує близько 20 євро, бронювати треба на конкретний день і годину. Голландці дотримуються часу краще, ніж німецька залізниця. Як німець, кажу це з болем.\n\nСам Кейкенгоф — це сім мільйонів цибулин і абсолютна дисципліна. Кожна клумба продумана, як код без жодного бага. Найкраще було в павільйоні з орхідеями й на вітряку, з якого видно поля навколо. Наступного дня в Амстердамі ми пішли до Рейксмузеуму (квиток близько 25 євро, онлайн) і пів години простояли перед «Нічною вартою». Рембрандт теж був перфекціоністом, тож ми зрозуміли один одного.\n\nМінуси. Вітер у Нідерландах завжди дме в обличчя, причому в обидва боки маршруту. Фізика тут працює інакше. У вихідні Кейкенгоф переповнений, тож приїжджайте на відкриття о восьмій. А велосипедисти в Амстердамі не гальмують ні для кого, тому туристові на велодоріжці краще не стояти. Підсумок таблиці: 820 євро на двох за чотири дні, і я вважаю, що тюльпани того варті.",
+        "en": "In my expense spreadsheet the Netherlands had a separate row called 'wind', and I am not joking. My girlfriend Kateryna and I flew from Warsaw to Amsterdam in mid-April to see the tulips at Keukenhof. The hotel near the Jordaan cost 190 euros a night. That is the most expensive row in the spreadsheet, and it still offends me.\n\nThe logic is this: you can go to Keukenhof by bus together with half the world, or you can cycle through the fields. We rented two bikes in Haarlem at 15 euros a day and rode 25 kilometres via Lisse. The fields are striped red, yellow and purple, and they smell stronger than I expected. A park ticket costs about 20 euros, and you have to book a specific day and time. The Dutch keep time better than German railways. As a German, I say this with pain.\n\nKeukenhof itself is seven million bulbs and absolute discipline. Every flower bed is thought through, like code without a single bug. The best parts were the orchid pavilion and the windmill, from which you can see the fields all around. The next day in Amsterdam we went to the Rijksmuseum (a ticket is about 25 euros, online) and stood for half an hour in front of The Night Watch. Rembrandt was a perfectionist too, so we understood each other.\n\nDownsides. The wind in the Netherlands always blows in your face, in both directions of the route. Physics works differently here. At weekends Keukenhof is packed, so arrive at the eight o'clock opening. And Amsterdam cyclists do not brake for anyone, so a tourist had better not stand on a bike lane. Spreadsheet total: 820 euros for two for four days, and I consider the tulips worth it."
+      },
+      "country": { "code": "NL", "uk": "Нідерланди", "en": "Netherlands", "es": "Países Bajos" },
+      "region": { "uk": "Південна Голландія", "en": "South Holland", "es": "Holanda Meridional" },
+      "seasons": ["spring"],
+      "budget": "high",
+      "durationDays": 4,
+      "tripType": "couple",
+      "tags": ["nature", "city-break", "museums", "photography"],
+      "lat": 52.2697,
+      "lng": 4.5465,
+      "photoQuery": "Keukenhof"
+    },
+    {
+      "key": "s-1-012",
+      "travellerKey": "t-1-12",
+      "category": "Європа",
+      "title": { "uk": "Крит з трьома дітьми: Балос, Кносс і грецькі бабусі", "en": "Crete with three kids: Balos, Knossos and Greek grannies" },
+      "article": {
+        "uk": "Нас п'ятеро: я, чоловік Олег, дев'ятирічний Івась, шестирічна Дана і дворічна Мирослава. Тому Крит ми обирали за принципом «короткий переліт, тепле море й лікарня поруч на всякий випадок». Летіли з Кракова до Ханьї, а в аеропорту взяли семимісний мінівен — 450 євро за дванадцять днів. Вілла з басейном біля Кісамоса коштувала 140 євро за ніч, і це дешевше, ніж два номери в готелі.\n\nЛагуна Балос — те місце, заради якого варто терпіти дорогу. Ми пливли туди поромом з порту Кісамоса: 30 євро для дорослого, дітям дешевше, Мирослава безкоштовно. Вода бірюзова, мілка й тепла, як у ванні, і діти годинами бігали по коліна в морі. Наступного дня поїхали на Елафонісі з рожевим піском, і Дана набрала його повну пляшечку «для бабусі».\n\nКносс ми витримали годину. Квиток для дорослих коштує близько 20 євро, діти з ЄС проходять безкоштовно. Івась нудьгував рівно доти, доки я не розповіла про Мінотавра і лабіринт. Після цього він шукав чудовисько за кожною колоною. Порада: їдьте зранку, бо опівдні там зовсім немає тіні.\n\nТепер про їжу. Порції в тавернах величезні: грецький салат за 8 євро ми ділили на трьох. А в гірському селі бабуся в чорній хустці винесла дітям лукумадес — пончики з медом — і не взяла грошей. Мінуси Криту для родин — вітер мельтемі, через який деякі дні море штормить, і дорога до Балоса: якщо їхати машиною, це ґрунтова дорога з ямами, на якій Дану заколисало. Проте ми вже плануємо повернутися.",
+        "en": "There are five of us: me, my husband Oleh, nine-year-old Ivas, six-year-old Dana and two-year-old Myroslava. So we chose Crete on the principle of 'short flight, warm sea and a hospital nearby just in case'. We flew from Kraków to Chania and picked up a seven-seat minivan at the airport, 450 euros for twelve days. A villa with a pool near Kissamos cost 140 euros a night, which is cheaper than two hotel rooms.\n\nBalos Lagoon is the place worth enduring the journey for. We sailed there by ferry from Kissamos port: 30 euros for an adult, cheaper for children, free for Myroslava. The water is turquoise, shallow and warm as a bath, and the kids ran knee-deep in the sea for hours. The next day we went to Elafonisi with its pink sand, and Dana filled a whole little bottle with it 'for granny'.\n\nWe lasted an hour at Knossos. An adult ticket costs about 20 euros, and children from the EU get in free. Ivas was bored exactly until I told him about the Minotaur and the labyrinth. After that he searched for the monster behind every column. Tip: go in the morning, because at noon there is no shade at all.\n\nNow about food. Portions in the tavernas are huge: we shared an 8-euro Greek salad among three. And in a mountain village a granny in a black headscarf brought the kids loukoumades, honey doughnuts, and refused to take money. The downsides of Crete for families are the meltemi wind, which makes the sea rough on some days, and the road to Balos: if you drive, it is a dirt track full of potholes, on which Dana got carsick. Still, we are already planning to come back."
+      },
+      "country": { "code": "GR", "uk": "Греція", "en": "Greece", "es": "Grecia" },
+      "region": { "uk": "Крит", "en": "Crete", "es": "Creta" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 12,
+      "tripType": "family",
+      "tags": ["beach", "islands", "with-kids", "history", "food"],
+      "lat": 35.5841,
+      "lng": 23.5880,
+      "photoQuery": "Balos"
+    },
+    {
+      "key": "s-1-013",
+      "travellerKey": "t-1-13",
+      "category": "Балкани",
+      "title": { "uk": "Бока-Которська з палуби: тиждень під вітрилом", "en": "The Bay of Kotor from the deck: a week under sail" },
+      "article": {
+        "uk": "Бока-Которську затоку часто називають найпівденнішим фіордом Європи, хоча геологи з цим сперечаються. Мені байдуже: коли заходиш туди під вітрилом, гори піднімаються просто з води на півтора кілометра. Ми вшістьох орендували 45-футову яхту в марині Тівата на тиждень — 2800 євро на всіх, плюс пальне й стоянки.\n\nВітер усередині затоки слабкий і примхливий, тож чесно скажу: половину часу ми йшли на двигуні. Справжнє вітрило почалося за мисом, на відкритій Адріатиці біля півострова Луштиця. Там я двічі пірнав з місцевим дайв-центром: видимість метрів двадцять, вода у вересні 23 градуси, скелясті стінки з губками, восьминоги й зграї риб. Занурення коштувало близько 45 євро разом з орендою спорядження.\n\nНайкрасивіше місце — Пераст. Ми стали на якір навпроти і на тузику дісталися острівця Госпа од Шкрпела. Його насипали вручну: моряки століттями кидали тут камені й топили старі кораблі. Усередині церкви висять срібні вотивні таблички від капітанів, які повернулися додому. Як людина моря, я простояв там довше, ніж планував.\n\nА от Котор удень нас трохи розчарував. Коли в порт заходять два круїзні лайнери, старе місто перетворюється на мурашник. Ми повернулися ввечері, піднялися до фортеці Святого Іоанна — близько 1350 сходинок, вхід 15 євро, — і захід сонця над затокою все пробачив. Ще мінус: якірні стоянки біля популярних місць платні, а місця на бочках розбирають до обіду.",
+        "en": "The Bay of Kotor is often called the southernmost fjord in Europe, although geologists argue with that. I do not care: when you sail in, the mountains rise straight out of the water to a kilometre and a half. Six of us chartered a 45-foot yacht at the Tivat marina for a week, 2,800 euros for all of us, plus fuel and moorings.\n\nThe wind inside the bay is weak and fickle, so I will be honest: half the time we motored. Real sailing began past the cape, on the open Adriatic near the Luštica peninsula. There I dived twice with a local dive centre: visibility around twenty metres, water 23 degrees in September, rocky walls with sponges, octopuses and schools of fish. A dive cost about 45 euros including gear rental.\n\nThe most beautiful place is Perast. We anchored opposite and took the dinghy to the islet of Our Lady of the Rocks. It was built up by hand: for centuries sailors threw stones here and sank old ships. Inside the church hang silver votive plaques from captains who made it home. As a man of the sea, I stood there longer than I had planned.\n\nKotor in the daytime disappointed us a little, though. When two cruise ships come into port, the old town turns into an anthill. We came back in the evening, climbed to the Fortress of St John, about 1,350 steps with a 15-euro entry fee, and the sunset over the bay forgave everything. One more downside: anchorages near popular spots are paid, and the mooring buoys are taken by lunchtime."
+      },
+      "country": { "code": "ME", "uk": "Чорногорія", "en": "Montenegro", "es": "Montenegro" },
+      "region": { "uk": "Бока-Которська затока", "en": "Bay of Kotor", "es": "Bocas de Kotor" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 7,
+      "tripType": "friends",
+      "tags": ["diving", "nature", "history", "photography"],
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "photoQuery": "Kotor Bay"
+    },
+    {
+      "key": "s-1-014",
+      "travellerKey": "t-1-14",
+      "category": "Європа",
+      "title": { "uk": "Ельзас на Різдво: ярмарки Страсбурга і Кольмара", "en": "Alsace at Christmas: the markets of Strasbourg and Colmar" },
+      "article": {
+        "uk": "Коли мої київські подруги Оксана й Віра дізналися, що я зі Страсбурга, вони поставили умову: на Різдво я везу їх додому. Тож у грудні ми прилетіли до Базеля, а звідти потягом за годину з чвертю доїхали до Страсбурга. Удома мама вже спекла бределе — маленьке ельзаське різдвяне печиво, — і дівчата з'їли пів коробки ще до вечері.\n\nРіздвяний ярмарок у Страсбурзі, Крістіндельсмерік, існує з 1570 року, і це один з найстаріших у Європі. На площі Клебер стоїть величезна ялинка, а навколо собору — десятки дерев'яних будиночків з іграшками, свічками й пряниками. Глінтвейн тут п'ють і білий, і червоний, келих коштує близько 3,50 євро плюс застава за чашку, яку можна забрати на згадку. Оксана сказала, що атмосфера нагадує Львів, тільки із сиром мюнстер, і я з нею погодилася.\n\nНаступного дня ми поїхали до Кольмара — пів години потягом, квиток близько 13 євро. Квартал Маленька Венеція з фахверковими будиночками над каналом узимку схожий на листівку. Потім винним шляхом доїхали до Рікевіра й Кайзерсберга. У маленькій вінстубі ми замовили шукрут, кислу капусту з ковбасками й свининою, і фламмекюхе — тонкий пиріг зі сметаною й цибулею за 10 євро. А до цього — келих гевюрцтрамінера.\n\nТепер чесно, як місцева: у грудні Ельзас переповнений. У вихідні в Кольмарі важко пройти вулицею, а ціни на готелі зростають утричі. Моя порада — жити в маленькому селі на винному шляху, їздити на ярмарки в будні й приходити зранку. І не купуйте пряники в першому ж будиночку біля собору: найкращі продають у пекарнях на бічних вуличках.",
+        "en": "When my Kyiv friends Oksana and Vira found out I was from Strasbourg, they set a condition: for Christmas I take them home. So in December we flew to Basel and from there took the train to Strasbourg in an hour and a quarter. At home my mother had already baked bredele, small Alsatian Christmas biscuits, and the girls ate half a box before dinner.\n\nThe Christmas market in Strasbourg, the Christkindelsmärik, has existed since 1570, and it is one of the oldest in Europe. A huge tree stands on Place Kléber, and around the cathedral there are dozens of wooden chalets with toys, candles and gingerbread. Mulled wine here comes both white and red; a glass costs about 3.50 euros plus a deposit for the mug, which you can keep as a souvenir. Oksana said the atmosphere reminds her of Lviv, only with Munster cheese, and I agreed.\n\nThe next day we went to Colmar, half an hour by train, a ticket about 13 euros. The Little Venice quarter with its half-timbered houses over the canal looks like a postcard in winter. Then we drove along the wine route to Riquewihr and Kaysersberg. In a small winstub we ordered choucroute, sauerkraut with sausages and pork, and flammekueche, a thin tart with cream and onion, for 10 euros. And before that, a glass of Gewürztraminer.\n\nNow honestly, as a local: in December Alsace is overcrowded. At weekends it is hard to walk down a street in Colmar, and hotel prices triple. My advice is to stay in a small village on the wine route, visit the markets on weekdays and come in the morning. And do not buy gingerbread at the first chalet by the cathedral: the best is sold in bakeries on the side streets."
+      },
+      "country": { "code": "FR", "uk": "Франція", "en": "France", "es": "Francia" },
+      "region": { "uk": "Ельзас", "en": "Alsace", "es": "Alsacia" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "friends",
+      "tags": ["markets", "festivals", "food", "wine", "train"],
+      "lat": 48.0794,
+      "lng": 7.3585,
+      "photoQuery": "Petite Venise Colmar"
+    },
+    {
+      "key": "s-1-015",
+      "travellerKey": "t-1-15",
+      "category": "Балкани",
+      "title": { "uk": "EXIT у Нові-Саді: чотири ночі в Петроварадинській фортеці", "en": "EXIT in Novi Sad: four nights in Petrovaradin Fortress" },
+      "article": {
+        "uk": "На EXIT ми поїхали вчотирьох: я, барабанщик Ден і двоє друзів, які обіцяли «трохи потанцювати», а потім не спали чотири ночі. Добиралися через Будапешт: звідти автобус до Нові-Сада йде близько п'яти годин і коштує 20 євро. Квиток на всі чотири дні фестивалю тоді коштував близько 150 євро, а кемпінг на пляжі Штранд біля Дунаю — ще 40.\n\nГоловне на EXIT — сама Петроварадинська фортеця. Сцени розкидані її бастіонами, ровами й тунелями, і ти ходиш між ними, наче проходиш квест. Як звукорежисер скажу: Dance Arena у старому рові — це окремий жанр. Кам'яні стіни працюють як природний рупор, бас відбивається від них і б'є в груди, а на світанку, коли над Дунаєм рожевіє небо, діджей ставить щось повільне, і тисячі людей просто зупиняються.\n\nПро їжу. О четвертій ранку найкраще, що може з тобою статися, — це плєскавиця, сербська котлета в лепінї з каймаком і цибулею, за 3–4 євро. Удень ми відсипалися на пляжі, купалися в Дунаї й ходили до старого центру Нові-Сада, де на площі Свободи п'ють каву з ракією так, ніби це звичайний сніданок. Місто спокійне, зелене, а люди дуже привітні.\n\nМінуси. Підйом до фортеці бруківкою після восьми годин танців здається Еверестом. Удень спека до 35 градусів, уночі пил, а черги по воду біля головної сцени довгі. Беріть пляшку, яку можна наповнювати, беруші для сну в кемпінгу і зручні кросівки. І не намагайтеся побачити всі сцени, бо не вийде: найкращі моменти трапляються там, де ти не планував бути.",
+        "en": "Four of us went to EXIT: me, Den the drummer and two friends who promised to 'dance a little' and then did not sleep for four nights. We travelled via Budapest: from there the bus to Novi Sad takes about five hours and costs 20 euros. A ticket for all four days of the festival cost about 150 euros back then, and camping on Štrand beach by the Danube another 40.\n\nThe main thing at EXIT is Petrovaradin Fortress itself. The stages are scattered across its bastions, moats and tunnels, and you walk between them as if playing a quest. As a sound engineer I will say this: the Dance Arena in the old moat is a genre of its own. The stone walls work as a natural horn, the bass bounces off them and hits you in the chest, and at dawn, when the sky turns pink over the Danube, the DJ plays something slow and thousands of people just stop.\n\nAbout food. At four in the morning the best thing that can happen to you is a pljeskavica, a Serbian patty in lepinja bread with kajmak and onion, for 3 to 4 euros. In the daytime we slept it off on the beach, swam in the Danube and walked to the old centre of Novi Sad, where on Liberty Square people drink coffee with rakija as if it were an ordinary breakfast. The city is calm and green, and the people are very friendly.\n\nDownsides. The cobbled climb to the fortress after eight hours of dancing feels like Everest. In the daytime the heat reaches 35 degrees, at night there is dust, and the queues for water near the main stage are long. Bring a refillable bottle, earplugs for sleeping at the campsite and comfortable trainers. And do not try to see every stage, because you will not manage: the best moments happen where you never planned to be."
+      },
+      "country": { "code": "RS", "uk": "Сербія", "en": "Serbia", "es": "Serbia" },
+      "region": { "uk": "Воєводина", "en": "Vojvodina", "es": "Voivodina" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "friends",
+      "tags": ["festivals", "nightlife", "camping", "history"],
+      "lat": 45.2526,
+      "lng": 19.8619,
+      "photoQuery": "Petrovaradin Fortress"
+    },
+    {
+      "key": "s-1-016",
+      "travellerKey": "t-1-16",
+      "category": "Європа",
+      "title": { "uk": "Острів Скай: вітер, туман і скеля Олд-Мен-оф-Сторр", "en": "Isle of Skye: wind, mist and the Old Man of Storr" },
+      "article": {
+        "uk": "На острів Скай я поїхала наприкінці вересня, коли вже немає літніх натовпів, але дні ще довгі. З Глазго автобус Citylink іде до Портрі майже сім годин, квиток коштує близько 55 фунтів. Дорога через Гленко й Форт-Вільям сама по собі стала першою главою мого щоденника: я дивилася у вікно і майже нічого не записувала.\n\nЖила в маленькому B&B у Портрі за 85 фунтів за ніч, з вікнами на гавань і різнокольорові будинки. Першого ранку пішла до скелі Олд-Мен-оф-Сторр. Підйом — година стрімкою стежкою, і майже весь час я йшла в тумані, не бачачи нічого далі кількох метрів. А потім туман розірвався, і переді мною виросла кам'яна голка заввишки п'ятдесят метрів. Я сіла на мокру траву і довго просто дихала. Іноді краєвид треба заслужити очікуванням.\n\nНаступні дні я ходила маршрутом Кірейнг — петлею майже на сім кілометрів серед зсувів, озерець і скель, схожих на руїни замків, — і до Казкових озер біля Гленбрітла, де вода така прозора, що видно кожен камінчик на дні. Увечері в пабі я їла рибний суп каллен-скінк з копченою пікшею і писала в щоденник про тишу, яку тут чути навіть у вітрі.\n\nЧесно про складне. Автобуси на острові ходять рідко, а в неділю майже не ходять, тож без машини доводиться планувати кожен день. Погода змінюється щогодини, і без непромокальної куртки тут нічого робити. А мошка мідж у безвітряні дні кусає навіть у вересні. Проте зі Ская я поверталася спокійнішою, ніж була будь-коли за останній рік.",
+        "en": "I went to the Isle of Skye at the end of September, when the summer crowds are gone but the days are still long. From Glasgow the Citylink bus takes almost seven hours to Portree, and a ticket costs about 55 pounds. The road through Glencoe and Fort William became the first chapter of my journal on its own: I looked out of the window and wrote almost nothing.\n\nI stayed in a small B&B in Portree for 85 pounds a night, with windows overlooking the harbour and its colourful houses. On the first morning I went to the Old Man of Storr. The climb is an hour up a steep path, and almost the whole time I walked in mist, unable to see more than a few metres ahead. Then the mist tore open, and a stone needle fifty metres tall rose in front of me. I sat down on the wet grass and simply breathed for a long time. Sometimes a view has to be earned by waiting.\n\nOn the following days I walked the Quiraing, a loop of almost seven kilometres among landslips, little lochs and rocks that look like castle ruins, and to the Fairy Pools near Glenbrittle, where the water is so clear you can see every pebble on the bottom. In the evenings at the pub I ate cullen skink, a fish soup with smoked haddock, and wrote in my journal about the silence you can hear here even in the wind.\n\nHonestly about the hard parts. Buses on the island are rare, and on Sundays they barely run, so without a car you have to plan every day. The weather changes every hour, and without a waterproof jacket there is nothing to do here. And on windless days the midges bite even in September. Still, I came back from Skye calmer than I had been at any time in the past year."
+      },
+      "country": { "code": "GB", "uk": "Велика Британія", "en": "United Kingdom", "es": "Reino Unido" },
+      "region": { "uk": "Острів Скай, Шотландія", "en": "Isle of Skye, Scotland", "es": "Isla de Skye, Escocia" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["hiking", "nature", "islands", "slow-travel"],
+      "lat": 57.5074,
+      "lng": -6.1799,
+      "photoQuery": "Old Man of Storr"
+    },
+    {
+      "key": "s-1-017",
+      "travellerKey": "t-1-01",
+      "category": "Європа",
+      "title": { "uk": "Сан-Себастьян: пінчос, чизкейк і пляж Ла-Конча", "en": "San Sebastián: pintxos, cheesecake and La Concha beach" },
+      "article": {
+        "uk": "Сан-Себастьян — місто, де я за чотири дні набрала два кілограми і не шкодую жодного грама. Ми з чоловіком Ігорем прилетіли до Більбао, а звідти автобус довіз нас до Доностії, як кажуть баски, за годину двадцять і 18 євро на двох. Жили в старому місті, Парте-Вієха, за 170 євро за ніч, зате до барів можна було дійти в капцях.\n\nПінчос тут — не закуска, а спосіб життя. Увечері ти переходиш з бару в бар, у кожному береш одну-дві фірмові страви і келих чаколі, молодого баскського вина, яке бармен наливає з висоти, щоб воно заграло. Обов'язково спробуйте гілду — оливку, гострий перчик гіндилья й анчоус на шпажці, по 2,50 євро. А ще гриби з жовтком, тушковані щічки й тортилью, яка всередині ледь рідка.\n\nЯк кондитерка я не могла оминути бар La Viña, де народився баскський чизкейк. Його печуть за дуже високої температури, і верх виходить майже чорним, а серединка — ніжною, як заварний крем. Шматок коштує близько 6 євро. Я з'їла два, а потім пів години розпитувала кухаря, і він по секрету сказав, що інгредієнтів лише п'ять. Тепер експериментую вдома.\n\nЗранку ми ходили на ринок Ла-Бреча — там рибалки продають анчоуси й тунця, а бабусі торгуються за кожну цибулину. Потім гуляли пляжем Ла-Конча, який вигинається ідеальною мушлею. Мінус один, але суттєвий: пінчос по 3–5 євро складаються в чималий рахунок, і вечір на двох легко обходиться в 120 євро. До того ж у популярних барах стоїш плечем до плеча й тарілку тримаєш у руці.",
+        "en": "San Sebastián is the city where I gained two kilos in four days and do not regret a single gram. My husband Ihor and I flew into Bilbao, and from there a bus took us to Donostia, as the Basques call it, in an hour and twenty minutes for 18 euros for both of us. We stayed in the old town, the Parte Vieja, for 170 euros a night, but we could walk to the bars in slippers.\n\nPintxos here are not a snack but a way of life. In the evening you move from bar to bar, in each one you order one or two signature dishes and a glass of txakoli, a young Basque wine the bartender pours from a height to make it sparkle. Be sure to try a gilda, an olive, a hot guindilla pepper and an anchovy on a skewer, for 2.50 euros. Also mushrooms with egg yolk, braised cheeks and a tortilla that is barely set inside.\n\nAs a pastry chef I could not skip La Viña, the bar where Basque cheesecake was born. It is baked at a very high temperature, so the top comes out almost black and the middle stays as soft as custard. A slice costs about 6 euros. I ate two, then spent half an hour questioning the cook, and he told me in confidence that there are only five ingredients. Now I am experimenting at home.\n\nIn the mornings we went to La Bretxa market, where fishermen sell anchovies and tuna and grannies haggle over every onion. Then we walked along La Concha beach, which curves like a perfect shell. One downside, but a serious one: pintxos at 3 to 5 euros add up to a hefty bill, and an evening for two easily costs 120 euros. On top of that, in popular bars you stand shoulder to shoulder holding your plate in your hand."
+      },
+      "country": { "code": "ES", "uk": "Іспанія", "en": "Spain", "es": "España" },
+      "region": { "uk": "Країна Басків", "en": "Basque Country", "es": "País Vasco" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 4,
+      "tripType": "couple",
+      "tags": ["food", "city-break", "markets", "beach", "wine"],
+      "lat": 43.3183,
+      "lng": -1.9812,
+      "photoQuery": "La Concha Beach"
+    },
+    {
+      "key": "s-1-018",
+      "travellerKey": "t-1-02",
+      "category": "Балкани",
+      "title": { "uk": "Плітвіцькі озера з дітьми: маршрут без сліз", "en": "Plitvice Lakes with kids: a route without tears" },
+      "article": {
+        "uk": "Плітвіцькі озера ми відвідали в жовтні, і це рішення виявилося найкращим за всю поїздку Хорватією. Влітку квиток коштує близько 40 євро, а восени — майже вдвічі дешевше, і людей помітно менше. Діти до семи років проходять безкоштовно, а нашій Софійці тоді якраз виповнилося вісім, тож за неї ми заплатили дитячий тариф. З Загреба їхали машиною дві години.\n\nМаршрутів у парку кілька, і всі вони позначені літерами. Ми обрали маршрут H від другого входу: спочатку панорамний поїзд везе тебе вгору, далі ти спускаєшся пішки вздовж каскаду озер, а посередині перепливаєш озеро Козяк на електричному катері. Усе разом зайняло близько п'яти годин з обідом і зупинками. Для дітей важливо, що весь шлях іде вниз, і ніхто не скиглив, що втомився.\n\nКрасу Плітвіце важко описати: вода бірюзова, смарагдова, а місцями майже синя, і крізь неї видно кожну рибину й повалене дерево на дні. Найбільший водоспад, Великий слап, падає з висоти 78 метрів. Марко порахував, що це майже втричі вище за нашу дев'ятиповерхівку, і був дуже задоволений своїми розрахунками.\n\nОдин серйозний мінус — дерев'яні настили. Вони вузькі, без поручнів, а після дощу дуже слизькі. Марко одного разу ледь не скупався в озері, тож тримайте малих за руку весь час. Усередині парку майже немає де поїсти, крім дорогих кіосків, тому беріть бутерброди. Ночували ми в гостьовому будинку в селі Растовача за 70 євро, а на вечерю замовили ягнятину з рожна. Раджу.",
+        "en": "We visited the Plitvice Lakes in October, and that decision turned out to be the best of our whole trip around Croatia. In summer a ticket costs about 40 euros, in autumn almost half that, and there are noticeably fewer people. Children under seven get in free, and our Sofiika had just turned eight, so we paid the child rate for her. We drove from Zagreb in two hours.\n\nThe park has several routes, all marked with letters. We chose route H from the second entrance: first a panoramic train takes you up, then you walk down along the cascade of lakes, and halfway you cross Lake Kozjak on an electric boat. Altogether it took about five hours with lunch and stops. What matters for kids is that the whole way goes downhill, and nobody whined about being tired.\n\nThe beauty of Plitvice is hard to describe: the water is turquoise, emerald and in places almost blue, and through it you can see every fish and fallen tree on the bottom. The biggest waterfall, Veliki Slap, drops from a height of 78 metres. Marko calculated that this is almost three times taller than our nine-storey block of flats and was very pleased with his maths.\n\nOne serious downside is the wooden boardwalks. They are narrow, have no railings and are very slippery after rain. Once Marko nearly went for a swim in the lake, so hold the little ones' hands the whole time. There is almost nowhere to eat inside the park apart from pricey kiosks, so bring sandwiches. We spent the nights in a guesthouse in the village of Rastovača for 70 euros and ordered spit-roasted lamb for dinner. Recommended."
+      },
+      "country": { "code": "HR", "uk": "Хорватія", "en": "Croatia", "es": "Croacia" },
+      "region": { "uk": "Ліцько-Сенська жупанія", "en": "Lika-Senj County", "es": "Condado de Lika-Senj" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 3,
+      "tripType": "family",
+      "tags": ["national-parks", "lakes", "with-kids", "nature", "hiking"],
+      "lat": 44.8654,
+      "lng": 15.5820,
+      "photoQuery": "Plitvice Lakes"
+    },
+    {
+      "key": "s-1-019",
+      "travellerKey": "t-1-03",
+      "category": "Європа",
+      "title": { "uk": "Метеори: монастирі на скелях у ранковому тумані", "en": "Meteora: monasteries on rocks in the morning mist" },
+      "article": {
+        "uk": "До Метеор ми з чоловіком Артемом їхали з Афін потягом, з пересадкою в Палеофарсалосі: близько п'яти годин і 30 євро на людину. Приїхали в листопаді навмисно: саме восени в долині Фессалії бувають температурні інверсії, коли туман лежить унизу, а скелі з монастирями стирчать над ним, як острови.\n\nЖили в селі Кастракі під самими скелями, за 60 євро за ніч. Будильник щодня на п'яту. Найкраща точка на світанку — оглядовий майданчик біля монастиря Русану і скеля над ним, звідки видно Велику Метеору й Варлаам одночасно. Я знімала на 24–70 для загальних планів і на 100–400, щоб виокремити один монастир на вершині стовпа з туманом під ним. На другий ранок туман стояв ідеально, і за сорок хвилин я зробила кадри, заради яких варто було їхати.\n\nСьогодні діють шість монастирів, вхід у кожен коштує 3 євро. Найбільший, Велика Метеора, заснований у XIV столітті, і досі туди ведуть сотні сходинок, вирізаних у скелі. Колись ченці піднімали людей і харчі в сітках на мотузках, і ця лебідка досі стоїть у башті Варлаама. Жінкам потрібна спідниця, але біля входу видають накидки. Перевірте графік: кожен монастир має свій вихідний.\n\nМінуси. З десятої ранку до Великої Метеори під'їжджають туристичні автобуси, і на сходах стоїть черга. Дрони над монастирями заборонені, тож про аерозйомку забудьте. А в листопаді світловий день короткий, після п'ятої вже темно, тож вечірню зйомку плануйте заздалегідь. Але туман над долиною я пам'ятатиму довго.",
+        "en": "My husband Artem and I travelled to Meteora from Athens by train, changing at Palaiofarsalos: about five hours and 30 euros each. We came in November on purpose: it is in autumn that the Thessaly valley gets temperature inversions, when the fog lies below and the rocks with their monasteries stick out above it like islands.\n\nWe stayed in the village of Kastraki right under the rocks, for 60 euros a night. Alarm at five every day. The best sunrise spot is the viewpoint by the Roussanou monastery and the rock above it, from which you can see the Great Meteoron and Varlaam at the same time. I shot with a 24–70 for wide views and a 100–400 to isolate a single monastery on top of a pillar with fog beneath it. On the second morning the fog was perfect, and in forty minutes I took the frames that made the trip worthwhile.\n\nToday six monasteries are active, and entry to each costs 3 euros. The largest, the Great Meteoron, was founded in the fourteenth century, and hundreds of steps cut into the rock still lead up to it. Monks once hauled people and food up in nets on ropes, and the winch still stands in the tower of Varlaam. Women need a skirt, but wraps are handed out at the entrance. Check the schedule: each monastery has its own closing day.\n\nDownsides. From ten in the morning tour buses pull up at the Great Meteoron, and there is a queue on the stairs. Drones over the monasteries are banned, so forget aerial shots. And in November daylight is short, it is dark after five, so plan your evening shoot in advance. But I will remember the fog over the valley for a long time."
+      },
+      "country": { "code": "GR", "uk": "Греція", "en": "Greece", "es": "Grecia" },
+      "region": { "uk": "Фессалія", "en": "Thessaly", "es": "Tesalia" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "couple",
+      "tags": ["photography", "history", "nature", "culture", "train"],
+      "lat": 39.7217,
+      "lng": 21.6306,
+      "photoQuery": "Meteora"
+    },
+    {
+      "key": "s-1-020",
+      "travellerKey": "t-1-04",
+      "category": "Балкани",
+      "title": { "uk": "Мостар: Старий міст, стрибуни і кава по-боснійськи", "en": "Mostar: the Old Bridge, divers and Bosnian coffee" },
+      "article": {
+        "uk": "До Мостара я поїхав із Сараєва потягом, і це той рідкісний випадок, коли дешевий транспорт ще й найкрасивіший. Дві години вздовж смарагдової Неретви, через тунелі й мости, квиток близько шести євро. У вагоні я був майже сам, якщо не рахувати кондуктора, який тричі приходив перевірити, чи я досі захоплююся краєвидами.\n\nХостел у старому місті коштував 13 євро за ліжко, а господиня зустріла мене боснійською кавою в джезві з рахат-лукумом. Каву тут не п'ють поспіхом, і за двадцять хвилин розмови я дізнався про Мостар більше, ніж із путівника. Старий міст османи збудували 1566 року, і його горбата кам'яна арка над річкою справді виглядає так, ніби її намалювали.\n\nГоловне шоу — стрибуни з мосту. Хлопці з місцевого клубу збирають із туристів близько 25 євро, а тоді стрибають у річку з висоти понад двадцять метрів. Вода в Неретві навіть улітку холодна, градусів дванадцять. Я серйозно обмірковував, чи не стрибнути самому, але згадав про свій бюджет на лікування і купив ще одну каву. На обід — чевапі в лепінї з цибулею за п'ять євро, яких вистачило до вечора.\n\nТепер мінуси. З одинадцятої до четвертої на міст висаджуються одноденні тури з Дубровника, і пройти ним стає неможливо. Сувенірний базар Куюнджилук гарний, але ціни там туристичні: мідні джезви за два квартали вдвічі дешевші. Мій лайфгак: прийдіть на міст о сьомій ранку або після заходу сонця, коли там лише коти й місцеві. А ще можна автостопом доїхати до водоспадів Кравиця за сорок кілометрів.",
+        "en": "I went to Mostar from Sarajevo by train, and it is one of those rare cases when cheap transport is also the most beautiful. Two hours along the emerald Neretva, through tunnels and over bridges, a ticket about six euros. I was almost alone in the carriage, not counting the conductor, who came by three times to check whether I was still admiring the views.\n\nThe hostel in the old town cost 13 euros a bed, and the owner greeted me with Bosnian coffee in a džezva with Turkish delight. Coffee here is not drunk in a hurry, and in twenty minutes of conversation I learned more about Mostar than from the guidebook. The Ottomans built the Old Bridge in 1566, and its humped stone arch over the river really looks as if someone painted it.\n\nThe main show is the bridge divers. Lads from the local club collect about 25 euros from tourists and then jump into the river from more than twenty metres. The Neretva is cold even in summer, about twelve degrees. I seriously considered jumping myself, but then remembered my medical budget and bought another coffee. Lunch was ćevapi in lepinja bread with onion for five euros, which kept me going until evening.\n\nNow the downsides. From eleven to four, day tours from Dubrovnik unload onto the bridge, and crossing it becomes impossible. The Kujundžiluk souvenir bazaar is pretty, but prices there are for tourists: copper džezvas are half the price two blocks away. My life hack: come to the bridge at seven in the morning or after sunset, when only cats and locals are there. You can also hitchhike to the Kravica waterfalls forty kilometres away."
+      },
+      "country": { "code": "BA", "uk": "Боснія і Герцеговина", "en": "Bosnia and Herzegovina", "es": "Bosnia y Herzegovina" },
+      "region": { "uk": "Герцеговина", "en": "Herzegovina", "es": "Herzegovina" },
+      "seasons": ["spring"],
+      "budget": "low",
+      "durationDays": 3,
+      "tripType": "solo",
+      "tags": ["backpacking", "history", "architecture", "train"],
+      "lat": 43.3373,
+      "lng": 17.8150,
+      "photoQuery": "Stari Most"
+    }
+  ]
+}

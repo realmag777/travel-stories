@@ -1,0 +1,204 @@
+{
+  "stories": [
+    {
+      "key": "s-4-011",
+      "travellerKey": "t-4-11",
+      "category": "Африка",
+      "title": { "uk": "Ессуейра: вітер, океан і музика гнауа", "en": "Essaouira: wind, ocean and Gnawa music" },
+      "article": {
+        "uk": "Ессуейра здалася мені рідною з першої хвилини. Білі стіни, сині човни, чайки над фортечним муром і холодний атлантичний вітер — усе як у моєму дитинстві в Порту, тільки з запахом кмину. Ми з двома подругами зі Львова приїхали сюди в червні на фестиваль музики гнауа: автобус із Марракеша їде три години й коштує близько восьми євро.\n\nГнауа — це духовна музика нащадків людей, яких колись привезли сюди з-за Сахари. Металеві кастаньєти карками, басова лютня гембрі й голоси, що повторюють одну фразу, доки ти не перестаєш рахувати час. На фестивалі сцени стоять просто на площі Мулай-Хассан і на пляжі, а вхід безкоштовний. Найкраще було вночі в маленькому дворику-завії, де маалем, майстер гембрі, грав для сорока людей, а ми сиділи на килимах і боялися поворухнутися.\n\nВдень ми гуляли медіною, яка внесена до списку ЮНЕСКО, і заходили в майстерні, де роблять скриньки з туї. У порту купували рибу просто з човна: за кілограм сардин і кілька кальмарів заплатили близько п’яти євро, а в ятці поруч нам їх засмажили ще за два. Я говорила з рибалками суміш французької й португальської, і вони сміялися, що португальці тут уже були, — і це правда, фортеця Могадор пам’ятає XVI століття.\n\nЖили ми в ріаді за 25 євро з людини, а ввечері на даху господиня Хадіджа вчила нас пекти мсемен, марокканські листкові коржі.\n\nЧесний мінус — вітер. Він тут дме майже завжди, на пляжі пісок летить в обличчя, і купатися в холодному океані можуть хіба що серфери в гідрокостюмах. А під час фестивалю ціни на житло зростають удвічі, тож бронюйте заздалегідь.",
+        "en": "Essaouira felt like home from the very first minute. White walls, blue boats, gulls above the ramparts and a cold Atlantic wind, all just like my childhood in Porto, only with the smell of cumin. Two friends from Lviv and I came here in June for the Gnawa music festival: the bus from Marrakech takes three hours and costs about eight euros.\n\nGnawa is the spiritual music of descendants of people once brought here from beyond the Sahara. Metal krakeb castanets, the bass lute called guembri and voices repeating one phrase until you stop counting time. At the festival the stages stand right on Moulay Hassan square and on the beach, and entry is free. The best moment was at night in a small zawiya courtyard, where a maalem, a master of the guembri, played for forty people while we sat on carpets afraid to move.\n\nDuring the day we walked the medina, which is on the UNESCO list, and went into workshops where they make boxes from thuya wood. At the port we bought fish straight from the boats: for a kilo of sardines and a few squid we paid about five euros, and at a stall next door they grilled them for another two. I spoke a mix of French and Portuguese with the fishermen, and they laughed that the Portuguese had already been here, which is true, the Mogador fortress remembers the 16th century.\n\nWe stayed in a riad for 25 euros each, and in the evening on the roof our host Khadija taught us to make msemen, Moroccan flaky flatbreads.\n\nThe honest downside is the wind. It blows here almost all the time, on the beach the sand flies in your face, and only surfers in wetsuits can swim in the cold ocean. And during the festival accommodation prices double, so book in advance."
+      },
+      "country": { "code": "MA", "uk": "Марокко", "en": "Morocco", "es": "Marruecos" },
+      "region": { "uk": "Марракеш-Сафі", "en": "Marrakesh-Safi", "es": "Marrakech-Safí" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 7,
+      "tripType": "friends",
+      "tags": ["festivals", "beach", "culture", "food"],
+      "lat": 31.5085,
+      "lng": -9.7595,
+      "photoQuery": "Essaouira"
+    },
+    {
+      "key": "s-4-012",
+      "travellerKey": "t-4-12",
+      "category": "Африка",
+      "title": { "uk": "Намібія за кермом: Етоша і три тисячі кілометрів гравію", "en": "Namibia behind the wheel: Etosha and 3,000 km of gravel" },
+      "article": {
+        "uk": "Намібія — країна, створена для автомандрівок: доріг небагато, машин ще менше, а більшість трас — укатаний гравій. Ми з дружиною взяли у Віндгуку Toyota Hilux з наметом на даху, двома запасками і холодильником. Шістнадцять днів оренди обійшлися в 1900 євро. Дорого, але це водночас машина, готель і кухня.\n\nДо Етоші від столиці — 430 кілометрів асфальту, перший день я просто привчався до лівостороннього руху. Парк величезний, понад 22 тисячі квадратних кілометрів, і всередині — велике соляне плесо, біле, як скатертина. Ми ночували в кемпах Окаукуеджо, Халалі й Намутоні, місце для намету коштувало близько 25 євро. Головне в Етоші — водопої. Біля водопою в Окаукуеджо вночі під прожектором ми бачили трьох чорних носорогів, а вдень слони приходили пити родинами по двадцять голів.\n\nКілька порад про дорогу. На гравії не їдьте швидше 80 км/год: машину заносить на поворотах, як на льоду. Тиск у шинах я знижував до 2,0 бара, і за всю поїздку проколов колесо лише раз, на дорозі C35 у Дамараленді. Заправки трапляються раз на 150–250 кілометрів, тож бак я доливав при кожній нагоді. Дизель коштував близько 1,20 євро за літр.\n\nПісля Етоші ми поїхали в Дамараленд до наскельних малюнків Твіфелфонтейна і пустельних слонів біля річки Уаб. Ночі в серпні холодні, до плюс трьох, і в наметі на даху без доброго спальника не обійтися.\n\nМінус — відстані й пил. За день буває по шість-сім годин за кермом, а червоний пил проникає всюди, навіть у закритий холодильник. Їздити в темряві не можна: на дорогу виходять антилопи куду, і зіткнення з ними може закінчити подорож.",
+        "en": "Namibia is a country made for road trips: there are few roads, even fewer cars, and most routes are compacted gravel. My wife and I picked up a Toyota Hilux in Windhoek with a rooftop tent, two spare wheels and a fridge. Sixteen days of rental cost 1,900 euros. Expensive, but it is a car, a hotel and a kitchen at the same time.\n\nFrom the capital to Etosha it is 430 kilometres of tarmac, and on the first day I was simply getting used to driving on the left. The park is huge, over 22,000 square kilometres, and inside lies a great salt pan, white as a tablecloth. We camped at Okaukuejo, Halali and Namutoni, and a tent pitch cost about 25 euros. The main thing in Etosha is the waterholes. At the Okaukuejo waterhole at night, under a floodlight, we saw three black rhinos, and in the daytime elephants came to drink in families of twenty.\n\nA few road tips. On gravel don't go faster than 80 km/h: the car slides on bends as if on ice. I lowered the tyre pressure to 2.0 bar, and during the whole trip I had only one puncture, on the C35 in Damaraland. Fuel stations come every 150 to 250 kilometres, so I topped up the tank at every chance. Diesel cost about 1.20 euros a litre.\n\nAfter Etosha we drove to Damaraland to the rock engravings of Twyfelfontein and the desert elephants by the Huab River. August nights are cold, down to plus three, and in a rooftop tent you can't do without a good sleeping bag.\n\nThe downside is distance and dust. Some days mean six or seven hours at the wheel, and the red dust gets everywhere, even into the closed fridge. Driving after dark is not allowed: kudu antelopes walk onto the road, and a collision with one can end the trip."
+      },
+      "country": { "code": "NA", "uk": "Намібія", "en": "Namibia", "es": "Namibia" },
+      "region": { "uk": "Ошана і Кунене", "en": "Oshana and Kunene", "es": "Oshana y Kunene" },
+      "seasons": ["summer"],
+      "budget": "high",
+      "durationDays": 16,
+      "tripType": "couple",
+      "tags": ["road-trip", "wildlife", "national-parks", "camping"],
+      "lat": -19.1797,
+      "lng": 15.9175,
+      "photoQuery": "Etosha National Park"
+    },
+    {
+      "key": "s-4-013",
+      "travellerKey": "t-4-13",
+      "category": "Африка",
+      "title": { "uk": "Дахаб: Блакитна діра і риф на відстані кроку", "en": "Dahab: the Blue Hole and a reef one step away" },
+      "article": {
+        "uk": "Дахаб — моє улюблене місце на Червоному морі саме тому, що тут риф починається просто біля берега. Не треба човнів і ранніх підйомів: вдягаєш гідрокостюм, переходиш дорогу, і за три метри від каміння вже кораловий сад. Я прилетіла в жовтні до Шарм-ель-Шейха, а звідти автобус довіз мене до Дахаба за годину з чвертю.\n\nГоловна зірка тут — Блакитна діра, вертикальна шахта в рифі глибиною понад сто метрів. Скажу як дайверка з десятирічним стажем: туди не треба лізти глибше за свій рівень. Арка на глибині 55 метрів забрала багато життів, і меморіальні таблички на скелі біля входу добре це нагадують. Я пірнала до 30 метрів уздовж стіни, і цього було більш ніж досить: м’які корали, риби-наполеони, зграї скляних рибок у тріщинах.\n\nНайбільше мені сподобалися менш відомі місця: Каньйон, Ель-Мадраса і Лайтхаус прямо в місті. На Лайтхаусі я щодня бачила ската, крилатку, мурен і двох черепах, які спокійно паслися на морській траві. Нагадую: черепах не чіпаємо, коралів не торкаємося ластами, і жодних сонцезахисних кремів з оксибензоном.\n\nПро ціни. Жила я в простому кемпі з видом на море за 15 євро на ніч. Пірнання з гідом і орендою спорядження коштувало близько 30 євро за занурення, пакет з десяти — дешевше. Обідала рибою на грилі в бедуїнських кафе, за 6–8 євро. Вечорами затока Ель-Масбат світиться ліхтарями, а з Синаю дме теплий вітер.\n\nЧесний мінус: частина рифів біля берега пошкоджена, бо новачки стають на корали. Ще мінус — кицьки, що випрошують рибу в кожному кафе. Хоча ні, це, мабуть, плюс.",
+        "en": "Dahab is my favourite place on the Red Sea precisely because the reef starts right at the shore. No boats and no early starts: you put on a wetsuit, cross the road, and three metres from the rocks there is already a coral garden. I flew to Sharm el-Sheikh in October, and from there a bus took me to Dahab in an hour and a quarter.\n\nThe main star here is the Blue Hole, a vertical shaft in the reef more than a hundred metres deep. I'll say it as a diver with ten years' experience: don't go deeper than your level. The arch at 55 metres has taken many lives, and the memorial plaques on the rock by the entrance are a strong reminder. I dived to 30 metres along the wall, and that was more than enough: soft corals, Napoleon wrasse, schools of glassfish in the cracks.\n\nWhat I liked most were the lesser-known sites: the Canyon, El Madrasa and the Lighthouse right in town. At the Lighthouse I saw every day a ray, a lionfish, morays and two turtles calmly grazing on seagrass. A reminder: we don't touch turtles, we don't touch corals with our fins, and no sunscreen with oxybenzone.\n\nAbout prices. I stayed in a simple camp with a sea view for 15 euros a night. A guided dive with equipment rental cost about 30 euros per dive, and a package of ten was cheaper. I had grilled fish for lunch in Bedouin cafes for 6 to 8 euros. In the evenings the bay at Masbat glows with lights, and a warm wind blows from Sinai.\n\nThe honest downside: some of the reefs near the shore are damaged because beginners stand on the corals. Another downside is the cats begging for fish in every cafe. Although no, that's probably an upside."
+      },
+      "country": { "code": "EG", "uk": "Єгипет", "en": "Egypt", "es": "Egipto" },
+      "region": { "uk": "Південний Синай", "en": "South Sinai", "es": "Sinaí del Sur" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 10,
+      "tripType": "solo",
+      "tags": ["diving", "beach", "nature", "wildlife"],
+      "lat": 28.5719,
+      "lng": 34.537,
+      "photoQuery": "Blue Hole Dahab"
+    },
+    {
+      "key": "s-4-014",
+      "travellerKey": "t-4-14",
+      "category": "Африка",
+      "title": { "uk": "Туніс: від руїн Карфагена до Сіді-Бу-Саїда", "en": "Tunisia: from the ruins of Carthage to Sidi Bou Said" },
+      "article": {
+        "uk": "«Карфаген має бути зруйнований», — повторював Катон Старший наприкінці кожної промови, і в 146 році до нашої ери Рим справді зрівняв місто з землею. Тому, приїжджаючи в Карфаген сьогодні, треба бути готовим: величі тут не побачиш, лише її сліди. Але ці сліди говорять більше за будь-який підручник.\n\nЯ жив у Тунісі шість днів і щоранку їхав до передмість приміським потягом TGM, квиток коштував менше за пів євро. Єдиний квиток за близько 10 євро відкриває кілька розкиданих ділянок: пагорб Бірса з руїнами пунічних кварталів, терми Антоніна Пія на самому березі моря, римські вілли і тофет, де пунійці ховали урни. Найсильніше враження — круглий військовий порт. Колись тут стояли двісті двадцять кораблів, а тепер — тихе озерце з качками, і тільки уява відновлює колонади.\n\nЗ Карфагена до Сіді-Бу-Саїда — дві зупинки. Це село на скелі, біло-синє, з кованими віконцями і жасмином. Його архітектурний образ закріпив барон Рудольф д’Ерлангер, який у 1920-х роках збудував тут палац Ennejma Ezzahra і домігся, щоб усі будинки фарбували саме в ці кольори. Я пив м’ятний чай з кедровими горішками в Café des Délices над затокою і думав про те, як поряд жили фінікійці, римляни, вандали, візантійці й араби.\n\nОбов’язково вирушайте ще й до музею Бардо в столиці: там одна з найбагатших у світі колекцій римської мозаїки, зокрема знаменитий портрет Вергілія з музами.\n\nМінус: Сіді-Бу-Саїд у вихідні переповнений, а продавці сувенірів ведуть себе голосно. Приїжджайте в будній день до десятої ранку, і село знову належатиме котам і відлунню ваших кроків.",
+        "en": "'Carthage must be destroyed', Cato the Elder repeated at the end of every speech, and in 146 BC Rome really did raze the city to the ground. So when you come to Carthage today you must be prepared: you will not see grandeur here, only its traces. But those traces say more than any textbook.\n\nI stayed in Tunis for six days and every morning took the TGM suburban train to the outskirts, the ticket cost less than half a euro. A single ticket for about 10 euros opens several scattered sites: Byrsa Hill with the ruins of Punic quarters, the Antonine Baths right on the seashore, Roman villas and the tophet where the Punic people buried their urns. The strongest impression is the round military harbour. Two hundred and twenty ships once stood here, and now it is a quiet pond with ducks, and only your imagination rebuilds the colonnades.\n\nFrom Carthage to Sidi Bou Said it is two stops. It is a village on a cliff, white and blue, with wrought-iron windows and jasmine. Its architectural image was fixed by Baron Rodolphe d'Erlanger, who in the 1920s built the Ennejma Ezzahra palace here and ensured that all houses were painted in exactly these colours. I drank mint tea with pine nuts at Café des Délices above the bay and thought about how Phoenicians, Romans, Vandals, Byzantines and Arabs all lived side by side here.\n\nBe sure to also visit the Bardo Museum in the capital: it holds one of the richest collections of Roman mosaics in the world, including the famous portrait of Virgil with the muses.\n\nThe downside: Sidi Bou Said is overcrowded at weekends, and the souvenir sellers are loud. Come on a weekday before ten in the morning, and the village will once again belong to the cats and the echo of your footsteps."
+      },
+      "country": { "code": "TN", "uk": "Туніс", "en": "Tunisia", "es": "Túnez" },
+      "region": { "uk": "Туніс", "en": "Tunis", "es": "Túnez" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["history", "architecture", "museums", "train"],
+      "lat": 36.8708,
+      "lng": 10.3472,
+      "photoQuery": "Sidi Bou Said"
+    },
+    {
+      "key": "s-4-015",
+      "travellerKey": "t-4-15",
+      "category": "Африка",
+      "title": { "uk": "Масаї-Мара з донькою: велика міграція зблизька", "en": "Masai Mara with my daughter: the great migration up close" },
+      "article": {
+        "uk": "Сафарі Даринка попросила ще у дев’ять років, коли побачила документальний фільм про антилоп гну. Ми відкладали гроші три роки, і в серпні полетіли до Найробі. Скажу одразу: це найдорожча наша подорож, близько 3200 євро на двох за вісім днів разом з перельотами, але донька досі називає її найкращою в житті.\n\nІз Найробі до Масаї-Мари ми летіли маленьким літаком на 12 місць, сорок п’ять хвилин замість шести годин трясіння дорогою. Даринка трималася за мою руку і кричала від захвату, коли ми сіли просто на ґрунтову смугу в савані. Жили в наметовому таборі з ліжками, душем і вечерею біля вогнища. Уночі охоронець-масаї проводжав нас до намету з ліхтариком, бо поруч ходили бегемоти. Це правило табору, і я була йому вдячна.\n\nПро міграцію. Сотні тисяч гну і зебр переходять річку Мара, і ми чекали біля берега дві години. Коли стадо рушило у воду, а крокодили почали рух назустріч, Даринка закрила очі руками, а потім розсунула пальці й дивилася далі. Ми бачили левицю з трьома левенятами, гепарда на пагорбі й жирафів, які ніби пливли над травою.\n\nПоради для мам: беріть шарф від пилу і флісові кофти, бо зранку в джипі холодно, до дванадцяти градусів. Обов’язково зробіть щеплення від жовтої лихоманки і пийте ліки від малярії за схемою лікаря. Даринці я наперед завантажила книжку про тварин Кенії, і вона знала більше за мене.\n\nЧесний мінус — кількість джипів під час міграції. Біля переправи інколи стоїть тридцять машин, і це трохи псує відчуття дикої природи. А візит до села масаї здався нам надто постановочним, з обов’язковою покупкою сувенірів.",
+        "en": "Darynka asked for a safari back when she was nine, after watching a documentary about wildebeest. We saved for three years and in August flew to Nairobi. I'll say it right away: this is our most expensive trip, about 3,200 euros for the two of us for eight days including flights, but my daughter still calls it the best of her life.\n\nFrom Nairobi to the Masai Mara we flew in a small 12-seat plane, forty-five minutes instead of six hours of bumping along the road. Darynka held my hand and shrieked with delight when we landed right on a dirt strip in the savannah. We stayed in a tented camp with beds, a shower and dinner by the fire. At night a Maasai guard walked us to our tent with a torch, because hippos roamed nearby. It is a camp rule, and I was grateful for it.\n\nAbout the migration. Hundreds of thousands of wildebeest and zebras cross the Mara River, and we waited on the bank for two hours. When the herd moved into the water and the crocodiles began to move towards it, Darynka covered her eyes with her hands, then spread her fingers and kept watching. We saw a lioness with three cubs, a cheetah on a hill and giraffes that seemed to float above the grass.\n\nTips for mums: take a scarf against the dust and fleece tops, because in the morning it is cold in the jeep, down to twelve degrees. Be sure to get a yellow fever vaccination and take malaria pills as your doctor prescribes. I downloaded a book about Kenya's animals for Darynka in advance, and she knew more than I did.\n\nThe honest downside is the number of jeeps during the migration. Sometimes thirty vehicles stand at a crossing, and that spoils the wild feeling a little. And the visit to a Maasai village seemed too staged to us, with an obligatory souvenir purchase."
+      },
+      "country": { "code": "KE", "uk": "Кенія", "en": "Kenya", "es": "Kenia" },
+      "region": { "uk": "Нарок", "en": "Narok", "es": "Narok" },
+      "seasons": ["summer"],
+      "budget": "high",
+      "durationDays": 8,
+      "tripType": "family",
+      "tags": ["wildlife", "national-parks", "with-kids", "nature"],
+      "lat": -1.4931,
+      "lng": 35.1439,
+      "photoQuery": "Maasai Mara"
+    },
+    {
+      "key": "s-4-016",
+      "travellerKey": "t-4-16",
+      "category": "Пустелі",
+      "title": { "uk": "Атакама: найсухіше і найтемніше небо на Землі", "en": "Atacama: the driest and darkest sky on Earth" },
+      "article": {
+        "uk": "Сан-Педро-де-Атакама. Висота 2400 метрів. Опадів майже немає. Хмар — теж. Для астронома це місце, куди їдуть так, як інші їдуть до моря.\n\nДобирався довго. Київ — Мадрид — Сантьяго, потім внутрішній рейс до Калами і година автобусом. Квитки — близько 1100 євро. У Сан-Педро орендував кімнату в хостелі за 22 євро і велосипед. Перші два дні нічого не робив. Лише пив чай з листя коки й акліматизувався. Висота дається взнаки: болить голова, погано спиш.\n\nДолина Місяця — за 13 кілометрів від селища. Їхав туди велосипедом. Солоні хребти, пісок, тиша. На заході сонця вулкан Ліканкабур стає рожевим. Потім — темно, різко, ніби вимкнули світло.\n\nНебо тут інше. Чумацький Шлях кидає тінь. Я не перебільшую. Великі й Малі Магелланові Хмари видно неозброєним оком. Центр Галактики стоїть майже над головою. Ніч на плато біля лагун Мінікес провів у наметі, телескоп — 130-міліметровий рефлектор, узяв його з собою у ручну поклажу. Температура вночі — мінус шість. Термос, два спальники, вовняні шкарпетки.\n\nЯ також пішов на екскурсію в місцеву обсерваторію з великим телескопом, близько 35 євро. Сатурн з кільцями. Туманність Тарантул. Гід говорив мало, і це було правильно.\n\nМінуси. Висота. Сухість: губи тріскаються за день, носова кровотеча — звична річ. Сан-Педро туристичний і дорогий, обід — від 15 євро. Гейзери Ель-Татіо — підйом о четвертій ранку, мінус десять і натовп автобусів. Я не шкодую, але вдруге не поїхав би. Небо — так. Поїхав би щороку.",
+        "en": "San Pedro de Atacama. Altitude 2,400 metres. Almost no rain. No clouds either. For an astronomer this is where you go the way others go to the sea.\n\nIt was a long journey. Kyiv, Madrid, Santiago, then a domestic flight to Calama and an hour by bus. Tickets came to about 1,100 euros. In San Pedro I rented a room in a hostel for 22 euros and a bicycle. For the first two days I did nothing. I just drank coca leaf tea and acclimatised. The altitude makes itself felt: headaches, poor sleep.\n\nThe Valley of the Moon is 13 kilometres from the village. I cycled there. Salt ridges, sand, silence. At sunset the Licancabur volcano turns pink. Then it is dark, abruptly, as if someone switched off the light.\n\nThe sky here is different. The Milky Way casts a shadow. I'm not exaggerating. The Large and Small Magellanic Clouds are visible to the naked eye. The centre of the Galaxy stands almost overhead. I spent a night on the plateau near the Miñiques lagoons in a tent, with a 130 mm reflector telescope I had brought in my hand luggage. The night temperature was minus six. A thermos, two sleeping bags, woollen socks.\n\nI also went on a tour to a local observatory with a large telescope, about 35 euros. Saturn with its rings. The Tarantula Nebula. The guide spoke little, and that was right.\n\nThe downsides. The altitude. The dryness: lips crack in a day, nosebleeds are normal. San Pedro is touristy and expensive, lunch starts at 15 euros. The El Tatio geysers mean getting up at four in the morning, minus ten and a crowd of buses. I don't regret it, but I wouldn't go twice. The sky, yes. I would go every year."
+      },
+      "country": { "code": "CL", "uk": "Чилі", "en": "Chile", "es": "Chile" },
+      "region": { "uk": "Антофагаста", "en": "Antofagasta", "es": "Antofagasta" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 9,
+      "tripType": "solo",
+      "tags": ["desert", "nature", "camping", "photography"],
+      "lat": -22.9167,
+      "lng": -68.2833,
+      "photoQuery": "Valle de la Luna Chile"
+    },
+    {
+      "key": "s-4-017",
+      "travellerKey": "t-4-01",
+      "category": "Пустелі",
+      "title": { "uk": "Соссусфлей і Мертвий Флей: світло пустелі Наміб", "en": "Sossusvlei and Deadvlei: the light of the Namib Desert" },
+      "article": {
+        "uk": "Мертвий Флей я знімала подумки років десять: чорні мертві акації, біла глиняна долина і помаранчева дюна за ними. У травні ми з трьома друзями-фотографами нарешті поїхали до Намібії. Від Віндгука до Сесрієма — близько 350 кілометрів, переважно гравієм, і на це пішов цілий день.\n\nГоловне, що треба знати: ворота парку Наміб-Науклуфт відкриваються на світанку, але ті, хто ночує в кемпі Сесрієм усередині, можуть виїхати на годину раніше. Ми бронювали кемп за пів року, місце коштувало близько 30 євро. Це дало нам можливість побачити схід сонця на дюні 45, а не в черзі машин біля воріт.\n\nНа дюну Біг-Деді ми не лізли, а пішли просто до Мертвого Флею, кілометр піском від парковки. Найкращий час — коли сонце вже освітлює дюну, а долина ще в тіні: тоді дерева на тлі помаранчевого піску виходять майже графічними. Я працювала телевиком 70–200 мм, стискаючи перспективу, щоб дюна нависала над деревами. Експозицію міряла по освітленому піску і недоекспонувала на дві третини ступеня, щоб не вибити білу глину.\n\nДругого дня знімали каньйон Сесрієм і дюни у м’якому вечірньому світлі. Ночами — зорі, бо пустеля темна, а повітря чисте. Жили в лоджі поруч за 160 євро за двомісний номер з вечерею. Бюджет поїздки великий: оренда позашляховика, бензин і житло на тиждень вийшли по 1300 євро на людину без перельотів.\n\nЧесний мінус — пісок і техніка. Об’єктиви на вітрі міняти не можна, я зробила це один раз і потім два вечори чистила матрицю. Беріть дощовий чохол для камери навіть у пустелю. І воду: до Мертвого Флею зранку йти легко, а назад о полудні — вже спека під тридцять.",
+        "en": "I had been shooting Deadvlei in my head for about ten years: black dead acacias, a white clay pan and an orange dune behind them. In May three photographer friends and I finally went to Namibia. From Windhoek to Sesriem it is about 350 kilometres, mostly gravel, and it took us a whole day.\n\nThe main thing to know: the gates of Namib-Naukluft park open at sunrise, but those staying at the Sesriem camp inside can drive in an hour earlier. We booked the camp six months ahead, and a pitch cost about 30 euros. That let us see sunrise on Dune 45 rather than in the queue of cars at the gate.\n\nWe didn't climb Big Daddy dune but went straight to Deadvlei, a kilometre through sand from the car park. The best time is when the sun already lights the dune while the pan is still in shadow: then the trees against the orange sand look almost graphic. I worked with a 70-200 mm telephoto, compressing the perspective so the dune loomed over the trees. I metered off the lit sand and underexposed by two thirds of a stop so as not to blow out the white clay.\n\nOn the second day we shot Sesriem Canyon and the dunes in the soft evening light. At night there were stars, because the desert is dark and the air is clean. We stayed in a lodge nearby for 160 euros for a double room with dinner. The trip budget is big: the 4x4 rental, fuel and accommodation for a week came to 1,300 euros per person excluding flights.\n\nThe honest downside is sand and gear. You cannot change lenses in the wind, I did it once and then spent two evenings cleaning the sensor. Take a rain cover for your camera even to the desert. And water: walking to Deadvlei in the morning is easy, but walking back at noon is already heat close to thirty."
+      },
+      "country": { "code": "NA", "uk": "Намібія", "en": "Namibia", "es": "Namibia" },
+      "region": { "uk": "Гардап", "en": "Hardap", "es": "Hardap" },
+      "seasons": ["spring"],
+      "budget": "high",
+      "durationDays": 7,
+      "tripType": "friends",
+      "tags": ["photography", "desert", "national-parks"],
+      "lat": -24.7275,
+      "lng": 15.3428,
+      "photoQuery": "Deadvlei"
+    },
+    {
+      "key": "s-4-018",
+      "travellerKey": "t-4-02",
+      "category": "Пустелі",
+      "title": { "uk": "Гобі в УАЗику: дванадцять днів без душу", "en": "The Gobi in a Soviet van: twelve days without a shower" },
+      "article": {
+        "uk": "У Монголії головний туристичний транспорт — старий сірий мікроавтобус УАЗ, який тут називають «буханкою». Він ламається, але його ремонтують за двадцять хвилин молотком і дротом. Ми знайшли тур у хостелі Улан-Батора: четверо мандрівників, водій, кухарка, дванадцять днів у Гобі. Ціна — 55 євро на день з людини разом з їжею, ночівлями в юртах і бензином. Я, звісно, спробував торгуватися, але монгольська господиня хостелу подивилася на мене так, що я замовк.\n\nПерші два дні — це степ, дорога у вигляді кількох паралельних колій і жодних знаків. Наш водій Батаа орієнтувався за горами та кривими стовпами. Потім почалися каньйони Ялин-Ам, де навіть у липні в ущелині лежить лід, і Палаючі скелі Баянзаг, де знайшли перші яйця динозаврів. На заході сонця вони справді горять червоним.\n\nГоловне — дюни Хонгорин-Елс, «співучі піски», завдовжки сто кілометрів і заввишки до трьохсот метрів. Підйом на гребінь забрав у мене годину і дві спроби: два кроки вгору, крок назад. Зате, коли з’їжджаєш, пісок справді гуде, як літак. Ночували ми в юрті кочової родини, їли бууз, монгольські пельмені, і пили суутей цай — солоний чай з молоком. Ні, до нього не звикаєш.\n\nКоли господарі пригостили нас айрагом, кобилячим кумисом, я з ввічливості випив дві піали. Наступні три години в «буханці» стали моїм найважчим автопробігом у житті.\n\nМінуси: душ за дванадцять днів — двічі, туалет — степ. Пил, спека вдень і холод уночі. Але за ці гроші ви не знайдете іншого місця, де за день не побачиш жодної людини, крім пастуха на мотоциклі з орлом.",
+        "en": "In Mongolia the main tourist transport is an old grey UAZ van that locals call the loaf. It breaks down, but they fix it in twenty minutes with a hammer and wire. We found a tour at a hostel in Ulaanbaatar: four travellers, a driver, a cook, twelve days in the Gobi. The price was 55 euros a day per person including food, nights in yurts and fuel. Of course I tried to haggle, but the Mongolian hostel owner looked at me in a way that made me shut up.\n\nThe first two days are steppe, a road made of several parallel tracks and not a single sign. Our driver Bataa navigated by mountains and crooked poles. Then came the Yolyn Am canyon, where even in July ice lies in the gorge, and the Flaming Cliffs of Bayanzag, where the first dinosaur eggs were found. At sunset they really do burn red.\n\nThe highlight is the Khongoryn Els dunes, the singing sands, a hundred kilometres long and up to three hundred metres high. Climbing to the crest took me an hour and two attempts: two steps up, one step back. But when you slide down, the sand really hums like a plane. We spent the night in a nomad family's yurt, ate buuz, Mongolian dumplings, and drank suutei tsai, salty tea with milk. No, you don't get used to it.\n\nWhen our hosts offered us airag, fermented mare's milk, I politely drank two bowls. The next three hours in the loaf were the hardest road trip of my life.\n\nThe downsides: two showers in twelve days, the toilet is the steppe. Dust, heat by day and cold at night. But for this money you won't find another place where in a whole day you see nobody except a herder on a motorbike with an eagle."
+      },
+      "country": { "code": "MN", "uk": "Монголія", "en": "Mongolia", "es": "Mongolia" },
+      "region": { "uk": "Південна Гобі", "en": "Ömnögovi", "es": "Ömnögovi" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 12,
+      "tripType": "friends",
+      "tags": ["desert", "backpacking", "camping", "road-trip"],
+      "lat": 43.7807,
+      "lng": 102.2711,
+      "photoQuery": "Khongoryn Els"
+    },
+    {
+      "key": "s-4-019",
+      "travellerKey": "t-4-03",
+      "category": "Грузія",
+      "title": { "uk": "Тбілісі на смак: хінкалі, хачапурі і Дезертирський ринок", "en": "Tbilisi on a plate: khinkali, khachapuri and the Deserters Market" },
+      "article": {
+        "uk": "До Тбілісі я поїхала сама, на чотири дні в жовтні, з однією метою: їсти. Квиток лоукостом коштував 70 євро, кімнату біля Сухого мосту я зняла за 20 євро на ніч, тож усі інші гроші пішли в живіт.\n\nПочала з Дезертирського ринку біля вокзалу. Це справжній грузинський базар: гори аджики і сванської солі, вінки червоного перцю, сири сулугуні й імеретинський, бочки з квашеною джонджолі. Продавчині дають куштувати все, а торгуватися тут не принизливо, а весело. Я купила чурчхелу з волоських горіхів по 2 ларі за штуку, ткемалі й букет свіжого тархуну.\n\nХінкалі вчилася їсти правильно: брати за хвостик, надкусити, випити бульйон, а хвостик лишити на тарілці. У закладі біля сірчаних лазень Абанотубані одна штука коштувала 1,5 ларі, і я з’їла дев’ять. Хачапурі по-аджарськи — човник з тіста з сиром, яйцем і шматком масла — краще їсти з кимось, бо це майже кілограм калорій. А найбільше відкриття — пхалі зі шпинату й буряка з горіхами та гранатом і чашушулі, гостре тушковане м’ясо з помідорами.\n\nТретього дня я пішла на майстер-клас у грузинську родину на Сололакі за 35 євро: ми ліпили хінкалі, і моїх кривих хвостиків вистачило б на весь стіл. Господиня Нана сказала, що справжня грузинська складка має бути не менше вісімнадцяти. Я дорахувала до дванадцяти.\n\nЧесний мінус — схили. Старе місто стоїть на пагорбах, бруківка слизька, і після ситного обіду підйом до Нарикали здається Еверестом. А в популярних закладах на проспекті Руставелі ціни вдвічі вищі, ніж за два квартали, тож ходіть туди, де їдять самі тбілісці.",
+        "en": "I went to Tbilisi alone, for four days in October, with one goal: to eat. A low-cost ticket cost 70 euros, I rented a room near the Dry Bridge for 20 euros a night, so all the rest of the money went into my stomach.\n\nI started with the Deserters Market near the station. It is a real Georgian bazaar: mountains of adjika and Svan salt, garlands of red peppers, sulguni and Imeretian cheeses, barrels of pickled jonjoli. The saleswomen let you taste everything, and haggling here is not humiliating but fun. I bought walnut churchkhela at 2 lari apiece, tkemali and a bunch of fresh tarragon.\n\nI learned to eat khinkali properly: hold it by the tail, bite, drink the broth and leave the tail on the plate. At a place near the Abanotubani sulphur baths one cost 1.5 lari, and I ate nine. Adjarian khachapuri, a boat of dough with cheese, an egg and a knob of butter, is better shared, because it is almost a kilo of calories. The biggest discovery was pkhali made of spinach and beetroot with walnuts and pomegranate, and chashushuli, a spicy stew of meat with tomatoes.\n\nOn the third day I went to a cooking class with a Georgian family in Sololaki for 35 euros: we made khinkali, and my crooked tails would have been enough for the whole table. Our host Nana said a real Georgian dumpling must have at least eighteen pleats. I counted up to twelve.\n\nThe honest downside is the slopes. The old town stands on hills, the cobbles are slippery, and after a hearty lunch the climb to Narikala feels like Everest. And in the popular places on Rustaveli Avenue prices are twice as high as two blocks away, so go where Tbilisi locals eat."
+      },
+      "country": { "code": "GE", "uk": "Грузія", "en": "Georgia", "es": "Georgia" },
+      "region": { "uk": "Тбілісі", "en": "Tbilisi", "es": "Tiflis" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["food", "markets", "city-break", "culture"],
+      "lat": 41.6934,
+      "lng": 44.8015,
+      "photoQuery": "Narikala"
+    },
+    {
+      "key": "s-4-020",
+      "travellerKey": "t-4-04",
+      "category": "Пустелі",
+      "title": { "uk": "Оман з дітьми: ніч у пісках Вахіба", "en": "Oman with kids: a night in the Wahiba Sands" },
+      "article": {
+        "uk": "Оман ми обрали на зимові канікули, бо це спокійна і дуже безпечна країна, де взимку тепло, але не спекотно: удень 25 градусів. Прилетіли до Маската, взяли в прокаті Toyota Land Cruiser з двома дитячими кріслами і поїхали на південь. Шість днів, близько 900 кілометрів.\n\nПерша зупинка — Ваді-Бані-Халід, ущелина з бірюзовими басейнами серед скель. Діти плавали годину, а Марко знайшов печеру, куди заходять, тримаючись за мотузку. Вхід безкоштовний, але жінкам і дівчаткам краще купатися в закритому купальнику і футболці, це місцеві правила.\n\nДалі — пустеля Вахіба, або Шаркія. Асфальт закінчується в селищі Бідія, і там на заправці водії табору спускають тиск у шинах. Самі ми в пісок не їхали: машина табору забрала нас і повезла за 11 кілометрів по дюнах. Соломія верещала від захвату на кожному спуску. Табір з будиночками коштував 220 євро за ніч на чотирьох з вечерею і сніданком. Дорого, але це було найяскравіше враження поїздки.\n\nНа заході сонця ми піднялися на дюну, діти з’їжджали з неї на дошці для сендбордингу, а потім дивилися, як бедуїни печуть хліб у піску. Вночі небо було таке зоряне, що Марко заснув на килимі біля вогню, рахуючи супутники. Ранок почався з прогулянки на верблюдах, по десять євро з людини.\n\nПорада батькам: беріть сонцезахисні окуляри дітям і рідкі серветки, пісок буде скрізь. Вода й перекуси обов’язкові, бо між містами магазинів мало. У пустелі вночі прохолодно, до 12 градусів, тож кофти знадобляться. Чесний мінус — ціни: Оман дорожчий за сусідні країни, і за шість днів ми витратили близько 2400 євро без перельотів. А ще Соломія досі просить привезти їй верблюда додому.",
+        "en": "We chose Oman for the winter holidays because it is a calm and very safe country, warm in winter but not hot: 25 degrees in the daytime. We flew to Muscat, rented a Toyota Land Cruiser with two child seats and drove south. Six days, about 900 kilometres.\n\nThe first stop was Wadi Bani Khalid, a gorge with turquoise pools among the rocks. The kids swam for an hour, and Marko found a cave you enter holding on to a rope. Entry is free, but women and girls should swim in a one-piece swimsuit and a T-shirt, those are the local rules.\n\nNext came the Wahiba Sands, also called Sharqiya. The tarmac ends in the village of Bidiyah, and there at the fuel station the camp drivers let down the tyres. We didn't drive into the sand ourselves: the camp vehicle picked us up and took us 11 kilometres over the dunes. Solomiia squealed with delight on every descent. The camp with cabins cost 220 euros a night for four with dinner and breakfast. Expensive, but it was the brightest impression of the trip.\n\nAt sunset we climbed a dune, the kids slid down it on a sandboard, and then watched Bedouins bake bread in the sand. At night the sky was so starry that Marko fell asleep on a rug by the fire counting satellites. The morning began with a camel ride, ten euros per person.\n\nA tip for parents: take sunglasses for the kids and wet wipes, sand will be everywhere. Water and snacks are a must, because there are few shops between towns. In the desert it is cool at night, down to 12 degrees, so jumpers will come in handy. The honest downside is prices: Oman is more expensive than its neighbours, and in six days we spent about 2,400 euros excluding flights. And Solomiia still asks us to bring her a camel home."
+      },
+      "country": { "code": "OM", "uk": "Оман", "en": "Oman", "es": "Omán" },
+      "region": { "uk": "Шаркія", "en": "Ash Sharqiyah", "es": "Al Sharqiyah" },
+      "seasons": ["winter"],
+      "budget": "high",
+      "durationDays": 6,
+      "tripType": "family",
+      "tags": ["desert", "with-kids", "road-trip", "camping"],
+      "lat": 22.43,
+      "lng": 58.79,
+      "photoQuery": "Wahiba Sands"
+    }
+  ]
+}

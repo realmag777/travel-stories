@@ -1,0 +1,17 @@
+{# Mobile select + desktop chips like the original; every option links to a crawlable URL. #}
+<div class="categories__mobile">
+  <label class="categories__label" for="category-select">{{ t('stories.categories') }}</label>
+  <div class="categories__select-wrap">
+    <select class="categories__select" id="category-select" data-category-select>
+      <option value=""{% if not state.category %} selected{% endif %}>{{ t('stories.all') }}</option>
+      {% for c in facetModel.category %}<option value="{{ c.value }}"{% if c.selected %} selected{% endif %}{% if c.disabled %} disabled{% endif %}>{{ c.label }} ({{ c.count }})</option>{% endfor %}
+    </select>
+    <svg class="categories__select-icon" aria-hidden="true"><use href="/sprite.svg#icon-arrow-down"></use></svg>
+  </div>
+</div>
+<div class="categories__desktop" role="group" aria-label="{{ t('stories.categories') }}">
+  <a class="categories__button" href="{{ categoryUrls[''] }}" data-category="" aria-pressed="{{ 'false' if state.category else 'true' }}">{{ t('stories.all') }}</a>
+  {% for c in facetModel.category %}
+  <a class="categories__button" href="{{ categoryUrls[c.value] }}" data-category="{{ c.value }}" aria-pressed="{{ 'true' if c.selected else 'false' }}"{% if c.disabled %} aria-disabled="true" tabindex="-1"{% endif %}>{{ c.label }}{% if showCounts %} <span class="categories__count" data-extra>{{ c.count }}</span>{% endif %}</a>
+  {% endfor %}
+</div>

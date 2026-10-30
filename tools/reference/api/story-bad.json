@@ -1,0 +1,17 @@
+{
+ "status": 400,
+ "body": {
+  "statusCode": 400,
+  "error": "Bad Request",
+  "message": "Validation failed",
+  "validation": {
+   "params": {
+    "source": "params",
+    "keys": [
+     "storyId"
+    ],
+    "message": "\"storyId\" length must be 24 characters long"
+   }
+  }
+ }
+}

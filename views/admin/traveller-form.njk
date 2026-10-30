@@ -1,0 +1,106 @@
+{% extends "admin/layout.njk" %}
+{% from "admin/macros.njk" import field, area %}
+{% block title %}{{ 'Новий мандрівник' if isNew else traveller.name }}{% endblock %}
+{% block content %}
+<header class="adm-head">
+  <div>
+    <a class="adm-back" href="/admin/travellers">← Усі мандрівники</a>
+    <h1 class="adm-head__title">{{ 'Новий мандрівник' if isNew else traveller.name }}</h1>
+    {% if not isNew %}<p class="adm-head__sub">ID {{ traveller.id }} · джерело: {{ traveller.source }}</p>{% endif %}
+  </div>
+  {% if not isNew %}<div class="adm-head__actions">
+    <a class="action action--ghost action--small" href="/travellers/{{ traveller.id }}" target="_blank">Профіль на сайті</a>
+    <button class="action action--ghost action--small adm-danger" type="button" data-delete="/admin/travellers/{{ traveller.id }}/delete" data-confirm-title="Видалити мандрівника?" data-confirm-text="Видалити можна лише мандрівника без історій.">Видалити</button>
+  </div>{% endif %}
+</header>
+
+<form class="adm-form" method="post" action="{{ '/admin/travellers' if isNew else '/admin/travellers/' + traveller.id }}?_csrf={{ csrf }}" enctype="multipart/form-data" data-adm-form="traveller" novalidate>
+  <div class="adm-form__main">
+    <section class="adm-card">
+      <h2 class="adm-card__title">Профіль</h2>
+      <div class="adm-row">
+        {{ field('name', 'Імʼя (uk)', traveller.name, { max: 32, required: true }) }}
+        {{ field('name_en', 'Імʼя (en)', traveller.name_en, { max: 64 }) }}
+      </div>
+      {{ area('description', 'Опис (uk)', traveller.description, { max: 400, rows: 4 }) }}
+      {{ area('description_en', 'Опис (en)', traveller.description_en, { max: 400, rows: 4 }) }}
+      {{ area('description_es', 'Опис (es)', traveller.description_es, { max: 400, rows: 4 }) }}
+    </section>
+    <section class="adm-card">
+      <h2 class="adm-card__title">Бронювання</h2>
+      <label class="check"><input type="checkbox" name="accepts_bookings"{% if traveller.accepts_bookings %} checked{% endif %}> Приймає бронювання (блок «Забронювати» на профілі)</label>
+      {{ area('booking_intro', 'Вступ до блоку бронювання', traveller.booking_intro, { max: 500, rows: 3 }) }}
+    </section>
+  </div>
+  <aside class="adm-form__side">
+    <section class="adm-card">
+      <h2 class="adm-card__title">Аватар</h2>
+      <div class="cover-upload" data-cover-upload>
+        <img class="cover-upload__preview cover-upload__preview--round" src="{{ avatar.large if avatar else '/images/default-avatar.svg' }}" alt="" width="160" height="160" data-cover-preview>
+        <label class="action action--ghost action--small cover-upload__btn">Завантажити<input type="file" name="avatar" accept="image/jpeg,image/png,image/webp" hidden data-cover-input></label>
+        <span class="field__error" data-error-for="avatar"></span>
+      </div>
+      <label class="check"><input type="checkbox" name="is_demo"{% if traveller.is_demo %} checked{% endif %}> Демо-контент</label>
+      <button class="action action--block" type="submit" data-submit>{{ 'Створити' if isNew else 'Зберегти' }}</button>
+    </section>
+  </aside>
+</form>
+
+{% if not isNew %}
+<div class="adm-grid">
+  <section class="adm-card">
+    <div class="adm-card__head"><h2 class="adm-card__title">Послуги</h2></div>
+    <table class="tbl tbl--compact"><thead><tr><th>Послуга</th><th>Тип</th><th class="num">Хв</th><th>Ціна</th><th></th></tr></thead><tbody>
+      {% for s in services %}
+      <tr{% if not s.active %} class="muted"{% endif %}><td>{{ s.title }}{% if not s.active %} (вимкнено){% endif %}</td><td>{{ 'Созвон' if s.kind == 'call' else 'Екскурсія' }}</td><td class="num">{{ s.duration_min }}</td><td>{{ s.price_label }}</td>
+        <td class="nowrap"><button class="icon-btn" type="button" data-edit-service='{{ s | dump | safe }}' aria-label="Редагувати"><svg width="18" height="18"><use href="/sprite.svg#icon-edit"></use></svg></button>
+        <button class="icon-btn icon-btn--danger" type="button" data-delete="/admin/services/{{ s.id }}/delete" data-confirm-title="Видалити послугу?" data-confirm-text="{{ s.title }}" aria-label="Видалити"><svg width="18" height="18"><use href="/sprite.svg#icon-close"></use></svg></button></td></tr>
+      {% else %}<tr><td colspan="5" class="adm-empty">Послуг ще немає.</td></tr>{% endfor %}
+    </tbody></table>
+    <form class="adm-inline-form" method="post" action="/admin/travellers/{{ traveller.id }}/services" data-ajax-form data-service-form novalidate>
+      <input type="hidden" name="serviceId" value="">
+      <div class="adm-row">
+        <div class="field"><label class="field__label" for="svc-kind">Тип</label><select class="field__select" id="svc-kind" name="kind"><option value="call">Консультація-созвон</option><option value="tour">Екскурсія</option></select><span class="field__error"></span></div>
+        {{ field('title', 'Назва (uk)', '', { max: 120, required: true }) }}
+      </div>
+      <div class="adm-row">{{ field('title_en', 'Назва (en)', '') }}{{ field('title_es', 'Назва (es)', '') }}</div>
+      <div class="adm-row">
+        {{ field('duration_min', 'Тривалість, хв', '60', { type: 'number', min: 15, required: true }) }}
+        {{ field('price_label', 'Ціна для показу', '€30', { max: 40, required: true }) }}
+      </div>
+      {{ field('description', 'Короткий опис', '', { max: 500 }) }}
+      <label class="check"><input type="checkbox" name="active" checked> Активна</label>
+      <button class="action action--small" type="submit">Зберегти послугу</button>
+    </form>
+  </section>
+
+  <section class="adm-card">
+    <div class="adm-card__head"><h2 class="adm-card__title">Розклад слотів</h2><span class="muted">Час — Київ</span></div>
+    <form class="adm-inline-form" method="post" action="/admin/travellers/{{ traveller.id }}/slots" data-ajax-form novalidate>
+      <div class="adm-row">
+        {{ field('from', 'З дати', '', { type: 'date', required: true }) }}
+        {{ field('to', 'По дату', '', { type: 'date', required: true }) }}
+      </div>
+      <fieldset class="adm-fieldset"><legend class="field__label">Дні тижня</legend>
+        <div class="checks">{% for d in [[1,'Пн'],[2,'Вт'],[3,'Ср'],[4,'Чт'],[5,'Пт'],[6,'Сб'],[0,'Нд']] %}<label class="check"><input type="checkbox" name="weekdays" value="{{ d[0] }}"{% if d[0] >= 1 and d[0] <= 5 %} checked{% endif %}> {{ d[1] }}</label>{% endfor %}</div></fieldset>
+      <div class="adm-row">
+        {{ field('times', 'Час (через кому)', '10:00, 14:00', { required: true }) }}
+        {{ field('duration_min', 'Тривалість слоту, хв', '60', { type: 'number', min: 15 }) }}
+      </div>
+      <button class="action action--small" type="submit">Додати слоти</button>
+    </form>
+    <div class="slots">
+      {% for s in slots %}
+      <span class="slot{% if s.booking_id %} slot--booked{% endif %}" title="{{ s.booked_by or 'вільний' }}">{{ s.day }} {{ s.time }}{% if s.booking_id %} · {{ s.booked_by }}{% else %}<button type="button" class="slot__x" data-delete="/admin/slots/{{ s.id }}/delete" data-confirm-title="Видалити слот?" data-confirm-text="{{ s.day }} {{ s.time }}" aria-label="Видалити слот">×</button>{% endif %}</span>
+      {% else %}<p class="adm-empty">Майбутніх слотів немає.</p>{% endfor %}
+    </div>
+  </section>
+</div>
+{% if bookings.length %}
+<section class="adm-card">
+  <div class="adm-card__head"><h2 class="adm-card__title">Бронювання цього мандрівника</h2><a href="/admin/bookings">усі</a></div>
+  {% set rows = bookings %}{% include "admin/bookings-table.njk" %}
+</section>
+{% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="stories-page" data-saved-page data-locale="{{ locale }}">
+  <div class="stories-page__container">
+    <h1 class="stories-page__title">{{ t('saved.title') }}</h1>
+    <p class="stories-page__message">{{ t('saved.text') }}</p>
+    <div data-saved-results>
+      <div class="spinner-wrap"><div class="spinner" aria-label="{{ t('common.loading') }}"></div></div>
+    </div>
+    <template data-saved-empty>
+      <div class="empty-state">
+        <p class="empty-state__message">{{ t('saved.empty') }}</p>
+        <a class="action" href="{{ url('/stories') }}">{{ t('saved.browse') }}</a>
+      </div>
+    </template>
+  </div>
+</section>
+{% endblock %}

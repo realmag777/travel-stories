@@ -1,0 +1,25 @@
+{% extends "admin/layout.njk" %}
+{% block title %}Вхід{% endblock %}
+{% block content %}
+<section class="adm-login">
+  <form class="adm-login__card" method="post" action="/admin/login" data-adm-login novalidate>
+    <img src="/images/logo.svg" alt="Подорожники+" width="156" height="36">
+    <h1 class="adm-login__title">Вхід до адмінки</h1>
+    <p class="adm-login__text">Керування історіями, мандрівниками, бронюваннями та статистикою.</p>
+    {% if error %}<p class="adm-alert adm-alert--error" role="alert">{{ error }}</p>{% endif %}
+    <input type="hidden" name="_csrf" value="{{ csrf }}">
+    <input type="hidden" name="next" value="{{ next }}">
+    <div class="field">
+      <label class="field__label" for="username">Логін</label>
+      <input class="field__input" id="username" name="username" autocomplete="username" required value="{{ username }}">
+      <span class="field__error"></span>
+    </div>
+    <div class="field">
+      <label class="field__label" for="password">Пароль</label>
+      <input class="field__input" id="password" name="password" type="password" autocomplete="current-password" required minlength="1">
+      <span class="field__error"></span>
+    </div>
+    <button class="action action--block" type="submit">Увійти</button>
+  </form>
+</section>
+{% endblock %}

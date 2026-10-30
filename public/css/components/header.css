@@ -1,0 +1,69 @@
+/* Header: same geometry and states as the original (72px bar, burger below 1440px,
+   transparent over the hero on the home page). */
+.header { width: 100%; }
+.header--overlay { position: absolute; top: 0; left: 0; z-index: 20; }
+
+.header__container {
+  background: var(--color-royal-blue-lightest);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 72px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+}
+@media (min-width: 375px) { .header__container { max-width: 767px; } }
+@media (min-width: 768px) { .header__container { max-width: 1439px; padding: 0 32px; } }
+@media (min-width: 1440px) { .header__container { max-width: 1440px; padding: 0 64px; } }
+
+.header__container--home { background: var(--opacity-transparent); color: var(--color-royal-blue-lightest); fill: var(--color-royal-blue-lightest); }
+.header__container--open { background: var(--color-royal-blue-lightest); }
+@media (min-width: 1440px) { .header__container--open { background: var(--opacity-transparent); } }
+.header__container--auth { background: var(--color-white); }
+
+.header__bar { justify-content: space-between; align-items: center; width: 100%; display: flex; }
+.header__logo { align-items: center; gap: 3.31px; width: 156px; height: 40px; display: flex; color: var(--color-neutral-darkest); }
+.header__logo svg, .header__logo img { width: 156px; height: 40px; }
+.header__logo img { object-fit: none; object-position: left top; }
+.header__container--home .header__logo { color: var(--color-royal-blue-lightest); }
+
+.header__controls { justify-content: space-between; align-items: center; display: flex; }
+.header__menu-controls { align-items: center; gap: 16px; display: flex; }
+.header__publish { display: none; }
+@media (min-width: 768px) and (max-width: 1439px) { .header__publish { display: flex; } }
+
+.header__menu {
+  background: inherit;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  padding: 16px 20px;
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  z-index: 30;
+}
+@media (min-width: 1440px) {
+  .header__menu { flex-direction: row; justify-content: space-between; width: auto; padding: 0; display: flex; position: static; }
+}
+.header__menu--open {
+  background: var(--color-royal-blue-lightest);
+  width: 100vw;
+  height: calc(100dvh - 72px);
+  color: var(--color-neutral-darkest);
+  display: flex;
+}
+@media (min-width: 1440px) {
+  .header__menu--open { background: var(--opacity-transparent); width: auto; height: auto; position: static; }
+}
+.header__auth { align-items: center; gap: 32px; display: flex; }
+.header__saved { display: flex; }
+
+/* Language switcher inside the burger menu (below desktop) — the desktop one sits in the footer. */
+.header__langs { display: flex; gap: 8px; }
+@media (min-width: 1440px) { .header__langs { display: none; } }

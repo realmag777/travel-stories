@@ -1,0 +1,105 @@
+/* Header buttons/links. The rule order mirrors the original cascade on purpose:
+   later hover rules win over the home-page variants exactly as they did there. */
+.btn {
+  font-family: var(--font-family);
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  display: flex;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media (min-width: 1440px) { .btn { font-size: 18px; } }
+
+.btn--primary, .btn--register {
+  border: 1px solid var(--color-royal-blue);
+  background: var(--color-royal-blue);
+  color: var(--color-white);
+  fill: var(--color-white);
+  border-radius: 8px;
+}
+.btn--secondary, .btn--menu, .btn--login {
+  border: 1px solid var(--opacity-neutral-darkest-15);
+  background: var(--opacity-white-5);
+  color: var(--color-neutral-darkest);
+  fill: var(--color-neutral-darkest);
+  border-radius: 8px;
+}
+.btn--menu { padding: 4px; }
+@media (min-width: 1440px) { .btn--menu { display: none; } }
+.btn--register.btn--home { color: var(--color-neutral-darkest); background-color: var(--color-white); }
+
+.btn--primary:hover, .btn--primary:focus, .btn--register:hover, .btn--register:focus {
+  background: var(--color-royal-blue-lighter);
+  color: var(--color-neutral-darkest);
+  fill: var(--color-neutral-darkest);
+}
+.btn--primary:active, .btn--register:active { background: var(--color-royal-blue-light); color: var(--color-neutral-darkest); fill: var(--color-neutral-darkest); }
+.btn--primary:disabled, .btn--register:disabled { opacity: .3; }
+.btn--secondary:hover, .btn--secondary:focus, .btn--menu:hover, .btn--menu:focus, .btn--login:hover, .btn--login:focus {
+  border: 1px solid var(--opacity-transparent);
+  background: var(--color-scheme-1-accent);
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+.btn--secondary:active, .btn--menu:active, .btn--login:active {
+  border: 1px solid var(--opacity-transparent);
+  background: var(--color-royal-blue-darker);
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+.btn--secondary:disabled, .btn--menu:disabled, .btn--login:disabled {
+  border: 1px solid var(--opacity-transparent);
+  background: var(--opacity-neutral-darkest-5);
+  opacity: .3;
+}
+.btn--home { border: 1px solid var(--opacity-transparent); background: var(--opacity-white-10); color: var(--color-white); fill: var(--color-white); }
+.btn--home:hover, .btn--home:focus { background: var(--color-scheme-1-accent); }
+.btn--home:active { background: var(--color-royal-blue-darker); }
+.btn--home:disabled { background: var(--opacity-neutral-darkest-5); opacity: .3; }
+
+.btn__icon { width: 24px; height: 24px; }
+
+/* Shared accent action (load more, view all, submit) — the original's royal-blue button family. */
+.action {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-royal-blue);
+  border-radius: 8px;
+  background-color: var(--color-royal-blue);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+@media (min-width: 1440px) { .action { font-size: 18px; } }
+.action:hover:not(:disabled), .action:focus-visible:not(:disabled) { color: var(--color-neutral-darkest); background-color: var(--color-royal-blue-lighter); }
+.action:active:not(:disabled) { color: var(--color-neutral-darkest); background-color: var(--color-royal-blue-light); }
+.action:disabled { opacity: .3; cursor: default; }
+.action--ghost {
+  background-color: var(--opacity-neutral-darkest-5);
+  border-color: var(--opacity-neutral-darkest-15);
+  color: var(--color-neutral-darkest);
+}
+.action--ghost:hover:not(:disabled), .action--ghost:focus-visible:not(:disabled) { color: var(--color-white); background-color: var(--color-royal-blue); border-color: var(--opacity-transparent); }
+.action--ghost:active:not(:disabled) { color: var(--color-white); background-color: var(--color-royal-blue-darker); }
+.action--small { min-height: 40px; padding: 4px 12px; font-size: 16px; }
+.action--block { width: 100%; }
+.action.is-loading { position: relative; color: transparent !important; pointer-events: none; }
+.action.is-loading::after {
+  content: ''; position: absolute; width: 20px; height: 20px; border-radius: 50%;
+  border: 2px solid currentColor; border-color: var(--color-white) var(--color-white) transparent transparent;
+  animation: spin .7s linear infinite;
+}
+.action--ghost.is-loading::after { border-color: var(--color-royal-blue) var(--color-royal-blue) transparent transparent; }
+@keyframes spin { to { transform: rotate(1turn); } }

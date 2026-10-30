@@ -1,0 +1,17 @@
+{% if stories.length %}
+<ul class="story-list" data-story-list>
+  {% for s in stories %}
+  <li class="story-list__item">{% set eager = loop.index <= 3 and not appended %}{% include "partials/story-card.njk" %}</li>
+  {% endfor %}
+</ul>
+{% if hasMore %}
+<div class="load-more">
+  <a class="load-more__button" href="{{ nextUrl }}" data-load-more rel="next">{{ t('stories.showMore') }}</a>
+</div>
+{% endif %}
+{% else %}
+<div class="empty-state">
+  <p class="empty-state__message">{{ t('stories.empty') }}</p>
+  <a class="action" href="{{ url('/stories') }}" data-reset-all>{{ t('filters.reset') }}</a>
+</div>
+{% endif %}

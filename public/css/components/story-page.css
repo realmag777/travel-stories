@@ -1,0 +1,67 @@
+/* /stories/:id — title, meta, cover, article, save box (+ credits, travel links, map pin). */
+.story { flex-direction: column; width: 100%; max-width: 375px; margin: 0 auto; display: flex; }
+@media only screen and (min-width: 768px) { .story { max-width: 768px; } }
+@media only screen and (min-width: 1440px) { .story { max-width: 1440px; } }
+.story__title { font-family: var(--second-family); letter-spacing: -.01em; color: var(--color-scheme-1-text); margin-bottom: 32px; font-size: 32px; font-weight: 700; line-height: 1.1; }
+@media only screen and (min-width: 768px) { .story__title { font-size: 48px; } }
+@media only screen and (min-width: 1440px) { .story__title { max-width: 900px; font-size: 56px; } }
+.story__meta { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 16px; display: flex; }
+@media only screen and (min-width: 768px) { .story__meta { flex-direction: row; align-items: center; gap: 48px; } }
+.story__meta-item { font-family: var(--font-family); color: var(--color-scheme-1-text); gap: 8px; font-size: 16px; line-height: 1.5; display: flex; }
+@media only screen and (min-width: 1440px) { .story__meta-item { font-size: 18px; } }
+.story__meta-label { font-weight: 700; }
+.story__meta-item a:hover { text-decoration: underline; }
+.story__category { background-color: var(--color-neutral-lightest); font-family: var(--font-family); color: var(--color-scheme-1-text); border: 1px solid #fff0; border-radius: 6px; padding: 4px 10px; font-size: 12px; font-weight: 600; line-height: 1.5; }
+@media only screen and (min-width: 768px) { .story__category { margin-left: auto; } }
+@media only screen and (min-width: 1440px) { .story__category { font-size: 16px; } }
+.story__category:hover { border-color: var(--color-neutral-darkest); }
+.story__figure { margin: 0; }
+.story__image { aspect-ratio: 3 / 2; object-fit: cover; border-radius: 24px; width: 100%; height: auto; background: var(--color-neutral-lightest); }
+.story__credit { margin-top: 8px; font-family: var(--font-family); font-size: 12px; line-height: 1.5; color: var(--color-neutral-dark); }
+.story__credit a { text-decoration: underline; text-decoration-color: var(--color-neutral-light); }
+.story__credit a:hover { color: var(--color-royal-blue); }
+.story__content1 { flex-direction: column; padding: 32px 20px; display: flex; }
+@media only screen and (min-width: 768px) { .story__content1 { padding: 32px; } }
+@media only screen and (min-width: 1440px) { .story__content1 { padding: 48px 64px; } }
+.story__content2 { flex-direction: column; gap: 24px; padding: 32px 20px; display: flex; }
+@media only screen and (min-width: 768px) { .story__content2 { padding: 32px; } }
+@media only screen and (min-width: 1440px) { .story__content2 { flex-direction: row; justify-content: space-between; align-items: flex-start; padding: 48px 64px; } }
+.story__body { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+@media only screen and (min-width: 1440px) { .story__body { flex: 1; max-width: 865px; } }
+.story__article { font-family: var(--font-family); color: var(--color-scheme-1-text); white-space: pre-line; font-size: 16px; line-height: 1.5; }
+@media only screen and (min-width: 1440px) { .story__article { font-size: 18px; } }
+.story__aside { display: flex; flex-direction: column; gap: 24px; }
+@media only screen and (min-width: 1440px) { .story__aside { flex-shrink: 0; width: 418px; } }
+.story__note { padding: 8px 12px; border-radius: 8px; background: var(--color-royal-blue-lighter); font-size: 14px; line-height: 1.5; }
+
+.save-box { background-color: var(--color-neutral-lightest); border: 0 solid #00000026; border-radius: 24px; flex-direction: column; gap: 16px; padding: 32px 20px; display: flex; }
+@media only screen and (min-width: 768px) { .save-box { max-width: 418px; padding: 32px; } }
+@media only screen and (min-width: 1440px) { .save-box { flex-shrink: 0; width: 418px; } }
+.save-box__title { font-family: var(--second-family); letter-spacing: -.01em; color: var(--color-scheme-1-text); font-size: 18px; font-weight: 700; line-height: 1.4; }
+@media only screen and (min-width: 1440px) { .save-box__title { font-size: 26px; } }
+.save-box__text { font-family: var(--font-family); color: var(--color-scheme-1-text); font-size: 16px; line-height: 1.5; }
+@media only screen and (min-width: 1440px) { .save-box__text { font-size: 18px; } }
+.save-box__button { border: 1px solid var(--color-royal-blue); background-color: var(--color-royal-blue); width: 100%; height: 48px; font-family: var(--font-family); color: var(--color-white); border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1.5; transition: background-color .3s, color .3s; cursor: pointer; }
+@media only screen and (min-width: 1440px) { .save-box__button { font-size: 18px; } }
+.save-box__button:hover, .save-box__button:focus { background-color: var(--color-royal-blue-lighter); color: var(--color-neutral-darkest); }
+.save-box__button:active { background-color: var(--color-royal-blue-light); color: var(--color-neutral-darkest); }
+.save-box__button--saved { background-color: var(--color-royal-blue-darker); border-color: var(--color-royal-blue-darker); }
+
+/* Facts list (country, season, budget...) shown under the article. */
+.story-facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.story-facts__item { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 6px; background: var(--color-royal-blue-lighter); font-family: var(--font-family); font-size: 14px; font-weight: 600; line-height: 1.5; color: var(--color-neutral-darkest); }
+.story-facts__item:hover { background: var(--color-royal-blue); color: var(--color-white); }
+
+/* "Де зупинитися / Як дістатися". */
+.travel-links { background-color: var(--color-royal-blue-lightest); border: 1px solid var(--opacity-neutral-darkest-10); border-radius: 24px; padding: 32px 20px; display: flex; flex-direction: column; gap: 16px; }
+@media only screen and (min-width: 768px) { .travel-links { padding: 32px; max-width: 418px; } }
+.travel-links__title { font-family: var(--second-family); letter-spacing: -.01em; font-size: 18px; line-height: 1.4; }
+@media only screen and (min-width: 1440px) { .travel-links__title { font-size: 22px; } }
+.travel-links__group { display: flex; flex-direction: column; gap: 8px; }
+.travel-links__label { font-size: 14px; font-weight: 700; color: var(--color-neutral-dark); text-transform: uppercase; letter-spacing: .04em; }
+.travel-links__list { display: flex; flex-wrap: wrap; gap: 8px; }
+.travel-links__link { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--opacity-neutral-darkest-15); background: var(--color-white); font-size: 15px; font-weight: 500; transition: background-color .2s, color .2s; }
+.travel-links__link:hover, .travel-links__link:focus-visible { background: var(--color-royal-blue); color: var(--color-white); border-color: transparent; }
+.travel-links__hint { font-size: 12px; color: var(--color-neutral); }
+
+.story-map { height: 260px; border-radius: 24px; overflow: hidden; border: 1px solid var(--opacity-neutral-darkest-10); }

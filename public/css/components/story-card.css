@@ -1,0 +1,56 @@
+/* Story card: cover, category, title, excerpt, author, date, saves, actions. */
+.story-card { background: var(--color-scheme-2-foreground); border-radius: 16px; max-width: 335px; overflow: hidden; height: 100%; display: flex; flex-direction: column; }
+@media (min-width: 768px) { .story-card { max-width: 340px; } }
+@media (min-width: 1440px) { .story-card { max-width: 421px; } }
+.story-card--fluid { max-width: none; }
+.story-card__image { object-fit: cover; width: 335px; height: 223px; background: var(--color-neutral-lightest); }
+@media (min-width: 768px) { .story-card__image { width: 340px; height: 226px; } }
+@media (min-width: 1440px) { .story-card__image { width: 421px; height: 280px; } }
+.story-card--fluid .story-card__image { width: 100%; height: auto; aspect-ratio: 3 / 2; }
+.story-card__info { flex-direction: column; gap: 24px; padding: 24px; display: flex; flex: 1; }
+.story-card__main { flex-direction: column; gap: 8px; display: flex; }
+.story-card__category { color: var(--color-neutral-darkest); font-size: 12px; font-weight: 600; }
+@media (min-width: 1440px) { .story-card__category { font-size: 16px; } }
+.story-card__title { -webkit-line-clamp: 2; height: 54px; color: var(--color-scheme-1-text); -webkit-box-orient: vertical; font-size: 18px; font-weight: 700; display: -webkit-box; overflow: hidden; }
+@media (min-width: 1440px) { .story-card__title { height: 78px; font-size: 26px; } }
+.story-card__description { -webkit-line-clamp: 3; height: 72px; color: var(--color-scheme-1-text); -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; }
+@media (min-width: 1440px) { .story-card__description { height: 81px; font-size: 18px; } }
+.story-card__details { flex-flow: wrap; align-items: center; gap: 16px; display: flex; }
+.story-card__author-image { object-fit: cover; border-radius: 50%; width: 48px; height: 48px; }
+.story-card__author-name { color: var(--color-scheme-1-text); font-size: 12px; font-weight: 600; }
+@media (min-width: 1440px) { .story-card__author-name { font-size: 16px; } }
+.story-card__author-name:hover { text-decoration: underline; }
+.story-card__line { flex-direction: row; align-items: center; gap: 8px; display: flex; }
+.story-card__date { color: var(--color-scheme-1-text); font-size: 12px; }
+@media (min-width: 1440px) { .story-card__date { font-size: 16px; } }
+.story-card__dot::after { content: '•'; color: var(--color-scheme-1-text); }
+@media (min-width: 1440px) { .story-card__dot::after { font-size: 20px; } }
+.story-card__favorite { flex-direction: row; justify-content: flex-start; align-items: center; gap: 2px; display: flex; }
+.story-card__favorite-count { color: var(--color-scheme-1-text); font-size: 12px; }
+@media (min-width: 1440px) { .story-card__favorite-count { font-size: 16px; } }
+.story-card__actions { flex-flow: wrap; gap: 10px; display: flex; margin-top: auto; }
+.story-card__button {
+  background: var(--opacity-neutral-darkest-5);
+  outline: 1px solid var(--color-scheme-2-border);
+  font-family: var(--font-family);
+  color: var(--color-neutral-darkest);
+  border: none;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 6px;
+  font-weight: 500;
+  transition-property: background-color, outline, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  display: flex;
+  cursor: pointer;
+}
+.story-card__button:hover, .story-card__button:focus { background-color: var(--color-royal-blue); outline: 1px solid var(--opacity-transparent); color: var(--color-white); }
+.story-card__button:disabled { background-color: var(--opacity-neutral-darkest-5); outline: 1px solid var(--opacity-transparent); opacity: .3; }
+.story-card__button:active, .story-card__button--saved { background-color: var(--color-royal-blue-darker); outline: 1px solid var(--opacity-transparent); color: var(--color-white); }
+.story-card__button--wide { flex: 1; }
+.story-card__button--square { padding: 12px; }
+.story-card__button svg { width: 24px; height: 24px; }
+.story-card__button--saved svg { fill: currentColor; }
+.story-card__note { font-size: 12px; color: var(--color-neutral-dark); }

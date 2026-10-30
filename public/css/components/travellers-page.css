@@ -1,0 +1,72 @@
+/* /travellers: grid of traveller cards with "Показати ще". */
+.travellers-page { background-color: #f7f9ff; flex: 1; }
+.travellers-page__main { width: calc(100% - 40px); max-width: 1312px; margin: 0 auto; padding: 48px 0 80px; }
+@media (min-width: 768px) { .travellers-page__main { width: calc(100% - 64px); padding-top: 64px; } }
+@media (min-width: 1440px) { .travellers-page__main { width: calc(100% - 128px); padding-top: 80px; } }
+.travellers-page__title { letter-spacing: -.01em; text-align: center; margin-bottom: 24px; font-size: 32px; line-height: 1.1; }
+@media (min-width: 768px) { .travellers-page__title { font-size: 48px; } }
+@media (min-width: 1440px) { .travellers-page__title { font-size: 56px; } }
+.travellers-page__more { text-align: center; color: #fff; background-color: #4169e1; border: 1px solid #4169e1; border-radius: 8px; width: 100%; height: 48px; margin: 24px auto 0; padding: 6px 12px; font-size: 18px; font-weight: 500; line-height: 1.5; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.travellers-page__more:disabled { opacity: .3; cursor: default; }
+.travellers-page__more:not(:disabled):hover, .travellers-page__more:not(:disabled):focus-visible { color: #000; background-color: #e8eeff; }
+.travellers-page__more:not(:disabled):active { color: #000; background-color: #7a96ea; }
+@media (min-width: 768px) { .travellers-page__more { width: max-content; } }
+
+.traveller-list { grid-template-columns: 1fr; gap: 24px; margin: 0; padding: 0; list-style: none; display: grid; }
+@media (min-width: 768px) { .traveller-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1440px) { .traveller-list { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.traveller-card { background-color: #e8eeff; border-radius: 16px; flex-direction: column; min-width: 0; padding: 24px; display: flex; }
+.traveller-card__avatar { object-fit: cover; border-radius: 50%; width: 112px; height: 112px; margin-bottom: 24px; }
+.traveller-card__name { font-family: var(--font-nunito-sans), sans-serif; text-overflow: ellipsis; white-space: nowrap; margin: 0 0 16px; font-size: 26px; font-weight: 600; line-height: 1.5; overflow: hidden; }
+.traveller-card__description { -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; margin: 0 0 16px; font-size: 18px; font-weight: 400; line-height: 1.5; display: -webkit-box; overflow: hidden; }
+.traveller-card__link { color: #000; background-color: #0000000d; border: 1px solid #00000026; border-radius: 8px; justify-content: center; align-items: center; min-height: 48px; margin-top: auto; font-size: 18px; font-weight: 500; line-height: 1.5; text-decoration: none; display: flex; }
+.traveller-card__link:hover, .traveller-card__link:focus-visible { color: #fff; background-color: #4169e1; }
+.traveller-card__link:active { color: #fff; background-color: #1a2a5a; }
+.traveller-card__badge { align-self: flex-start; margin: -8px 0 12px; padding: 2px 8px; border-radius: 6px; background: var(--color-white); font-size: 12px; font-weight: 600; color: var(--color-royal-blue-dark); }
+
+/* /travellers/:id profile. */
+.profile-head { background-color: #f7f9ff; width: 100%; min-height: 385px; padding: 32px 32px 0; }
+.profile-blog { background-color: #f7f9ff; width: 100%; padding: 32px 20px 64px; }
+.profile-blog__container { flex-direction: column; gap: 40px; width: 335px; max-width: 100%; margin: 0 auto; display: flex; }
+.profile-blog__title { color: #000; font-size: 24px; font-weight: 700; line-height: 1.2; }
+.profile-blog__more { color: #fff; cursor: pointer; background-color: #4169e1; border: 1px solid #4169e1; border-radius: 8px; justify-content: center; align-items: center; width: 100%; max-width: 335px; height: 48px; margin: 72px auto 0; font-size: 16px; font-weight: 500; transition: background-color .2s, color .2s, border-color .2s; display: flex; }
+.profile-blog__more:hover:not(:disabled), .profile-blog__more:focus:not(:disabled) { color: #000; background-color: #e8eeff; border: 1px solid #4169e1; }
+.profile-blog__more:active:not(:disabled) { color: #000; background-color: #7a96ea; border: 1px solid #4169e1; }
+.profile-blog__more:disabled { opacity: .6; cursor: not-allowed; }
+@media screen and (min-width: 768px) {
+  .profile-head { min-height: 231px; }
+  .profile-blog { padding: 32px 32px 64px; }
+  .profile-blog__container { width: 704px; max-width: 1280px; }
+  .profile-blog__title { font-size: 28px; }
+  .profile-blog__more { white-space: nowrap; gap: 8px; width: 123px; max-width: 220px; padding: 6px 12px; }
+}
+@media screen and (min-width: 1440px) {
+  .profile-head { min-height: 247px; padding-top: 48px; }
+  .profile-blog__title { font-size: 52px; }
+  .profile-blog { padding: 48px 64px 72px; }
+  .profile-blog__container { width: 100%; max-width: 1312px; }
+  .profile-blog__more { width: 135px; font-size: 18px; }
+}
+
+.profile-card { text-align: center; flex-direction: column; align-items: center; gap: 16px; width: 311px; max-width: 100%; margin: 0 auto; display: flex; }
+.profile-card__avatar { object-fit: cover; border-radius: 50%; flex-shrink: 0; width: 199px; height: 199px; }
+.profile-card__text { display: block; width: 311px; max-width: 100%; height: 130px; }
+.profile-card__name { height: 26px; letter-spacing: -.01em; font-family: var(--font-inter), sans-serif; font-size: 20px; font-weight: 700; line-height: 130%; }
+.profile-card__description { font-family: var(--font-nunito-sans), sans-serif; font-size: 16px; font-weight: 400; line-height: 150%; }
+@media screen and (min-width: 768px) {
+  .profile-card { text-align: left; flex-direction: row; align-items: center; gap: 24px; width: 704px; }
+  .profile-card__text { width: 481px; height: 74px; }
+}
+@media screen and (min-width: 1440px) {
+  .profile-card { width: 1312px; max-width: 1312px; }
+  .profile-card__text { width: 367px; height: 150px; }
+  .profile-card__name { font-size: 32px; height: 42px; }
+  .profile-card__description { font-size: 18px; }
+}
+
+/* Below desktop the original shows 8 travellers / 4 profile stories per load; the script
+   trims the server-rendered page accordingly, this rule avoids a flash before it runs. */
+@media (max-width: 1439px) {
+  [data-mobile-limit="8"] > li:nth-child(n+9), [data-mobile-limit="4"] > li:nth-child(n+5) { display: none; }
+  [data-mobile-limit].is-trimmed > li { display: revert; }
+}

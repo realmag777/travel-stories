@@ -1,0 +1,204 @@
+{
+  "stories": [
+    {
+      "key": "s-3-021",
+      "travellerKey": "t-3-07",
+      "category": "Америка",
+      "title": { "uk": "Куба повільно: три тижні в долині Віньялес", "en": "Cuba Slowly: Three Weeks in the Viñales Valley" },
+      "article": {
+        "uk": "Ми з Петром приїхали до Віньялеса на три дні, а залишилися на три тижні. Так у нас буває часто. Із Гавани туди близько трьох годин туристичним автобусом, а потім дорога спускається в долину, де з червоної землі піднімаються моготе, круглі вапнякові пагорби, порослі лісом. Перший вечір ми просто сиділи на ґанку і дивилися, як над ними сідає сонце.\n\nЖили в каса-партикуляр, приватному будинку, у пані Ямілет і її чоловіка Орландо. Кімната зі сніданком коштувала близько 25 євро за ніч, а снідали ми щоранку однаково й щасливо: папая, гуава, яєчня, свіжий хліб і густа солодка кава. Невдовзі нас уже кликали на вечерю, рис із чорною квасолею, смажені банани, іноді лангуст, якого Орландо приносив від знайомого рибалки.\n\nДні складалися з малого. Ранкова прогулянка до тютюнової ферми сусіда, де дон Рауль показував, як сушать листя в дерев'яних сараях і як скручують сигару, вмочуючи кінчик у мед. Петро, який не курить, усе одно сидів з ним годинами. Пообіді ми їхали верхи до печер чи до озерця серед пагорбів, а ввечері слухали сон у маленькому барі на центральній вулиці.\n\nВажливе для мандрівників: на Кубі дуже знадобиться готівка в євро, картки працюють погано. Інтернет є тільки через картки державного оператора і точки доступу, тож ми майже три тижні жили без новин. Нам це навіть сподобалося.\n\nЧесний мінус: дефіцит і перебої зі світлом. Іноді в магазинах не було навіть води, а вечорами вимикали електрику на кілька годин. Беріть із собою ліки, гігієну і ліхтарик. І будьте готові, що повільний ритм тут не вибір, а необхідність.",
+        "en": "Petro and I came to Viñales for three days and stayed three weeks. That often happens to us. From Havana it takes about three hours by tourist bus, and then the road drops into the valley, where mogotes, round limestone hills covered in forest, rise out of the red earth. On the first evening we simply sat on the porch and watched the sun set over them.\n\nWe stayed in a casa particular, a private house, with Señora Yamilet and her husband Orlando. A room with breakfast cost about 25 euros a night, and every morning we had the same happy breakfast: papaya, guava, fried eggs, fresh bread and thick sweet coffee. Soon we were being called to dinner too, rice with black beans, fried plantains and sometimes a lobster that Orlando brought from a fisherman he knew.\n\nThe days were made of small things. A morning walk to the neighbour's tobacco farm, where Don Raúl showed how the leaves are dried in wooden barns and how a cigar is rolled, dipping the tip in honey. Petro, who doesn't smoke, still sat with him for hours. In the afternoon we rode horses to the caves or to a little lake among the hills, and in the evening we listened to son in a small bar on the main street.\n\nSomething important for travellers: in Cuba you will badly need cash in euros, as cards work poorly. Internet is only available through the state operator's cards and hotspots, so for almost three weeks we lived without news. We even liked it.\n\nThe honest downside: shortages and power cuts. Sometimes the shops didn't even have water, and in the evenings the electricity went off for several hours. Bring medicines, toiletries and a torch. And be ready for the slow rhythm here to be not a choice but a necessity."
+      },
+      "country": { "code": "CU", "uk": "Куба", "en": "Cuba", "es": "Cuba" },
+      "region": { "uk": "Пінар-дель-Ріо", "en": "Pinar del Río", "es": "Pinar del Río" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 21,
+      "tripType": "couple",
+      "tags": ["slow-travel", "nature", "culture", "hiking"],
+      "lat": 22.6167,
+      "lng": -83.7000,
+      "photoQuery": "Viñales Valley"
+    },
+    {
+      "key": "s-3-022",
+      "travellerKey": "t-3-07",
+      "category": "Океанія",
+      "title": { "uk": "Тасманія: два тижні біля затоки Вайнгласс", "en": "Tasmania: Two Weeks by Wineglass Bay" },
+      "article": {
+        "uk": "До Тасманії ми летіли з Мельбурна лише годину, а відчуття було, ніби потрапили на інший континент. У Гобарті взяли маленьку машину і за дві з половиною години доїхали до містечка Коулз-Бей на півострові Фрейсінет. Там ми винайняли дерев'яний будиночок у місцевої пари, Джуді й Мартіна, і прожили в ньому два тижні наприкінці березня, коли осінь лагідна, а школярі вже повернулися за парти.\n\nЗатоку Вайнгласс знають усі з фотографій: ідеальний білий півмісяць піску між гранітними горами. Ми піднялися на оглядовий майданчик першого ж ранку, це близько години стежкою з каменями, а через кілька днів спустилися до самого пляжу. Удруге ми йшли туди вже неквапливо, з бутербродами і термосом, і просиділи на піску до обіду майже самі. Перепустка до нацпарків Тасманії на вісім тижнів коштувала нам близько 50 євро на машину.\n\nНаш ритм швидко встановився. Вранці кава на терасі, де валабі, маленькі кенгуру, підходили так близько, що Петро вигадав їм імена. Потім прогулянка або поїздка на ферму устриць неподалік, де їх відкривають при тобі, дюжина коштувала близько 15 євро. Увечері вогонь у пічці, бо вночі вже холодно.\n\nОдного вечора Мартін повіз нас у Бічено, сусіднє містечко, дивитися, як маленькі пінгвіни виходять з моря і перевальцем біжать до нір. Без ліхтарів і фото, тільки темрява і шурхіт. Це був, мабуть, найтихіший і найзворушливіший вечір за всю подорож.\n\nЧесний мінус: погода змінюється кілька разів на день, а вода навіть у березні близько шістнадцяти градусів, купатися наважувався лише Петро. Магазин у Коулз-Бей маленький і дорогий, тож продукти краще везти із Суонсі.",
+        "en": "Our flight from Melbourne to Tasmania took only an hour, yet it felt as though we had landed on another continent. In Hobart we picked up a small car and two and a half hours later reached the town of Coles Bay on the Freycinet Peninsula. There we rented a wooden cabin from a local couple, Judy and Martin, and lived in it for two weeks at the end of March, when autumn is gentle and the schoolchildren are already back at their desks.\n\nEveryone knows Wineglass Bay from photographs: a perfect white crescent of sand between granite mountains. We climbed to the lookout on the very first morning, about an hour on a rocky path, and a few days later went down to the beach itself. The second time we walked there slowly, with sandwiches and a thermos, and sat on the sand until lunchtime almost alone. A Tasmanian national parks pass for eight weeks cost us about 50 euros per car.\n\nOur rhythm settled quickly. In the morning coffee on the terrace, where wallabies, small kangaroos, came so close that Petro gave them names. Then a walk or a drive to an oyster farm nearby, where they open them in front of you; a dozen cost about 15 euros. In the evening a fire in the stove, because the nights are already cold.\n\nOne evening Martin drove us to Bicheno, the next town, to watch little penguins come out of the sea and waddle to their burrows. No torches and no photos, just darkness and rustling. It was probably the quietest and most touching evening of the whole trip.\n\nThe honest downside: the weather changes several times a day, and even in March the water is about sixteen degrees, so only Petro dared to swim. The shop in Coles Bay is small and expensive, so it is better to bring groceries from Swansea."
+      },
+      "country": { "code": "AU", "uk": "Австралія", "en": "Australia", "es": "Australia" },
+      "region": { "uk": "Тасманія", "en": "Tasmania", "es": "Tasmania" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 14,
+      "tripType": "couple",
+      "tags": ["slow-travel", "beach", "hiking", "wildlife"],
+      "lat": -42.1585,
+      "lng": 148.3011,
+      "photoQuery": "Wineglass Bay"
+    },
+    {
+      "key": "s-3-023",
+      "travellerKey": "t-3-07",
+      "category": "Океанія",
+      "title": { "uk": "Самоа: місяць у пляжних фале і неділі без поспіху", "en": "Samoa: a Month in Beach Fales and Unhurried Sundays" },
+      "article": {
+        "uk": "Самоа ми обрали тому, що про неї мало пишуть. Летіли через Окленд, а в аеропорту Фалеоло на острові Уполу нас зустріло тепле повітря з запахом квітів франжипані. Перший тиждень ми жили в пляжному фале на півдні острова, біля Лаломану. Фале це традиційна хатинка без стін, лише дах на стовпах і плетені штори, які опускають на ніч. Разом зі сніданком і вечерею вона коштувала нам близько 50 євро за двох.\n\nСпати під шум прибою без стін спершу дивно, а потім уже не уявляєш інакше. Решту місяця ми прожили в селі на тому ж узбережжі, в гостьовій хатинці родини Туіла. Господиня Сіна навчила мене плести кошики з пальмового листя, а Петро ходив із її чоловіком на риболовлю на світанку.\n\nНеділя в Самоа особлива. Усе зачинено, люди в білому йдуть до церкви, і звідти лунає спів, від якого мурашки по шкірі. Після служби готують уму, страви, запечені на гарячому камінні під листям: таро, свинина, риба, і пудинг з кокосовим кремом. Нас запрошували щонеділі, і це були найсмачніші обіди нашого життя.\n\nНайвідоміше місце острова, океанська розколина То-Суа, була за двадцять хвилин від нас. Це глибока яма з бірюзовою водою, з'єднана з океаном, і спускатися до неї треба довгою дерев'яною драбиною. Ми приїжджали туди рано вранці, коли нікого немає, і плавали в тиші.\n\nЧесний мінус: у неділю в селах не можна купатися і шуміти, а магазини не працюють, тож запасайтеся в суботу. Комарі ввечері невблаганні. І звикайте, що поспіх тут вважають неввічливістю, особливо з боку гостей.",
+        "en": "We chose Samoa because little is written about it. We flew via Auckland, and at Faleolo airport on the island of Upolu we were met by warm air smelling of frangipani. For the first week we lived in a beach fale in the south of the island near Lalomanu. A fale is a traditional hut without walls, just a roof on posts and woven blinds you lower at night. With breakfast and dinner it cost us about 50 euros for two.\n\nSleeping to the sound of the surf without walls feels strange at first, and then you can't imagine it any other way. We spent the rest of the month in a village on the same coast, in the Tuila family's guest hut. Our hostess Sina taught me to weave baskets from palm leaves, and Petro went fishing with her husband at dawn.\n\nSunday in Samoa is special. Everything is closed, people in white walk to church, and the singing that comes from there gives you goosebumps. After the service they prepare umu, food baked on hot stones under leaves: taro, pork, fish, and a pudding with coconut cream. We were invited every Sunday, and those were the tastiest lunches of our lives.\n\nThe island's most famous place, the To Sua Ocean Trench, was twenty minutes from us. It is a deep pit of turquoise water connected to the ocean, and you climb down to it by a long wooden ladder. We came early in the morning when nobody was there and swam in silence.\n\nThe honest downside: on Sundays you may not swim or make noise in the villages, and the shops are closed, so stock up on Saturday. The mosquitoes in the evening are merciless. And get used to the fact that hurrying is considered impolite here, especially from guests."
+      },
+      "country": { "code": "WS", "uk": "Самоа", "en": "Samoa", "es": "Samoa" },
+      "region": { "uk": "Уполу", "en": "Upolu", "es": "Upolu" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 30,
+      "tripType": "couple",
+      "tags": ["slow-travel", "islands", "beach", "culture"],
+      "lat": -14.0573,
+      "lng": -171.4345,
+      "photoQuery": "To Sua Ocean Trench"
+    },
+    {
+      "key": "s-3-024",
+      "travellerKey": "t-3-08",
+      "category": "Америка",
+      "title": { "uk": "Нью-Йорк для студента: як прожити тиждень і не збанкрутувати", "en": "New York on a Student Budget: a Week Without Going Broke" },
+      "article": {
+        "uk": "Нью-Йорк і бюджет студента звучать як анекдот, але я перевірив: можна. Прилетів у грудні, бо після свят квитки дешевші, і шість днів жив у хостелі на Мангеттені за 45 євро за ліжко в кімнаті на шістьох. Вайфай там тягнув чудово, кухня була спільна, а сусіди з Бразилії і Кореї навчили мене, де найдешевша піца.\n\nПро піцу окремо. По всьому місту є точки, де шматок коштує близько двох доларів, а це менше двох євро. Ще один рятівник це візки з халяльною їжею: рис, курка, білий соус, і ти ситий до вечора за 8 євро. Бейгл з вершковим сиром на сніданок коштує 3–4 євро. Ресторани я обходив, бо до ціни в меню треба додати податок і чайові.\n\nМетро тепер оплачується просто банківською карткою на турнікеті, близько 2,7 євро за поїздку, а після дванадцяти поїздок за тиждень решта безкоштовні. Головний лайфхак: пором на Стейтен-Айленд безкоштовний і пропливає повз Статую Свободи. Я проплив туди й назад тричі, з кавою, як справжній нью-йоркець.\n\nБезкоштовно також Хай-Лайн, парк на старій естакаді, Центральний парк і Бруклінський міст, яким я пройшов пішки на світанку, поки там не було натовпу. У Бушвіку цілі квартали розписані графіті, це найкраща безкоштовна галерея міста. А в багатьох музеях бувають безкоштовні вечори чи години, перевіряйте сайти заздалегідь.\n\nЧесний мінус: житло. Навіть хостел тут дорожчий, ніж готель у більшості країн, і за шість днів я витратив на нього майже половину бюджету. Ще вітер між хмарочосами в грудні пронизує, тож шарф і рукавиці обов'язково. Але вогні Таймс-сквер я побачив, і вони були безкоштовними.",
+        "en": "New York and a student budget sounds like a joke, but I checked: it's possible. I flew in in December, because tickets are cheaper after the holidays, and for six days I lived in a hostel in Manhattan for 45 euros a bed in a six-bed room. The wifi was great, the kitchen was shared, and my roommates from Brazil and Korea taught me where the cheapest pizza is.\n\nPizza deserves its own paragraph. All over the city there are places where a slice costs about two dollars, which is less than two euros. Another lifesaver is the halal carts: rice, chicken, white sauce, and you're full until evening for 8 euros. A bagel with cream cheese for breakfast is 3 to 4 euros. I avoided restaurants, because you have to add tax and tips to the menu price.\n\nThe subway is now paid simply with a bank card at the turnstile, about 2.7 euros a ride, and after twelve rides in a week the rest are free. The main hack: the Staten Island Ferry is free and sails past the Statue of Liberty. I went there and back three times, with a coffee, like a real New Yorker.\n\nAlso free are the High Line, a park on an old elevated railway, Central Park and the Brooklyn Bridge, which I walked across at dawn before the crowds arrived. In Bushwick whole blocks are covered in graffiti; it's the city's best free gallery. And many museums have free evenings or hours, so check their websites in advance.\n\nThe honest downside: accommodation. Even a hostel here costs more than a hotel in most countries, and in six days it ate almost half my budget. Also, in December the wind between the skyscrapers cuts right through you, so a scarf and gloves are a must. But I did see the lights of Times Square, and they were free."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Нью-Йорк", "en": "New York", "es": "Nueva York" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["city-break", "street-art", "food", "backpacking"],
+      "lat": 40.7061,
+      "lng": -73.9969,
+      "photoQuery": "Brooklyn Bridge"
+    },
+    {
+      "key": "s-3-025",
+      "travellerKey": "t-3-08",
+      "category": "Америка",
+      "title": { "uk": "Мехіко: тако за євро і піраміди Теотіуакана", "en": "Mexico City: One-Euro Tacos and the Pyramids of Teotihuacan" },
+      "article": {
+        "uk": "У Мехіко ми полетіли з одногрупником Максом на весняні канікули в березні, і це було найкраще співвідношення ціни і вражень за всі мої подорожі. Хостел у районі Рома з дахом-терасою і швидким вайфаєм коштував 12 євро за ніч. Квиток на метро взагалі смішний, кілька песо, тобто менше ніж 30 євроцентів за будь-яку відстань.\n\nТако тут їдять на кожному розі і в будь-який час. Тако аль пастор, свинина, засмажена на вертикальному шампурі з ананасом, коштують близько євро за штуку, і після п'яти ти щасливий. Ще пробували кесадильї з квіткою гарбуза, тамалі на сніданок і чуррос із гарячим шоколадом. Наш шлунок пережив усе, але воду пили тільки з пляшок.\n\nЗ культурної програми: Музей антропології, де можна провести цілий день, і саме там зберігається величезний ацтекський Камінь Сонця. Палац витончених мистецтв з помаранчевим куполом стоїть просто в центрі, а фрески Дієго Ривери в Національному палаці можна побачити безкоштовно, тільки візьміть паспорт. До Блакитного будинку Фріди Кало квитки треба купувати онлайн за кілька днів, ми цього не знали і подивилися лише на стіни ззовні.\n\nДо Теотіуакана їхали звичайним автобусом з північного автовокзалу, приблизно година і 3 євро. Піраміда Сонця величезна, і краєвид з Дороги мертвих вражає. Приїжджайте до відкриття, поки не почалася спека.\n\nЧесний мінус: місто стоїть на висоті понад 2200 метрів, і перші дні задишка навіть на сходах метро. Повітря буває брудним, а затори такі, що таксі через центр інколи повільніше за пішохода. Але за тиждень ми витратили менше, ніж за вихідні в Європі.",
+        "en": "My coursemate Max and I flew to Mexico City for spring break in March, and it was the best ratio of price to impressions in all my travels. A hostel in the Roma district with a roof terrace and fast wifi cost 12 euros a night. A metro ticket is laughable, a few pesos, meaning less than 30 euro cents for any distance.\n\nTacos are eaten here on every corner and at any hour. Tacos al pastor, pork roasted on a vertical spit with pineapple, cost about a euro each, and after five you're happy. We also tried quesadillas with squash blossom, tamales for breakfast and churros with hot chocolate. Our stomachs survived everything, but we drank only bottled water.\n\nFor culture: the Anthropology Museum, where you can spend a whole day and where the huge Aztec Sun Stone is kept. The Palace of Fine Arts with its orange dome stands right in the centre, and Diego Rivera's murals in the National Palace can be seen for free, just bring your passport. Tickets to Frida Kahlo's Blue House have to be bought online a few days ahead; we didn't know that and only saw the walls from outside.\n\nTo Teotihuacan we took an ordinary bus from the northern bus station, about an hour and 3 euros. The Pyramid of the Sun is huge, and the view down the Avenue of the Dead is stunning. Arrive by opening time, before the heat begins.\n\nThe honest downside: the city sits at over 2200 metres, and for the first days you get out of breath even on the metro stairs. The air can be dirty, and the traffic jams are such that a taxi through the centre is sometimes slower than walking. But in a week we spent less than on a weekend in Europe."
+      },
+      "country": { "code": "MX", "uk": "Мексика", "en": "Mexico", "es": "México" },
+      "region": { "uk": "Мехіко", "en": "Mexico City", "es": "Ciudad de México" },
+      "seasons": ["spring"],
+      "budget": "low",
+      "durationDays": 8,
+      "tripType": "friends",
+      "tags": ["city-break", "food", "museums", "history"],
+      "lat": 19.4352,
+      "lng": -99.1412,
+      "photoQuery": "Palacio de Bellas Artes"
+    },
+    {
+      "key": "s-3-026",
+      "travellerKey": "t-3-08",
+      "category": "Америка",
+      "title": { "uk": "Ігуасу: Горлянка диявола з двох боків кордону", "en": "Iguazú: the Devil's Throat from Both Sides of the Border" },
+      "article": {
+        "uk": "Водоспади Ігуасу ми з дівчиною Катею бачили з двох країн за три дні, і я досі не можу вирішити, який бік кращий. Летіли з Буенос-Айреса до Пуерто-Ігуасу, квитки брали за два місяці на розпродажі. Жили в хостелі з басейном за 14 євро на людину, і басейн у грудневу спеку виявився не розкішшю, а виживанням.\n\nАргентинський бік це прогулянки. Квиток для іноземців коштував близько 35 євро, і на другий день його можна продовжити зі знижкою. Маленький потяг довозить до початку металевих містків над річкою, і ти йдеш понад кілометр просто над водою до Горлянки диявола. Там вода падає з усіх боків у підкову, бризки летять угору, і за хвилину ти мокрий до нитки. Катя кричала від захвату, я теж, але тихіше.\n\nБразильський бік дає панораму. Перетнули кордон міжнародним автобусом, на паспортному контролі трохи постояли. Там одна довга стежка вздовж каньйону, і звідти видно всі водоспади одразу, понад двісті потоків. Найкраще світло зранку, коли над водою веселка.\n\nПро тварин: носухи, кумедні єнотоподібні звірі з довгими носами, тут справжні грабіжники. Одна вихопила в Каті пакет печива просто з рук. Їх не можна годувати, і вони кусаються, тож тримайте їжу в рюкзаку. А ще ми бачили тукана і сотні метеликів, які сідали на наші спітнілі руки.\n\nЧесний мінус: квитки на обидва боки разом відчутно б'ють по студентському бюджету, а на аргентинському боці о дванадцятій натовпи такі, що на містку до Горлянки рухаєшся в черзі. Приходьте до відкриття. І візьміть дощовик або одяг, який не шкода намочити.",
+        "en": "My girlfriend Katia and I saw the Iguazú Falls from two countries in three days, and I still can't decide which side is better. We flew from Buenos Aires to Puerto Iguazú, buying tickets two months ahead in a sale. We stayed in a hostel with a pool for 14 euros each, and in the December heat the pool turned out to be not a luxury but survival.\n\nThe Argentine side is about walks. The ticket for foreigners cost about 35 euros, and on the second day you can extend it at a discount. A little train takes you to the start of the metal walkways over the river, and you walk over a kilometre right above the water to the Devil's Throat. There the water falls from all sides into a horseshoe, the spray flies upward, and within a minute you are soaked to the skin. Katia screamed with delight, and so did I, only more quietly.\n\nThe Brazilian side gives you the panorama. We crossed the border on an international bus and waited a bit at passport control. There is one long trail along the canyon, and from it you can see all the falls at once, over two hundred streams. The best light is in the morning, when there is a rainbow over the water.\n\nAbout the animals: coatis, funny raccoon-like creatures with long noses, are real robbers here. One snatched a packet of biscuits right out of Katia's hands. You mustn't feed them and they bite, so keep food in your backpack. We also saw a toucan and hundreds of butterflies landing on our sweaty arms.\n\nThe honest downside: tickets for both sides together hit a student budget hard, and on the Argentine side at noon the crowds are so big that you move along the walkway to the Throat in a queue. Arrive at opening time. And bring a raincoat or clothes you don't mind getting wet."
+      },
+      "country": { "code": "AR", "uk": "Аргентина", "en": "Argentina", "es": "Argentina" },
+      "region": { "uk": "Місьйонес", "en": "Misiones", "es": "Misiones" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 3,
+      "tripType": "couple",
+      "tags": ["nature", "national-parks", "wildlife", "backpacking"],
+      "lat": -25.6953,
+      "lng": -54.4367,
+      "photoQuery": "Iguazu Falls"
+    },
+    {
+      "key": "s-3-027",
+      "travellerKey": "t-3-09",
+      "category": "Америка",
+      "title": { "uk": "Гавана з сином: старі машини, гармата о дев'ятій і музика сон", "en": "Havana with My Son: Old Cars, the Nine O'Clock Cannon and Son Music" },
+      "article": {
+        "uk": "Гавану я хотів показати Олені й Мирону давно, бо для мексиканця це місто як старший брат, трохи втомлений, але з гітарою в руках. Ми полетіли у квітні, коли ще не надто спекотно, і сім днів жили в каса-партикуляр у Старій Гавані. Кімната з балконом і сніданком коштувала близько 45 євро за ніч, а господиня Маріца годувала Мирона манго так, ніби він її онук.\n\nПершим ділом син вимагав поїздку на старій американській машині. Рожевий кабріолет п'ятдесятих років, водій Йоель, година по Малекону і Ведадо за 40 євро. Мирон махав перехожим, як президент. Я сказав Олені, що в Мексиці таких машин майже не лишилося, а тут їх лагодять десятиліттями деталями з чого завгодно. Справжнє мистецтво.\n\nСтара Гавана це площі, кожна зі своїм характером. Площа Катедраль з бароковим собором, Пласа-В'єха з кольоровими будинками, вулиця Обіспо, де з кожних дверей грає музика. Капітолій з куполом тепер знову відкритий для відвідувачів. Олена сказала, що облуплені фасади нагадують їй старий Львів, якби його розфарбували в усі кольори морозива.\n\nНайбільше Мирону сподобалася церемонія каньйонасо у фортеці Ла-Кабанья: щовечора о дев'ятій солдати в старовинній формі стріляють з гармати, як колись, коли закривали міську браму. Він закрив вуха і сміявся. А ввечері ми слухали сон у маленьких барах, і Олена вчилася танцювати сальсу в мене, хоч я з Гвадалахари, і моє танцювання тут викликало співчуття.\n\nЧесний мінус: дефіцит. У магазинах порожньо, ліки, зокрема дитячі, і сонцезахисний крем везіть із собою. Ще настирливі хінетерос, вуличні посередники, весь час пропонують таксі й сигари. Ввічливе «но, грасіас» і усмішка працюють найкраще.",
+        "en": "I had long wanted to show Havana to Olena and Myron, because for a Mexican this city is like an older brother, a bit tired but with a guitar in his hands. We flew in April, when it isn't too hot yet, and for seven days stayed in a casa particular in Old Havana. A room with a balcony and breakfast cost about 45 euros a night, and our hostess Maritza fed Myron mango as if he were her grandson.\n\nFirst of all my son demanded a ride in an old American car. A pink convertible from the fifties, a driver called Yoel, an hour along the Malecón and through Vedado for 40 euros. Myron waved at passers-by like a president. I told Olena that in Mexico hardly any such cars are left, while here they have been repaired for decades with parts made from anything. True art.\n\nOld Havana is all squares, each with its own character. Plaza de la Catedral with its baroque cathedral, Plaza Vieja with its coloured houses, Obispo Street, where music plays from every door. The domed Capitolio is open to visitors again. Olena said the peeling facades reminded her of old Lviv, if it had been painted in every ice-cream colour.\n\nWhat Myron liked most was the cañonazo ceremony at La Cabaña fortress: every evening at nine, soldiers in old uniforms fire a cannon as in the days when the city gate was closed. He covered his ears and laughed. In the evenings we listened to son in small bars, and Olena learned salsa from me, although I'm from Guadalajara and my dancing drew sympathy here.\n\nThe honest downside: shortages. The shops are empty, so bring medicines, including children's ones, and sunscreen with you. There are also pushy jineteros, street middlemen, constantly offering taxis and cigars. A polite 'no, gracias' and a smile work best."
+      },
+      "country": { "code": "CU", "uk": "Куба", "en": "Cuba", "es": "Cuba" },
+      "region": { "uk": "Гавана", "en": "Havana", "es": "La Habana" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 7,
+      "tripType": "family",
+      "tags": ["history", "architecture", "culture", "with-kids"],
+      "lat": 23.1352,
+      "lng": -82.3593,
+      "photoQuery": "Old Havana"
+    },
+    {
+      "key": "s-3-028",
+      "travellerKey": "t-3-09",
+      "category": "Америка",
+      "title": { "uk": "Картахена: місто за мурами і острови Росаріо", "en": "Cartagena: the Walled City and the Rosario Islands" },
+      "article": {
+        "uk": "Картахена стала нашою з Оленою першою подорожжю вдвох після народження Мирона. Бабуся забрала онука на тиждень, і ми полетіли в Колумбію в грудні, коли сезон дощів закінчився. Я колумбійців люблю: вони говорять іспанською так чітко, що мені, мексиканцю, здається, ніби я слухаю радіо.\n\nМісто за мурами схоже на декорацію до старого фільму. Балкони, обвиті бугенвілеями, двері з бронзовими молотками у формі левів і ящірок, площі з тінистими деревами. Ми жили в маленькому готелі в кварталі Гетсемані, за 80 євро на ніч, і це було найкраще рішення. Тут менше туристів, стіни розписані яскравими муралами, а ввечері на площі біля церкви Святої Трійці грають діти, танцюють пари і продають гарячі арепи.\n\nПро їжу. Арепа де уево, кукурудзяний пиріжок із яйцем усередині, смажений у фритюрі, коштує близько євро. Палєнкерас, жінки в барвистих сукнях з мисками фруктів на голові, продають манго й ананас. Олена спершу просто сфотографувала одну з них, і та одразу попросила плату. Тут це звичайна справа, тож краще купіть фрукти і тоді фотографуйте. Севіче з креветками в кав'ярні біля моря нагадало мені Акапулько, тільки з більшою кількістю лайма.\n\nФортеця Сан-Феліпе стоїть на пагорбі над містом, її будували іспанці, щоб захищати золото від піратів. Усередині вузькі тунелі, де відлунюють кроки. Приходьте зранку, бо вдень камінь розпікається.\n\nЧесний мінус: продавці на пляжах і вулицях дуже наполегливі, а екскурсія на острови Росаріо, близько 50 євро на людину, виявилася конвеєром з переповненим пляжем. Беріть приватний човен разом з іншою парою, вийде не набагато дорожче і значно спокійніше.",
+        "en": "Cartagena was Olena's and my first trip as a couple since Myron was born. Grandma took her grandson for a week, and we flew to Colombia in December, when the rainy season was over. I love Colombians: they speak Spanish so clearly that to me, a Mexican, it feels like listening to the radio.\n\nThe walled city looks like the set for an old film. Balconies wrapped in bougainvillea, doors with bronze knockers shaped like lions and lizards, squares with shady trees. We stayed in a small hotel in the Getsemaní district for 80 euros a night, and it was the best decision. There are fewer tourists here, the walls are covered in bright murals, and in the evening on the square by the Holy Trinity church children play, couples dance and hot arepas are sold.\n\nAbout the food. An arepa de huevo, a deep-fried corn pastry with an egg inside, costs about a euro. Palenqueras, women in colourful dresses with bowls of fruit on their heads, sell mango and pineapple. Olena at first just photographed one of them, who immediately asked to be paid. That's normal here, so it's better to buy some fruit and then take your photo. A shrimp ceviche in a café by the sea reminded me of Acapulco, only with more lime.\n\nThe San Felipe fortress stands on a hill above the city; the Spaniards built it to protect their gold from pirates. Inside are narrow tunnels where footsteps echo. Come in the morning, because by midday the stone is scorching.\n\nThe honest downside: vendors on the beaches and streets are very persistent, and the tour to the Rosario Islands, about 50 euros per person, turned out to be a conveyor belt with an overcrowded beach. Share a private boat with another couple; it costs not much more and is much calmer."
+      },
+      "country": { "code": "CO", "uk": "Колумбія", "en": "Colombia", "es": "Colombia" },
+      "region": { "uk": "Болівар", "en": "Bolívar", "es": "Bolívar" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "couple",
+      "tags": ["history", "architecture", "food", "street-art", "islands"],
+      "lat": 10.4236,
+      "lng": -75.5478,
+      "photoQuery": "Castillo San Felipe de Barajas"
+    },
+    {
+      "key": "s-3-029",
+      "travellerKey": "t-3-09",
+      "category": "Америка",
+      "title": { "uk": "Еверглейдс: алігатори, ламантини і трава до горизонту", "en": "The Everglades: Alligators, Manatees and Grass to the Horizon" },
+      "article": {
+        "uk": "Після тижня в Маямі Мирон заявив, що пляжів йому вистачає і вдома, на Дніпрі, тож ми з Оленою вирішили показати йому щось справді дике. Еверглейдс за годину їзди від міста, і за чотири дні в лютому ми побачили більше тварин, ніж за все його життя в зоопарках. Сухий сезон з грудня по квітень тут найкращий: тварини збираються біля залишків води, а комарів значно менше.\n\nВхід до нацпарку коштує близько 32 євро за машину на тиждень. Першою була стежка Анхінга біля Ройял-Палм, дерев'яний настил над болотом менше кілометра завдовжки. На ній Мирон нарахував чотирнадцять алігаторів, деякі лежали за кілька метрів від стежки і не звертали на нас уваги. Рейнджерка попередила: не наближатися і не годувати, а дітей тримати за руку. Ще ми бачили птаха анхінгу, який сушить крила, розкинувши їх, як плащ.\n\nУ Шарк-Веллі ми взяли напрокат велосипеди і проїхали петлю близько 24 кілометрів по рівному асфальту. Для семирічного це було багато, тож другу половину Мирон їхав у дитячому кріслі на моєму велосипеді і коментував кожну черепаху. Посередині петлі є оглядова вежа, звідки видно, що Еверглейдс це не ліс і не озеро, а безкінечна річка трави.\n\nНайзворушливішим було місто Еверглейдс-Сіті на заході, де з причалу ми побачили ламантина. Він повільно виринав, дихав і зникав, а Мирон шепотів, щоб його не налякати. Аеробот, катер із великим вентилятором, ми теж спробували, але за межами нацпарку: гучно, швидко, і синові сподобалося.\n\nЧесний мінус: навіть узимку ввечері кусаються комарі, а влітку, кажуть, тут неможливо. І відстані між частинами парку великі, на дорогу йде половина дня. Мексиканський заповідник Сіан-Каан схожий, але Еверглейдс організований набагато краще.",
+        "en": "After a week in Miami Myron declared that he had enough beaches at home on the Dnipro, so Olena and I decided to show him something truly wild. The Everglades are an hour's drive from the city, and in four days in February we saw more animals than in all his life of zoos. The dry season from December to April is the best here: animals gather around the remaining water, and there are far fewer mosquitoes.\n\nPark entry costs about 32 euros per car for a week. First came the Anhinga Trail by Royal Palm, a wooden boardwalk over the swamp less than a kilometre long. On it Myron counted fourteen alligators; some lay a few metres from the path and paid no attention to us. The ranger warned: don't approach or feed them, and hold the children's hands. We also saw the anhinga bird drying its wings, spreading them like a cloak.\n\nAt Shark Valley we rented bikes and rode the loop of about 24 kilometres on flat tarmac. For a seven-year-old it was a lot, so for the second half Myron rode in the child seat on my bike and commented on every turtle. In the middle of the loop there is an observation tower from which you can see that the Everglades are neither a forest nor a lake but an endless river of grass.\n\nThe most touching moment was in Everglades City in the west, where we saw a manatee from the dock. It slowly surfaced, breathed and vanished, while Myron whispered so as not to scare it. We tried an airboat too, a boat with a big fan, but outside the national park: loud, fast, and my son loved it.\n\nThe honest downside: even in winter the mosquitoes bite in the evening, and in summer, they say, it's impossible. And the distances between the parts of the park are big, so half the day goes on the road. The Mexican reserve of Sian Ka'an is similar, but the Everglades are organised much better."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Флорида", "en": "Florida", "es": "Florida" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "family",
+      "tags": ["wildlife", "national-parks", "with-kids", "nature"],
+      "lat": 25.3825,
+      "lng": -80.6090,
+      "photoQuery": "Anhinga Trail"
+    },
+    {
+      "key": "s-3-030",
+      "travellerKey": "t-3-10",
+      "category": "Океанія",
+      "title": { "uk": "Сідней очима місцевої: пороми, пляжі і правило прапорців", "en": "Sydney Through a Local's Eyes: Ferries, Beaches and the Flag Rule" },
+      "article": {
+        "uk": "Сідней я показувала своїм львівським друзям Лізі й Назарові в грудні, коли тут починається літо, а в нас якраз зима. Вони вийшли з аеропорту в пуховиках, а через годину вже купували шльопанці, які ми тут називаємо тонгз. П'ять днів у місті вистачило, щоб вони зрозуміли, чому я сумую за домом.\n\nПерша порада всім гостям: забудьте про таксі, катайтеся поромами. Від Серкулар-Кі пором до Менлі пливе пів години повз Оперу і Гарбор-брідж, і це найкраща екскурсія за ціною проїзду, кілька євро. Оплачуєте банківською карткою на валідаторі, а в неділю для всього громадського транспорту діє низька денна межа. У Менлі ми з'їли фіш-енд-чипс просто на піску і віддали останню картоплину нахабній чайці.\n\nОпера зблизька не біла, а вкрита тисячами кремових плиток, і Назар, архітектор, гладив їх як кота. Екскурсія всередину коштує близько 30 євро, але навіть просто сісти на сходах із кавою на заході сонця вже свято. Ще ми пройшли прибережну стежку від Бонді до Куджі, близько шести кілометрів через кілька пляжів і скелі з басейнами, вирубаними просто в камені.\n\nТепер серйозне. На пляжах купайтеся тільки між жовто-червоними прапорцями, там чергують рятувальники. Течії, які ми звемо ріпс, затягують навіть досвідчених плавців. І сонце тут жорстоке: крем із захистом 50, капелюх і футболка з довгим рукавом. Ліза проігнорувала це в перший день і два дні виглядала як варений рак.\n\nЧесний мінус: Сідней дорогий. Кава 4 євро, обід 20–25, а номер у готелі в центрі легко виходить за 200 за ніч. Ми жили в моєї тітки в передмісті, але друзям без австралійської тітки раджу житло біля станції поїзда поза центром.",
+        "en": "I showed Sydney to my friends from Lviv, Liza and Nazar, in December, when summer starts here and it's winter back home. They walked out of the airport in down jackets and an hour later were buying flip-flops, which we call thongs here. Five days in the city were enough for them to understand why I miss home.\n\nMy first tip for all guests: forget taxis and ride the ferries. From Circular Quay the ferry to Manly takes half an hour past the Opera House and the Harbour Bridge, and it's the best tour for the price of a fare, a few euros. You pay with a bank card at the reader, and on Sundays there's a low daily cap for all public transport. In Manly we ate fish and chips right on the sand and lost the last chip to a cheeky seagull.\n\nUp close the Opera House isn't white but covered in thousands of cream tiles, and Nazar, an architect, stroked them like a cat. A tour inside costs about 30 euros, but even just sitting on the steps with a coffee at sunset is a treat. We also walked the coastal path from Bondi to Coogee, about six kilometres past several beaches and cliffs with pools cut right into the rock.\n\nNow the serious part. On beaches swim only between the red and yellow flags, where lifeguards are on duty. Currents we call rips drag out even experienced swimmers. And the sun here is brutal: SPF 50, a hat and a long-sleeved shirt. Liza ignored that on the first day and looked like a boiled crayfish for two days.\n\nThe honest downside: Sydney is expensive. Coffee is 4 euros, lunch 20 to 25, and a hotel room in the centre easily exceeds 200 a night. We stayed with my aunt in the suburbs, but to friends without an Australian aunt I recommend lodging near a train station outside the centre."
+      },
+      "country": { "code": "AU", "uk": "Австралія", "en": "Australia", "es": "Australia" },
+      "region": { "uk": "Новий Південний Уельс", "en": "New South Wales", "es": "Nueva Gales del Sur" },
+      "seasons": ["summer"],
+      "budget": "high",
+      "durationDays": 5,
+      "tripType": "friends",
+      "tags": ["city-break", "beach", "architecture", "hiking"],
+      "lat": -33.8568,
+      "lng": 151.2153,
+      "photoQuery": "Sydney Opera House"
+    }
+  ]
+}

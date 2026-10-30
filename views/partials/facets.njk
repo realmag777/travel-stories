@@ -1,0 +1,26 @@
+{% macro option(facet, o, urls) %}
+<a class="facet__option{% if o.selected %} facet__option--selected{% endif %}{% if o.disabled %} facet__option--disabled{% endif %}"
+   href="{{ urls[facet + ':' + o.value] }}" data-facet="{{ facet }}" data-value="{{ o.value }}" role="checkbox"
+   aria-checked="{{ 'true' if o.selected else 'false' }}"{% if o.disabled %} aria-disabled="true" tabindex="-1"{% endif %} rel="nofollow">
+  <span class="facet__box" aria-hidden="true"></span>
+  <span class="facet__label">{{ o.label }}</span>
+  <span class="facet__count">{{ o.count }}</span>
+</a>
+{% endmacro %}
+
+{% for group in facetGroups %}
+<details class="facet" {% if group.open %}open{% endif %} data-facet-group="{{ group.key }}">
+  <summary class="facet__summary">{{ group.title }}</summary>
+  <div class="{{ 'facet__pills' if group.pills else 'facet__options' }}{% if group.scroll %} facet__options--scroll{% endif %}">
+    {% for o in group.options %}{{ option(group.key, o, facetUrls) }}{% endfor %}
+  </div>
+</details>
+{% endfor %}
+{% if state.bbox %}
+<div class="facet">
+  <div class="facet__summary">{{ t('map.area') }}</div>
+  <a class="facet__option facet__option--selected" href="{{ facetUrls['bbox:'] }}" data-facet="bbox" data-value="" role="checkbox" aria-checked="true" rel="nofollow">
+    <span class="facet__box" aria-hidden="true"></span><span class="facet__label">{{ t('map.visibleArea') }}</span>
+  </a>
+</div>
+{% endif %}

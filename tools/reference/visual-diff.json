@@ -1,0 +1,53 @@
+{
+ "at": "2026-10-30T17:57:49.241Z",
+ "rows": [
+  {
+   "page": "stories",
+   "width": 375,
+   "masked": 0,
+   "raw": 23.02,
+   "heightOriginal": 6112,
+   "heightOurs": 6112
+  },
+  {
+   "page": "stories",
+   "width": 768,
+   "masked": 0,
+   "raw": 23.71,
+   "heightOriginal": 3708,
+   "heightOurs": 3708
+  },
+  {
+   "page": "stories",
+   "width": 1440,
+   "masked": 0,
+   "raw": 26.31,
+   "heightOriginal": 2716,
+   "heightOurs": 2716
+  },
+  {
+   "page": "traveller",
+   "width": 375,
+   "masked": 0,
+   "raw": 15.89,
+   "heightOriginal": 3473,
+   "heightOurs": 3473
+  },
+  {
+   "page": "traveller",
+   "width": 768,
+   "masked": 0,
+   "raw": 13.84,
+   "heightOriginal": 2002,
+   "heightOurs": 2002
+  },
+  {
+   "page": "traveller",
+   "width": 1440,
+   "masked": 0,
+   "raw": 14.34,
+   "heightOriginal": 2217,
+   "heightOurs": 2217
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+/* Design tokens copied from the original project (:root of its global stylesheet). */
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/nunito-sans-cyrillic-400-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/nunito-sans-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/nunito-sans-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB, U+20AD-20C0; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url(/fonts/nunito-sans-cyrillic-500-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url(/fonts/nunito-sans-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url(/fonts/nunito-sans-cyrillic-600-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url(/fonts/nunito-sans-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url(/fonts/nunito-sans-cyrillic-700-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url(/fonts/nunito-sans-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url(/fonts/inter-cyrillic-700-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url(/fonts/inter-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Sora'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/sora-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Sora'; font-style: normal; font-weight: 600; font-display: swap; src: url(/fonts/sora-latin-600-normal.woff2) format('woff2'); }
+/* Metric-compatible fallbacks (same overrides as the original next/font build) to avoid layout shift. */
+@font-face { font-family: 'Inter Fallback'; src: local(Arial); ascent-override: 90.44%; descent-override: 22.52%; line-gap-override: 0%; size-adjust: 107.12%; }
+@font-face { font-family: 'Nunito Sans Fallback'; src: local(Arial); ascent-override: 99.71%; descent-override: 34.82%; line-gap-override: 0%; size-adjust: 101.39%; }
+
+:root {
+  --font-inter: 'Inter', 'Inter Fallback';
+  --font-nunito-sans: 'Nunito Sans', 'Nunito Sans Fallback';
+  --background: #fff;
+  --foreground: #171717;
+  --color-white: #fff;
+  --color-neutral-darkest: #000;
+  --color-neutral-darker: #191919;
+  --color-neutral-dark: #4c4c4c;
+  --color-neutral: #7f7f7f;
+  --color-neutral-light: #b2b2b2;
+  --color-neutral-lighter: #d8d8d8;
+  --color-neutral-lightest: #f2f2f2;
+  --opacity-transparent: #fff0;
+  --opacity-white-5: #ffffff0d;
+  --opacity-white-10: #ffffff1a;
+  --opacity-white-15: #ffffff26;
+  --opacity-white-20: #fff3;
+  --opacity-white-30: #ffffff4d;
+  --opacity-white-40: #fff6;
+  --opacity-white-50: #ffffff80;
+  --opacity-white-60: #fff9;
+  --opacity-neutral-darkest-5: #0000000d;
+  --opacity-neutral-darkest-10: #0000001a;
+  --opacity-neutral-darkest-15: #00000026;
+  --opacity-neutral-darkest-20: #0003;
+  --opacity-neutral-darkest-30: #0000004d;
+  --opacity-neutral-darkest-40: #0006;
+  --opacity-neutral-darkest-50: #00000080;
+  --opacity-neutral-darkest-60: #0009;
+  --color-royal-blue-lightest: #f7f9ff;
+  --color-royal-blue-lighter: #e8eeff;
+  --color-royal-blue-light: #7a96ea;
+  --color-royal-blue: #4169e1;
+  --color-royal-blue-dark: #3454b4;
+  --color-royal-blue-darker: #1a2a5a;
+  --color-royal-blue-darkest: #131f43;
+  --color-red: #b00101;
+  --color-scheme-1-background: var(--color-white);
+  --color-scheme-1-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-1-text: var(--color-neutral-darkest);
+  --color-scheme-1-foreground: var(--color-neutral-lightest);
+  --color-scheme-1-accent: var(--color-royal-blue);
+  --color-scheme-2-text: var(--color-neutral-darkest);
+  --color-scheme-2-background: var(--color-royal-blue-lightest);
+  --color-scheme-2-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-2-accent: var(--color-royal-blue);
+  --color-scheme-2-foreground: var(--color-royal-blue-lighter);
+  --font-family: var(--font-nunito-sans), sans-serif;
+  --second-family: var(--font-inter), sans-serif;
+  --third-family: 'Sora', sans-serif;
+  /* Additions for new features, derived from the same palette. */
+  --color-success: #1d7a46;
+  --color-success-bg: #e6f4ec;
+  --radius-s: 8px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+  --shadow-panel: 0 4px 12px #00000014;
+}

@@ -1,0 +1,17 @@
+{# Facet panel: sidebar on desktop, drawer below 1440px. Options are real links (SSR, crawlable);
+   the script intercepts clicks and updates results without reloading. #}
+<aside data-extra class="filter-panel" id="filter-panel" aria-label="{{ t('filters.title') }}" data-filter-panel>
+  <div class="filter-panel__head">
+    <h2 class="filter-panel__title">{{ t('filters.title') }}</h2>
+    <a class="filter-panel__reset" href="{{ url('/stories') }}" data-reset-all>{{ t('filters.reset') }}</a>
+    <button type="button" class="filter-panel__close" data-close-filters aria-label="{{ t('filters.close') }}">
+      <svg width="24" height="24" aria-hidden="true"><use href="/sprite.svg#icon-close"></use></svg>
+    </button>
+  </div>
+  <div class="filter-panel__body" data-facets>
+    {% include "partials/facets.njk" %}
+  </div>
+  <div class="filter-panel__foot">
+    <button type="button" class="action action--block" data-close-filters data-show-results>{{ t('filters.show', { n: facetModel.total }) }}</button>
+  </div>
+</aside>

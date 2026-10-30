@@ -1,0 +1,15 @@
+/* Main navigation list (header). */
+.nav__list { flex-direction: column; align-items: center; gap: 32px; display: flex; }
+@media (min-width: 1440px) { .nav__list { flex-direction: row; } }
+
+.nav__item { border: 1px solid var(--opacity-transparent); padding: 0 8px; }
+.nav__item:hover, .nav__item:focus-within { border: 1px solid var(--color-neutral-darkest); border-radius: 8px; }
+.nav__item:active { background: var(--color-neutral-lighter); }
+.nav__item--home:hover, .nav__item:focus-within { border: 1px solid var(--color-white); border-radius: 8px; }
+.nav__item--current { }
+
+.nav__link { font-family: var(--font-family); color: var(--color-neutral-darkest); font-size: 16px; font-weight: 400; line-height: 1.5; display: block; }
+@media (min-width: 1440px) {
+  .nav__link { font-size: 18px; }
+  .nav__link--home { color: var(--color-white); }
+}

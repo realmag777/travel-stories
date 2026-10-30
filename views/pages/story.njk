@@ -1,0 +1,72 @@
+{% extends "layouts/base.njk" %}
+{% block head %}{% if story.lat %}<link rel="stylesheet" href="{{ asset('map.css') }}">{% endif %}{% endblock %}
+{% block content %}
+<div>
+  <section class="story" data-story="{{ story.id }}">
+    <div class="story__content1">
+      <h1 class="story__title">{{ story.title }}</h1>
+      <div class="story__meta">
+        <p class="story__meta-item"><span class="story__meta-label">{{ t('story.author') }}</span><a href="{{ url('/travellers/' + story.owner.id) }}">{{ story.owner.name }}</a></p>
+        <p class="story__meta-item"><span class="story__meta-label">{{ t('story.published') }}</span><time datetime="{{ story.date }}">{{ story.dateLabel }}</time></p>
+        {% if story.category %}<a class="story__category" href="{{ url('/stories') }}?category={{ story.categoryId }}">{{ story.category }}</a>{% endif %}
+      </div>
+      <figure class="story__figure">
+        <img class="story__image" src="{{ story.cover.large }}"{% if story.cover.srcset %} srcset="{{ story.cover.srcset }}"{% endif %}
+          sizes="(min-width: 1440px) 1312px, (min-width: 768px) 704px, 335px" alt="{{ t('story.coverAlt', { title: story.title }) }}" width="1312" height="875" fetchpriority="high" decoding="async">
+        {% if credit %}
+        <figcaption class="story__credit" data-extra>{{ t('story.photo') }}: {% if credit.sourceUrl %}<a href="{{ credit.sourceUrl }}" target="_blank" rel="noopener nofollow">{{ credit.author or 'Wikimedia Commons' }}</a>{% else %}{{ credit.author }}{% endif %}{% if credit.license %}, {% if credit.licenseUrl %}<a href="{{ credit.licenseUrl }}" target="_blank" rel="noopener nofollow license">{{ credit.license }}</a>{% else %}{{ credit.license }}{% endif %}{% endif %}, {{ t('story.viaCommons') }}</figcaption>
+        {% endif %}
+      </figure>
+    </div>
+    <div class="story__content2">
+      <div class="story__body">
+        {% if story.fallback %}<p data-extra class="story__note" lang="{{ locale }}">{{ t('story.notTranslated') }}</p>{% endif %}
+        <p class="story__article"{% if story.fallback %} lang="uk"{% endif %}>{{ story.article }}</p>
+        {% if facts.length %}
+        <div data-extra class="story-facts" aria-label="{{ t('story.facts') }}">
+          {% for f in facts %}<a class="story-facts__item" href="{{ f.href }}">{{ f.label }}</a>{% endfor %}
+        </div>
+        {% endif %}
+        {% if story.lat %}
+        <div data-extra class="story-map" id="story-map" data-story-map data-lat="{{ story.lat }}" data-lng="{{ story.lng }}" data-title="{{ story.title }}" role="img" aria-label="{{ t('story.mapAria') }}"></div>
+        {% endif %}
+      </div>
+      <div class="story__aside">
+        <aside class="save-box">
+          <h2 class="save-box__title">{{ t('story.saveTitle') }}</h2>
+          <p class="save-box__text">{{ t('story.saveText') }}</p>
+          <button type="button" class="save-box__button" data-save="{{ story.id }}" data-save-big aria-pressed="false"
+            data-label-save="{{ t('story.save') }}" data-label-saved="{{ t('story.saved') }}">{{ t('story.save') }}</button>
+        </aside>
+        {% if travel %}
+        <aside data-extra class="travel-links" aria-labelledby="travel-title">
+          <h2 class="travel-links__title" id="travel-title">{{ t('travel.title') }}</h2>
+          <div class="travel-links__group">
+            <span class="travel-links__label">{{ t('travel.stay') }}</span>
+            <div class="travel-links__list">
+              {% for l in travel.stay %}<a class="travel-links__link" href="{{ l.url }}" target="_blank" rel="noopener {{ 'sponsored' if l.partner else 'nofollow' }}"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="/sprite.svg#icon-hotel"></use></svg>{{ t('travel.' + l.key) }}</a>{% endfor %}
+            </div>
+          </div>
+          <div class="travel-links__group">
+            <span class="travel-links__label">{{ t('travel.go') }}</span>
+            <div class="travel-links__list">
+              {% for l in travel.go %}<a class="travel-links__link" href="{{ l.url }}" target="_blank" rel="noopener {{ 'sponsored' if l.partner else 'nofollow' }}"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="/sprite.svg#icon-{{ 'flight' if l.key == 'flights' else 'place' }}"></use></svg>{{ t('travel.' + l.key) }}</a>{% endfor %}
+            </div>
+          </div>
+          <p class="travel-links__hint">{{ t('travel.hint', { place: travel.place }) }}</p>
+        </aside>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  <section class="popular-wrap">
+    <div class="popular__container">
+      <h2 class="popular__title">{{ t('home.popular') }}</h2>
+      <ul class="popular__list">
+        {% for s in popular %}<li class="popular__item">{% include "partials/story-card.njk" %}</li>{% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>
+{% endblock %}
+{% block scripts %}{% if story.lat %}<script src="{{ asset('map.js') }}" defer></script>{% endif %}{% endblock %}

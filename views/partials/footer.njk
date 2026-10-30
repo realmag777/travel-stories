@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <a class="footer__logo-link" href="{{ url('/') }}" aria-label="{{ t('nav.homeAria') }}">
+        <img class="footer__logo" src="/images/logo.svg" alt="{{ t('site.name') }}" width="104" height="24" loading="lazy">
+      </a>
+      <ul class="footer__socials">
+        <li><a class="footer__social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="footer__social-icon"><use href="/sprite.svg#icon-facebook"></use></svg></a></li>
+        <li><a class="footer__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="footer__social-icon"><use href="/sprite.svg#icon-instagram"></use></svg></a></li>
+        <li><a class="footer__social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><svg class="footer__social-icon"><use href="/sprite.svg#icon-x"></use></svg></a></li>
+        <li><a class="footer__social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="footer__social-icon"><use href="/sprite.svg#icon-youtube"></use></svg></a></li>
+      </ul>
+      <nav class="footer__nav" aria-label="{{ t('nav.footer') }}">
+        <a href="{{ url('/') }}">{{ t('nav.home') }}</a>
+        <a href="{{ url('/stories') }}">{{ t('nav.stories') }}</a>
+        <a href="{{ url('/travellers') }}">{{ t('nav.travellers') }}</a>
+      </nav>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">{{ t('footer.copyright', { year: currentYear }) }}</p>
+      <nav data-extra class="footer__langs" aria-label="{{ t('footer.language') }}">
+        {% for l in languageLinks %}<a class="footer__lang{% if l.current %} footer__lang--current{% endif %}" href="{{ l.href }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.current %} aria-current="true"{% endif %}>{{ l.name }}</a>{% endfor %}
+        <a class="footer__lang" href="{{ url('/map') }}">{{ t('nav.map') }}</a>
+      </nav>
+    </div>
+  </div>
+</footer>

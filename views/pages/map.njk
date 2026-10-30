@@ -1,0 +1,32 @@
+{% extends "layouts/base.njk" %}
+{% block head %}<link rel="stylesheet" href="{{ asset('map.css') }}">{% endblock %}
+{% block content %}
+<section class="map-page" data-catalog data-map-page data-base="{{ url('/map') }}" data-locale="{{ locale }}">
+  <div class="map-page__container">
+    <h1 class="stories-page__title">{{ t('map.title') }}</h1>
+    {% include "partials/nl-search.njk" %}
+    <div class="catalog">
+      {% include "partials/facet-panel.njk" %}
+      <div class="catalog__results">
+        <div class="toolbar">
+          <p class="toolbar__count" data-total-label>{{ totalLabel | safe }}</p>
+          <button type="button" class="action action--small toolbar__filters-btn" data-open-filters aria-controls="filter-panel" aria-expanded="false">
+            <svg class="icon" width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-tune"></use></svg>
+            {{ t('filters.button') }} <span class="toolbar__badge" data-active-count{% if not activeCount %} hidden{% endif %}>{{ activeCount }}</span>
+          </button>
+          <nav class="view-toggle" aria-label="{{ t('filters.view') }}">
+            <a class="view-toggle__link" href="{{ listUrl }}" data-view="list"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-list"></use></svg>{{ t('filters.list') }}</a>
+            <a class="view-toggle__link view-toggle__link--active" href="{{ mapUrl }}" data-view="map" aria-current="true"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-map"></use></svg>{{ t('filters.map') }}</a>
+          </nav>
+        </div>
+        <div class="active-chips" data-active-chips>{% include "partials/active-chips.njk" %}</div>
+        <div class="map-view" id="stories-map" data-map data-points-url="/api/v2/map" data-lang="{{ locale }}">
+          <label class="map-view__bbox"><input type="checkbox" data-bbox-toggle{% if state.bbox %} checked{% endif %}> {{ t('map.searchInView') }}</label>
+          <span class="map-view__status" data-map-status></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ asset('map.js') }}" defer></script>{% endblock %}

@@ -1,0 +1,2686 @@
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Travel Stories API",
+      "version": "1.0.2",
+      "description": "API documentation for the Travel Stories team project"
+    },
+    "servers": [
+      {
+        "url": "https://travel-stories-backend.onrender.com",
+        "description": "Production server"
+      },
+      {
+        "url": "http://localhost:3001",
+        "description": "Local server"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Auth",
+        "description": "Authentication endpoints"
+      },
+      {
+        "name": "Users",
+        "description": "Users endpoints"
+      },
+      {
+        "name": "Categories",
+        "description": "Categories endpoints"
+      },
+      {
+        "name": "Stories",
+        "description": "Stories endpoints"
+      }
+    ],
+    "paths": {
+      "/api/users": {
+        "get": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Get all users",
+          "operationId": "getAllUsers",
+          "description": "Returns a paginated list of users sorted by articlesAmount descending. `_id` is used as a stable tie-breaker. This allows the Home page to request `page=1&limit=4` for the agreed top-4 travellers.",
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "description": "Page number. Values below 1 are invalid.",
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "default": 1
+              }
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "required": false,
+              "description": "Number of users per page.",
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50,
+                "default": 12
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found users. A page beyond the end returns 200 with an empty users array and hasNextPage=false.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found users"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "users",
+                          "page",
+                          "perPage",
+                          "totalItems",
+                          "hasNextPage"
+                        ],
+                        "properties": {
+                          "users": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/User"
+                            }
+                          },
+                          "page": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 1
+                          },
+                          "perPage": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 9
+                          },
+                          "totalItems": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 24
+                          },
+                          "hasNextPage": {
+                            "type": "boolean",
+                            "example": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid query parameters",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid query parameters"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "patch": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Update current user profile",
+          "operationId": "updateUser",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Partially updates the authenticated user. Only name, email and description are accepted. Email is normalized with trim + lowercase. Email verification is outside the current MVP.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "minProperties": 1,
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 32,
+                      "description": "Trimmed; whitespace-only value is invalid.",
+                      "example": "Дмитро Романенко"
+                    },
+                    "email": {
+                      "type": "string",
+                      "format": "email",
+                      "maxLength": 64,
+                      "description": "Trimmed and lowercased before validation and uniqueness check.",
+                      "example": "dmytro@example.com"
+                    },
+                    "description": {
+                      "type": "string",
+                      "maxLength": 150,
+                      "description": "Trimmed. Empty string is allowed to clear the profile description.",
+                      "example": "Люблю подорожувати та ділитися історіями."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successfully updated user profile",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully updated user profile"
+                      },
+                      "data": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid request data or unknown field",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid request data"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "User not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "User not found"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Email is already in use",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 409,
+                    "message": "Email is already in use"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/users/avatar": {
+        "patch": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Update user avatar",
+          "operationId": "updateUserAvatar",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Updates the authenticated user avatar. Allowed MIME types: image/jpeg, image/png, image/webp. SVG/GIF, empty, corrupted, or MIME/content-mismatched files are rejected. Maximum size is 512000 bytes (500 KiB); exactly 512000 bytes is allowed.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "avatar"
+                  ],
+                  "properties": {
+                    "avatar": {
+                      "type": "string",
+                      "format": "binary",
+                      "description": "JPEG, PNG or WEBP image, maximum 512000 bytes."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Avatar updated successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Avatar updated successfully"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "url"
+                        ],
+                        "properties": {
+                          "url": {
+                            "type": "string",
+                            "format": "uri",
+                            "example": "https://res.cloudinary.com/example/image/upload/avatar.jpg"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "No file, unsupported type, corrupted file or file larger than 512000 bytes",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid avatar file"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/users/me": {
+        "get": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Get current user",
+          "operationId": "getCurrentUser",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Returns the authenticated user profile including the list of saved story IDs in `favorites`. The `favorites` field can be used by the frontend to determine whether a story is already saved by the current user.",
+          "responses": {
+            "200": {
+              "description": "Successfully found current user profile",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found current user profile"
+                      },
+                      "data": {
+                        "allOf": [
+                          {
+                            "$ref": "#/components/schemas/User"
+                          },
+                          {
+                            "type": "object",
+                            "required": [
+                              "favorites"
+                            ],
+                            "properties": {
+                              "favorites": {
+                                "type": "array",
+                                "description": "MongoDB ObjectIds of stories saved by the current user.",
+                                "items": {
+                                  "$ref": "#/components/schemas/MongoObjectId"
+                                },
+                                "example": [
+                                  "68498236a100312bea079008",
+                                  "68498236a100312bea079027"
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "User not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "User not found"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/users/{id}": {
+        "get": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Get user profile by ID",
+          "operationId": "getUserProfile",
+          "description": "Returns public user information and their stories. User stories are ordered by publication date descending with `_id` as a stable tie-breaker. A valid page beyond the result set returns 200 with an empty stories array.",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "description": "User MongoDB ObjectId. Malformed value returns 400; valid but missing user returns 404.",
+              "schema": {
+                "$ref": "#/components/schemas/MongoObjectId"
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "default": 1
+              }
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "required": false,
+              "description": "Number of stories per page.",
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50,
+                "default": 6
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found user profile and stories",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found traveller profile and stories"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "traveller",
+                          "stories",
+                          "page",
+                          "perPage",
+                          "totalItems",
+                          "hasNextPage"
+                        ],
+                        "properties": {
+                          "traveller": {
+                            "$ref": "#/components/schemas/User"
+                          },
+                          "stories": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Story"
+                            }
+                          },
+                          "page": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 1
+                          },
+                          "perPage": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 6
+                          },
+                          "totalItems": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 3
+                          },
+                          "hasNextPage": {
+                            "type": "boolean",
+                            "example": false
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid ObjectId or query parameters",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid request parameters"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "User not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "User not found"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories": {
+        "get": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Get all stories",
+          "operationId": "getStories",
+          "description": "Returns a paginated list of stories with optional category filtering. Stories are sorted by publication date descending with `_id` as a stable tie-breaker. A valid but non-existing category ObjectId returns 200 with an empty stories array.",
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "description": "Page number.",
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "default": 1
+              }
+            },
+            {
+              "name": "perPage",
+              "in": "query",
+              "required": false,
+              "description": "Number of stories per API page. Keep the same perPage while traversing consecutive pages to avoid gaps/duplicates.",
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 20,
+                "default": 9
+              }
+            },
+            {
+              "name": "category",
+              "in": "query",
+              "required": false,
+              "description": "Category MongoDB ObjectId. Malformed value returns 400.",
+              "schema": {
+                "$ref": "#/components/schemas/MongoObjectId"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found stories. A valid page beyond the end returns 200 with an empty stories array.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found stories!"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "stories",
+                          "page",
+                          "perPage",
+                          "totalItems",
+                          "hasNextPage",
+                          "totalPages",
+                          "hasPreviousPage"
+                        ],
+                        "properties": {
+                          "stories": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Story"
+                            }
+                          },
+                          "page": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 1
+                          },
+                          "perPage": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 9
+                          },
+                          "totalItems": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 24
+                          },
+                          "hasNextPage": {
+                            "type": "boolean",
+                            "example": true
+                          },
+                          "totalPages": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 3
+                          },
+                          "hasPreviousPage": {
+                            "type": "boolean",
+                            "example": false
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "examples": {
+                    "empty": {
+                      "value": {
+                        "status": 200,
+                        "message": "Successfully found stories!",
+                        "data": {
+                          "stories": [],
+                          "page": 100,
+                          "perPage": 9,
+                          "totalItems": 24,
+                          "totalPages": 3,
+                          "hasNextPage": false,
+                          "hasPreviousPage": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid query parameters or malformed category ObjectId",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid query parameters"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Create a story",
+          "operationId": "createStory",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Creates a story for the authenticated user. The client sends multipart/form-data with cover, title, article and category. Backend uploads the cover and generates `img`, `ownerId`, `date` and initial `favoriteCount`. Unknown/server-managed fields are rejected.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cover",
+                    "title",
+                    "article",
+                    "category"
+                  ],
+                  "properties": {
+                    "cover": {
+                      "type": "string",
+                      "format": "binary",
+                      "description": "JPEG, PNG or WEBP image. Maximum 2097152 bytes (2 MiB)."
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80,
+                      "description": "Trimmed; whitespace-only value is invalid.",
+                      "example": "Сванетія: серед веж і гірських легенд"
+                    },
+                    "article": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2500,
+                      "description": "Trimmed; whitespace-only value is invalid.",
+                      "example": "Подорож до Сванетії залишила незабутні враження..."
+                    },
+                    "category": {
+                      "allOf": [
+                        {
+                          "$ref": "#/components/schemas/MongoObjectId"
+                        }
+                      ],
+                      "description": "Existing category ObjectId."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Successfully created a story",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 201
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully created a story!"
+                      },
+                      "data": {
+                        "$ref": "#/components/schemas/Story"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid text fields, malformed ObjectId, unsupported/corrupted cover or cover larger than 2 MiB",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid request data"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Category not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "Category not found"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories/own": {
+        "get": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Get own stories",
+          "operationId": "getOwnStories",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Returns stories created by the authenticated user, ordered by publication date descending with `_id` as a stable tie-breaker.",
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "default": 1
+              }
+            },
+            {
+              "name": "perPage",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50,
+                "default": 12
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found own stories. A page beyond the end returns 200 with an empty stories array.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found own stories"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "stories",
+                          "page",
+                          "perPage",
+                          "totalItems",
+                          "hasNextPage"
+                        ],
+                        "properties": {
+                          "stories": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Story"
+                            }
+                          },
+                          "page": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 1
+                          },
+                          "perPage": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 9
+                          },
+                          "totalItems": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 24
+                          },
+                          "hasNextPage": {
+                            "type": "boolean",
+                            "example": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid query parameters",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid query parameters"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories/saved": {
+        "get": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Get saved stories",
+          "operationId": "getSavedStories",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Returns stories saved by the authenticated user. The Frontend uses the complete set of saved story IDs as the personal bookmark state and updates/invalidates this cache after favorite add/remove. Results are ordered by story publication date descending with `_id` as a stable tie-breaker.",
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "default": 1
+              }
+            },
+            {
+              "name": "perPage",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50,
+                "default": 12
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found saved stories. A page beyond the end returns 200 with an empty stories array.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found saved stories"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "stories",
+                          "page",
+                          "perPage",
+                          "totalItems",
+                          "hasNextPage"
+                        ],
+                        "properties": {
+                          "stories": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Story"
+                            }
+                          },
+                          "page": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 1
+                          },
+                          "perPage": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 9
+                          },
+                          "totalItems": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 24
+                          },
+                          "hasNextPage": {
+                            "type": "boolean",
+                            "example": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid query parameters",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid query parameters"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories/popular": {
+        "get": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Get popular stories",
+          "operationId": "getPopularStories",
+          "description": "Returns popular stories ordered by `favoriteCount DESC`, then publication `date DESC`, then `_id` as a stable tie-breaker. This endpoint does not automatically exclude the currently opened story; StoryPage filters its current story client-side and may request one additional item.",
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "default": 1
+              }
+            },
+            {
+              "name": "perPage",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12,
+                "default": 3
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found popular stories. A page beyond the end returns 200 with an empty stories array.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found popular stories"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "stories",
+                          "page",
+                          "perPage",
+                          "totalItems",
+                          "hasNextPage"
+                        ],
+                        "properties": {
+                          "stories": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Story"
+                            }
+                          },
+                          "page": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 1
+                          },
+                          "perPage": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "example": 9
+                          },
+                          "totalItems": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "example": 24
+                          },
+                          "hasNextPage": {
+                            "type": "boolean",
+                            "example": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid query parameters",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid query parameters"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories/favorite/add/{storyId}": {
+        "patch": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Add story to favorites",
+          "operationId": "addFavoriteStory",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Adds a story to the authenticated user favorites. If the story is already in favorites, returns 400 without creating a duplicate or changing favoriteCount. A user cannot save their own story.",
+          "parameters": [
+            {
+              "name": "storyId",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/MongoObjectId"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Story added to favorites. `favoriteCount` increases only when the story is successfully added.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Story added to favorites"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "user",
+                          "story"
+                        ],
+                        "properties": {
+                          "user": {
+                            "$ref": "#/components/schemas/User"
+                          },
+                          "story": {
+                            "$ref": "#/components/schemas/Story"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Malformed story ObjectId or story already in favorites",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "examples": {
+                    "invalidStoryId": {
+                      "value": {
+                        "status": 400,
+                        "message": "Invalid story ID"
+                      }
+                    },
+                    "alreadyInFavorites": {
+                      "value": {
+                        "status": 400,
+                        "message": "Bad request. Story already in favorites",
+                        "data": null
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "The owner cannot save their own story",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 403,
+                    "message": "You cannot save your own story"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Story not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "Story not found"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories/favorite/remove/{storyId}": {
+        "patch": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Remove story from favorites",
+          "operationId": "removeFavoriteStory",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Removes a saved story. If the story is not in favorites, returns 404 without changing favoriteCount. favoriteCount never becomes negative.",
+          "parameters": [
+            {
+              "name": "storyId",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/MongoObjectId"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Story removed from favorites. `favoriteCount` decreases only when the story was actually in favorites.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Story removed from favorites"
+                      },
+                      "data": {
+                        "type": "object",
+                        "required": [
+                          "user",
+                          "story"
+                        ],
+                        "properties": {
+                          "user": {
+                            "$ref": "#/components/schemas/User"
+                          },
+                          "story": {
+                            "$ref": "#/components/schemas/Story"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Malformed story ObjectId",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid story ID"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Story not found or story is not in favorites",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "examples": {
+                    "storyNotFound": {
+                      "value": {
+                        "status": 404,
+                        "message": "Story not found"
+                      }
+                    },
+                    "notInFavorites": {
+                      "value": {
+                        "status": 404,
+                        "message": "Story is not in favorites",
+                        "data": null
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/stories/{storyId}": {
+        "get": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Get story by ID",
+          "operationId": "getStoryById",
+          "description": "Returns one story. Story contains ownerId; author profile data is obtained separately via `GET /api/users/{ownerId}`.",
+          "parameters": [
+            {
+              "name": "storyId",
+              "in": "path",
+              "required": true,
+              "description": "Malformed ObjectId returns 400; valid but missing story returns 404.",
+              "schema": {
+                "$ref": "#/components/schemas/MongoObjectId"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successfully found story",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found story"
+                      },
+                      "data": {
+                        "$ref": "#/components/schemas/Story"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Malformed story ObjectId",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid story ID"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Story not found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "Story not found"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "patch": {
+          "tags": [
+            "Stories"
+          ],
+          "summary": "Update a story",
+          "operationId": "updateStory",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Partially updates a story owned by the authenticated user. Accepts multipart/form-data. If cover is omitted, the existing image remains. `ownerId`, original publication `date` and `favoriteCount` are not client-editable. Unknown/server-managed fields are rejected.",
+          "parameters": [
+            {
+              "name": "storyId",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "$ref": "#/components/schemas/MongoObjectId"
+              }
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "minProperties": 1,
+                  "additionalProperties": false,
+                  "properties": {
+                    "cover": {
+                      "type": "string",
+                      "format": "binary",
+                      "description": "JPEG, PNG or WEBP image. Maximum 2097152 bytes (2 MiB)."
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80,
+                      "description": "Trimmed; whitespace-only value is invalid.",
+                      "example": "Сванетія: серед веж і гірських легенд"
+                    },
+                    "article": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2500,
+                      "description": "Trimmed; whitespace-only value is invalid.",
+                      "example": "Подорож до Сванетії залишила незабутні враження..."
+                    },
+                    "category": {
+                      "allOf": [
+                        {
+                          "$ref": "#/components/schemas/MongoObjectId"
+                        }
+                      ],
+                      "description": "Existing category ObjectId."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successfully updated a story",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully updated a story!"
+                      },
+                      "data": {
+                        "$ref": "#/components/schemas/Story"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid request data, unknown field, malformed ObjectId or invalid cover",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid request data"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Story/category not found, or story does not belong to current user",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 404,
+                    "message": "Story not found"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/categories": {
+        "get": {
+          "tags": [
+            "Categories"
+          ],
+          "summary": "Get all categories",
+          "operationId": "getCategories",
+          "responses": {
+            "200": {
+              "description": "Successfully found categories",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found categories!"
+                      },
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Category"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/auth/register": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Register user",
+          "operationId": "registerUser",
+          "description": "Creates a user, creates a cookie session and sets accessToken, refreshToken and sessionId cookies.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "name",
+                    "email",
+                    "password"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 32,
+                      "description": "Trimmed before validation. Whitespace-only value is invalid.",
+                      "example": "Дмитро Романенко"
+                    },
+                    "email": {
+                      "type": "string",
+                      "format": "email",
+                      "maxLength": 64,
+                      "description": "Normalized with trim + lowercase before lookup and uniqueness validation.",
+                      "example": "dmytro@example.com"
+                    },
+                    "password": {
+                      "type": "string",
+                      "minLength": 8,
+                      "maxLength": 128,
+                      "description": "Case-sensitive. Password is not trimmed. No additional uppercase/digit requirement is imposed.",
+                      "example": "password123"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Successfully registered a user",
+              "headers": {
+                "Set-Cookie": {
+                  "description": "Sets httpOnly accessToken (15 minutes), refreshToken (1 day) and sessionId (1 day) cookies. Production cookies use Secure and SameSite=None.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 201
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully registered a user"
+                      },
+                      "data": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid request data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid request data"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "A user with this email is already registered",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 409,
+                    "message": "Користувач з таким email вже існує"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/auth/login": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Login user",
+          "operationId": "loginUser",
+          "description": "Authenticates by normalized email and password, creates a new cookie session and sets session cookies.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "email",
+                    "password"
+                  ],
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "format": "email",
+                      "maxLength": 64,
+                      "description": "Normalized with trim + lowercase before authentication.",
+                      "example": "user@example.com"
+                    },
+                    "password": {
+                      "type": "string",
+                      "minLength": 8,
+                      "maxLength": 128,
+                      "description": "Case-sensitive and not trimmed.",
+                      "example": "password123"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successful login",
+              "headers": {
+                "Set-Cookie": {
+                  "description": "Sets httpOnly accessToken (15 minutes), refreshToken (1 day) and sessionId (1 day) cookies. Production cookies use Secure and SameSite=None.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successful login"
+                      },
+                      "data": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Invalid request data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 400,
+                    "message": "Invalid request data"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Invalid email or password",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Невірний email або пароль"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/auth/refresh": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Refresh session",
+          "operationId": "refreshSession",
+          "description": "Refreshes the cookie session using the refresh session cookies. Refresh session lifetime is 1 day. A successful refresh rotates/updates the session and authentication cookies.",
+          "responses": {
+            "200": {
+              "description": "Session refreshed successfully",
+              "headers": {
+                "Set-Cookie": {
+                  "description": "Sets httpOnly accessToken (15 minutes), refreshToken (1 day) and sessionId (1 day) cookies. Production cookies use Secure and SameSite=None.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully refreshed a session"
+                      },
+                      "data": {
+                        "type": "object",
+                        "nullable": true
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Refresh session is missing, invalid or expired",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/auth/session": {
+        "get": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Get current session user",
+          "operationId": "getSessionUser",
+          "description": "Public session-status endpoint. Always returns 200. For a guest `data` is null; for an authenticated session `data` contains the current user.",
+          "responses": {
+            "200": {
+              "description": "Current session status",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "message",
+                      "data"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "integer",
+                        "example": 200
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "Successfully found current session user"
+                      },
+                      "data": {
+                        "nullable": true,
+                        "allOf": [
+                          {
+                            "$ref": "#/components/schemas/User"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "examples": {
+                    "authenticated": {
+                      "value": {
+                        "status": 200,
+                        "message": "Successfully found current session user",
+                        "data": {
+                          "_id": "6881563901add19ee16fd012",
+                          "name": "Дмитро Романенко",
+                          "avatarUrl": null,
+                          "description": "",
+                          "articlesAmount": 0
+                        }
+                      }
+                    },
+                    "guest": {
+                      "value": {
+                        "status": 200,
+                        "message": "User is not authenticated",
+                        "data": null
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/auth/logout": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Logout user",
+          "operationId": "logoutUser",
+          "security": [
+            {
+              "cookieAuth": []
+            }
+          ],
+          "description": "Removes the current session and clears accessToken, refreshToken and sessionId cookies.",
+          "responses": {
+            "204": {
+              "description": "Successfully logged out",
+              "headers": {
+                "Set-Cookie": {
+                  "description": "Clears accessToken, refreshToken and sessionId cookies.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 401,
+                    "message": "Unauthorized"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorResponse"
+                  },
+                  "example": {
+                    "status": 500,
+                    "message": "Internal server error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "securitySchemes": {
+        "cookieAuth": {
+          "type": "apiKey",
+          "in": "cookie",
+          "name": "accessToken",
+          "description": "Authentication cookie used by protected endpoints. Auth flows also use httpOnly refreshToken and sessionId cookies. Cookies are Secure and SameSite=None in production."
+        }
+      },
+      "schemas": {
+        "MongoObjectId": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{24}$",
+          "description": "MongoDB ObjectId as a 24-character hexadecimal string.",
+          "example": "68498236a100312bea079008"
+        },
+        "Category": {
+          "type": "object",
+          "required": [
+            "_id",
+            "name"
+          ],
+          "properties": {
+            "_id": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/MongoObjectId"
+                }
+              ]
+            },
+            "name": {
+              "type": "string",
+              "example": "Азія"
+            }
+          }
+        },
+        "User": {
+          "type": "object",
+          "required": [
+            "_id",
+            "name",
+            "avatarUrl",
+            "description",
+            "articlesAmount"
+          ],
+          "properties": {
+            "_id": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/MongoObjectId"
+                }
+              ]
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 32,
+              "description": "Trimmed before validation. May contain letters, spaces, apostrophes and hyphens.",
+              "example": "Матвій Мельник"
+            },
+            "avatarUrl": {
+              "type": "string",
+              "format": "uri",
+              "nullable": true,
+              "default": null,
+              "description": "Null until the user uploads an avatar.",
+              "example": "https://res.cloudinary.com/example/image/upload/avatar.jpg"
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 150,
+              "default": "",
+              "description": "Trimmed text. Empty string is allowed to clear the profile description.",
+              "example": "Шукаю натхнення у кожній поїздці."
+            },
+            "articlesAmount": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "example": 3
+            }
+          }
+        },
+        "Story": {
+          "type": "object",
+          "required": [
+            "_id",
+            "img",
+            "title",
+            "article",
+            "category",
+            "ownerId",
+            "date",
+            "favoriteCount"
+          ],
+          "properties": {
+            "_id": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/MongoObjectId"
+                }
+              ]
+            },
+            "img": {
+              "type": "string",
+              "format": "uri",
+              "example": "https://res.cloudinary.com/example/image/upload/story.jpg"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80,
+              "example": "Йорданія: шлях у Петру"
+            },
+            "article": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2500,
+              "example": "Петра — одне з нових чудес світу..."
+            },
+            "category": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/MongoObjectId"
+                }
+              ]
+            },
+            "ownerId": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/MongoObjectId"
+                }
+              ]
+            },
+            "date": {
+              "type": "string",
+              "format": "date",
+              "description": "Publication date in YYYY-MM-DD format. It is not changed by ordinary story editing.",
+              "example": "2026-10-22"
+            },
+            "favoriteCount": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "example": 4
+            }
+          }
+        },
+        "ErrorResponse": {
+          "type": "object",
+          "required": [
+            "status",
+            "message"
+          ],
+          "properties": {
+            "status": {
+              "type": "integer",
+              "example": 400
+            },
+            "message": {
+              "type": "string",
+              "example": "Invalid request data"
+            }
+          },
+          "description": "MVP error contract. Field-error arrays and machine-readable error codes are not part of the current API contract."
+        }
+      }
+    }
+  },
+  "customOptions": {}
+};
+  url = options.swaggerUrl || url
+  var urls = options.swaggerUrls
+  var customOptions = options.customOptions
+  var spec1 = options.swaggerDoc
+  var swaggerOptions = {
+    spec: spec1,
+    url: url,
+    urls: urls,
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout"
+  }
+  for (var attrname in customOptions) {
+    swaggerOptions[attrname] = customOptions[attrname];
+  }
+  var ui = SwaggerUIBundle(swaggerOptions)
+
+  if (customOptions.oauth) {
+    ui.initOAuth(customOptions.oauth)
+  }
+
+  if (customOptions.preauthorizeApiKey) {
+    const key = customOptions.preauthorizeApiKey.authDefinitionKey;
+    const value = customOptions.preauthorizeApiKey.apiKeyValue;
+    if (!!key && !!value) {
+      const pid = setInterval(() => {
+        const authorized = ui.preauthorizeApiKey(key, value);
+        if(!!authorized) clearInterval(pid);
+      }, 500)
+
+    }
+  }
+
+  if (customOptions.authAction) {
+    ui.authActions.authorize(customOptions.authAction)
+  }
+
+  window.ui = ui
+}

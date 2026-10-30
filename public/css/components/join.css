@@ -1,0 +1,23 @@
+/* "Приєднуйтесь до нашої спільноти" call to action on join_2x.jpg. */
+.join { width: 100%; max-width: 375px; margin: 0 auto; padding: 32px 20px; }
+@media only screen and (min-width: 768px) { .join { max-width: 768px; padding: 32px; } }
+@media only screen and (min-width: 1440px) { .join { max-width: 1440px; padding: 48px 64px; } }
+.join__card { background-color: var(--color-royal-blue-darkest); border-radius: 20px; padding: 20px; position: relative; overflow: hidden; }
+@media only screen and (min-width: 768px) { .join__card { padding: 32px; } }
+@media only screen and (min-width: 1440px) { .join__card { padding: 78px 64px; } }
+.join__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left top; transform-origin: 0 0; transform: scale(1.12); }
+@media only screen and (min-width: 768px) { .join__bg { transform: scale(1.39); } }
+@media only screen and (min-width: 1440px) { .join__bg { object-position: center; transform: none; } }
+.join__content { z-index: 1; flex-direction: column; align-items: flex-start; display: flex; position: relative; }
+@media only screen and (min-width: 768px) { .join__content { max-width: 558px; } }
+.join__title { font-family: var(--second-family); letter-spacing: -.01em; color: var(--color-white); margin-bottom: 16px; font-size: 26px; line-height: 1.2; }
+@media only screen and (min-width: 768px) { .join__title { margin-bottom: 8px; font-size: 32px; } }
+@media only screen and (min-width: 1440px) { .join__title { margin-bottom: 24px; font-size: 48px; } }
+.join__text { font-family: var(--font-family); color: var(--color-white); margin-bottom: 24px; font-size: 16px; font-weight: 400; line-height: 1.5; }
+@media only screen and (min-width: 768px) { .join__text { margin-bottom: 16px; } }
+@media only screen and (min-width: 1440px) { .join__text { margin-bottom: 32px; font-size: 20px; } }
+.join__button { width: 100%; height: 48px; font-family: var(--font-family); color: var(--color-white); background-color: var(--color-royal-blue); border: 1px solid var(--color-royal-blue); border-radius: 8px; justify-content: center; align-items: center; font-size: 16px; font-weight: 500; line-height: 1.5; transition: color .3s, background-color .3s; display: flex; }
+@media only screen and (min-width: 768px) { .join__button { width: auto; padding: 12px; } }
+@media only screen and (min-width: 1440px) { .join__button { padding: 10.5px 12px; font-size: 18px; } }
+.join__button:hover, .join__button:focus { background-color: var(--color-royal-blue-lighter); color: var(--color-neutral-darkest); }
+.join__button:active { color: var(--color-neutral-darkest); background-color: #7a96ea; }

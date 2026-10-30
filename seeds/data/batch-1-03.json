@@ -1,0 +1,204 @@
+{
+  "stories": [
+    {
+      "key": "s-1-021",
+      "travellerKey": "t-1-05",
+      "category": "Європа",
+      "title": { "uk": "Відень неспішно: Шенбрунн, Бельведер і кав'ярні", "en": "Vienna at a gentle pace: Schönbrunn, the Belvedere and coffee houses" },
+      "article": {
+        "uk": "До Відня ми з чоловіком Петром їхали автобусом зі Львова, чотирнадцять годин з короткими зупинками. Для наших років це випробування, але квитки коштували вдвічі дешевше за переліт. Жили в маленькому готелі біля Нашмаркту за 110 євро за ніч і одразу купили тижневий проїзний, близько 17 євро на людину: віденський трамвай — найкращий друг пенсіонера.\n\nШенбрунн я знала з підручників, але побачити його наживо — зовсім інше. Літня резиденція Габсбургів має понад тисячу кімнат, туристам відкрито кілька десятків. Квиток на великий маршрут коштує близько 30 євро. У Дзеркальній залі 1762 року шестирічний Моцарт грав для імператриці Марії Терезії, а потім, кажуть, заліз їй на коліна. У неї було шістнадцятеро дітей, і я подумала, що з одним маленьким генієм вона впоралася б легко.\n\nНаступного дня ми пішли до Бельведеру, барокового палацу принца Євгенія Савойського. Тут висить «Поцілунок» Густава Клімта, і біля нього завжди юрба, але варто зачекати кілька хвилин: золото на полотні справді світиться. А ввечері ми купили стоячі квитки до Віденської опери, по 15 євро за місце, і три години слухали Пуччіні. Петро, який зазвичай засинає на концертах, стояв не ворухнувшись.\n\nОкремо про кав'ярні. У кав'ярні «Централь» сиділи колись Троцький і Фройд, а тепер сидимо ми з Петром. Меланж коштує близько 6 євро, шматок торта «Захер» — 9, але офіціант у смокінгу приносить склянку води безкоштовно й не підганяє. Мінус Відня — ціни і черги: до Шенбрунна квитки треба брати онлайн на конкретний час, інакше доведеться стояти годину. І візьміть зручне взуття, бо паркетні зали палаців тягнуться кілометрами.",
+        "en": "My husband Petro and I travelled to Vienna by bus from Lviv, fourteen hours with short stops. At our age it is a trial, but the tickets cost half as much as a flight. We stayed in a small hotel near the Naschmarkt for 110 euros a night and immediately bought a weekly pass, about 17 euros each: the Viennese tram is a pensioner's best friend.\n\nI knew Schönbrunn from textbooks, but seeing it in person is something else entirely. The Habsburgs' summer residence has over a thousand rooms, and a few dozen are open to visitors. A ticket for the grand tour costs about 30 euros. In the Hall of Mirrors in 1762 the six-year-old Mozart played for Empress Maria Theresa and then, they say, climbed onto her lap. She had sixteen children, and I thought she would have coped easily with one more little genius.\n\nThe next day we went to the Belvedere, the Baroque palace of Prince Eugene of Savoy. Gustav Klimt's The Kiss hangs here, and there is always a crowd around it, but it is worth waiting a few minutes: the gold on the canvas really does glow. In the evening we bought standing tickets to the Vienna State Opera, 15 euros a place, and listened to Puccini for three hours. Petro, who usually falls asleep at concerts, stood without moving.\n\nA separate word about coffee houses. Trotsky and Freud once sat in Café Central, and now Petro and I sit there. A melange costs about 6 euros, a slice of Sacher torte 9, but the waiter in a tuxedo brings a glass of water free of charge and never hurries you. Vienna's downsides are prices and queues: for Schönbrunn you need to buy tickets online for a set time, otherwise you will stand for an hour. And bring comfortable shoes, because the parquet halls of the palaces stretch for kilometres."
+      },
+      "country": { "code": "AT", "uk": "Австрія", "en": "Austria", "es": "Austria" },
+      "region": { "uk": "Відень", "en": "Vienna", "es": "Viena" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "couple",
+      "tags": ["museums", "history", "architecture", "culture", "city-break"],
+      "lat": 48.1845,
+      "lng": 16.3122,
+      "photoQuery": "Schönbrunn Palace"
+    },
+    {
+      "key": "s-1-022",
+      "travellerKey": "t-1-06",
+      "category": "Гори",
+      "title": { "uk": "Високі Татри: на Риси через найвищу хату Словаччини", "en": "High Tatras: up Rysy via Slovakia's highest hut" },
+      "article": {
+        "uk": "Риси — 2501 метр, гора на кордоні Словаччини й Польщі. З польського боку маршрут крутий і людний, зі словацького — довший, але спокійніший. Я обрав словацький. Доїхав потягом до Попрада, далі татранською електричкою до Штрбського Плеса, квиток близько 2 євро. Висота старту — 1350 метрів.\n\nМаршрут: Штрбське Плесо — Попрадське плесо — Жаб'ячі озера — Хата під Рисами — вершина. Набір близько 1150 метрів, на підйом пішло чотири з половиною години. До Попрадського плеса — асфальт і ліс, далі кам'яна стежка серед озер, потім ланцюги й металеві скоби на крутих плитах. Самостраховка не потрібна, але рукавички раджу: метал холодний навіть у серпні.\n\nХата під Рисами стоїть на 2250 метрах, це найвища гірська хата Словаччини. Усе сюди носять на спинах носильники — по шістдесят кілограмів і більше. Тому чай коштує 3 євро, і переплачувати не соромно. Я ночував тут: ліжко в загальній кімнаті близько 25 євро, бронювання за два тижні. На світанку вийшов на вершину за сорок хвилин. Зверху видно все пасмо Татр і хмари внизу над Польщею.\n\nМінуси. Словацька стежка на Риси відкрита лише з середини червня до кінця жовтня, решту року закрита через лавини. На початку літа біля ланцюгів ще лежить сніжник, без кішок туди не варто. Після обіду часто збираються грози. Польська вершина на два метри нижча і завжди забита людьми — ідіть на словацьку. Бюджет за два дні: 70 євро разом з дорогою з Попрада.",
+        "en": "Rysy is 2,501 metres, a mountain on the border of Slovakia and Poland. From the Polish side the route is steep and crowded, from the Slovak side longer but calmer. I chose the Slovak side. Train to Poprad, then the Tatra electric railway to Štrbské Pleso, a ticket about 2 euros. Starting altitude: 1,350 metres.\n\nRoute: Štrbské Pleso, Popradské pleso, the Frog Lakes, Chata pod Rysmi, summit. Gain about 1,150 metres; the ascent took four and a half hours. Up to Popradské pleso it is asphalt and forest, then a rocky path among lakes, then chains and metal rungs on steep slabs. No lanyard needed, but I recommend gloves: the metal is cold even in August.\n\nChata pod Rysmi stands at 2,250 metres, the highest mountain hut in Slovakia. Everything is carried up here on porters' backs, sixty kilos and more at a time. So tea costs 3 euros, and overpaying is nothing to be ashamed of. I spent the night here: a bed in the dormitory about 25 euros, booked two weeks ahead. At dawn I reached the summit in forty minutes. From the top you see the whole Tatra range and clouds below over Poland.\n\nDownsides. The Slovak trail to Rysy is only open from mid-June to the end of October; the rest of the year it is closed because of avalanches. In early summer a snowfield still lies by the chains, and without crampons you should not go. Thunderstorms often build up after lunch. The Polish summit is two metres lower and always packed with people, so go to the Slovak one. Budget for two days: 70 euros including travel from Poprad."
+      },
+      "country": { "code": "SK", "uk": "Словаччина", "en": "Slovakia", "es": "Eslovaquia" },
+      "region": { "uk": "Високі Татри", "en": "High Tatras", "es": "Altos Tatras" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 2,
+      "tripType": "solo",
+      "tags": ["hiking", "national-parks", "lakes", "backpacking"],
+      "lat": 49.1795,
+      "lng": 20.0881,
+      "photoQuery": "Rysy"
+    },
+    {
+      "key": "s-1-023",
+      "travellerKey": "t-1-07",
+      "category": "Європа",
+      "title": { "uk": "Будапешт за сто євро: купальні, руїн-бари і Дунай", "en": "Budapest for a hundred euros: baths, ruin bars and the Danube" },
+      "article": {
+        "uk": "Ми з одногрупницею Лілею поставили собі мету: чотири дні в Будапешті за сто євро на людину, не рахуючи дороги. Доїхали потягом через Чоп, а оселилися в хостелі в сьомому районі, колишньому єврейському кварталі, за 15 євро за ліжко. Першою покупкою став проїзний на 72 години, близько 15 євро, і він окупився вже першого дня.\n\nНайкраще в Будапешті безкоштовне. Ми піднялися на гору Геллерт на захід сонця, і місто лежало під нами, як розгорнута книжка: з одного боку пагорби Буди, з другого — рівнинний Пешт. Нижні тераси Рибальського бастіону теж нічого не коштують, а увечері з набережної видно Парламент, підсвічений золотом. Тут я зрозуміла, чому поети так люблять річки: Дунай у темряві схожий на ртуть.\n\nНа одну дорогу розвагу ми таки зважилися — купальні Сечені. Квиток коштував близько 30 євро, тож ми прийшли зранку й сиділи у вуличних басейнах до вечора, поки шкіра на пальцях не зморщилася. Пара над водою, старі чоловіки грають у шахи просто в басейні, а навколо жовті необарокові фасади. Увечері пішли в руїн-бар «Сімпла Керт»: вхід вільний, пиво близько 3 євро, а меблі — як із бабусиного горища.\n\nЇли ми лангош — смажений корж зі сметаною й сиром, за 4 євро, — і гуляш у маленькій їдальні за 6. Мінуси: на вулиці Ваці все в півтора раза дорожче, а обмінники з вигідним курсом часто мають приховану комісію, тож платіть карткою. У «Сімплі» після десятої тісно так, що дихати важко. Але наш підсумок — 96 євро на людину, і я пишаюся ним більше, ніж сесією.",
+        "en": "My classmate Lilia and I set ourselves a goal: four days in Budapest for a hundred euros each, not counting travel. We got there by train via Chop and settled into a hostel in the Seventh District, the former Jewish quarter, for 15 euros a bed. Our first purchase was a 72-hour transport pass, about 15 euros, and it paid for itself on the first day.\n\nThe best things in Budapest are free. We climbed Gellért Hill for sunset, and the city lay below us like an open book: on one side the hills of Buda, on the other the flat Pest. The lower terraces of Fisherman's Bastion cost nothing either, and in the evening you can see Parliament lit in gold from the embankment. There I understood why poets love rivers so much: in the dark the Danube looks like mercury.\n\nWe did allow ourselves one expensive treat, the Széchenyi Baths. A ticket cost about 30 euros, so we came in the morning and sat in the outdoor pools until evening, until the skin on our fingers wrinkled. Steam over the water, old men playing chess right in the pool, and yellow Neo-Baroque facades all around. In the evening we went to the ruin bar Szimpla Kert: free entry, beer about 3 euros, and furniture that looks like it came from granny's attic.\n\nWe ate lángos, fried dough with sour cream and cheese, for 4 euros, and goulash in a small canteen for 6. Downsides: on Váci Street everything costs half as much again, and exchange offices with good rates often hide a commission, so pay by card. In Szimpla after ten it is so crowded that it is hard to breathe. But our total was 96 euros each, and I am prouder of it than of my exams."
+      },
+      "country": { "code": "HU", "uk": "Угорщина", "en": "Hungary", "es": "Hungría" },
+      "region": { "uk": "Будапешт", "en": "Budapest", "es": "Budapest" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 4,
+      "tripType": "friends",
+      "tags": ["city-break", "train", "nightlife", "architecture", "food"],
+      "lat": 47.5072,
+      "lng": 19.0456,
+      "photoQuery": "Hungarian Parliament Building"
+    },
+    {
+      "key": "s-1-024",
+      "travellerKey": "t-1-08",
+      "category": "Європа",
+      "title": { "uk": "Валь-д'Орча: десять днів в агротуризмі біля П'єнци", "en": "Val d'Orcia: ten days at an agriturismo near Pienza" },
+      "article": {
+        "uk": "Після Дору ми з Лесею засвоїли урок і цього разу одразу взяли машину: маленький «Фіат 500» в аеропорту Флоренції, 35 євро на день. Їхали до П'єнци близько двох годин, і останні двадцять кілометрів Леся просила зупинятися на кожному пагорбі. Я її розумію: кипариси вздовж білих доріг, золоті поля й ферми на вершинах виглядають саме так, як на листівках.\n\nЖили десять ночей в агротуризмі — фермі, яка приймає гостей, — за 150 євро за ніч з вечерею. Господиня синьйора Паола щовечора готувала те, що росте довкола: бобові супи, пасту пічі ручної роботи з часниковим соусом, кролика з розмарином. Одного дня вона навчила нас самих катати пічі, і в мене вийшли товсті й нерівні, а в Лесі — майже ідеальні. Паола сказала, що в Тоскані головне не форма, а терпіння.\n\nДні в нас ішли повільно. Зранку — кава і пекоріно з П'єнци з медом, потім одна поїздка: до Монтальчино на дегустацію брунелло (близько 25 євро за п'ять вин), до винних погребів Монтепульчано, до каплиці Мадонни ді Віталета серед поля. Увечері ми купалися в термальних джерелах Баньї-Сан-Філіппо, де білі вапнякові каскади й тепла вода доступні безкоштовно. А в Баньо-Віньйоні замість площі — старовинний басейн з гарячою водою.\n\nМінус, про який нас ніхто не попередив, — зони обмеженого руху ZTL. У центрах старих міст в'їзд дозволено лише місцевим, камери все фіксують, а штраф приходить через кілька місяців. Ми отримали один, на 90 євро, за п'ять хвилин у Монтепульчано. Паркуйтеся біля мурів і йдіть пішки. А білі ґрунтові дороги, хоч і фотогенічні, після дощу перетворюються на кашу.",
+        "en": "After the Douro, Lesia and I had learned our lesson and took a car straight away this time: a small Fiat 500 at Florence airport, 35 euros a day. The drive to Pienza took about two hours, and for the last twenty kilometres Lesia asked me to stop on every hill. I understand her: cypresses along white roads, golden fields and farms on hilltops look exactly like the postcards.\n\nWe spent ten nights at an agriturismo, a farm that takes guests, for 150 euros a night with dinner. Our host, Signora Paola, cooked every evening from what grows around: bean soups, handmade pici pasta with garlic sauce, rabbit with rosemary. One day she taught us to roll pici ourselves, and mine came out thick and uneven while Lesia's were almost perfect. Paola said that in Tuscany what matters is not the shape but patience.\n\nOur days went slowly. In the morning, coffee and Pienza pecorino with honey, then one outing: to Montalcino for a Brunello tasting (about 25 euros for five wines), to the wine cellars of Montepulciano, to the Chapel of the Madonna di Vitaleta in the middle of a field. In the evening we bathed in the thermal springs of Bagni San Filippo, where white limestone cascades and warm water are free for everyone. And in Bagno Vignoni, instead of a square there is an ancient pool of hot water.\n\nThe downside nobody warned us about is the ZTL limited traffic zones. In the old town centres only locals may drive in, cameras record everything, and the fine arrives months later. We got one, 90 euros, for five minutes in Montepulciano. Park by the walls and walk. And the white gravel roads, photogenic as they are, turn to mush after rain."
+      },
+      "country": { "code": "IT", "uk": "Італія", "en": "Italy", "es": "Italia" },
+      "region": { "uk": "Тоскана", "en": "Tuscany", "es": "Toscana" },
+      "seasons": ["spring"],
+      "budget": "high",
+      "durationDays": 10,
+      "tripType": "couple",
+      "tags": ["wine", "slow-travel", "food", "road-trip", "nature"],
+      "lat": 43.0766,
+      "lng": 11.6788,
+      "photoQuery": "Val d'Orcia"
+    },
+    {
+      "key": "s-1-025",
+      "travellerKey": "t-1-09",
+      "category": "Європа",
+      "title": { "uk": "Копенгаген: Нюгавн, Б'ярке Інгельс і місто для людей", "en": "Copenhagen: Nyhavn, Bjarke Ingels and a city for people" },
+      "article": {
+        "uk": "Копенгаген для архітекторки — як підручник з урбаністики, який можна обійти пішки. Я прилетіла сюди з Варшави на чотири дні в червні і щодня проходила по п'ятнадцять кілометрів. Вулицю Стрьойет зробили пішохідною ще 1962 року, і саме з неї почалася ідея Яна Гела про місто, спроєктоване для людей, а не для машин. Тут це відчувається на кожному кроці.\n\nНюгавн — канал XVII століття з різнокольоровими будинками, і він справді такий яскравий, як на фото. Але найцікавіше для мене починалося далі. Біля Амагера стоїть CopenHill бюро Б'ярке Інгельса — сміттєспалювальна електростанція, на даху якої обладнано лижний схил і стежку для бігу. Я піднялася нагору пішки і не могла повірити, що стою на заводі. В Ерестаді — його ж житловий комплекс «8-Таллет»: будинок у формі вісімки, пандусом якого можна доїхати на велосипеді до десятого поверху.\n\nЩе одна точка — Королівська бібліотека «Чорний діамант» 1999 року: полірований чорний граніт, нахилені фасади й атріум, що відкривається на воду. А в гавані біля Айлендс-Брюгге місто облаштувало купальні просто посеред каналу. Люди після роботи стрибають у чисту морську воду поруч з офісами. Для мене, одеситки, це було найзворушливіше видовище поїздки.\n\nМінус Копенгагена — ціни. Номер у скромному готелі коштував 180 євро, смьорребрьод — відкритий бутерброд з оселедцем чи ростбіфом — 12–15 євро, келих пива близько 10. Вітер з моря змінює погоду щогодини, тож куртка потрібна навіть улітку. І пам'ятайте про велодоріжки: вони тут широкі, швидкі, і пішохід на них — порушник.",
+        "en": "For an architect, Copenhagen is like an urbanism textbook you can walk around. I flew here from Warsaw for four days in June and walked fifteen kilometres every day. Strøget was pedestrianised back in 1962, and that is where Jan Gehl's idea of a city designed for people rather than cars began. You feel it at every step here.\n\nNyhavn is a seventeenth-century canal lined with colourful houses, and it really is as bright as in the photos. But for me the most interesting things started further on. Near Amager stands CopenHill by Bjarke Ingels's studio, a waste-to-energy plant with a ski slope and a running trail on its roof. I walked up to the top and could not believe I was standing on a factory. In Ørestad there is his residential complex 8 House: a building shaped like a figure eight, whose ramp you can cycle up to the tenth floor.\n\nAnother stop was the Royal Library's Black Diamond from 1999: polished black granite, leaning facades and an atrium opening onto the water. And in the harbour near Islands Brygge the city has set up baths right in the middle of the canal. After work people jump into clean seawater next to their offices. For me, an Odesa girl, that was the most touching sight of the trip.\n\nCopenhagen's downside is prices. A room in a modest hotel cost 180 euros, smørrebrød, an open sandwich with herring or roast beef, 12 to 15 euros, a glass of beer about 10. The wind from the sea changes the weather every hour, so you need a jacket even in summer. And mind the bike lanes: here they are wide and fast, and a pedestrian on one is an offender."
+      },
+      "country": { "code": "DK", "uk": "Данія", "en": "Denmark", "es": "Dinamarca" },
+      "region": { "uk": "Столичний регіон", "en": "Capital Region", "es": "Región Capital" },
+      "seasons": ["summer"],
+      "budget": "high",
+      "durationDays": 4,
+      "tripType": "solo",
+      "tags": ["architecture", "city-break", "culture", "food"],
+      "lat": 55.6798,
+      "lng": 12.5910,
+      "photoQuery": "Nyhavn"
+    },
+    {
+      "key": "s-1-026",
+      "travellerKey": "t-1-10",
+      "category": "Балкани",
+      "title": { "uk": "Дурмітор на «Октавії»: каньйон Тари і Чорне озеро", "en": "Durmitor in my Octavia: Tara Canyon and the Black Lake" },
+      "article": {
+        "uk": "Цього разу «Октавія» поїхала зі мною, а поруч сиділа дружина Оксана з мапою, якій вона довіряє більше, ніж навігатору. З Ужгорода до Жабляка ми їхали два дні через Угорщину й Сербію — близько 1300 кілометрів, з ночівлею під Белградом. Платні дороги в Сербії обійшлися приблизно в 25 євро, пальне в Чорногорії коштувало близько 1,50 євро за літр.\n\nПерша зупинка — міст Джурджевича над каньйоном Тари. Його збудували 1940 року, і він висить на висоті 172 метрів над річкою. Над каньйоном натягнуто зіплайн, спуск коштує близько 20 євро. Оксана полетіла, а я тримав камеру і робив вигляд, що так і задумано. Каньйон Тари — один з найглибших у Європі, і з мосту вода внизу здається тонкою бірюзовою ниткою.\n\nУ Жабляку ми стали в кемпінгу за 10 євро з людини і щоранку ходили до Чорного озера: вхід до нацпарку 3 євро, стежка навколо озера — три з половиною кілометри серед смерек. Одного дня проїхали Дурміторське кільце — 76 кілометрів панорамною дорогою через перевал Седло на висоті понад 1900 метрів. Краєвиди такі, що я їхав сорок кілометрів на годину не через обмеження, а через рота, який не закривався. Увечері в конобі нам приготували ягнятину під сачем і качамак — кукурудзяну кашу з сиром.\n\nМінуси. Дорога з Плужине до Жабляка вузька, з неосвітленими тунелями, вирубаними просто в скелі, і назустріч може виїхати автобус. Корови на трасі тут повноправні учасники руху. А погода в горах міняється швидко: у серпні вночі в наметі було лише сім градусів. Беріть теплі спальники і не плануйте більше двохсот кілометрів на день.",
+        "en": "This time the Octavia came with me, and next to me sat my wife Oksana with a paper map, which she trusts more than the satnav. From Uzhhorod to Žabljak we drove for two days through Hungary and Serbia, about 1,300 kilometres with a night near Belgrade. Serbian toll roads cost us roughly 25 euros, and fuel in Montenegro was about 1.50 euros per litre.\n\nThe first stop was the Đurđevića Tara Bridge over the Tara Canyon. It was built in 1940 and hangs 172 metres above the river. A zipline is strung across the canyon, and a ride costs about 20 euros. Oksana flew; I held the camera and pretended that was the plan. The Tara Canyon is one of the deepest in Europe, and from the bridge the water below looks like a thin turquoise thread.\n\nIn Žabljak we stayed at a campsite for 10 euros per person and walked to the Black Lake every morning: national park entry 3 euros, the path around the lake three and a half kilometres among spruces. One day we drove the Durmitor Ring, 76 kilometres of panoramic road over the Sedlo pass at more than 1,900 metres. The views are such that I drove at forty kilometres an hour, not because of a speed limit but because my jaw would not close. In the evening at a konoba they cooked us lamb under a sač and kačamak, a cornmeal porridge with cheese.\n\nDownsides. The road from Plužine to Žabljak is narrow, with unlit tunnels cut straight into the rock, and a bus can come the other way. Cows on the road are full traffic participants here. And the weather in the mountains changes fast: in August it was only seven degrees in the tent at night. Bring warm sleeping bags and do not plan more than two hundred kilometres a day."
+      },
+      "country": { "code": "ME", "uk": "Чорногорія", "en": "Montenegro", "es": "Montenegro" },
+      "region": { "uk": "Дурмітор", "en": "Durmitor", "es": "Durmitor" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 8,
+      "tripType": "couple",
+      "tags": ["road-trip", "national-parks", "lakes", "camping", "nature"],
+      "lat": 43.1542,
+      "lng": 19.1236,
+      "photoQuery": "Durmitor"
+    },
+    {
+      "key": "s-1-027",
+      "travellerKey": "t-1-11",
+      "category": "Балкани",
+      "title": { "uk": "Скоп'є і каньйон Матка: статуї, печери і каяк", "en": "Skopje and Matka Canyon: statues, caves and a kayak" },
+      "article": {
+        "uk": "Скоп'є стало першим містом, де моя таблиця витрат виявилася песимістичною. Я заклав 50 євро на день, а витратив у середньому 35. Квартира біля Старого базару коштувала 30 євро за ніч, шопський салат — 2,50, тавче-гравче, запечена квасоля в глиняному горщику, — 3 євро. Для людини з Гамбурга це майже образливо дешево.\n\nЦентр міста — окремий досвід. На площі Македонія і вздовж річки Вардар стоїть більше статуй, ніж я бачив будь-де, разом з величезним вершником посередині. Стилі змішані так сміливо, що мій внутрішній німецький архітектор узяв відпустку. Зате Старий базар через кам'яний міст — справжній: османські хани, чайні, майстерні срібла й найкращий бурек мого життя за один євро.\n\nГоловна причина поїздки — каньйон Матка, за 15 кілометрів від міста. Їхав міським автобусом номер 60, квиток менш ніж євро, сорок хвилин. Розклад існує теоретично. Від греблі стежка йде над водою до монастиря Святого Андрія 1389 року, а далі можна взяти човен до печери Врело, близько 8 євро. Вона вважається однією з найглибших підводних печер світу, хоча дна досі не знайшли. Я ж орендував каяк за 10 євро на годину і веслував між скелями у повній тиші. Ну, майже повній: десь позаду турист співав.\n\nМінуси. У вихідні півміста їде в Матку, і на вузькій стежці над водою, без жодних поручнів, стає тісно. Улітку в Скоп'є спека під сорок, тож у каньйон їдьте зранку. А автобусний розклад змусив мене постаріти на кілька років: номер 60 приходить тоді, коли вважає за потрібне. Підсумок: три дні, 105 євро без перельоту, рекомендую.",
+        "en": "Skopje was the first city where my expense spreadsheet turned out to be pessimistic. I budgeted 50 euros a day and spent an average of 35. An apartment near the Old Bazaar cost 30 euros a night, a shopska salad 2.50, tavče gravče, baked beans in a clay pot, 3 euros. For someone from Hamburg this is almost insultingly cheap.\n\nThe city centre is an experience of its own. On Macedonia Square and along the Vardar river there are more statues than I have seen anywhere, including a huge horseman in the middle. The styles are mixed so boldly that my inner German architect took a holiday. The Old Bazaar across the stone bridge, on the other hand, is the real thing: Ottoman hans, tea houses, silver workshops and the best burek of my life for one euro.\n\nThe main reason for the trip was Matka Canyon, 15 kilometres from the city. I took city bus number 60, a ticket under a euro, forty minutes. The timetable exists in theory. From the dam a path runs above the water to the Monastery of St Andrew from 1389, and from there you can take a boat to Vrelo Cave for about 8 euros. It is considered one of the deepest underwater caves in the world, and its bottom has still not been found. I rented a kayak for 10 euros an hour and paddled between the cliffs in complete silence. Well, almost complete: somewhere behind me a tourist was singing.\n\nDownsides. At weekends half the city goes to Matka, and the narrow path above the water, without any railings, gets crowded. In summer Skopje heats up to nearly forty, so go to the canyon in the morning. And the bus timetable aged me by several years: number 60 comes whenever it sees fit. Total: three days, 105 euros excluding flights, recommended."
+      },
+      "country": { "code": "MK", "uk": "Північна Македонія", "en": "North Macedonia", "es": "Macedonia del Norte" },
+      "region": { "uk": "Скоп'є", "en": "Skopje", "es": "Skopie" },
+      "seasons": ["summer"],
+      "budget": "low",
+      "durationDays": 3,
+      "tripType": "solo",
+      "tags": ["nature", "lakes", "city-break", "markets"],
+      "lat": 41.9536,
+      "lng": 21.2981,
+      "photoQuery": "Matka Canyon"
+    },
+    {
+      "key": "s-1-028",
+      "travellerKey": "t-1-12",
+      "category": "Балкани",
+      "title": { "uk": "Банско з трьома дітьми: перший лижний тиждень", "en": "Bansko with three kids: our first ski week" },
+      "article": {
+        "uk": "Лижі з трьома дітьми — це як переїзд, тільки щодня. Ми довго вагалися між Альпами й Болгарією і обрали Банско, бо так дешевше майже вдвічі. Летіли до Софії, а звідти трансфером 160 кілометрів, близько двох з половиною годин. Апартаменти з кухнею біля підйомника коштували 90 євро за ніч, і це був найкращий вибір: сушарка для черевиків у коридорі врятувала нам відпустку.\n\nСкі-пас для дорослого коштував близько 55 євро на день, дитячий — дешевше, Мирославі ще не потрібен. Івася й Дану ми записали в лижну школу: дві години щоранку п'ять днів поспіль, близько 150 євро на дитину. На третій день Дана вже їхала синьою трасою й кричала нам «дивіться!», а Івась вирішив, що він майбутній олімпійський чемпіон. Ми з Олегом каталися по черзі: поки один на схилі, другий з Мирославою ліпив сніговиків і катав її на санчатах.\n\nСаме Банско — не лише курорт, а старе містечко з кам'яними будинками й церквою Святої Трійці. Увечері ми ходили в механи — традиційні таверни з каміном. Там подають баницю з бринзою, капаму — тушковане м'ясо з капустою, яке готують саме тут, — і кисле молоко з медом для дітей. Вечеря на п'ятьох обходилася в 45–50 євро.\n\nМінуси. Головний — черга на гондолу вранці. О пів на дев'яту вона може тягнутися на годину, а з дітьми й лижами це випробування для нервів. Ми навчилися виходити о сьомій сорок або їхати після десятої. Внизу траси біля Бандеришкої поляни в обідню пору тісно, як на ринку. А спуск лижною дорогою до міста вузький і крижаний — малих краще везти назад гондолою.",
+        "en": "Skiing with three kids is like moving house, only every day. We hesitated for a long time between the Alps and Bulgaria and chose Bansko because it is almost half the price. We flew to Sofia and took a transfer from there, 160 kilometres, about two and a half hours. An apartment with a kitchen near the lift cost 90 euros a night, and it was the best choice: the boot dryer in the hallway saved our holiday.\n\nAn adult ski pass cost about 55 euros a day, a child's less, and Myroslava did not need one yet. We enrolled Ivas and Dana in ski school: two hours every morning for five days in a row, about 150 euros per child. On the third day Dana was already going down a blue run shouting 'look at me!', and Ivas decided he is a future Olympic champion. Oleh and I took turns: while one was on the slope, the other built snowmen with Myroslava and pulled her on a sledge.\n\nBansko itself is not just a resort but an old town with stone houses and the Holy Trinity church. In the evenings we went to mehanas, traditional taverns with a fireplace. They serve banitsa with brynza, kapama, meat stewed with cabbage that is made right here, and sour milk with honey for the kids. Dinner for five came to 45 to 50 euros.\n\nDownsides. The main one is the morning gondola queue. At half past eight it can stretch for an hour, and with kids and skis that tests your nerves. We learned to arrive at seven forty or to go after ten. At the bottom of the runs near Banderishka Polyana it gets as crowded as a market at lunchtime. And the ski road back down to town is narrow and icy, so it is better to bring the little ones back by gondola."
+      },
+      "country": { "code": "BG", "uk": "Болгарія", "en": "Bulgaria", "es": "Bulgaria" },
+      "region": { "uk": "Пірин", "en": "Pirin", "es": "Pirin" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 7,
+      "tripType": "family",
+      "tags": ["skiing", "with-kids", "food", "culture"],
+      "lat": 41.8383,
+      "lng": 23.4885,
+      "photoQuery": "Vihren"
+    },
+    {
+      "key": "s-1-029",
+      "travellerKey": "t-1-13",
+      "category": "Європа",
+      "title": { "uk": "Мадейра: левади, лавові басейни і дельфіни", "en": "Madeira: levadas, lava pools and dolphins" },
+      "article": {
+        "uk": "На Мадейру я летів через Лісабон, і посадка у Фуншалі сама по собі пригода: злітна смуга частково стоїть на палях над океаном, а боковий вітер тут звичне явище. Літак трохи потрусило, сусідка перехрестилася, а я подумав, що з моря острів виглядає набагато гостиннішим. Машину взяв на дев'ять днів, близько 30 євро на добу, бо автобуси тут ходять повільно і нечасто.\n\nСпершу — вода. У морському заповіднику Гаражау біля Фуншала я двічі пірнав з місцевим центром, близько 50 євро за занурення. У квітні вода була 19 градусів, видимість понад 25 метрів, і просто біля скель неквапливо пропливали великі морські окуні-групери, які тут під охороною і людей не бояться. Холодно для людини з Миколаєва, тож гідрокостюм беріть сім міліметрів. Ще один вихід у море — на катері до дельфінів: за дві години ми бачили дві зграї афалін і одного кашалота вдалині.\n\nПотім — гори. Мадейра пронизана левадами, старими зрошувальними каналами, уздовж яких ідуть стежки. Левада Калдейрау-Верде — 13 кілометрів туди й назад серед лаврового лісу і крізь тунелі, де потрібен ліхтарик. А маршрут від Піку-ду-Арієйру до Піку-Руйву йде гребенем над хмарами, і на світанку там просто неймовірно. Увечері — еспетада, яловичина на лавровому шпажці, лапас — молюски з часниковим маслом — і пунша, місцевий напій з ромом і лимоном.\n\nМінуси. Частину стежки до Піку-Руйву після зсувів періодично закривають, перевіряйте статус на сайті перед виїздом. Погода на півночі й півдні острова зовсім різна: у Фуншалі сонце, а за перевалом дощ. Лавові басейни в Порту-Моніш — 3 євро і купатися там класно, але вода холодна навіть для мене.",
+        "en": "I flew to Madeira via Lisbon, and landing at Funchal is an adventure in itself: the runway partly stands on pillars above the ocean, and crosswinds are normal here. The plane shook a little, my neighbour crossed herself, and I thought the island looks much more welcoming from the sea. I rented a car for nine days, about 30 euros a day, because buses here are slow and infrequent.\n\nFirst, the water. In the Garajau marine reserve near Funchal I dived twice with a local centre, about 50 euros per dive. In April the water was 19 degrees, visibility over 25 metres, and right by the rocks big dusky groupers drifted past without hurry; they are protected here and are not afraid of people. Cold for someone from Mykolaiv, so bring a seven-millimetre wetsuit. Another trip out to sea was by boat to see dolphins: in two hours we saw two pods of bottlenose dolphins and a sperm whale in the distance.\n\nThen, the mountains. Madeira is laced with levadas, old irrigation channels with paths running alongside them. Levada do Caldeirão Verde is 13 kilometres there and back through laurel forest and tunnels where you need a torch. And the route from Pico do Arieiro to Pico Ruivo runs along a ridge above the clouds, and at sunrise it is simply incredible. In the evening: espetada, beef on a laurel skewer, lapas, limpets with garlic butter, and poncha, the local drink of rum and lemon.\n\nDownsides. Part of the trail to Pico Ruivo is closed from time to time after landslides, so check its status online before you go. The weather in the north and south of the island is completely different: sun in Funchal, rain over the pass. The lava pools at Porto Moniz cost 3 euros and swimming there is great, but the water is cold even for me."
+      },
+      "country": { "code": "PT", "uk": "Португалія", "en": "Portugal", "es": "Portugal" },
+      "region": { "uk": "Мадейра", "en": "Madeira", "es": "Madeira" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 9,
+      "tripType": "solo",
+      "tags": ["diving", "hiking", "islands", "wildlife", "nature"],
+      "lat": 32.6669,
+      "lng": -16.9241,
+      "photoQuery": "Pico do Arieiro"
+    },
+    {
+      "key": "s-1-030",
+      "travellerKey": "t-1-14",
+      "category": "Європа",
+      "title": { "uk": "Прованс у липні: лаванда Валансоля і ринки Люберону", "en": "Provence in July: Valensole lavender and Luberon markets" },
+      "article": {
+        "uk": "Мій чоловік Остап виріс на Херсонщині серед соняшникових полів і довго не вірив, що лавандове поле може його здивувати. Тож у липні ми сіли на TGV в Парижі й за дві години сорок хвилин були в Авіньйоні. Там узяли машину і поїхали на плато Валансоль. Лаванда цвіте з кінця червня до середини липня, а потім її косять, тож вікно дуже вузьке.\n\nО шостій ранку поля були фіолетові до самого обрію, гули бджоли, і пахло так, що Остап нарешті замовк. Його вердикт: «Соняшники кращі, але це теж нічого». Для француженки це майже комплімент. Ми проїхали до абатства Сенанк біля Горда, де ченці-цистерціанці досі вирощують лаванду перед кам'яною церквою XII століття, а потім пройшли охровою стежкою в Руссільйоні — 3 євро, і ви вийдете звідти помаранчевими.\n\nЗа що я найбільше люблю Прованс, то це ринки. У неділю — Іль-сюр-ла-Сорг з антикваріатом уздовж каналів, у суботу — Апт з козячими сирами, тапенадою й медом. Дині з Кавайона пахнуть так, що їх чути за кілька метрів, а ящик абрикосів коштує дешевше, ніж три штуки в Києві. Обідали ми в селах на площах під платанами: салат з козячим сиром, келих рожевого вина, і за все — близько 25 євро на двох.\n\nТепер про мінуси, і як місцева я тут сувора. У липні до лавандових полів приїжджають автобуси, і туристи заходять просто в ряди, ламаючи кущі заради фото. Фермери ставлять таблички — поважайте їх. Спека сягала 36 градусів, а містраль, холодний північний вітер, може дути по три дні поспіль. Їдьте на світанку, беріть капелюх і не плануйте більше двох сіл на день.",
+        "en": "My husband Ostap grew up in the Kherson region among sunflower fields and for a long time did not believe a lavender field could surprise him. So in July we boarded the TGV in Paris and two hours forty minutes later we were in Avignon. There we picked up a car and drove to the Valensole plateau. Lavender blooms from late June to mid-July and is then cut, so the window is very narrow.\n\nAt six in the morning the fields were purple all the way to the horizon, the bees were humming, and the scent was such that Ostap finally fell silent. His verdict: 'Sunflowers are better, but this is not bad either.' For a Frenchwoman that is almost a compliment. We drove on to Sénanque Abbey near Gordes, where Cistercian monks still grow lavender in front of a twelfth-century stone church, and then walked the ochre trail in Roussillon: 3 euros, and you will come out orange.\n\nWhat I love most about Provence is the markets. On Sunday, L'Isle-sur-la-Sorgue with antiques along the canals; on Saturday, Apt with goat cheeses, tapenade and honey. Cavaillon melons smell so strongly you notice them from several metres away, and a crate of apricots costs less than three of them in Kyiv. We had lunch in villages on squares under plane trees: a goat cheese salad, a glass of rosé, and about 25 euros for two for everything.\n\nNow the downsides, and as a local I am strict here. In July coaches come to the lavender fields, and tourists walk right into the rows, breaking the bushes for photos. Farmers put up signs; respect them. The heat reached 36 degrees, and the mistral, a cold north wind, can blow for three days in a row. Go at dawn, take a hat and do not plan more than two villages a day."
+      },
+      "country": { "code": "FR", "uk": "Франція", "en": "France", "es": "Francia" },
+      "region": { "uk": "Прованс", "en": "Provence", "es": "Provenza" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 7,
+      "tripType": "couple",
+      "tags": ["road-trip", "markets", "nature", "food", "photography"],
+      "lat": 43.8370,
+      "lng": 5.9830,
+      "photoQuery": "Plateau de Valensole"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{% for u in travellers %}
+<li class="traveller-card">
+  <img class="traveller-card__avatar" src="{{ u.avatar.large }}" alt="{{ u.name }}" width="112" height="112" loading="lazy" decoding="async">
+  <h2 class="traveller-card__name">{{ u.name }}</h2>
+  {% if u.acceptsBookings %}<span class="traveller-card__badge" data-extra>{{ t('booking.badge') }}</span>{% endif %}
+  <p class="traveller-card__description">{{ u.description }}</p>
+  <a class="traveller-card__link" href="{{ url('/travellers/' + u.id) }}">{{ t('travellers.viewProfile') }}</a>
+</li>
+{% endfor %}

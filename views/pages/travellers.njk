@@ -1,0 +1,14 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<div class="travellers-page">
+  <div class="travellers-page__main">
+    <section>
+      <h1 class="travellers-page__title">{{ t('travellers.title') }}</h1>
+      <ul class="traveller-list" data-traveller-list data-mobile-limit="8" data-total="{{ total }}">
+        {% include "partials/traveller-items.njk" %}
+      </ul>
+      {% if hasMore %}<a class="travellers-page__more" href="{{ nextUrl }}" data-load-more-travellers rel="next">{{ t('stories.showMore') }}</a>{% endif %}
+    </section>
+  </div>
+</div>
+{% endblock %}

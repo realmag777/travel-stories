@@ -1,0 +1,17 @@
+{
+ "status": 400,
+ "body": {
+  "statusCode": 400,
+  "error": "Bad Request",
+  "message": "Validation failed",
+  "validation": {
+   "query": {
+    "source": "query",
+    "keys": [
+     "limit"
+    ],
+    "message": "\"limit\" must be less than or equal to 50"
+   }
+  }
+ }
+}

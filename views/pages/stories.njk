@@ -1,0 +1,52 @@
+{% extends "layouts/base.njk" %}
+{% block head %}{% if state.view == 'map' %}<link rel="stylesheet" href="{{ asset('map.css') }}">{% endif %}{% endblock %}
+{% block content %}
+<section class="stories-page" data-catalog data-base="{{ url('/stories') }}" data-locale="{{ locale }}">
+  <div class="stories-page__container">
+    <h1 class="stories-page__title">{{ t('stories.title') }}</h1>
+
+    {% include "partials/nl-search.njk" %}
+
+    {# Category chips and select — as in the original, with live counts. #}
+    <div class="categories" data-categories>
+      {% include "partials/categories.njk" %}
+    </div>
+
+    <div class="catalog">
+      {% include "partials/facet-panel.njk" %}
+      <div class="catalog__results">
+        <div class="toolbar" data-extra>
+          <p class="toolbar__count" data-total-label>{{ totalLabel | safe }}</p>
+          <button type="button" class="action action--small toolbar__filters-btn" data-open-filters aria-controls="filter-panel" aria-expanded="false">
+            <svg class="icon" width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-tune"></use></svg>
+            {{ t('filters.button') }} <span class="toolbar__badge" data-active-count{% if not activeCount %} hidden{% endif %}>{{ activeCount }}</span>
+          </button>
+          <label class="toolbar__sort">
+            <span class="visually-hidden">{{ t('filters.sort') }}</span>
+            <select class="toolbar__select" data-sort aria-label="{{ t('filters.sort') }}">
+              {% for so in sorts %}<option value="{{ so.value }}"{% if so.value == state.sort %} selected{% endif %}>{{ so.label }}</option>{% endfor %}
+            </select>
+          </label>
+          <nav class="view-toggle" aria-label="{{ t('filters.view') }}">
+            <a class="view-toggle__link{% if state.view != 'map' %} view-toggle__link--active{% endif %}" href="{{ listUrl }}" data-view="list"{% if state.view != 'map' %} aria-current="true"{% endif %}>
+              <svg class="icon" width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-list"></use></svg>{{ t('filters.list') }}</a>
+            <a class="view-toggle__link{% if state.view == 'map' %} view-toggle__link--active{% endif %}" href="{{ mapUrl }}" data-view="map"{% if state.view == 'map' %} aria-current="true"{% endif %}>
+              <svg class="icon" width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-map"></use></svg>{{ t('filters.map') }}</a>
+          </nav>
+        </div>
+        <div class="active-chips" data-active-chips data-extra>{% include "partials/active-chips.njk" %}</div>
+
+        {% if state.view == 'map' %}
+        <div class="map-view" id="stories-map" data-map data-points-url="/api/v2/map" data-lang="{{ locale }}">
+          <label class="map-view__bbox"><input type="checkbox" data-bbox-toggle{% if state.bbox %} checked{% endif %}> {{ t('map.searchInView') }}</label>
+          <span class="map-view__status" data-map-status></span>
+        </div>
+        {% else %}
+        <div data-results>{% include "partials/story-results.njk" %}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}{% if state.view == 'map' %}<script src="{{ asset('map.js') }}" defer></script>{% endif %}{% endblock %}

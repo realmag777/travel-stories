@@ -1,0 +1,366 @@
+{
+  "travellers": [
+    {
+      "key": "t-3-01",
+      "gender": "female",
+      "name": { "uk": "Оксана Литвиненко", "en": "Oksana Lytvynenko" },
+      "description": {
+        "uk": "Привіт! Я Оксана. Пейзажна фотографка з Дніпра: їжджу туди, де світло буває раз на рік, і чекаю його зі штативом. У нотатках завжди пишу, яким об'єктивом і о котрій годині знімала, щоб ви не повторювали моїх помилок.",
+        "en": "Hi! I'm Oksana. A landscape photographer from Dnipro: I go where the light happens once a year and wait for it with a tripod. In my notes I always write which lens I used and at what hour, so you don't repeat my mistakes."
+      },
+      "style": "Precise landscape photographer: camera settings, light timing, tripod spots; dry calm humour; one practical warning per story."
+    },
+    {
+      "key": "t-3-02",
+      "gender": "male",
+      "name": { "uk": "Тарас Бондар", "en": "Taras Bondar" },
+      "description": {
+        "uk": "Привіт! Я Тарас. Мандрую з одним рюкзаком на 40 літрів, сплю в хостелах і їжджу місцевими автобусами, де кури теж мають квиток. Чесно пишу, скільки що коштувало і де я знову загубився.",
+        "en": "Hi! I'm Taras. I travel with one 40-litre backpack, sleep in hostels and ride local buses where the chickens have tickets too. I write honestly about what everything cost and where I got lost again."
+      },
+      "style": "Ironic budget backpacker: self-deprecating jokes, chicken buses and hostels, exact low prices, gets lost a lot."
+    },
+    {
+      "key": "t-3-03",
+      "gender": "female",
+      "name": { "uk": "Галина Ковальчук", "en": "Halyna Kovalchuk" },
+      "description": {
+        "uk": "Привіт! Я Галина. Тридцять років викладала історію в житомирській школі, а на пенсії нарешті їду дивитися на те, про що розповідала учням. Люблю музеї, старі мури і неквапливі екскурсії з добрим гідом.",
+        "en": "Hi! I'm Halyna. For thirty years I taught history at a school in Zhytomyr, and now that I'm retired I finally go to see what I used to tell my pupils about. I love museums, old walls and unhurried tours with a good guide."
+      },
+      "style": "Retired history teacher: measured and polite, dates and context, gentle didactic tone, notes on comfort and accessibility for older travellers."
+    },
+    {
+      "key": "t-3-04",
+      "gender": "male",
+      "name": { "uk": "Андрій Савчук", "en": "Andriy Savchuk" },
+      "description": {
+        "uk": "Привіт! Я Андрій. Тато Марка і Соні, інженер із Вінниці. Плануємо мандрівки так, щоб дітям було цікаво, а батькам не довелося рятуватися втечею: короткі переходи, перекуси в рюкзаку і сон до дев'ятої вечора.",
+        "en": "Hi! I'm Andriy. Dad to Marko and Sonia, an engineer from Vinnytsia. We plan trips so the kids stay curious and the parents don't have to flee: short walks, snacks in the backpack and bedtime by nine."
+      },
+      "style": "Calm practical family dad: logistics, kids' reactions, distances and snack stops, what worked and what did not with children."
+    },
+    {
+      "key": "t-3-05",
+      "gender": "female",
+      "name": { "uk": "Марта Гнатюк", "en": "Marta Hnatiuk" },
+      "description": {
+        "uk": "Привіт! Я Марта. Кулінарна блогерка зі Львова, і мої маршрути будуються від ринку до ринку. Пробую все, що продають з візка, записую рецепти за бабусями і привожу додому більше спецій, ніж одягу.",
+        "en": "Hi! I'm Marta. A food blogger from Lviv, and my routes run from market to market. I try everything sold from a cart, write down recipes from grandmothers and bring home more spices than clothes."
+      },
+      "style": "Sensory foodie: smells, textures, dishes and food prices, markets and street stalls, recipes overheard from cooks."
+    },
+    {
+      "key": "t-3-06",
+      "gender": "male",
+      "name": { "uk": "Богдан Ткачук", "en": "Bohdan Tkachuk" },
+      "description": {
+        "uk": "Привіт! Я Богдан. Альпініст і трекер з Івано-Франківська, виріс у Карпатах. Пишу коротко: кілометри, набір висоти, погода, спорядження. Гори не люблять зайвих слів.",
+        "en": "Hi! I'm Bohdan. A mountaineer and trekker from Ivano-Frankivsk who grew up in the Carpathians. I write briefly: kilometres, elevation gain, weather, gear. Mountains don't like unnecessary words."
+      },
+      "style": "Terse mountaineer: short sentences, distances and elevation gain, gear and weather, respect for risk, minimal emotion."
+    },
+    {
+      "key": "t-3-07",
+      "gender": "female",
+      "name": { "uk": "Ірина Мороз", "en": "Iryna Moroz" },
+      "description": {
+        "uk": "Привіт! Я Ірина. Ми з чоловіком Петром повільні мандрівники: замість десяти міст за тиждень обираємо одне село на місяць. Винаймаємо житло в місцевих, ходимо на ринок і вчимося жити чужим ритмом.",
+        "en": "Hi! I'm Iryna. My husband Petro and I are slow travellers: instead of ten cities in a week we choose one village for a month. We rent from locals, go to the market and learn to live by someone else's rhythm."
+      },
+      "style": "Reflective slow traveller writing as 'we' with husband Petro: unhurried, small daily rituals, neighbours, long stays."
+    },
+    {
+      "key": "t-3-08",
+      "gender": "male",
+      "name": { "uk": "Дмитро Козак", "en": "Dmytro Kozak" },
+      "description": {
+        "uk": "Привіт! Я Дмитро, студент-програміст з Харкова. Подорожую за стипендію та гроші з фрилансу, тому знаю всі лайфхаки: дешеві квитки, безкоштовні музеї, вуличну їжу за копійки і хостели з найкращим вайфаєм.",
+        "en": "Hi! I'm Dmytro, a computer science student from Kharkiv. I travel on my grant and freelance money, so I know all the hacks: cheap tickets, free museums, street food for pennies and hostels with the best wifi."
+      },
+      "style": "Energetic budget student: hacks, cheap tickets, free days, street food prices, wifi and hostel ratings, upbeat."
+    },
+    {
+      "key": "t-3-09",
+      "gender": "male",
+      "name": { "uk": "Карлос Мендоса", "en": "Carlos Mendoza" },
+      "description": {
+        "uk": "Привіт! Я Карлос. Я мексиканець із Гвадалахари, вже дванадцять років живу в Києві, одружений з Оленою і виховую сина Мирона. Показую своїй українській родині Латинську Америку і весь час порівнюю її з Україною.",
+        "en": "Hi! I'm Carlos. I'm a Mexican from Guadalajara who has lived in Kyiv for twelve years, married to Olena and raising our son Myron. I show my Ukrainian family Latin America and keep comparing it with Ukraine."
+      },
+      "style": "Warm Mexican living in Kyiv: family trips with wife Olena and son Myron, compares Latin America with Ukraine, drops Spanish words."
+    },
+    {
+      "key": "t-3-10",
+      "gender": "female",
+      "name": { "uk": "Емма Вільямс", "en": "Emma Williams" },
+      "description": {
+        "uk": "Привіт! Я Емма. Я австралійка з Аделаїди, викладаю англійську у Львові. Коли їду додому, беру з собою українських друзів і показую їм наш край без туристичного глянцю: з мухами, спекою і найкращими пляжами світу.",
+        "en": "Hi! I'm Emma. I'm an Australian from Adelaide teaching English in Lviv. When I fly home I bring Ukrainian friends along and show them our part of the world without the tourist gloss: flies, heat and the best beaches on earth."
+      },
+      "style": "Australian insider living in Lviv: friendly humour, local slang explained, practical safety tips about sun, distances and wildlife."
+    },
+    {
+      "key": "t-3-11",
+      "gender": "female",
+      "name": { "uk": "Соломія Вовк", "en": "Solomiia Vovk" },
+      "description": {
+        "uk": "Привіт! Я Соломія. Інструкторка з дайвінгу і морська біологиня з Одеси. Мої розповіді пахнуть неопреном: глибина, видимість, температура води і хто кого з'їв на рифі.",
+        "en": "Hi! I'm Solomiia. A diving instructor and marine biologist from Odesa. My stories smell of neoprene: depth, visibility, water temperature and who ate whom on the reef."
+      },
+      "style": "Diving instructor and marine biologist: dive-log details (depth, visibility, water temperature), species names, reef etiquette."
+    },
+    {
+      "key": "t-3-12",
+      "gender": "male",
+      "name": { "uk": "Олег Павленко", "en": "Oleh Pavlenko" },
+      "description": {
+        "uk": "Привіт! Я Олег. Обожнюю дорогу: беру авто напрокат, вмикаю плейлист і їду, доки не скінчиться асфальт. Рахую кілометри, ціну пального і найкращі місця, де можна зупинитися на каву.",
+        "en": "Hi! I'm Oleh. I love the road: I rent a car, put on a playlist and drive until the tarmac runs out. I count kilometres, fuel prices and the best places to stop for coffee."
+      },
+      "style": "Road-trip enthusiast: car rental, distances and fuel costs, driving tips, roadside diners and music, upbeat and practical."
+    },
+    {
+      "key": "t-3-13",
+      "gender": "female",
+      "name": { "uk": "Наталія Шевчук", "en": "Nataliia Shevchuk" },
+      "description": {
+        "uk": "Привіт! Я Наталія. Мандрую з донькою-підліткою Дариною, яка спершу каже «нудно», а потім робить тисячу фото. Пишу про те, як знайти компроміс між маминими музеями і доньчиними магазинами.",
+        "en": "Hi! I'm Nataliia. I travel with my teenage daughter Daryna, who first says 'boring' and then takes a thousand photos. I write about finding a compromise between mum's museums and her daughter's shops."
+      },
+      "style": "Warm humorous mum travelling with teen daughter Daryna: negotiations, teen reactions, safety and budget for two."
+    },
+    {
+      "key": "t-3-14",
+      "gender": "male",
+      "name": { "uk": "Юрій Кравець", "en": "Yurii Kravets" },
+      "description": {
+        "uk": "Привіт! Я Юрій. Сомельє з Києва і трохи кавовий маніяк. Їжджу туди, де ростуть виноград і кава, розмовляю з фермерами і пишу дегустаційні нотатки навіть на полях ресторанного меню.",
+        "en": "Hi! I'm Yurii. A sommelier from Kyiv and a bit of a coffee maniac. I travel where grapes and coffee grow, talk to farmers and write tasting notes even in the margins of restaurant menus."
+      },
+      "style": "Sommelier and coffee nerd: tasting notes, grape varieties and coffee processing, talks to farmers, precise but enthusiastic."
+    },
+    {
+      "key": "t-3-15",
+      "gender": "female",
+      "name": { "uk": "Вікторія Лисенко", "en": "Viktoriia Lysenko" },
+      "description": {
+        "uk": "Привіт! Я Вікторія. Подорожую з подругами, полюю на фестивалі, вечірки і концерти просто неба. Ми плануємо мало, танцюємо багато, а потім довго згадуємо все в нашому спільному чаті.",
+        "en": "Hi! I'm Viktoriia. I travel with my girlfriends and hunt for festivals, parties and open-air concerts. We plan little, dance a lot and then reminisce for ages in our group chat."
+      },
+      "style": "Lively friend-group traveller: festivals and nightlife, group dynamics, quick sentences, honest about late nights and costs."
+    },
+    {
+      "key": "t-3-16",
+      "gender": "female",
+      "name": { "uk": "Мікаела Сантос", "en": "Micaela Santos" },
+      "description": {
+        "uk": "Привіт! Я Мікаела. Я бразилійка із Салвадора, вже вісім років живу в Одесі і викладаю самбу та капоейру. Розповідаю про Бразилію і не тільки очима місцевої, а мій чоловік Сергій додає погляд українця.",
+        "en": "Hi! I'm Micaela. I'm a Brazilian from Salvador who has lived in Odesa for eight years, teaching samba and capoeira. I tell you about Brazil and beyond through a local's eyes, and my husband Serhiy adds a Ukrainian view."
+      },
+      "style": "Brazilian dance teacher living in Odesa: rhythm and music, insider view, travels with husband Serhiy, sprinkles Portuguese words."
+    }
+  ],
+  "stories": [
+    {
+      "key": "s-3-001",
+      "travellerKey": "t-3-01",
+      "category": "Америка",
+      "title": { "uk": "Йосеміті: полювання на світло над Half Dome", "en": "Yosemite: Chasing the Light over Half Dome" },
+      "article": {
+        "uk": "До Йосеміті я їхала заради одного кадру: Тунельний краєвид на заході сонця, коли Ель-Капітан уже в тіні, а Half Dome ще світиться помаранчевим. Прилетіла до Сан-Франциско, взяла авто напрокат і за чотири з половиною години була біля західного в'їзду. Перепустка на машину діє тиждень і коштувала мені приблизно 32 євро, а в жовтні ще треба було заздалегідь бронювати слот на в'їзд, тож стежте за сайтом парку.\n\nЗнімала на повнокадрову камеру з об'єктивами 24–70 і 70–200. На Тунельному майданчику штатив краще ставити до 17:30, бо потім там стоїть ціла шеренга фотографів. Базові налаштування: ISO 100, f/11, а щойно сонце сідає, вмикаю брекетинг у три кадри, бо долина провалюється в тінь значно швидше, ніж скелі. Поляризаційний фільтр прибирає відблиски з водоспаду Bridalveil, але на ширококутному об'єктиві робить небо плямистим, тож обережно.\n\nЧесний мінус: восени водоспад Йосеміті майже пересихає, а Дзеркальне озеро перетворюється на калюжу, в якій відбиваються хіба що ваші черевики. Якщо потрібна вода, їдьте у травні, коли тане сніг. Натомість жовтень подарував мені золоті дуби в долині і майже порожні стежки на світанку.\n\nНайкраща ніч була на Ґлейшер-Пойнт: Чумацький Шлях стоїть просто над Half Dome, 20 секунд на f/2.8 і ISO 3200 на 16 мм. Ночувала в наметовому будиночку в Каррі-Віллідж, понад 150 євро за ніч, і це було найдешевше в долині. Їжа в парку дорога й посередня, тому бутерброди я возила з Маріпози. За сім днів 1200 кадрів, з яких я залишила дванадцять. Нормальна статистика.",
+        "en": "I went to Yosemite for a single shot: Tunnel View at sunset, when El Capitan is already in shadow and Half Dome still glows orange. I flew into San Francisco, rented a car and four and a half hours later was at the western entrance. The vehicle pass is valid for a week and cost me about 32 euros, and in October you also had to book an entry slot in advance, so keep an eye on the park website.\n\nI shot on a full-frame camera with 24–70 and 70–200 lenses. At Tunnel View set up your tripod before 17:30, because after that there is a whole row of photographers. Base settings: ISO 100, f/11, and as soon as the sun is down I switch to three-frame bracketing, because the valley drops into shadow much faster than the rock faces. A polariser removes glare from Bridalveil Fall, but on a wide-angle lens it makes the sky blotchy, so be careful.\n\nAn honest downside: in autumn Yosemite Falls almost dries up and Mirror Lake turns into a puddle that reflects little more than your boots. If you want water, go in May when the snow melts. October, on the other hand, gave me golden oaks in the valley and nearly empty trails at dawn.\n\nThe best night was at Glacier Point: the Milky Way stands right above Half Dome, 20 seconds at f/2.8 and ISO 3200 at 16 mm. I slept in a tent cabin in Curry Village, over 150 euros a night, and that was the cheapest option in the valley. Food in the park is pricey and mediocre, so I brought sandwiches from Mariposa. Seven days, 1200 frames, of which I kept twelve. A normal ratio."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Каліфорнія", "en": "California", "es": "California" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 7,
+      "tripType": "solo",
+      "tags": ["photography", "national-parks", "hiking", "nature"],
+      "lat": 37.7459,
+      "lng": -119.5332,
+      "photoQuery": "Half Dome"
+    },
+    {
+      "key": "s-3-002",
+      "travellerKey": "t-3-01",
+      "category": "Америка",
+      "title": { "uk": "Болівія: дзеркало Уюні в сезон дощів", "en": "Bolivia: the Uyuni Mirror in the Rainy Season" },
+      "article": {
+        "uk": "Солончак Уюні перетворюється на дзеркало лише тоді, коли на ньому стоїть кілька сантиметрів води, тобто з січня по березень. Ми з двома знайомими фотографами поїхали в лютому. З Ла-Паса летіли годину місцевою авіакомпанією, хоча можна і нічним автобусом, якщо ви не цінуєте власну спину. У містечку Уюні взяли приватний джип із водієм на три дні, вийшло близько 200 євро на людину, зате ми самі вирішували, де і скільки стояти.\n\nГоловне правило дзеркала: камера має бути низько, майже над водою, і горизонт рівно посередині кадру. Я працювала на 16 мм, з рівнем на гарячому черевику, бо без нього відображення завжди трохи завалене. На світанку вистачало ISO 200 і f/8, а вночі зоряне небо відбивалося так, що втрачаєш відчуття верху і низу: 15 секунд, f/2.8, ISO 3200.\n\nПро техніку. Сіль їсть усе. Ноги штатива я обмотала харчовою плівкою, а ввечері промивала прісною водою з пляшки, і все одно один затискач заклинило. Гумові чоботи беріть обов'язково, їх часто дають водії, але розміри бувають дивні.\n\nВисота 3650 метрів дається взнаки: перші дві ночі в мене боліла голова, рятували чай з коки і повільні рухи. Ночували в готелі з соляних блоків, романтично, але холодно, близько нуля в кімнаті. Їжа проста: кіноа, лама на грилі, багато картоплі. Мінус один і чесний: якщо дощі пізні, дзеркала може не бути зовсім, тож закладайте запасні дні. Нам пощастило лише на другий ранок.",
+        "en": "The Uyuni salt flat only becomes a mirror when a few centimetres of water stand on it, meaning from January to March. Two photographer friends and I went in February. We flew an hour from La Paz on a local airline, though you can also take the night bus if you don't value your back. In the town of Uyuni we hired a private jeep with a driver for three days, about 200 euros each, but we decided ourselves where to stop and for how long.\n\nThe main rule of the mirror: the camera must be low, almost above the water, with the horizon exactly in the middle of the frame. I worked at 16 mm with a spirit level on the hot shoe, because without it the reflection is always slightly tilted. At dawn ISO 200 and f/8 were enough, and at night the starry sky reflected so well that you lose the sense of up and down: 15 seconds, f/2.8, ISO 3200.\n\nAbout gear. Salt eats everything. I wrapped my tripod legs in cling film and rinsed them with bottled fresh water every evening, and one clamp still seized. Bring rubber boots without fail; drivers often provide them, but the sizes can be strange.\n\nThe altitude of 3650 metres makes itself felt: for the first two nights I had a headache, and coca tea and slow movements helped. We slept in a hotel built of salt blocks, romantic but cold, around zero in the room. Food is simple: quinoa, grilled llama, lots of potatoes. One honest downside: if the rains are late there may be no mirror at all, so plan spare days. We only got lucky on the second morning."
+      },
+      "country": { "code": "BO", "uk": "Болівія", "en": "Bolivia", "es": "Bolivia" },
+      "region": { "uk": "Потосі", "en": "Potosí", "es": "Potosí" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "friends",
+      "tags": ["photography", "desert", "nature", "road-trip"],
+      "lat": -20.1338,
+      "lng": -67.4891,
+      "photoQuery": "Salar de Uyuni"
+    },
+    {
+      "key": "s-3-003",
+      "travellerKey": "t-3-01",
+      "category": "Америка",
+      "title": { "uk": "Атакама: найтемніше небо, яке я бачила", "en": "Atacama: the Darkest Sky I Have Ever Seen" },
+      "article": {
+        "uk": "У пустелю Атакама я планувала поїздку від фази Місяця: шість днів навколо молодика у квітні. З Сантьяго летіла до Каламі, звідти автобус за півтори години довозить до Сан-Педро-де-Атакама. Містечко глиняне, пилюжне і дуже туристичне, тому я відразу взяла напрокат пікап і більшість часу проводила за його межами.\n\nДолина Місяця найкраща на заході сонця з оглядового майданчика Кари: соляні хребти стають рожевими, а вулкан Ліканкабур на горизонті фіолетовим. Я знімала телевиком 70–200, щоб стиснути плани, ISO 100, f/8, і ще двадцять хвилин після заходу, коли небо тримає синій колір. Квиток у долину коштує кілька євро, але кількість відвідувачів обмежена, тож купуйте онлайн.\n\nГейзери Ель-Татіо вимагають жертв: виїзд о 4:30, висота 4300 метрів і мінус десять. Пара найгустіша до сходу сонця, а найкрасивіша, коли перші промені б'ють їй у спину. Пальці в рукавицях з відкритими кінчиками не відчувала вже за пів години, а батареї тримала в нагрудній кишені.\n\nНоччю тут починається головне. Небо настільки темне, що Чумацький Шлях відкидає ледь помітну тінь. Біля лагун Місканті я робила панорами з 12 кадрів по 15 секунд, f/2.8, ISO 4000, і це найчистіші зоряні знімки в моєму архіві.\n\nЧесний мінус: пил. Він проникає всюди, і після першого дня я побачила на сенсорі цілу галактику плям. Змінюйте об'єктиви тільки в машині, з вимкненим вентилятором. А харчуватися в Сан-Педро дорого, обід виходить близько 20 євро, тож супермаркет у Каламі ваш друг.",
+        "en": "I planned my trip to the Atacama Desert around the phase of the Moon: six days around the new moon in April. From Santiago I flew to Calama, and from there a bus takes an hour and a half to San Pedro de Atacama. The town is adobe, dusty and very touristy, so I immediately rented a pickup and spent most of my time outside it.\n\nThe Valley of the Moon is best at sunset from the Kari viewpoint: the salt ridges turn pink and the Licancabur volcano on the horizon turns violet. I shot with a 70–200 telephoto to compress the layers, ISO 100, f/8, and for twenty more minutes after sunset while the sky holds its blue. A ticket to the valley costs a few euros, but visitor numbers are limited, so buy online.\n\nThe El Tatio geysers demand sacrifices: departure at 4:30, an altitude of 4300 metres and minus ten. The steam is thickest before sunrise and most beautiful when the first rays hit it from behind. Within half an hour I could no longer feel my fingers in fingerless gloves, and I kept the batteries in my chest pocket.\n\nAt night the main event begins. The sky is so dark that the Milky Way casts a faint shadow. By the Miscanti lagoons I made panoramas of 12 frames at 15 seconds, f/2.8, ISO 4000, and they are the cleanest star pictures in my archive.\n\nAn honest downside: dust. It gets everywhere, and after the first day I found a whole galaxy of spots on my sensor. Change lenses only inside the car with the fan switched off. Eating in San Pedro is also expensive, lunch comes to about 20 euros, so the supermarket in Calama is your friend."
+      },
+      "country": { "code": "CL", "uk": "Чилі", "en": "Chile", "es": "Chile" },
+      "region": { "uk": "Антофагаста", "en": "Antofagasta", "es": "Antofagasta" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "solo",
+      "tags": ["desert", "photography", "nature", "road-trip"],
+      "lat": -22.9110,
+      "lng": -68.2003,
+      "photoQuery": "Valle de la Luna"
+    },
+    {
+      "key": "s-3-004",
+      "travellerKey": "t-3-01",
+      "category": "Океанія",
+      "title": { "uk": "Нова Зеландія: Мілфорд-Саунд під дощем", "en": "New Zealand: Milford Sound in the Rain" },
+      "article": {
+        "uk": "Про Мілфорд-Саунд кажуть, що тут дощить двісті днів на рік, і для фотографа це добра новина. Після зливи зі скель зриваються сотні тимчасових водоспадів, яких у сонячну погоду просто немає. Ми з чоловіком Ігорем поїхали наприкінці травня, коли новозеландська осінь уже холодна, а туристів мало.\n\nБазувалися в Те-Анау, звідти до фіорду 120 кілометрів дороги, яку я вважаю окремою пам'яткою. Зупинялися на Дзеркальних озерах на світанку, коли вода ще спокійна, далі тунель Гомера і серпантин у долину. Заправтеся в Те-Анау, бо далі пального немає, як і мобільного зв'язку.\n\nУ сам фіорд ми вийшли на ранковому катері, квиток коштував близько 60 євро. На палубі я тримала камеру під дощовиком, а Ігор тримав парасольку і терпів. Для водоспадів ставила нейтральний фільтр на шість стопів і витримку одна-дві секунди, але з палуби, що гойдається, це лотерея, тож половина кадрів пішла в кошик. Найкращий знімок вийшов не з води, а з короткої стежки біля причалу: пік Мітре з відображенням у штиль, 24 мм, f/11, ISO 100.\n\nЧесний мінус має назву: мошка. Місцеві піщані мушки кусають так, що свербить тиждень, і жоден репелент не дає повного захисту. Довгі рукави і штани навіть у спеку, якщо вона раптом буде.\n\nПро бюджет: Нова Зеландія дорога, мотель у Те-Анау коштував нам близько 130 євро за ніч, вечеря на двох понад 60. Але п'ять днів у Фіордленді дали мені стільки кадрів, скільки не давала жодна інша поїздка.",
+        "en": "They say it rains two hundred days a year in Milford Sound, and for a photographer that is good news. After a downpour hundreds of temporary waterfalls pour off the cliffs, and on a sunny day they simply don't exist. My husband Ihor and I went at the end of May, when the New Zealand autumn is already cold and there are few tourists.\n\nWe were based in Te Anau, and from there it is 120 kilometres to the fiord along a road I consider a sight in itself. We stopped at the Mirror Lakes at dawn while the water was still calm, then came the Homer Tunnel and the switchbacks down into the valley. Fill up in Te Anau, because there is no fuel further on, and no mobile signal either.\n\nWe went out into the fiord on a morning boat, the ticket cost about 60 euros. On deck I kept the camera under a rain cover while Ihor held the umbrella and endured. For the waterfalls I used a six-stop ND filter and a one to two second exposure, but from a rocking deck that is a lottery, so half the frames went to the bin. The best shot came not from the water but from the short walk by the wharf: Mitre Peak reflected in a dead calm, 24 mm, f/11, ISO 100.\n\nThe honest downside has a name: sandflies. These local midges bite so badly that you itch for a week, and no repellent gives full protection. Long sleeves and trousers even in heat, if it ever comes.\n\nAs for the budget, New Zealand is expensive: a motel in Te Anau cost us about 130 euros a night, dinner for two over 60. But five days in Fiordland gave me more frames than any other trip."
+      },
+      "country": { "code": "NZ", "uk": "Нова Зеландія", "en": "New Zealand", "es": "Nueva Zelanda" },
+      "region": { "uk": "Саутленд", "en": "Southland", "es": "Southland" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 5,
+      "tripType": "couple",
+      "tags": ["photography", "nature", "road-trip", "national-parks"],
+      "lat": -44.6414,
+      "lng": 167.8974,
+      "photoQuery": "Mitre Peak"
+    },
+    {
+      "key": "s-3-005",
+      "travellerKey": "t-3-02",
+      "category": "Америка",
+      "title": { "uk": "Гватемала: озеро Атітлан і курячі автобуси", "en": "Guatemala: Lake Atitlán and the Chicken Buses" },
+      "article": {
+        "uk": "З Антигуа до озера Атітлан ходить туристичний шатл за 12 євро і три години. Я, звісно, вирішив зекономити і поїхав курячими автобусами: це старі американські шкільні автобуси, розмальовані як новорічна ялинка, з музикою на повну і водієм, що вірить у безсмертя. Три пересадки, чотири євро, п'ять годин, одна курка в мене на колінах. Економія вісім євро, нерви окремо.\n\nОзеро лежить у кратері між трьома вулканами, і кожне село на березі має свій характер. Сан-Педро-ла-Лагуна для бекпекерів: ліжко в хостелі за 8 євро, вечірки і кав'ярні з банановим хлібом. Сан-Хуан тихіший, там жіночі кооперативи фарбують нитки натуральними барвниками. Сан-Маркос для тих, хто шукає себе через йогу, я себе там не знайшов, зате знайшов чудовий фалафель.\n\nМіж селами плавають моторні човни. Місцеві платять менше, туристи більше, і торгуватися марно. В середньому це 3 євро за переправу. О п'ятій ранку я пішов на Індіанський Ніс з гідом за 10 євро, і схід сонця над вулканами Атітлан і Толіман вартий кожної хвилини недосипу.\n\nЇв у комедорах, маленьких родинних їдальнях: рагу пепіан, кукурудзяні тортильї, квасоля, і все за 2–3 євро. Ще тиждень ходив на курси іспанської, тепер можу впевнено замовити пиво і загубитися вже двомовно.\n\nЧесний мінус: вода біля сіл брудна, купатися краще подалі від берега. А після обіду піднімається вітер шокомиль, і човен скаче по хвилях так, що мій рюкзак вимок разом зі мною. Беріть гермомішок. Дванадцять днів пролетіли, як один курячий автобус.",
+        "en": "A tourist shuttle runs from Antigua to Lake Atitlán for 12 euros and three hours. Of course I decided to save money and went by chicken bus: old American school buses painted like Christmas trees, music at full blast and a driver who believes in immortality. Three changes, four euros, five hours, one chicken on my lap. Eight euros saved, nerves billed separately.\n\nThe lake lies in a crater between three volcanoes, and every village on the shore has its own character. San Pedro La Laguna is for backpackers: a hostel bed for 8 euros, parties and cafés with banana bread. San Juan is quieter, with women's cooperatives dyeing thread with natural colours. San Marcos is for those looking for themselves through yoga; I didn't find myself there, but I did find a great falafel.\n\nMotor boats run between the villages. Locals pay less, tourists pay more, and bargaining is pointless. On average a crossing is 3 euros. At five in the morning I went up the Indian Nose with a guide for 10 euros, and the sunrise over the Atitlán and Tolimán volcanoes is worth every minute of lost sleep.\n\nI ate in comedores, small family eateries: pepián stew, corn tortillas, beans, all for 2 to 3 euros. I also spent a week at a Spanish school, so now I can confidently order a beer and get lost in two languages.\n\nAn honest downside: the water near the villages is dirty, so swim well away from the shore. And in the afternoon the Xocomil wind picks up and the boat bounces over the waves so hard that my backpack got soaked along with me. Take a dry bag. Twelve days flew by like one chicken bus ride."
+      },
+      "country": { "code": "GT", "uk": "Гватемала", "en": "Guatemala", "es": "Guatemala" },
+      "region": { "uk": "Солола", "en": "Sololá", "es": "Sololá" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 12,
+      "tripType": "solo",
+      "tags": ["backpacking", "lakes", "culture", "hiking"],
+      "lat": 14.6907,
+      "lng": -91.2025,
+      "photoQuery": "Lake Atitlán"
+    },
+    {
+      "key": "s-3-006",
+      "travellerKey": "t-3-02",
+      "category": "Америка",
+      "title": { "uk": "Перу: Тітікака, острови з очерету і ночі на Амантані", "en": "Peru: Titicaca, Reed Islands and Nights on Amantaní" },
+      "article": {
+        "uk": "Із Куско до Пуно ми з другом Сашком їхали нічним автобусом сім годин за 15 євро. Сашко спав, я рахував повороти. Пуно стоїть на висоті 3800 метрів, і перший підйом сходами до хостелу нагадав мені, що спорт я кинув дарма. Чай з листя коки тут подають усюди, і він справді допомагає, хоч на смак як сіно з надією.\n\nНа озері ми взяли дводенний тур за 35 євро з ночівлею в родини на острові Амантані. Спершу човен заходить на плавучі острови уру, складені з очерету тотора. Під ногами все пружинить, як матрац, а господарі показують, як ріжуть і в'яжуть очерет. Так, це трохи театр для туристів, і після показу всі одразу продають вишивки. Але сама ідея жити на острові, який доводиться підкладати щомісяця, вражає.\n\nНа Амантані нас поселили до сім'ї пані Росалії. Вечеря: суп з кіноа, варена картопля трьох кольорів, сир. Електрики мало, гарячої води немає. Увечері нас перевдягли в місцеві строї й повели на танці в громадський зал. Ми з Сашком у пончо і вишитих шапках виглядали як два заблукані експонати, але танцювали чесно.\n\nВночі в кімнаті було близько мінус двох. Я спав під чотирма ковдрами з альпаки і в усьому одязі, який мав. Вранці острів Такіле, де в'яжуть чоловіки, причому з дитинства, і за якістю шапки там можна дізнатися, чи хлопець готовий до шлюбу. Мою б, мабуть, не схвалили.\n\nЧесний мінус: саме місто Пуно не надто гарне і живе тільки туристами. Але п'ять днів на висоті неба мені вистачили з головою, особливо коли голова від висоти й так гуде.",
+        "en": "My friend Sashko and I went from Cusco to Puno on a seven-hour night bus for 15 euros. Sashko slept, I counted the bends. Puno sits at 3800 metres, and the first climb up the stairs to the hostel reminded me that giving up sport had been a mistake. Coca leaf tea is served everywhere, and it really helps, even if it tastes like hay with hope.\n\nOn the lake we took a two-day tour for 35 euros with a homestay on Amantaní island. First the boat calls at the floating islands of the Uros, built from totora reeds. Everything springs underfoot like a mattress, and the hosts show how they cut and tie the reeds. Yes, it is a bit of a theatre for tourists, and right after the show everyone sells embroidery. But the very idea of living on an island you have to top up every month is impressive.\n\nOn Amantaní we stayed with Señora Rosalía's family. Dinner was quinoa soup, boiled potatoes in three colours and cheese. There is little electricity and no hot water. In the evening they dressed us in local costume and took us to a dance in the community hall. Sashko and I, in ponchos and embroidered hats, looked like two lost museum exhibits, but we danced honestly.\n\nAt night it was about minus two in the room. I slept under four alpaca blankets wearing every piece of clothing I had. In the morning came Taquile island, where the men knit, from childhood, and the quality of a hat tells you whether a young man is ready to marry. Mine would probably not pass.\n\nAn honest downside: Puno itself is not very pretty and lives only on tourists. But five days at the height of the sky were more than enough, especially when your head is already buzzing from the altitude."
+      },
+      "country": { "code": "PE", "uk": "Перу", "en": "Peru", "es": "Perú" },
+      "region": { "uk": "Пуно", "en": "Puno", "es": "Puno" },
+      "seasons": ["winter"],
+      "budget": "low",
+      "durationDays": 5,
+      "tripType": "friends",
+      "tags": ["backpacking", "lakes", "islands", "culture"],
+      "lat": -15.8193,
+      "lng": -69.9686,
+      "photoQuery": "Uros Floating Islands"
+    },
+    {
+      "key": "s-3-007",
+      "travellerKey": "t-3-02",
+      "category": "Океанія",
+      "title": { "uk": "Папуа Нова Гвінея: фестиваль у Маунт-Хагені", "en": "Papua New Guinea: the Mount Hagen Show" },
+      "article": {
+        "uk": "Папуа Нова Гвінея виявилася країною, де мій бюджетний досвід не працює зовсім. Хостелів тут немає, автостоп не радять, а переліт із Порт-Морсбі до Маунт-Хагена коштував близько 200 євро. Найдешевша гостьова хата обійшлася в 60 євро за ніч, і господар одразу попередив: увечері пішки не ходити, водія він дасть сам. Мій рюкзак на 40 літрів тут викликав щирий сміх, бо всі навколо носили речі в плетених торбах білум на лобі.\n\nЗаради чого все це: щорічний культурний фестиваль у середині серпня. На полі за містом збираються десятки громад з усього нагір'я, і кожна виходить у своєму вбранні. Пір'я райських птахів, розмальовані жовтим і червоним обличчя, намиста з мушель, дзвін барабанів кунду. Найбільше мене вразили чоловіки з долини Асаро у важких глиняних масках, які рухаються повільно й моторошно, а діти навколо верещать від захвату.\n\nКвиток для іноземців у рази дорожчий, ніж для місцевих, зате пускають майже за лаштунки, де учасники фарбуються. Ніхто не проти фото, але спитати дозволу треба обов'язково, і часто потім просять показати кадр на екрані. Я показав разів двісті.\n\nЇв муму: свинина, батат і зелень, запечені в ямі з розпеченим камінням. Смачно, ситно, і ділилися зі мною щедро, хоч я був чужинцем із дивним акцентом. Люди тут привітні, просто країна складна для самостійних мандрівок.\n\nЧесний мінус: ціни і погода. Щодня після обіду йде злива, а гроші тануть швидше, ніж фарба на обличчях танцюристів. Десять днів коштували мені як місяць в Азії. Але такого я не бачив ніде.",
+        "en": "Papua New Guinea turned out to be a country where my budget experience doesn't work at all. There are no hostels, hitchhiking is not advised, and the flight from Port Moresby to Mount Hagen cost about 200 euros. The cheapest guesthouse came to 60 euros a night, and the owner warned me straight away: don't walk in the evening, he would provide a driver himself. My 40-litre backpack drew genuine laughter here, because everyone around carried their things in woven bilum bags hanging from the forehead.\n\nWhat it was all for: the annual cultural show in mid-August. Dozens of communities from all over the highlands gather on a field outside town, and each comes out in its own dress. Bird-of-paradise feathers, faces painted yellow and red, shell necklaces, the beat of kundu drums. What struck me most were the men from the Asaro valley in heavy clay masks, moving slowly and eerily while the children around them squeal with delight.\n\nThe ticket for foreigners is many times more expensive than for locals, but you are let almost backstage, where the performers paint themselves. Nobody minds photos, but you must ask permission, and often they then ask to see the shot on the screen. I showed it about two hundred times.\n\nI ate mumu: pork, sweet potato and greens baked in a pit of hot stones. Tasty and filling, and people shared it generously with me even though I was a stranger with an odd accent. People here are friendly; it's just a difficult country to travel independently.\n\nAn honest downside: prices and weather. Every afternoon a downpour comes, and money melts faster than the paint on the dancers' faces. Ten days cost me as much as a month in Asia. But I have never seen anything like it."
+      },
+      "country": { "code": "PG", "uk": "Папуа Нова Гвінея", "en": "Papua New Guinea", "es": "Papúa Nueva Guinea" },
+      "region": { "uk": "Західне Нагір'я", "en": "Western Highlands", "es": "Tierras Altas Occidentales" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 10,
+      "tripType": "solo",
+      "tags": ["festivals", "culture", "backpacking", "photography"],
+      "lat": -5.8570,
+      "lng": 144.2300,
+      "photoQuery": "Mount Hagen"
+    },
+    {
+      "key": "s-3-008",
+      "travellerKey": "t-3-03",
+      "category": "Америка",
+      "title": { "uk": "Канада: старий Квебек, місто за мурами", "en": "Canada: Old Quebec, a City Behind Walls" },
+      "article": {
+        "uk": "Квебек мене цікавив як урок історії під відкритим небом. Це єдине місто Північної Америки на північ від Мексики, яке зберегло свої фортечні мури, і з 1985 року старе місто внесене до списку ЮНЕСКО. Заснував його Самюель де Шамплен у 1608 році, а на Полях Авраама у 1759 році відбулася битва, після якої Нова Франція перейшла до британців. Я десятки разів розповідала про це учням, а тепер стояла на тій самій траві.\n\nЇздили ми з подругою Ніною, теж учителькою, на шість днів у жовтні. Кленові ліси вже горіли червоним, а повітря було свіже, як перший урок у вересні. Жили не всередині мурів, де готелі дуже дорогі, а в кварталі Сен-Рок, звідки до старого міста двадцять хвилин неквапом.\n\nВулиці тут круті, тому Нижнє і Верхнє місто з'єднує фунікулер, квиток близько 4 євро. Для наших колін це було спасіння. Вулиця Пті-Шамплен з крамничками і стінописом на фасадах чарівна, а Музей цивілізації вартий щонайменше пів дня, там чудова експозиція про перші народи цих земель. Готель Шато-Фронтенак ми оглянули ззовні і зайшли на каву, щоб відчути атмосферу.\n\nНаша шкільна французька несподівано знадобилася, хоча місцевий акцент спершу збиває. Скуштували путін, картоплю фрі з сиром і підливою, і кленовий сироп, застиглий на снігу. Ще з'їздили до водоспаду Монморансі, він вищий за Ніагару, і там є підвісний місток просто над потоком.\n\nНевеликий мінус: зміну варти в Цитаделі показують лише влітку, ми не встигли. І ціни в ресторанах відчутні, обід на двох виходив понад 50 євро.",
+        "en": "Quebec interested me as a history lesson in the open air. It is the only city in North America north of Mexico that has kept its fortified walls, and since 1985 the old town has been on the UNESCO list. It was founded by Samuel de Champlain in 1608, and on the Plains of Abraham in 1759 a battle was fought after which New France passed to the British. I told my pupils about it dozens of times, and now I was standing on the same grass.\n\nI went with my friend Nina, also a teacher, for six days in October. The maple woods were already burning red, and the air was as fresh as the first lesson in September. We stayed not inside the walls, where hotels are very expensive, but in the Saint-Roch district, twenty unhurried minutes from the old town.\n\nThe streets here are steep, so the Lower and Upper Town are linked by a funicular, a ticket is about 4 euros. For our knees it was a salvation. Rue du Petit-Champlain with its little shops and murals on the facades is charming, and the Museum of Civilization is worth at least half a day, with an excellent exhibition about the First Nations of these lands. We admired the Château Frontenac hotel from outside and went in for a coffee to feel the atmosphere.\n\nOur school French unexpectedly came in handy, although the local accent throws you at first. We tried poutine, fries with cheese curds and gravy, and maple syrup set on snow. We also went out to Montmorency Falls, which is higher than Niagara and has a suspension bridge right above the stream.\n\nA small downside: the changing of the guard at the Citadel is only held in summer, and we missed it. Restaurant prices are noticeable too, lunch for two came to over 50 euros."
+      },
+      "country": { "code": "CA", "uk": "Канада", "en": "Canada", "es": "Canadá" },
+      "region": { "uk": "Квебек", "en": "Quebec", "es": "Quebec" },
+      "seasons": ["autumn"],
+      "budget": "medium",
+      "durationDays": 6,
+      "tripType": "friends",
+      "tags": ["history", "architecture", "city-break", "museums"],
+      "lat": 46.8118,
+      "lng": -71.2050,
+      "photoQuery": "Château Frontenac"
+    },
+    {
+      "key": "s-3-009",
+      "travellerKey": "t-3-03",
+      "category": "Америка",
+      "title": { "uk": "Мексика: Чичен-Іца на світанку", "en": "Mexico: Chichén Itzá at Opening Time" },
+      "article": {
+        "uk": "На Юкатан ми полетіли з чоловіком Миколою в січні, коли спека ще помірна. Із Канкуна автобусом за три години доїхали до Вальядоліда, тихого колоніального містечка з жовтими фасадами, і саме там оселилися. Звідти до Чичен-Іци менше години, і це дозволило нам бути біля входу до відкриття о восьмій, задовго до великих автобусів з курортів.\n\nПерша година в порожньому місті майя варта всього. Піраміда Кукулькана, яку іспанці назвали Ель-Кастільйо, має по 91 сходинці з кожного боку, а разом із верхньою платформою виходить 365, як днів у році. У дні рівнодення тінь на гранях складається в змія, що сповзає донизу. Піднятися нагору вже давно не можна, і я вважаю це правильним. Наш гід плеснув у долоні перед пірамідою, і луна повернулася звуком, схожим на крик священного птаха кетцаля.\n\nНайбільше мене вразило поле для гри в м'яч, найбільше в Мезоамериці. Якщо стати на одному кінці і говорити звичайним голосом, тебе чути на іншому. А на рельєфах уздовж стін зображено, чим закінчувалася гра для деяких гравців, тож учням я про це розповідала обережніше.\n\nКвитки складаються з двох частин, федеральної і штатної, разом близько 30 євро на людину. Гід коштує окремо, але без нього половина символів залишиться німою. Після руїн ми охолоджувалися в сеноті Ік-Кіль, природному колодязі з ліанами до самої води.\n\nМінус: до полудня спека сягає 34 градусів, а продавці сувенірів невтомно свистять у глиняні свищики, що імітують ревіння ягуара. Дев'ять днів на Юкатані минули неквапливо і змістовно.",
+        "en": "My husband Mykola and I flew to Yucatán in January, when the heat is still moderate. From Cancún a three-hour bus took us to Valladolid, a quiet colonial town with yellow facades, and that is where we stayed. From there Chichén Itzá is less than an hour away, which let us be at the gate for the eight o'clock opening, long before the big buses from the resorts.\n\nThe first hour in an empty Maya city is worth everything. The Pyramid of Kukulcán, which the Spaniards called El Castillo, has 91 steps on each side, and together with the top platform that makes 365, like the days of the year. On the equinoxes the shadow on its edges forms a serpent sliding down. Climbing to the top has not been allowed for a long time, and I think that is right. Our guide clapped his hands in front of the pyramid, and the echo came back as a sound resembling the cry of the sacred quetzal bird.\n\nWhat impressed me most was the ball court, the largest in Mesoamerica. If you stand at one end and speak in a normal voice, you can be heard at the other. The reliefs along the walls show how the game ended for some players, so I told my pupils about it more carefully.\n\nTickets come in two parts, federal and state, about 30 euros per person in total. A guide costs extra, but without one half of the symbols stay silent. After the ruins we cooled off in the Ik Kil cenote, a natural well with vines hanging down to the water.\n\nThe downside: by noon the heat reaches 34 degrees, and souvenir sellers tirelessly blow clay whistles that imitate a jaguar's roar. Nine days in Yucatán passed unhurriedly and meaningfully."
+      },
+      "country": { "code": "MX", "uk": "Мексика", "en": "Mexico", "es": "México" },
+      "region": { "uk": "Юкатан", "en": "Yucatán", "es": "Yucatán" },
+      "seasons": ["winter"],
+      "budget": "medium",
+      "durationDays": 9,
+      "tripType": "couple",
+      "tags": ["history", "culture", "architecture"],
+      "lat": 20.6843,
+      "lng": -88.5678,
+      "photoQuery": "Chichen Itza"
+    },
+    {
+      "key": "s-3-010",
+      "travellerKey": "t-3-03",
+      "category": "Америка",
+      "title": { "uk": "Перу: Мачу-Пікчу, мрія вчительки історії", "en": "Peru: Machu Picchu, a History Teacher's Dream" },
+      "article": {
+        "uk": "Про Мачу-Пікчу я мріяла з того часу, як уперше показала учням світлину в підручнику. Поїхала сама, з невеликою організованою групою, у травні, коли сезон дощів уже минув. Із Ліми летіли до Куско, але гід порадив одразу спуститися у Священну долину: там висота близько 2800 метрів, а не 3400, як у Куско, і організм звикає м'якше. Для людини мого віку це дуже слушна порада.\n\nДо підніжжя гори веде лише залізниця. Потяг з Ольянтайтамбо до Агуас-Кальєнтес їде півтори години вздовж річки Урубамби, вікна заходять навіть на дах вагона, і ти бачиш, як скелі піднімаються все вище. Квиток в один бік коштував близько 70 євро. Звідти автобус за двадцять п'ять хвилин серпантином підвозить до входу.\n\nКвитки до самого міста продають за маршрутами і на певну годину, кількість обмежена, тож купувати треба за кілька місяців. Без гіда не пускають, і це на краще. Наш Хуан пояснив, що місто збудували в середині XV століття за правителя Пачакутека, а широкому світу його показав Хайрам Бінгем у 1911 році. Найбільше я дивилася на кладку: величезні камені припасовані без жодного розчину так, що між ними не просунеш лезо ножа.\n\nНа терасах паслися лами, туман то закривав, то відкривав гору Уайна-Пікчу, і я стояла з відчуттям, що урок нарешті завершено. Ще два дні ми провели в Куско, де собор стоїть на інкських фундаментах.\n\nМінус для старших мандрівників: сходинки круті й без поручнів, а натовпи до обіду великі. Беріть зручне взуття, воду і не поспішайте.",
+        "en": "I had dreamed of Machu Picchu ever since I first showed my pupils the photograph in the textbook. I went alone with a small organised group in May, when the rainy season is over. We flew from Lima to Cusco, but the guide advised going straight down to the Sacred Valley: the altitude there is about 2800 metres rather than the 3400 of Cusco, and the body adapts more gently. For a person of my age that is very sound advice.\n\nOnly a railway leads to the foot of the mountain. The train from Ollantaytambo to Aguas Calientes runs for an hour and a half along the Urubamba river, the windows reach up into the roof of the carriage, and you watch the cliffs rise higher and higher. A one-way ticket cost about 70 euros. From there a bus climbs the switchbacks to the entrance in twenty-five minutes.\n\nTickets to the citadel itself are sold by circuit and for a set hour, numbers are limited, so you need to buy them several months ahead. You are not admitted without a guide, and that is for the best. Our Juan explained that the city was built in the mid-fifteenth century under the ruler Pachacuti, and that Hiram Bingham showed it to the wider world in 1911. I looked longest at the masonry: huge stones fitted together without any mortar so tightly you cannot slip a knife blade between them.\n\nLlamas grazed on the terraces, mist kept covering and uncovering Huayna Picchu, and I stood there feeling that the lesson was finally complete. We spent two more days in Cusco, where the cathedral stands on Inca foundations.\n\nA downside for older travellers: the steps are steep and have no handrails, and the crowds before lunch are large. Bring comfortable shoes and water, and don't hurry."
+      },
+      "country": { "code": "PE", "uk": "Перу", "en": "Peru", "es": "Perú" },
+      "region": { "uk": "Куско", "en": "Cusco", "es": "Cusco" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 8,
+      "tripType": "solo",
+      "tags": ["history", "hiking", "culture", "train"],
+      "lat": -13.1631,
+      "lng": -72.5450,
+      "photoQuery": "Machu Picchu"
+    }
+  ]
+}

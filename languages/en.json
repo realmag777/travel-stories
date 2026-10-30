@@ -1,0 +1,119 @@
+{
+  "site": { "name": "Podorozhnyky" },
+  "lang": { "name": "English" },
+  "nav": {
+    "homeAria": "Home page", "publish": "Publish a story", "openMenu": "Open menu", "closeMenu": "Close menu",
+    "main": "Main menu", "footer": "Footer navigation", "login": "Log in", "register": "Sign up",
+    "home": "Home", "stories": "Stories", "travellers": "Travellers", "saved": "Saved", "map": "Story map"
+  },
+  "footer": { "copyright": "© {year} Podorozhnyky. All rights reserved.", "copyrightShort": "© {year} Podorozhnyky", "language": "Site language" },
+  "card": {
+    "coverAlt": "Cover of the story {title}", "noCategory": "No category", "authorAlt": "Photo of the author - {name}",
+    "saves": "Times saved", "view": "Read the story", "save": "Save the story", "unsave": "Remove from saved"
+  },
+  "home": {
+    "heroTitle1": "Discover the world", "heroTitle2": "of travel", "heroTitle3": "with us!",
+    "heroText1": "Join our community of travellers, where you can share",
+    "heroText2": "your stories and get inspired for new adventures. Discover new places and find like-minded people!",
+    "join": "Join us",
+    "aboutTitle": "A project made for people who live to travel",
+    "aboutText": "We believe every journey is a unique story worth sharing. Our platform brings together people who love discovering something new. Share your experience, make friends and get inspired for the next adventure with us.",
+    "missionTitle": "Our mission", "missionText": "Bringing people together through a love of adventure and inspiring new discoveries.",
+    "authenticTitle": "Authentic stories", "authenticText": "We value real, unedited impressions from travellers all over the world.",
+    "communityTitle": "Your community", "communityText": "Become part of a community where everyone can be both an author and a reader.",
+    "popular": "Popular stories", "viewAll": "View all", "travellers": "Our Travellers", "viewAllTravellers": "View everyone",
+    "joinAlt": "Night sea with a coral reef underwater and mountains on the horizon",
+    "joinTitle": "Join our community",
+    "joinText": "Join travellers who share their stories and inspire new adventures.",
+    "joinButton": "Sign up"
+  },
+  "travellers": { "title": "Travellers", "viewProfile": "View profile" },
+  "traveller": { "storiesTitle": "Traveller's stories", "empty": "This traveller has no stories yet." },
+  "stories": {
+    "title": "Travellers' Stories", "categories": "Categories", "all": "All stories", "showMore": "Show more",
+    "empty": "No stories match these filters. Try removing some of them.",
+    "found": "{n} {word} found", "storyForms": ["story", "stories", "stories"]
+  },
+  "filters": {
+    "button": "Filters", "sort": "Sort", "view": "View", "list": "List", "map": "Map", "title": "Filters",
+    "reset": "Reset all", "close": "Close filters", "show": "Show {n}", "removeChip": "Remove filter {label}", "clearAll": "Clear all",
+    "country": "Country", "region": "Region", "season": "Season", "budget": "Budget", "trip": "Trip type", "days": "Duration", "tags": "Tags",
+    "sort_new": "Newest first", "sort_popular": "Most popular", "sort_duration-asc": "Shortest trips", "sort_duration-desc": "Longest trips"
+  },
+  "map": { "title": "Story map", "searchInView": "Search in the visible area", "area": "Map area", "visibleArea": "Visible map area" },
+  "search": {
+    "label": "Search in plain words", "placeholder": "For example: where to go in May with kids on a budget",
+    "clear": "Clear search", "submit": "Search", "examplesLabel": "Try:",
+    "examples": ["where to go in May with kids on a budget", "mountains in winter with friends", "wine and food in Georgia", "islands for two in summer"]
+  },
+  "story": {
+    "author": "Author", "published": "Published", "coverAlt": "Cover of the story {title}", "photo": "Photo",
+    "viaCommons": "Wikimedia Commons", "notTranslated": "The translation of this story is not ready yet — showing the Ukrainian original.",
+    "facts": "Trip details", "mapAria": "Map with the trip location", "saveTitle": "Save this story",
+    "saveText": "It will be available in your profile under saved", "save": "Save", "saved": "Saved ✓", "days": "{n} days"
+  },
+  "travel": {
+    "title": "Where to stay / How to get there", "stay": "Where to stay", "go": "How to get there", "booking": "Booking.com",
+    "hotelsMap": "Hotels on the map", "flights": "Flights", "trains": "Trains & buses", "directions": "Directions", "things": "Things to do",
+    "hint": "Searching for: {place}. Links open on partner websites."
+  },
+  "booking": {
+    "badge": "Takes bookings", "title": "Book", "intro": "{name} offers calls and guided walks. Pick a service and a convenient time.",
+    "stepService": "Choose a service", "stepSlot": "Choose a date and time", "stepForm": "Your contacts",
+    "kind_call": "Video call", "kind_tour": "Guided walk", "minutes": "{n} min", "needJs": "Enable JavaScript to pick a time.",
+    "pickSlot": "Pick a date and time in the calendar", "name": "Name", "email": "E-mail", "message": "Message (optional)",
+    "submit": "Book", "noPayment": "No payment needed: the traveller confirms the booking by e-mail.",
+    "mailSubject": "Your booking with {name} has been received",
+    "mailBody": "Hello {name}!\n\nWe have received your booking: {service} with {traveller}, {day} at {time} (Kyiv time).\nStatus: new. We will e-mail you as soon as the traveller confirms it.\n\nPodorozhnyky+",
+    "mail_confirmed_subject": "Booking confirmed",
+    "mail_confirmed_body": "Hello {name}!\n\nYour booking is confirmed: {service} with {traveller}, {day} at {time} (Kyiv time).\n\nPodorozhnyky+",
+    "mail_cancelled_subject": "Booking cancelled",
+    "mail_cancelled_body": "Hello {name}.\n\nUnfortunately the booking {service} with {traveller} on {day} at {time} has been cancelled. Please pick another time on the site.\n\nPodorozhnyky+"
+  },
+  "auth": {
+    "loginTitle": "Log in", "loginSubtitle": "Welcome back to the travellers' community!",
+    "registerTitle": "Sign up", "registerSubtitle": "Glad to see you in the travellers' community!"
+  },
+  "editorial": {
+    "title": "Stories are published by the editors",
+    "text": "We removed sign-up: you don't need an account to read, save stories or book guides. Want to share a trip? Send it to the editors.",
+    "point1": "Saved stories live in your browser — no password needed.",
+    "point2": "The editors proofread the text, pick freely licensed photos and publish it under your name.",
+    "point3": "Booking calls and guided walks works without an account — an e-mail is enough.",
+    "mailSubject": "A story for Podorozhnyky", "write": "Send a story", "read": "Read stories"
+  },
+  "create": { "title": "Publish a story", "subtitle": "New stories come through the editors — that keeps the quality and the photos honest." },
+  "saved": {
+    "title": "Saved stories", "text": "Stories you saved on this device.",
+    "empty": "You haven't saved anything yet. Tap the bookmark on a story card and it will show up here.", "browse": "Browse stories"
+  },
+  "errors": {
+    "404Title": "Page not found", "404Text": "The story may have been removed or the link is outdated. Start from the home page or the catalogue.",
+    "500Title": "Something went wrong", "500Text": "We already know about the problem. Please refresh the page in a minute.",
+    "home": "Home page", "stories": "Browse stories"
+  },
+  "common": { "loading": "Loading" },
+  "seo": {
+    "homeTitle": "Podorozhnyky — travel stories, a map and guide bookings",
+    "homeDescription": "Real stories from travellers worldwide: filters by season, budget and trip type, a route map, plain-language search and guide bookings.",
+    "storiesTitle": "Travellers' stories", "storiesDescription": "{n} travel stories: filter by country, season, budget, duration and trip type.",
+    "mapTitle": "Travel story map", "mapDescription": "Every story on a world map with filters and search in the visible area.",
+    "createTitle": "Publish a story — Podorozhnyky", "savedTitle": "Saved stories — Podorozhnyky",
+    "travellersTitle": "Travellers — Podorozhnyky", "travellersDescription": "The authors of Podorozhnyky: profiles, routes and calls with people who have been there.",
+    "travellerSuffix": "Podorozhnyky traveller", "loginTitle": "Log in — Podorozhnyky", "registerTitle": "Sign up — Podorozhnyky"
+  },
+  "client": {
+    "close": "Close", "network": "No connection to the server. Check your internet.", "requestFailed": "The request failed. Please try again.",
+    "tooMany": "Too many requests — try again in a minute.", "savedToast": "Story saved", "unsaved": "Story removed from saved",
+    "searchApplied": "Filters picked from your request: {n} stories", "searchNothing": "No filters recognised — showing all stories",
+    "map": { "open": "Read the story", "count": "On the map: {n}" },
+    "validation": { "required": "This field is required", "min": "At least {min} characters", "max": "At most {max} characters", "email": "Enter a valid e-mail", "invalid": "Invalid value" },
+    "booking": {
+      "weekdays": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"], "prevMonth": "Previous month", "nextMonth": "Next month",
+      "times": "Free times", "noSlots": "No free slots yet — check back later.", "pickDay": "Pick a day with free time.",
+      "tz": "Times are in Kyiv time.", "summary": "{service} ({price}) · {day}, {time}", "pickSlotShort": "Pick a date and time in the calendar",
+      "doneTitle": "Booking sent!", "doneText": "{day}. Status: new — we sent you a receipt e-mail and the traveller will reply soon.",
+      "doneToast": "Booking created", "taken": "This time was just booked. Please choose another slot.", "loadFailed": "Could not load the schedule."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{% extends "admin/layout.njk" %}
+{% from "admin/macros.njk" import field %}
+{% block title %}Налаштування{% endblock %}
+{% block content %}
+<header class="adm-head"><div><h1 class="adm-head__title">Налаштування</h1><p class="adm-head__sub">Значення з цієї сторінки мають пріоритет над змінними .env.</p></div></header>
+<form class="adm-form adm-form--single" method="post" action="/admin/settings" data-plain-form>
+  <input type="hidden" name="_csrf" value="{{ csrf }}">
+  <section class="adm-card">
+    <h2 class="adm-card__title">Партнерські ID («Де зупинитися / Як дістатися»)</h2>
+    <p class="field__hint">Порожні поля — звичайні пошукові посилання без партнерських параметрів.</p>
+    <div class="adm-row adm-row--3">
+      {{ field('bookingAid', 'Booking.com aid', s.affiliate.bookingAid) }}
+      {{ field('skyscannerAssociateId', 'Skyscanner associate id', s.affiliate.skyscannerAssociateId) }}
+      {{ field('tripadvisorPartnerId', 'Tripadvisor partner id', s.affiliate.tripadvisorPartnerId) }}
+    </div>
+  </section>
+  <section class="adm-card">
+    <h2 class="adm-card__title">LLM — пошук звичайною мовою та переклади</h2>
+    <p class="field__hint">Без ключа працює вбудований розбірник на правилах{% if env.llm %}; у .env вже задано LLM_PROVIDER{% endif %}.</p>
+    <div class="adm-row">
+      <div class="field"><label class="field__label" for="llmProvider">Провайдер</label>
+        <select class="field__select" id="llmProvider" name="llmProvider"><option value="">— правила (без LLM) —</option><option value="anthropic"{% if s.llm.provider == 'anthropic' %} selected{% endif %}>anthropic</option><option value="openai-compatible"{% if s.llm.provider == 'openai-compatible' %} selected{% endif %}>openai-compatible</option></select><span class="field__error"></span></div>
+      {{ field('llmModel', 'Модель', s.llm.model) }}
+    </div>
+    <div class="adm-row">
+      <div class="field"><label class="field__label" for="llmApiKey">API-ключ</label><input class="field__input" id="llmApiKey" name="llmApiKey" type="password" autocomplete="off" placeholder="{{ '•••••••• (збережено)' if s.llm.apiKey else '' }}"><span class="field__hint">Залиште порожнім, щоб не змінювати.</span></div>
+      {{ field('llmBaseUrl', 'Base URL (для openai-compatible)', s.llm.baseUrl) }}
+    </div>
+  </section>
+  <section class="adm-card">
+    <h2 class="adm-card__title">SMTP — листи про бронювання</h2>
+    <p class="field__hint">Без SMTP листи пишуться в лог контейнера (docker compose logs app).</p>
+    <div class="adm-row adm-row--3">{{ field('smtpHost', 'Хост', s.smtp.host) }}{{ field('smtpPort', 'Порт', s.smtp.port, { type: 'number' }) }}{{ field('smtpUser', 'Користувач', s.smtp.user) }}</div>
+    <div class="adm-row adm-row--3">
+      <div class="field"><label class="field__label" for="smtpPass">Пароль</label><input class="field__input" id="smtpPass" name="smtpPass" type="password" autocomplete="off" placeholder="{{ '•••••••• (збережено)' if s.smtp.pass else '' }}"></div>
+      {{ field('smtpFrom', 'Від кого', s.smtp.from) }}{{ field('smtpNotify', 'Сповіщати адміністратора на', s.smtp.notify) }}
+    </div>
+  </section>
+  <div><button class="action" type="submit">Зберегти налаштування</button></div>
+</form>
+
+<section class="adm-card adm-card--danger">
+  <h2 class="adm-card__title">Демо-контент</h2>
+  <p>Зараз у базі <b>{{ demoStories }}</b> демо-історій і <b>{{ demoUsers }}</b> демо-мандрівників (позначка isDemo). Імпортовані з оригіналу записи та створені вручну не зачіпаються.</p>
+  <form method="post" action="/admin/demo/delete" data-demo-delete>
+    <input type="hidden" name="_csrf" value="{{ csrf }}">
+    <div class="adm-row">
+      <div class="field"><label class="field__label" for="confirm">Введіть DELETE для підтвердження</label><input class="field__input" id="confirm" name="confirm" autocomplete="off"></div>
+      <div><button class="action adm-danger-btn" type="submit"{% if not demoStories and not demoUsers %} disabled{% endif %}>Видалити весь демо-контент</button></div>
+    </div>
+  </form>
+</section>
+
+<section class="adm-card">
+  <h2 class="adm-card__title">MCP-сервер</h2>
+  <p>Endpoint: <code>{{ mcpUrl }}</code> (JSON-RPC 2.0 через POST). Авторизація: заголовок <code>Authorization: Bearer &lt;MCP_TOKEN з .env&gt;</code>. Інструменти: пошук і CRUD історій, мандрівників і категорій, бронювання, статистика.</p>
+</section>
+{% endblock %}

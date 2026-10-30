@@ -1,0 +1,119 @@
+{
+  "site": { "name": "Podorozhnyky" },
+  "lang": { "name": "Español" },
+  "nav": {
+    "homeAria": "Página de inicio", "publish": "Publicar una historia", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú",
+    "main": "Menú principal", "footer": "Navegación del pie", "login": "Entrar", "register": "Registrarse",
+    "home": "Inicio", "stories": "Historias", "travellers": "Viajeros", "saved": "Guardadas", "map": "Mapa de historias"
+  },
+  "footer": { "copyright": "© {year} Podorozhnyky. Todos los derechos reservados.", "copyrightShort": "© {year} Podorozhnyky", "language": "Idioma del sitio" },
+  "card": {
+    "coverAlt": "Portada de la historia {title}", "noCategory": "Sin categoría", "authorAlt": "Foto del autor - {name}",
+    "saves": "Veces guardada", "view": "Leer la historia", "save": "Guardar la historia", "unsave": "Quitar de guardadas"
+  },
+  "home": {
+    "heroTitle1": "Descubre el mundo", "heroTitle2": "de los viajes", "heroTitle3": "con nosotros",
+    "heroText1": "Únete a nuestra comunidad de viajeros, donde puedes compartir",
+    "heroText2": "tus historias e inspirarte para nuevas aventuras. ¡Descubre lugares nuevos y encuentra gente afín!",
+    "join": "Unirse",
+    "aboutTitle": "Un proyecto para quienes viven para viajar",
+    "aboutText": "Creemos que cada viaje es una historia única que merece compartirse. Nuestra plataforma une a personas enamoradas de descubrir. Comparte tu experiencia, haz amigos e inspírate para la próxima aventura con nosotros.",
+    "missionTitle": "Nuestra misión", "missionText": "Unir a las personas a través del amor por la aventura e inspirar nuevos descubrimientos.",
+    "authenticTitle": "Historias auténticas", "authenticText": "Valoramos impresiones reales y sin editar de viajeros de todo el mundo.",
+    "communityTitle": "Tu comunidad", "communityText": "Forma parte de una comunidad donde todos pueden ser autores y lectores.",
+    "popular": "Historias populares", "viewAll": "Ver todas", "travellers": "Nuestros Viajeros", "viewAllTravellers": "Ver a todos",
+    "joinAlt": "Mar nocturno con un arrecife de coral bajo el agua y montañas en el horizonte",
+    "joinTitle": "Únete a nuestra comunidad",
+    "joinText": "Súmate a los viajeros que comparten sus historias e inspiran nuevas aventuras.",
+    "joinButton": "Registrarse"
+  },
+  "travellers": { "title": "Viajeros", "viewProfile": "Ver perfil" },
+  "traveller": { "storiesTitle": "Historias del viajero", "empty": "Este viajero aún no tiene historias." },
+  "stories": {
+    "title": "Historias de Viajeros", "categories": "Categorías", "all": "Todas las historias", "showMore": "Mostrar más",
+    "empty": "No hay historias con estos filtros. Prueba a quitar algunos.",
+    "found": "{n} {word} encontradas", "storyForms": ["historia", "historias", "historias"]
+  },
+  "filters": {
+    "button": "Filtros", "sort": "Orden", "view": "Vista", "list": "Lista", "map": "Mapa", "title": "Filtros",
+    "reset": "Restablecer", "close": "Cerrar filtros", "show": "Mostrar {n}", "removeChip": "Quitar el filtro {label}", "clearAll": "Borrar todo",
+    "country": "País", "region": "Región", "season": "Temporada", "budget": "Presupuesto", "trip": "Tipo de viaje", "days": "Duración", "tags": "Etiquetas",
+    "sort_new": "Más recientes", "sort_popular": "Más populares", "sort_duration-asc": "Viajes más cortos", "sort_duration-desc": "Viajes más largos"
+  },
+  "map": { "title": "Mapa de historias", "searchInView": "Buscar en el área visible", "area": "Área del mapa", "visibleArea": "Área visible del mapa" },
+  "search": {
+    "label": "Búsqueda en lenguaje natural", "placeholder": "Por ejemplo: adónde ir en mayo con niños y barato",
+    "clear": "Borrar búsqueda", "submit": "Buscar", "examplesLabel": "Prueba:",
+    "examples": ["adónde ir en mayo con niños barato", "montañas en invierno con amigos", "vino y gastronomía en Georgia", "islas para dos en verano"]
+  },
+  "story": {
+    "author": "Autor", "published": "Publicado", "coverAlt": "Portada de la historia {title}", "photo": "Foto",
+    "viaCommons": "Wikimedia Commons", "notTranslated": "La traducción de esta historia aún no está lista: se muestra el original en ucraniano.",
+    "facts": "Detalles del viaje", "mapAria": "Mapa con el lugar del viaje", "saveTitle": "Guarda esta historia",
+    "saveText": "Estará disponible en tu perfil, en guardadas", "save": "Guardar", "saved": "Guardada ✓", "days": "{n} días"
+  },
+  "travel": {
+    "title": "Dónde alojarse / Cómo llegar", "stay": "Dónde alojarse", "go": "Cómo llegar", "booking": "Booking.com",
+    "hotelsMap": "Hoteles en el mapa", "flights": "Vuelos", "trains": "Trenes y autobuses", "directions": "Ruta", "things": "Qué ver",
+    "hint": "Búsqueda por destino: {place}. Los enlaces se abren en sitios de socios."
+  },
+  "booking": {
+    "badge": "Acepta reservas", "title": "Reservar", "intro": "{name} ofrece videollamadas y paseos guiados. Elige un servicio y un horario.",
+    "stepService": "Elige un servicio", "stepSlot": "Elige fecha y hora", "stepForm": "Tus datos",
+    "kind_call": "Videollamada", "kind_tour": "Paseo guiado", "minutes": "{n} min", "needJs": "Activa JavaScript para elegir la hora.",
+    "pickSlot": "Elige fecha y hora en el calendario", "name": "Nombre", "email": "Correo", "message": "Mensaje (opcional)",
+    "submit": "Reservar", "noPayment": "Sin pago: el viajero confirmará la reserva por correo.",
+    "mailSubject": "Hemos recibido tu reserva con {name}",
+    "mailBody": "¡Hola, {name}!\n\nHemos recibido tu reserva: {service} con {traveller}, {day} a las {time} (hora de Kyiv).\nEstado: nueva. Te escribiremos en cuanto el viajero la confirme.\n\nPodorozhnyky+",
+    "mail_confirmed_subject": "Reserva confirmada",
+    "mail_confirmed_body": "¡Hola, {name}!\n\nTu reserva está confirmada: {service} con {traveller}, {day} a las {time} (hora de Kyiv).\n\nPodorozhnyky+",
+    "mail_cancelled_subject": "Reserva cancelada",
+    "mail_cancelled_body": "Hola, {name}.\n\nLamentablemente la reserva {service} con {traveller} del {day} a las {time} se ha cancelado. Elige otro horario en el sitio.\n\nPodorozhnyky+"
+  },
+  "auth": {
+    "loginTitle": "Entrar", "loginSubtitle": "¡Bienvenido de nuevo a la comunidad de viajeros!",
+    "registerTitle": "Registro", "registerSubtitle": "¡Nos alegra verte en la comunidad de viajeros!"
+  },
+  "editorial": {
+    "title": "Las historias las publica la redacción",
+    "text": "Quitamos el registro: no necesitas cuenta para leer, guardar historias o reservar guías. ¿Quieres compartir un viaje? Envíalo a la redacción.",
+    "point1": "Las historias guardadas viven en tu navegador, sin contraseña.",
+    "point2": "La redacción corrige el texto, elige fotos con licencia libre y lo publica con tu nombre.",
+    "point3": "Las reservas de videollamadas y paseos funcionan sin cuenta: basta un correo.",
+    "mailSubject": "Una historia para Podorozhnyky", "write": "Enviar una historia", "read": "Leer historias"
+  },
+  "create": { "title": "Publicar una historia", "subtitle": "Las historias nuevas llegan a través de la redacción: así cuidamos la calidad y las fotos." },
+  "saved": {
+    "title": "Historias guardadas", "text": "Historias que guardaste en este dispositivo.",
+    "empty": "Aún no has guardado nada. Pulsa el marcador en una tarjeta y aparecerá aquí.", "browse": "Ver historias"
+  },
+  "errors": {
+    "404Title": "Página no encontrada", "404Text": "Quizá la historia se eliminó o el enlace está obsoleto. Empieza por el inicio o el catálogo.",
+    "500Title": "Algo salió mal", "500Text": "Ya conocemos el problema. Actualiza la página en un minuto.",
+    "home": "Ir al inicio", "stories": "Ver historias"
+  },
+  "common": { "loading": "Cargando" },
+  "seo": {
+    "homeTitle": "Podorozhnyky — historias de viaje, mapa y reservas de guías",
+    "homeDescription": "Historias reales de viajeros de todo el mundo: filtros por temporada, presupuesto y tipo de viaje, mapa, búsqueda en lenguaje natural y reservas de guías.",
+    "storiesTitle": "Historias de viajeros", "storiesDescription": "{n} historias de viaje: filtra por país, temporada, presupuesto, duración y tipo de viaje.",
+    "mapTitle": "Mapa de historias de viaje", "mapDescription": "Todas las historias en un mapa del mundo con filtros y búsqueda en el área visible.",
+    "createTitle": "Publicar una historia — Podorozhnyky", "savedTitle": "Historias guardadas — Podorozhnyky",
+    "travellersTitle": "Viajeros — Podorozhnyky", "travellersDescription": "Los autores de Podorozhnyky: perfiles, rutas y videollamadas con quienes ya estuvieron allí.",
+    "travellerSuffix": "viajero de Podorozhnyky", "loginTitle": "Entrar — Podorozhnyky", "registerTitle": "Registro — Podorozhnyky"
+  },
+  "client": {
+    "close": "Cerrar", "network": "Sin conexión con el servidor. Revisa tu internet.", "requestFailed": "La solicitud falló. Inténtalo de nuevo.",
+    "tooMany": "Demasiadas solicitudes: inténtalo en un minuto.", "savedToast": "Historia guardada", "unsaved": "Historia quitada de guardadas",
+    "searchApplied": "Filtros elegidos según tu búsqueda: {n} historias", "searchNothing": "No reconocimos filtros: mostramos todas las historias",
+    "map": { "open": "Leer la historia", "count": "En el mapa: {n}" },
+    "validation": { "required": "Este campo es obligatorio", "min": "Mínimo {min} caracteres", "max": "Máximo {max} caracteres", "email": "Introduce un correo válido", "invalid": "Valor no válido" },
+    "booking": {
+      "weekdays": ["Lu", "Ma", "Mi", "Ju", "Vi", "Sá", "Do"], "prevMonth": "Mes anterior", "nextMonth": "Mes siguiente",
+      "times": "Horas libres", "noSlots": "Aún no hay horarios libres; vuelve más tarde.", "pickDay": "Elige un día con horas libres.",
+      "tz": "Horario de Kyiv.", "summary": "{service} ({price}) · {day}, {time}", "pickSlotShort": "Elige fecha y hora en el calendario",
+      "doneTitle": "¡Reserva enviada!", "doneText": "{day}. Estado: nueva; te enviamos un correo de recepción y el viajero responderá pronto.",
+      "doneToast": "Reserva creada", "taken": "Esa hora se acaba de reservar. Elige otra.", "loadFailed": "No se pudo cargar el horario."
+    }
+  }
+}

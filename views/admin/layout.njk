@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="csrf-token" content="{{ csrf }}">
+  <title>{% block title %}Адмінка{% endblock %} — Подорожники+</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="{{ asset('admin.css') }}">
+  {% block head %}{% endblock %}
+</head>
+<body class="adm">
+  <div class="loader-bar" id="loader-bar" aria-hidden="true"></div>
+  {% if adminUser %}
+  <aside class="adm-side" data-adm-side>
+    <a class="adm-side__brand" href="/admin"><img src="/images/logo.svg" alt="" width="132" height="30"><span class="adm-side__plus">admin</span></a>
+    <nav class="adm-nav" aria-label="Розділи">
+      {% set items = [['dashboard','/admin','Дашборд','icon-wand-stars'],['stories','/admin/stories','Історії','icon-edit'],['travellers','/admin/travellers','Мандрівники','icon-avatar'],['bookings','/admin/bookings','Бронювання','icon-calendar'],['dictionaries','/admin/dictionaries','Категорії та словники','icon-tune'],['settings','/admin/settings','Налаштування','icon-luggage']] %}
+      {% for it in items %}
+      <a class="adm-nav__link{% if section == it[0] %} adm-nav__link--active{% endif %}" href="{{ it[1] }}"{% if section == it[0] %} aria-current="page"{% endif %}>
+        <svg width="20" height="20" aria-hidden="true"><use href="/sprite.svg#{{ it[3] }}"></use></svg>{{ it[2] }}</a>
+      {% endfor %}
+    </nav>
+    <div class="adm-side__foot">
+      <a class="adm-nav__link" href="/" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-arrow-forward"></use></svg>Відкрити сайт</a>
+      <a class="adm-nav__link" href="/docs" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-list"></use></svg>API /docs</a>
+      <form method="post" action="/admin/logout"><input type="hidden" name="_csrf" value="{{ csrf }}">
+        <button class="adm-nav__link adm-nav__link--btn" type="submit"><svg width="20" height="20" aria-hidden="true"><use href="/sprite.svg#icon-logout"></use></svg>Вийти ({{ adminUser.user }})</button>
+      </form>
+    </div>
+  </aside>
+  <div class="adm-top">
+    <button class="adm-top__burger" type="button" data-adm-burger aria-label="Меню"><svg width="24" height="24" aria-hidden="true"><use href="/sprite.svg#icon-menu"></use></svg></button>
+    <a href="/admin"><img src="/images/logo.svg" alt="Подорожники+" width="120" height="28"></a>
+  </div>
+  {% endif %}
+  <main class="adm-main{% if not adminUser %} adm-main--bare{% endif %}">
+    {% block content %}{% endblock %}
+  </main>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <div class="modal" data-modal hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" data-modal-close aria-label="Закрити"><svg width="24" height="24" aria-hidden="true"><use href="/sprite.svg#icon-close"></use></svg></button>
+      <h2 class="modal__title" id="modal-title" data-modal-title></h2>
+      <p class="modal__text" data-modal-text></p>
+      <div class="modal__buttons">
+        <button class="modal__cancel" type="button" data-modal-close>Скасувати</button>
+        <button class="modal__confirm" type="button" data-modal-confirm>Підтвердити</button>
+      </div>
+    </div>
+  </div>
+  <script id="i18n" type="application/json">{"close":"Закрити","network":"Немає зв'язку з сервером","requestFailed":"Помилка запиту","tooMany":"Забагато запитів, спробуйте пізніше"}</script>
+  {% if flash %}<script id="flash" type="application/json">{{ flash | dump | safe }}</script>{% endif %}
+  <script src="{{ asset('admin.js') }}" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

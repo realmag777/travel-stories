@@ -1,0 +1,10 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="auth">
+  <div class="auth__container">
+    <h1 class="auth__title">{{ t('create.title') }}</h1>
+    <p class="auth__subtitle">{{ t('create.subtitle') }}</p>
+    {% include "partials/editorial-notice.njk" %}
+  </div>
+</section>
+{% endblock %}

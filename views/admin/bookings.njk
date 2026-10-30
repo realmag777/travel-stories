@@ -1,0 +1,12 @@
+{% extends "admin/layout.njk" %}
+{% block title %}Бронювання{% endblock %}
+{% block content %}
+<header class="adm-head"><div><h1 class="adm-head__title">Бронювання</h1><p class="adm-head__sub">Оплати немає: нова бронь чекає на підтвердження. Листи клієнтам ідуть через SMTP або в лог.</p></div></header>
+<nav class="seg" aria-label="Статус">
+  {% for s in [['', 'Усі'], ['new', 'Нові'], ['confirmed', 'Підтверджені'], ['cancelled', 'Скасовані']] %}
+  <a class="seg__link{% if status == s[0] %} seg__link--active{% endif %}" href="/admin/bookings{% if s[0] %}?status={{ s[0] }}{% endif %}">{{ s[1] }}</a>
+  {% endfor %}
+</nav>
+<div class="adm-card adm-card--flush">{% include "admin/bookings-table.njk" %}</div>
+{% set query = 'status=' + status %}{% include "admin/pager.njk" %}
+{% endblock %}

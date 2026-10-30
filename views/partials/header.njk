@@ -1,0 +1,47 @@
+{# Header, markup and states as in the original: transparent over the hero on the home page,
+   burger below 1440px. "Збережені" appears only when the visitor has saved stories. #}
+<div class="header{% if isHome %} header--overlay{% endif %}" data-header>
+  <div class="header__container{% if isHome %} header__container--home{% endif %}{% if isAuth %} header__container--auth{% endif %}" data-header-container>
+    <header class="header__bar">
+      <a class="header__logo" aria-label="{{ t('nav.homeAria') }}" href="{{ url('/') }}">
+        {% if isHome %}
+        <svg width="156" height="40" data-logo-home><use href="/sprite.svg#icon-logo-home" aria-hidden="true"></use></svg>
+        <img src="/images/logo.svg" alt="" width="156" height="40" data-logo-default hidden>
+        {% else %}
+        <img src="/images/logo.svg" alt="{{ t('site.name') }}" width="156" height="40">
+        {% endif %}
+      </a>
+      <div class="header__controls">
+        <div class="header__menu-controls">
+          <div class="header__publish">
+            <a class="btn btn--primary" href="{{ url('/stories/create') }}">{{ t('nav.publish') }}</a>
+          </div>
+          <div>
+            <button type="button" class="btn btn--menu{% if isHome %} btn--home{% endif %}" aria-label="{{ t('nav.openMenu') }}" aria-controls="site-menu" aria-expanded="false" data-burger
+              data-label-open="{{ t('nav.openMenu') }}" data-label-close="{{ t('nav.closeMenu') }}">
+              <svg width="24" height="24" class="btn__icon"><use href="/sprite.svg#icon-menu" aria-hidden="true" data-burger-icon></use></svg>
+            </button>
+          </div>
+        </div>
+        <div class="header__menu" id="site-menu" data-menu>
+          <nav aria-label="{{ t('nav.main') }}">
+            <ul class="nav__list">
+              {% for item in navItems %}
+              <li class="nav__item{% if isHome %} nav__item--home{% endif %}{% if item.current %} nav__item--current{% endif %}"{% if item.savedOnly %} data-saved-nav hidden{% endif %}>
+                <a class="nav__link{% if isHome %} nav__link--home{% endif %}" href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>{{ item.label }}{% if item.savedOnly %} <span data-saved-count></span>{% endif %}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+          <div class="header__auth">
+            <div><a class="btn btn--login{% if isHome %} btn--home{% endif %}" href="{{ url('/auth/login') }}">{{ t('nav.login') }}</a></div>
+            <div><a class="btn btn--register{% if isHome %} btn--home{% endif %}" href="{{ url('/auth/register') }}">{{ t('nav.register') }}</a></div>
+          </div>
+          <div data-extra class="header__langs" aria-label="{{ t('footer.language') }}">
+            {% for l in languageLinks %}<a class="btn btn--secondary" href="{{ l.href }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.current %} aria-current="true"{% endif %}>{{ l.short }}</a>{% endfor %}
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>

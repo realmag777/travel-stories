@@ -1,0 +1,22 @@
+<div class="tbl-wrap">
+<table class="tbl">
+  <thead><tr><th>#</th><th>Клієнт</th><th>Мандрівник</th><th>Послуга</th><th>Коли (Київ)</th><th>Статус</th><th>Створено</th><th></th></tr></thead>
+  <tbody>
+    {% for b in rows %}
+    <tr>
+      <td>{{ b.id }}</td>
+      <td><b>{{ b.name }}</b><br><a href="mailto:{{ b.email }}">{{ b.email }}</a>{% if b.message %}<div class="tbl__msg">{{ b.message }}</div>{% endif %}</td>
+      <td><a href="/admin/travellers/{{ b.user_id }}">{{ b.traveller_name }}</a></td>
+      <td>{{ b.service_title or '—' }}{% if b.price_label %}<br><span class="muted">{{ b.price_label }}</span>{% endif %}</td>
+      <td class="nowrap">{{ b.starts_at | kyiv }}</td>
+      <td><span class="status status--{{ b.status }}">{{ {'new': 'Нова', 'confirmed': 'Підтверджена', 'cancelled': 'Скасована'}[b.status] }}</span></td>
+      <td class="nowrap muted">{{ b.created_at | kyiv }}</td>
+      <td class="nowrap">
+        {% if b.status != 'confirmed' %}<button class="pill pill--ok" data-booking-status="{{ b.id }}" data-status="confirmed">Підтвердити</button>{% endif %}
+        {% if b.status != 'cancelled' %}<button class="pill pill--danger" data-booking-status="{{ b.id }}" data-status="cancelled">Скасувати</button>{% endif %}
+      </td>
+    </tr>
+    {% else %}<tr><td colspan="8" class="adm-empty">Бронювань немає.</td></tr>{% endfor %}
+  </tbody>
+</table>
+</div>

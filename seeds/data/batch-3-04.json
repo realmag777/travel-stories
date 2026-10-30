@@ -1,0 +1,204 @@
+{
+  "stories": [
+    {
+      "key": "s-3-031",
+      "travellerKey": "t-3-10",
+      "category": "Океанія",
+      "title": { "uk": "Улуру: червоне серце Австралії і мухи в подарунок", "en": "Uluru: the Red Heart of Australia, with Flies Included" },
+      "article": {
+        "uk": "Улуру я довго відкладала, бо навіть для австралійки з Аделаїди це далеко. Але коли подруга Мар'яна і її чоловік Остап зі Львова сказали, що без «того великого червоного каменя» Австралія не рахується, ми полетіли в липні. Зима в пустелі ідеальна: вдень близько двадцяти градусів, ясне небо, а вночі майже нуль, тож теплі куртки, які друзі везли з України, нарешті знадобились.\n\nДо аеропорту біля Улуру є прямі рейси з великих міст, але вони дорогі. Можна летіти до Еліс-Спрінгс і їхати 450 кілометрів машиною, тільки не вночі, бо на дорогу виходять кенгуру і верблюди. Так, у нас є дикі верблюди, і це довга історія. Усе житло в курортному селищі Юлара належить одній компанії, тому ціни кусаються: найпростіший номер коштував понад 200 євро. Перепустка до нацпарку на три дні близько 25 євро.\n\nЗ жовтня 2019 року на Улуру не можна підніматися, і це правильно: для народу анангу, корінних власників землі, скеля священна. Натомість ми пройшли стежку навколо підніжжя, близько десяти з половиною кілометрів. Зблизька камінь зовсім не гладкий: печери, хвилясті стіни, давні малюнки, і біля деяких місць таблички просять не фотографувати. Ми слухали рейнджерку-анангу і відчували, що це не просто пейзаж.\n\nНа заході сонця скеля змінює колір від помаранчевого до темно-винного, а наступного ранку ми пішли в Долину вітрів у Ката-Тьюта, кам'яних куполах за сорок кілометрів. Мені там подобається навіть більше, ніж біля Улуру, і людей менше.\n\nЧесний мінус, і я попереджала: мухи. Вони лізуть в очі, ніс і рот. Сітка на капелюх коштує кілька євро в магазині Юлари, і Остап, який спершу сміявся, купив її вже за десять хвилин.",
+        "en": "I put off Uluru for a long time, because even for an Australian from Adelaide it's far. But when my friend Mariana and her husband Ostap from Lviv said Australia doesn't count without 'that big red rock', we flew out in July. Winter in the desert is ideal: around twenty degrees in the day, clear skies, and almost zero at night, so the warm jackets my friends had brought from Ukraine were finally useful.\n\nThere are direct flights to the airport near Uluru from the big cities, but they're expensive. You can fly to Alice Springs and drive 450 kilometres, just not at night, because kangaroos and camels wander onto the road. Yes, we have wild camels, and it's a long story. All the accommodation in the resort village of Yulara belongs to one company, so the prices bite: the simplest room cost over 200 euros. A three-day park pass is about 25 euros.\n\nSince October 2019 you can't climb Uluru, and that's right: for the Anangu people, the traditional owners of the land, the rock is sacred. Instead we walked the base trail around it, about ten and a half kilometres. Up close the rock isn't smooth at all: caves, wavy walls, ancient paintings, and at some places signs ask you not to take photos. We listened to an Anangu ranger and felt that this was not just scenery.\n\nAt sunset the rock changes colour from orange to dark wine, and the next morning we walked the Valley of the Winds at Kata Tjuta, stone domes forty kilometres away. I like it there even more than at Uluru, and there are fewer people.\n\nThe honest downside, and I did warn them: flies. They get in your eyes, nose and mouth. A head net costs a few euros at the Yulara shop, and Ostap, who laughed at first, bought one within ten minutes."
+      },
+      "country": { "code": "AU", "uk": "Австралія", "en": "Australia", "es": "Australia" },
+      "region": { "uk": "Північна територія", "en": "Northern Territory", "es": "Territorio del Norte" },
+      "seasons": ["winter"],
+      "budget": "high",
+      "durationDays": 4,
+      "tripType": "friends",
+      "tags": ["desert", "culture", "hiking", "national-parks"],
+      "lat": -25.3444,
+      "lng": 131.0369,
+      "photoQuery": "Uluru"
+    },
+    {
+      "key": "s-3-032",
+      "travellerKey": "t-3-10",
+      "category": "Океанія",
+      "title": { "uk": "Абель-Тасман: прибережна стежка, каяки і таблиця припливів", "en": "Abel Tasman: the Coast Track, Kayaks and a Tide Table" },
+      "article": {
+        "uk": "Австралійцям не личить хвалити Нову Зеландію, у нас із сусідами давнє дружнє суперництво. Але Абель-Тасман я хвалитиму. Ми з моїм хлопцем Остапом, так, ще одним Остапом, у Львові їх багато, пройшли прибережну стежку в лютому, у розпал новозеландського літа. Близько шістдесяти кілометрів уздовж золотих пляжів і бірюзових заток за п'ять днів.\n\nПочинали в селищі Марахау, за годину машиною від Нельсона. Машину залишили на охоронюваній стоянці, а рюкзаки з наметом понесли самі. Кемпінги й хатини на стежці треба бронювати через сайт Департаменту охорони природи заздалегідь, влітку місця розбирають швидко. Місце в кемпінгу коштувало близько 15 євро на людину за ніч. Якщо не хочете нести все на собі, водні таксі перевозять і людей, і багаж між пляжами.\n\nДругий день ми провели в каяках, і це найкраща частина. Пливли вздовж острова Адель, де на скелях вилежуються морські котики, а один молодий котик проплив просто під моїм човном. Оренда каяка на день із інструктажем близько 70 євро на двох. Вода прозора, як в акваріумі, але холодніша, ніж у нас удома.\n\nГоловна порада: таблиця припливів. На стежці є кілька переходів через лиман, і найбільший, Авароа, можна перейти тільки за дві години до і після відпливу. Ми розрахували час неправильно і дві години сиділи на березі, чекаючи, поки вода спаде. Зате пообідали і поспали.\n\nЧесний мінус: піщані мушки, новозеландська відповідь нашим мухам. Вони кусають на світанку і на заході, свербить тиждень. І на популярних пляжах біля початку стежки людно, справжня тиша починається десь після третього дня.",
+        "en": "It doesn't become an Australian to praise New Zealand; we have a long friendly rivalry with our neighbours. But I will praise Abel Tasman. My boyfriend Ostap, yes, another Ostap, Lviv has plenty of them, and I walked the Coast Track in February, at the height of the New Zealand summer. About sixty kilometres along golden beaches and turquoise bays in five days.\n\nWe started at the village of Marahau, an hour's drive from Nelson. We left the car in a secure car park and carried our packs and tent ourselves. Campsites and huts on the track have to be booked in advance on the Department of Conservation website; in summer places go fast. A campsite cost about 15 euros per person per night. If you don't want to carry everything, water taxis move both people and luggage between beaches.\n\nWe spent the second day in kayaks, and that's the best part. We paddled along Adele Island, where fur seals lounge on the rocks, and one young seal swam right under my boat. Kayak hire for a day with a briefing was about 70 euros for two. The water is as clear as an aquarium, but colder than at home.\n\nThe main tip: the tide table. There are several estuary crossings on the track, and the biggest, Awaroa, can only be crossed within two hours either side of low tide. We got the timing wrong and sat on the shore for two hours waiting for the water to drop. On the bright side, we had lunch and a nap.\n\nThe honest downside: sandflies, New Zealand's answer to our flies. They bite at dawn and dusk, and the itching lasts a week. And the popular beaches near the start of the track are busy; real quiet starts somewhere after the third day."
+      },
+      "country": { "code": "NZ", "uk": "Нова Зеландія", "en": "New Zealand", "es": "Nueva Zelanda" },
+      "region": { "uk": "Тасман", "en": "Tasman", "es": "Tasman" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 5,
+      "tripType": "couple",
+      "tags": ["hiking", "beach", "camping", "national-parks"],
+      "lat": -40.8800,
+      "lng": 173.0000,
+      "photoQuery": "Abel Tasman National Park"
+    },
+    {
+      "key": "s-3-033",
+      "travellerKey": "t-3-11",
+      "category": "Америка",
+      "title": { "uk": "Галапагоси: молоти на Гордон-Рокс і морські леви в масці", "en": "Galápagos: Hammerheads at Gordon Rocks and Sea Lions at My Mask" },
+      "article": {
+        "uk": "Галапагоси були моєю мрією ще з першого курсу біофаку. Я обрала вересень: вода холодніша, близько 20–22 градусів, зате течія Гумбольдта приносить планктон, а за ним і великих тварин. Летіла через Гуаякіль, і вже в аеропорту на острові Балтра заплатила вхідний збір до нацпарку, тепер це близько 185 євро. Плюс окремий транзитний збір в Еквадорі, тож готуйтеся.\n\nЖила в Пуерто-Айорі на острові Санта-Крус і ходила на денні дайв-тури, бо круїз на яхті до островів Дарвін і Вулф коштував більше, ніж я заробляю за пів року. Два занурення на день із човна обходилися близько 200 євро. Головне місце поблизу, Гордон-Рокс, кратер старого вулкана посеред моря. Глибина 18–24 метри, видимість 12–15 метрів, течія така, що ми трималися за каміння руками в рукавичках. І тут вони: зграя акул-молотів, близько двадцяти особин, пливли над нами спокійно, як на параді. Ще бачила орлякових скатів і великих морських черепах.\n\nУ гідрокостюмі 7 мм мені було комфортно, але на глибині трапляється термоклин, і температура падає до шістнадцяти. Інструктор попередив про це заздалегідь, і я вдягла ще й жилет.\n\nНа острові Сан-Крістобаль я занурювалася біля скелі Кікер, а на мілководді до мене підплив молодий морський лев і почав гратися з моєю маскою. Так, я знаю, що торкатися тварин не можна, і я не торкалася. Він сам вирішив. На суші, у високогір'ї Санта-Круса, бродять гігантські черепахи, і вони пасуться просто серед корів на фермах.\n\nЧесний мінус: ціни. Усе завозять з материка, тож навіть вода і фрукти дорожчі вдвічі. А течії на кращих сайтах складні, новачкам туди не можна, тільки після сотні занурень і з досвідом дрейфу.",
+        "en": "The Galápagos had been my dream since my first year of biology. I chose September: the water is colder, around 20 to 22 degrees, but the Humboldt current brings plankton and, after it, the big animals. I flew via Guayaquil, and at the airport on Baltra island I paid the national park entry fee, now about 185 euros. Plus a separate transit fee in Ecuador, so be prepared.\n\nI stayed in Puerto Ayora on Santa Cruz and went on day dive trips, because a liveaboard to Darwin and Wolf islands cost more than I earn in half a year. Two boat dives a day came to about 200 euros. The main site nearby, Gordon Rocks, is the crater of an old volcano in the middle of the sea. Depth 18 to 24 metres, visibility 12 to 15 metres, and a current so strong we held onto the rocks with gloved hands. And there they were: a school of hammerhead sharks, about twenty individuals, swimming calmly above us as if on parade. I also saw eagle rays and big sea turtles.\n\nIn a 7 mm wetsuit I was comfortable, but at depth you hit a thermocline and the temperature drops to sixteen. The instructor warned about it in advance, and I added a vest.\n\nOn San Cristóbal I dived at Kicker Rock, and in the shallows a young sea lion swam up to me and started playing with my mask. Yes, I know you mustn't touch the animals, and I didn't. He decided by himself. On land, in the Santa Cruz highlands, giant tortoises roam and graze right among the cows on the farms.\n\nThe honest downside: prices. Everything is shipped from the mainland, so even water and fruit cost twice as much. And the currents at the best sites are difficult; beginners aren't allowed, only after a hundred dives and with drift experience."
+      },
+      "country": { "code": "EC", "uk": "Еквадор", "en": "Ecuador", "es": "Ecuador" },
+      "region": { "uk": "Галапагоські острови", "en": "Galápagos Islands", "es": "Islas Galápagos" },
+      "seasons": ["autumn"],
+      "budget": "high",
+      "durationDays": 12,
+      "tripType": "solo",
+      "tags": ["diving", "islands", "wildlife", "nature"],
+      "lat": -0.7432,
+      "lng": -90.3134,
+      "photoQuery": "Tortuga Bay"
+    },
+    {
+      "key": "s-3-034",
+      "travellerKey": "t-3-11",
+      "category": "Океанія",
+      "title": { "uk": "Великий Бар'єрний риф: черепахи, губани і чесно про знебарвлення", "en": "The Great Barrier Reef: Turtles, Wrasse and the Truth about Bleaching" },
+      "article": {
+        "uk": "На Великий Бар'єрний риф ми поїхали втрьох із моїми ученицями з дайв-клубу, Ольгою і Яною, у жовтні. Це найкращий місяць: видимість досягає двадцяти метрів і більше, вода близько 25 градусів, а сезон отруйних медуз ще не почався. З листопада по травень біля узбережжя Квінсленду пливати можна тільки в лайкрових костюмах, бо медузи-коробочки і крихітні ірукандджі небезпечні.\n\nБазою був Кернс. Перші два дні ми ходили на денних катерах на зовнішній риф: півтори години в морі, три занурення, обід на борту, близько 200 євро на людину. Глибина 8–18 метрів, я була в костюмі 3 мм. На рифі Норман бачили зелену черепаху, яка спала під коралом і навіть не відкрила ока, і величезного губана-наполеона, якого тут кличуть Воллі. Він підпливає до кожного дайвера і дивиться в маску з виглядом інспектора.\n\nПотім узяли триденний круїз на борту до Ріфів Рібон, далі на північ. Це дорожче, але риф там здоровіший і людей менше. На знаменитій Кодовій ямі нас обступили картопляні окуні завбільшки з мене. Нічне занурення з ліхтарем показало рифових акул на полюванні і креветок з очима, що світяться.\n\nТепер чесно. Значна частина рифу пережила кілька хвиль масового знебарвлення коралів через спеку, і на деяких ділянках біля берега ми бачили білі, мертві колонії. Як біологиня, я дивилася на це з болем. Але є й місця, де корали відновлюються, і їх показують гіди. Користуйтеся кремом, безпечним для рифу, і не стійте на коралах ластами.\n\nЩе один мінус: морська хвороба. На зовнішній риф катер іде по відкритому морю, і Яну заколисало в перший же день. Таблетки приймайте за годину до виходу.",
+        "en": "The three of us, me and my dive-club students Olha and Yana, went to the Great Barrier Reef in October. It's the best month: visibility reaches twenty metres and more, the water is around 25 degrees, and the stinger season hasn't started yet. From November to May off the Queensland coast you can only swim in lycra suits, because box jellyfish and the tiny Irukandji are dangerous.\n\nOur base was Cairns. For the first two days we took day boats to the outer reef: an hour and a half at sea, three dives, lunch on board, about 200 euros each. Depth 8 to 18 metres, I wore a 3 mm suit. At Norman Reef we saw a green turtle sleeping under a coral that didn't even open an eye, and a huge Maori wrasse that the locals call Wally. He swims up to every diver and looks into the mask with the air of an inspector.\n\nThen we took a three-day liveaboard to the Ribbon Reefs further north. It costs more, but the reef there is healthier and there are fewer people. At the famous Cod Hole we were surrounded by potato cod as big as me. A night dive with a torch showed reef sharks hunting and shrimp with glowing eyes.\n\nNow honestly. A large part of the reef has gone through several waves of mass coral bleaching caused by heat, and at some sites near the coast we saw white, dead colonies. As a biologist I looked at it with pain. But there are also places where the corals are recovering, and the guides show them. Use reef-safe sunscreen and don't stand on coral with your fins.\n\nAnother downside: seasickness. To the outer reef the boat crosses open sea, and Yana was seasick on the very first day. Take pills an hour before departure."
+      },
+      "country": { "code": "AU", "uk": "Австралія", "en": "Australia", "es": "Australia" },
+      "region": { "uk": "Квінсленд", "en": "Queensland", "es": "Queensland" },
+      "seasons": ["spring"],
+      "budget": "high",
+      "durationDays": 7,
+      "tripType": "friends",
+      "tags": ["diving", "islands", "wildlife", "nature"],
+      "lat": -16.7590,
+      "lng": 145.9710,
+      "photoQuery": "Great Barrier Reef"
+    },
+    {
+      "key": "s-3-035",
+      "travellerKey": "t-3-11",
+      "category": "Океанія",
+      "title": { "uk": "Фіджі: м'які корали Тавеуні і церемонія янгони", "en": "Fiji: the Soft Corals of Taveuni and a Kava Ceremony" },
+      "article": {
+        "uk": "Фіджі називають світовою столицею м'яких коралів, і після десяти днів на острові Тавеуні я з цим згодна. Ми з чоловіком Артемом поїхали в липні, це сухий сезон і місцева зима: вода близько 25 градусів, повітря приємне, дощів мало. З Наді на Тавеуні літає маленький літак, і тут перша пастка: ліміт багажу дуже жорсткий, тож за наше дайверське спорядження ми доплатили чималу суму.\n\nГоловна мета, протока Сомосомо між Тавеуні і Вануа-Леву. Тут сильні припливні течії, і саме вони живлять корали. Знаменита Велика біла стіна на глибині 15–25 метрів вкрита блідо-лавандовими м'якими коралами, і коли течія підхоплює їх, вся стіна ніби вкривається снігом. Видимість близько 25 метрів. Ще на Райдужному рифі ми бачили корали всіх кольорів, рифових акул, черепах і хмари антіасів, помаранчевих рибок, яких так люблять підводні фотографи.\n\nЗанурення тут дрейфові, і графік залежить від течій, тож о часі вирішує дайвмайстер, а не ви. Два занурення на день коштували близько 160 євро на людину. Ми жили в маленькому дайв-резорті з бунгало на березі, і це був відчутний пункт бюджету.\n\nОдного вечора нас запросили до села на церемонію янгони, яку ще називають кава-кава. Це не напій з кавових зерен, а настій з кореня перцю, що трохи німить язик. За звичаєм гості приносять корінь у подарунок старійшині, це називається севусеву. Ми плескали в долоні, випивали з половинки кокоса і говорили «була». Артем попросив другу чашу, і його поважали весь вечір.\n\nЧесний мінус: течії тут для досвідчених, новачкам у протоці буде страшно. І дорога з Європи займає майже дві доби з пересадками, а ще дорогий переліт по островах.",
+        "en": "Fiji is called the soft coral capital of the world, and after ten days on Taveuni island I agree. My husband Artem and I went in July, the dry season and local winter: water around 25 degrees, pleasant air, little rain. A small plane flies from Nadi to Taveuni, and here is the first trap: the baggage limit is very strict, so we paid quite a sum extra for our dive gear.\n\nThe main goal was the Somosomo Strait between Taveuni and Vanua Levu. There are strong tidal currents here, and they are what feed the corals. The famous Great White Wall at 15 to 25 metres is covered with pale lavender soft corals, and when the current catches them the whole wall looks as if covered in snow. Visibility about 25 metres. On Rainbow Reef we also saw corals of every colour, reef sharks, turtles and clouds of anthias, the orange fish underwater photographers love so much.\n\nThe dives here are drift dives, and the schedule depends on the currents, so the divemaster decides the timing, not you. Two dives a day cost about 160 euros each. We stayed at a small dive resort with bungalows on the shore, and that was a noticeable part of the budget.\n\nOne evening we were invited to a village for a kava ceremony. It's not a drink made from coffee beans but an infusion of a pepper root that slightly numbs your tongue. By custom guests bring the root as a gift to the chief, which is called sevusevu. We clapped our hands, drank from half a coconut and said 'bula'. Artem asked for a second bowl and was respected all evening.\n\nThe honest downside: the currents here are for experienced divers; beginners will find the strait frightening. And the journey from Europe takes almost two days with connections, plus the island flights are expensive."
+      },
+      "country": { "code": "FJ", "uk": "Фіджі", "en": "Fiji", "es": "Fiyi" },
+      "region": { "uk": "Тавеуні", "en": "Taveuni", "es": "Taveuni" },
+      "seasons": ["winter"],
+      "budget": "high",
+      "durationDays": 10,
+      "tripType": "couple",
+      "tags": ["diving", "islands", "culture", "wildlife"],
+      "lat": -16.7900,
+      "lng": -179.9800,
+      "photoQuery": "Taveuni Fiji"
+    },
+    {
+      "key": "s-3-036",
+      "travellerKey": "t-3-12",
+      "category": "Америка",
+      "title": { "uk": "Шосе 66 і Долина монументів: 2400 кілометрів заходу", "en": "Route 66 and Monument Valley: 2400 Kilometres of the West" },
+      "article": {
+        "uk": "Із другом Віталіком ми мріяли про цей маршрут з дитинства, коли дивилися вестерни на касетах. У травні полетіли до Лас-Вегаса, взяли напрокат великий позашляховик і за дванадцять днів намотали близько 2400 кілометрів. Пальне в США значно дешевше, ніж удома, близько 0,9 євро за літр, тож бак на 70 літрів обходився десь у 60 євро. Правда, і їсть такий автомобіль відповідно.\n\nПерший день на старому шосе 66 між Кінгманом і Селіґменом. Це найдовший збережений шматок легендарної траси: заправки п'ятдесятих, іржаві пікапи, вивіски з неоном і закусочні, де бургер з молочним коктейлем коштує близько 12 євро. У Селіґмені Віталік сфотографувався з кожною старою машиною, а я записав у блокнот, що найкращий плейлист для цієї дороги починається з кантрі і закінчується роком сімдесятих.\n\nДалі на північ, через землі навахо, до Долини монументів. Червоні скелі-останці, які всі бачили в кіно, піднімаються просто з пустелі. На шосе 163 є точка, де Форрест Ґамп зупинив свій біг, і там завжди стоять люди посеред дороги, обережно. Вхід до племінного парку навахо платний, кілька євро з людини, а всередині ґрунтова дорога близько 27 кілометрів. Ми проїхали її самі, але в закриті частини долини пускають тільки з місцевим гідом, і з ним вона того варта.\n\nЛайфхак: навахо переводять годинники на літній час, а решта Аризони ні, тож у цьому районі телефон іноді плутається, і ми двічі запізнилися на захід сонця. Ще на землях навахо заборонений алкоголь, пам'ятайте про це.\n\nЧесний мінус: ґрунтова дорога в долині розбита, а страховка орендованої машини часто не покриває пошкоджень поза асфальтом. Читайте договір. Вечеряли ми фрай-бредом, смаженим коржем навахо, і він вартий окремої поїздки.",
+        "en": "My friend Vitalik and I had dreamed of this route since childhood, when we watched westerns on video tapes. In May we flew to Las Vegas, rented a big SUV and covered about 2400 kilometres in twelve days. Fuel in the USA is much cheaper than at home, about 0.9 euros a litre, so a 70-litre tank came to about 60 euros. Then again, a car like that drinks accordingly.\n\nThe first day was on old Route 66 between Kingman and Seligman. It's the longest surviving stretch of the legendary road: fifties petrol stations, rusty pickups, neon signs and diners where a burger with a milkshake costs about 12 euros. In Seligman Vitalik took a photo with every old car, and I noted that the best playlist for this road starts with country and ends with seventies rock.\n\nThen north, across Navajo land, to Monument Valley. The red buttes everyone has seen in films rise straight out of the desert. On Highway 163 there is the spot where Forrest Gump stopped running, and there are always people standing in the middle of the road there, so be careful. Entry to the Navajo tribal park is paid, a few euros per person, and inside there is a dirt road about 27 kilometres long. We drove it ourselves, but the closed parts of the valley are only open with a local guide, and with one it's worth it.\n\nA hack: the Navajo Nation observes daylight saving time and the rest of Arizona doesn't, so in this area your phone sometimes gets confused, and we were late for sunset twice. Also, alcohol is banned on Navajo land, remember that.\n\nThe honest downside: the dirt road in the valley is rough, and rental car insurance often doesn't cover damage off tarmac. Read the contract. We had Navajo fry bread for dinner, and it's worth a trip of its own."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Аризона і Юта", "en": "Arizona and Utah", "es": "Arizona y Utah" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 12,
+      "tripType": "friends",
+      "tags": ["road-trip", "desert", "photography", "nature"],
+      "lat": 36.9980,
+      "lng": -110.0985,
+      "photoQuery": "Monument Valley"
+    },
+    {
+      "key": "s-3-037",
+      "travellerKey": "t-3-12",
+      "category": "Америка",
+      "title": { "uk": "Юта сам на сам: арки, каньйони і ночі в кемпінгу біля Моаба", "en": "Utah Alone: Arches, Canyons and Camping Nights near Moab" },
+      "article": {
+        "uk": "Цього разу я поїхав сам, з наметом і старим пікапом із прокату. Жовтень у Юті ідеальний для дороги: вдень близько двадцяти градусів, вночі до нуля, а небо таке синє, що здається намальованим. З Солт-Лейк-Сіті до Моаба близько чотирьох годин по трасі, і останні пів години дорога вже пливе між червоними скелями.\n\nЩоб заощадити, ночував у кемпінгах Бюро управління землями вздовж річки Колорадо. Місце коштувало близько 20 євро, туалет є, води немає, тож каністра на 20 літрів обов'язкова. Кава з газового пальника на світанку, коли сонце підсвічує скелі навпроти, це мій особистий рейтинг найкращих сніданків у світі.\n\nУ нацпарк Арки з квітня по жовтень треба заздалегідь бронювати час в'їзду, бронь коштує символічні два долари, але без неї не пустять. До Делікатної арки, символу Юти, стежка близько п'яти кілометрів туди й назад, набір висоти невеликий, але гладкий камінь у спеку виснажує. На заході сонця тут натовп, тому я прийшов на світанку і стояв біля арки майже сам. Ще варто проїхати до Вікон і подвійної арки, там коротші прогулянки.\n\nНаступного ранку поїхав у Каньйонлендс, на схід сонця до Мейса-Арки, де світло підсвічує арку знизу, а в отворі видно каньйон. Ще одна точка, Дед-Горс-Пойнт, дає вид на петлю Колорадо на глибині шестисот метрів. Між ними близько години їзди, і на дорозі я двічі пропускав стада оленів.\n\nЧесний мінус: вода і пальне. Між Моабом і віддаленими районами заправок немає, а в пустелі навіть восени п'єш по чотири літри на день. І фото Делікатної арки без людей вимагає вставати о п'ятій.",
+        "en": "This time I went alone, with a tent and an old rental pickup. October in Utah is perfect for the road: around twenty degrees in the day, down to zero at night, and a sky so blue it looks painted. From Salt Lake City to Moab is about four hours on the highway, and for the last half hour the road already floats between red cliffs.\n\nTo save money I slept at Bureau of Land Management campsites along the Colorado River. A pitch cost about 20 euros; there's a toilet but no water, so a 20-litre jerrycan is a must. Coffee from a gas stove at dawn, when the sun lights up the cliffs opposite, tops my personal ranking of the world's best breakfasts.\n\nFrom April to October Arches National Park requires a timed entry reservation in advance; it costs a symbolic two dollars, but without it you won't get in. To Delicate Arch, the symbol of Utah, the trail is about five kilometres there and back, with little elevation gain, but smooth rock in the heat wears you out. At sunset there's a crowd, so I came at dawn and stood by the arch almost alone. The Windows and Double Arch are also worth the drive, with shorter walks.\n\nThe next morning I drove to Canyonlands for sunrise at Mesa Arch, where the light illuminates the arch from below and the canyon shows through the opening. Another spot, Dead Horse Point, gives a view of a loop of the Colorado six hundred metres below. They are about an hour's drive apart, and on the road I twice stopped for herds of deer.\n\nThe honest downside: water and fuel. There are no petrol stations between Moab and the remote areas, and in the desert even in autumn you drink four litres a day. And a photo of Delicate Arch without people means getting up at five."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Юта", "en": "Utah", "es": "Utah" },
+      "seasons": ["autumn"],
+      "budget": "low",
+      "durationDays": 5,
+      "tripType": "solo",
+      "tags": ["road-trip", "national-parks", "hiking", "camping"],
+      "lat": 38.7436,
+      "lng": -109.4993,
+      "photoQuery": "Delicate Arch"
+    },
+    {
+      "key": "s-3-038",
+      "travellerKey": "t-3-12",
+      "category": "Океанія",
+      "title": { "uk": "Великий океанський шлях: лівосторонній рух і Дванадцять апостолів", "en": "The Great Ocean Road: Driving on the Left and the Twelve Apostles" },
+      "article": {
+        "uk": "Великий океанський шлях я довго вважав переоціненим, поки не проїхав його сам. Ми з дружиною Лесею поїхали в січні, в австралійське літо, на чотири дні. Узяли в Мельбурні компактне авто, і перша година пішла на звикання до лівостороннього руху. Найважче не тримати смугу, а не вмикати двірники замість поворотника: я зробив це разів двадцять.\n\nДорога тягнеться близько 240 кілометрів від Торкі до Аллансфорда, вздовж скель над океаном. Будували її після Першої світової колишні солдати, і в кінці траси є арка на їхню честь. Пальне коштувало близько 1,2 євро за літр, повний бак виходив у 50 євро. Ми не поспішали і їхали в середньому по 80 кілометрів на день, бо зупинок тут більше, ніж поворотів.\n\nУ Торкі зазирнули на пляж Беллс, де відбуваються змагання серфінгістів, а в Кеннетт-Рівер шукали коал. Шукати не довелося: вони сиділи на евкаліптах просто над парковкою, а одна спала у розвилці гілки, як подушка. У Лорні пили каву з видом на океан і з'їли найкращий фіш-енд-чипс поїздки.\n\nДалі дорога звертає через ліс Отвей, де росте папороть заввишки з людину, і виходить до Дванадцяти апостолів. Насправді вапнякових стовпів у морі зараз менше дванадцяти, хвилі їх руйнують. Ми приїхали на захід сонця, і це було правильно: скелі стають золотими, а туристичні автобуси вже їдуть. Поруч ущелина Лок-Ард, де розбився корабель у XIX столітті, і там можна спуститися на пляж.\n\nЧесний мінус: дорога вузька і звивиста, обганяти ніде, а влітку на ній чимало автобусів і новачків на лівій смузі. Плануйте кожну годину з запасом. Біля Апостолів удень натовп, а парковка повна.",
+        "en": "For a long time I thought the Great Ocean Road was overrated, until I drove it myself. My wife Lesia and I went in January, in the Australian summer, for four days. We picked up a compact car in Melbourne, and the first hour went on getting used to driving on the left. The hardest part isn't keeping in lane but not switching on the wipers instead of the indicator: I did it about twenty times.\n\nThe road runs about 240 kilometres from Torquay to Allansford along cliffs above the ocean. It was built after the First World War by returned soldiers, and at the end of the route there is an arch in their honour. Fuel cost about 1.2 euros a litre, a full tank came to 50 euros. We didn't hurry and averaged about 80 kilometres a day, because there are more stops here than bends.\n\nIn Torquay we looked in at Bells Beach, where surfing competitions are held, and in Kennett River we went looking for koalas. We didn't have to look: they sat in eucalyptus trees right above the car park, and one slept in the fork of a branch like a pillow. In Lorne we had coffee with an ocean view and ate the best fish and chips of the trip.\n\nThen the road turns through the Otway forest, where ferns grow as tall as a person, and comes out at the Twelve Apostles. In fact there are now fewer than twelve limestone stacks in the sea, as the waves destroy them. We arrived at sunset, and that was right: the rocks turn golden and the tour buses are already leaving. Next to them is Loch Ard Gorge, where a ship was wrecked in the nineteenth century, and you can go down to the beach there.\n\nThe honest downside: the road is narrow and winding, with nowhere to overtake, and in summer there are plenty of buses and beginners in the left lane. Plan every hour with a margin. At the Apostles there's a crowd in the daytime and the car park is full."
+      },
+      "country": { "code": "AU", "uk": "Австралія", "en": "Australia", "es": "Australia" },
+      "region": { "uk": "Вікторія", "en": "Victoria", "es": "Victoria" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "couple",
+      "tags": ["road-trip", "beach", "nature", "wildlife"],
+      "lat": -38.6621,
+      "lng": 143.1051,
+      "photoQuery": "Twelve Apostles"
+    },
+    {
+      "key": "s-3-039",
+      "travellerKey": "t-3-13",
+      "category": "Америка",
+      "title": { "uk": "Гранд-Каньйон з підлітком: світанок, спека і стежка Брайт-Енджел", "en": "The Grand Canyon with a Teenager: Sunrise, Heat and Bright Angel Trail" },
+      "article": {
+        "uk": "Коли я сказала Дарині, що будильник на 4:45, бо ми їдемо дивитися світанок над Гранд-Каньйоном, вона подивилася на мене як на ворога. Але на оглядовому майданчику Мазер-Пойнт, коли сонце виринуло з-за краю, а каньйон почав мінятися з синього на червоний, моя п'ятнадцятирічна донька сказала лише: «Мам, ну це нереально». За такі секунди я і подорожую.\n\nЇхали ми з Лас-Вегаса, близько чотирьох з половиною годин машиною, у липні. Жили в містечку Таян біля південного входу, номер у мотелі коштував близько 160 євро, і це ще пощастило. Вхід до парку діє тиждень, приблизно 32 євро за машину. Усередині безкоштовні автобуси-шатли, і ними зручно пересуватися вздовж краю, не шукаючи парковку.\n\nЩодо прогулянок ми знайшли компроміс. Стежка вздовж краю каньйону рівна, з асфальтом, і ми пройшли кілька кілометрів між оглядовими майданчиками, поки Дарина фотографувала все для своїх подруг. А потім я вмовила її спуститися стежкою Брайт-Енджел до першої зупинки з тінню, це близько двох з половиною кілометрів униз і триста метрів перепаду висоти. Униз легко, назад удвічі довше. Таблички на стежці прямо попереджають: не намагайтеся дійти до річки й назад за один день. Влітку на дні понад сорок градусів, і рятувальники щороку виносять туристів.\n\nДарині найбільше сподобалася Вежа в пустелі на сході, кам'яна башта з розписами всередині, і, звісно, магазин сувенірів. А мені захід сонця на Гопі-Пойнт на західній дорозі.\n\nЧесний мінус: спека вдень і холод уночі, бо край каньйону на висоті понад дві тисячі метрів. Беріть куртки, воду і сіль. Ще біля головних оглядових точок дуже людно, але варто відійти на сто метрів, і ти сам на сам із каньйоном.",
+        "en": "When I told Daryna the alarm was set for 4:45 because we were going to watch sunrise over the Grand Canyon, she looked at me as if I were the enemy. But at the Mather Point overlook, when the sun popped up over the rim and the canyon began changing from blue to red, my fifteen-year-old daughter just said: 'Mum, this is unreal.' Seconds like that are why I travel.\n\nWe drove from Las Vegas, about four and a half hours, in July. We stayed in the town of Tusayan by the south entrance; a motel room cost about 160 euros, and that was lucky. Park entry is valid for a week, about 32 euros per car. Inside there are free shuttle buses, which make it easy to move along the rim without looking for parking.\n\nAs for walks, we found a compromise. The Rim Trail is level and paved, and we walked a few kilometres between overlooks while Daryna photographed everything for her friends. Then I persuaded her to go down the Bright Angel Trail to the first shaded rest stop, about two and a half kilometres down and three hundred metres of descent. Going down is easy; the way back takes twice as long. Signs on the trail warn plainly: don't try to reach the river and back in one day. In summer it's over forty degrees at the bottom, and rescuers carry out tourists every year.\n\nWhat Daryna liked best was the Desert View Watchtower in the east, a stone tower with paintings inside, and of course the souvenir shop. For me it was sunset at Hopi Point on the western road.\n\nThe honest downside: heat in the day and cold at night, because the rim is over two thousand metres high. Bring jackets, water and salty snacks. The main viewpoints are very crowded, but walk a hundred metres away and you're alone with the canyon."
+      },
+      "country": { "code": "US", "uk": "США", "en": "United States", "es": "Estados Unidos" },
+      "region": { "uk": "Аризона", "en": "Arizona", "es": "Arizona" },
+      "seasons": ["summer"],
+      "budget": "medium",
+      "durationDays": 4,
+      "tripType": "family",
+      "tags": ["national-parks", "hiking", "with-kids", "nature"],
+      "lat": 36.0544,
+      "lng": -112.1401,
+      "photoQuery": "Grand Canyon"
+    },
+    {
+      "key": "s-3-040",
+      "travellerKey": "t-3-13",
+      "category": "Америка",
+      "title": { "uk": "Ніагара: червоні дощовики, неон і крижане вино для мами", "en": "Niagara: Red Ponchos, Neon and Icewine for Mum" },
+      "article": {
+        "uk": "Ніагарський водоспад був пунктом, на який ми з Дариною погодилися без суперечок, що трапляється рідко. Ми гостювали в моєї подруги в Торонто в травні і поїхали до Ніагари на три дні. Із Торонто туди близько півтори години приміським потягом або автобусом, квиток кілька євро. Кажуть, канадський бік кращий, бо з нього видно всі водоспади анфас, і я з цим згодна.\n\nПерше, що ми зробили, це катер до підніжжя водоспаду Підкова. Видають червоні дощовики, але вони рятують хіба що від частини води. Коли катер заходить у хмару бризок, гуркіт такий, що Дарина кричала мені щось у вухо, а я нічого не чула. Квиток близько 30 євро, і це найкращі гроші за всю поїздку. Ще ми спускалися ліфтом у тунелі за водоспадом, там оглядові вікна просто за стіною води.\n\nУвечері водоспади підсвічують кольоровими прожекторами, а влітку і в травневі вихідні бувають феєрверки. Вулиця Кліфтон-Гілл поруч виглядає як маленький Лас-Вегас: колесо огляду, будинки з привидами, восковий музей, автомати з іграшками. Дарина була в захваті, я трохи менше, але одне колесо огляду ми таки покатали, і вид звідти на водоспад чудовий.\n\nНаступного дня я виторгувала свою частину програми: поїздку в Ніагара-он-те-Лейк, старовинне містечко з квітниками за двадцять хвилин від водоспадів. Тут вирощують виноград для крижаного вина, яке роблять з ягід, зібраних на морозі. Я продегустувала три келихи на виноробні, а Дарина, якій до вина ще далеко, з'їла морозиво і визнала, що «тут затишно».\n\nЧесний мінус: біля водоспадів усе дороге і кітчеве, обід у ресторані з видом коштує вдвічі більше, ніж за квартал. Ми їли за два квартали від набережної і заощадили на подарунки.",
+        "en": "Niagara Falls was one item Daryna and I agreed on without an argument, which rarely happens. We were staying with my friend in Toronto in May and went to Niagara for three days. From Toronto it's about an hour and a half by commuter train or bus, a ticket of a few euros. They say the Canadian side is better because you see all the falls head-on, and I agree.\n\nThe first thing we did was the boat to the foot of the Horseshoe Falls. They hand out red ponchos, but they only save you from part of the water. When the boat enters the cloud of spray the roar is so loud that Daryna was shouting something in my ear and I couldn't hear a thing. The ticket is about 30 euros, and it was the best money of the whole trip. We also took a lift down into the tunnels behind the falls, where the viewing windows are right behind a wall of water.\n\nIn the evening the falls are lit by coloured floodlights, and in summer and on May weekends there are fireworks. Clifton Hill nearby looks like a little Las Vegas: a Ferris wheel, haunted houses, a wax museum, claw machines. Daryna was delighted, I somewhat less so, but we did ride the Ferris wheel, and the view of the falls from it is great.\n\nThe next day I bargained for my part of the programme: a trip to Niagara-on-the-Lake, a historic little town with flower beds twenty minutes from the falls. Grapes are grown here for icewine, made from berries picked frozen. I tasted three glasses at a winery, and Daryna, who is still a long way from wine, ate an ice cream and admitted that 'it's cosy here'.\n\nThe honest downside: by the falls everything is expensive and kitschy, and lunch in a restaurant with a view costs twice as much as a block away. We ate two blocks from the riverside and saved money for presents."
+      },
+      "country": { "code": "CA", "uk": "Канада", "en": "Canada", "es": "Canadá" },
+      "region": { "uk": "Онтаріо", "en": "Ontario", "es": "Ontario" },
+      "seasons": ["spring"],
+      "budget": "medium",
+      "durationDays": 3,
+      "tripType": "family",
+      "tags": ["nature", "with-kids", "wine", "photography"],
+      "lat": 43.0896,
+      "lng": -79.0849,
+      "photoQuery": "Horseshoe Falls"
+    }
+  ]
+}

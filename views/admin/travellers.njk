@@ -1,0 +1,32 @@
+{% extends "admin/layout.njk" %}
+{% block title %}Мандрівники{% endblock %}
+{% block content %}
+<header class="adm-head">
+  <div><h1 class="adm-head__title">Мандрівники</h1><p class="adm-head__sub">Знайдено: {{ total }}</p></div>
+  <a class="action" href="/admin/travellers/new">+ Новий мандрівник</a>
+</header>
+<form class="adm-filters" method="get" action="/admin/travellers" data-autosubmit>
+  <input class="field__input adm-filters__search" type="search" name="q" value="{{ q }}" placeholder="Пошук за імʼям або ID">
+  <select class="field__select" name="demo" aria-label="Демо"><option value="">Демо + реальні</option><option value="1"{% if demo == '1' %} selected{% endif %}>Тільки демо</option><option value="0"{% if demo == '0' %} selected{% endif %}>Без демо</option></select>
+  <select class="field__select" name="bookings" aria-label="Бронювання"><option value="">Усі</option><option value="1"{% if bookings == '1' %} selected{% endif %}>Приймають бронювання</option></select>
+  <button class="action action--small" type="submit">Знайти</button>
+</form>
+<div class="adm-card adm-card--flush"><div class="tbl-wrap">
+  <table class="tbl">
+    <thead><tr><th></th><th>Імʼя</th><th class="num">Історій</th><th>Бронювання</th><th>Джерело</th><th>Видимість</th></tr></thead>
+    <tbody>
+      {% for u in rows %}
+      <tr>
+        <td><img class="tbl__avatar" src="{{ u.avatar.src }}" alt="" width="40" height="40" loading="lazy"></td>
+        <td><a class="tbl__title" href="/admin/travellers/{{ u.id }}">{{ u.name }}</a>{% if u.is_demo %} <span class="tag tag--demo">демо</span>{% endif %}<div class="muted">{{ u.description | truncate(90) }}</div></td>
+        <td class="num">{{ u.stories }}</td>
+        <td>{% if u.accepts_bookings %}<span class="status status--confirmed">гід</span>{% else %}—{% endif %}</td>
+        <td>{{ u.source }}</td>
+        <td>{{ 'приховано' if u.hidden else 'публічний' }}</td>
+      </tr>
+      {% else %}<tr><td colspan="6" class="adm-empty">Нічого не знайдено.</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div></div>
+{% include "admin/pager.njk" %}
+{% endblock %}

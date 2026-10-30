@@ -1,0 +1,20 @@
+// Saves sample responses of every public endpoint of the original API (read-only).
+import fs from 'node:fs';
+const B = 'https://travel-stories-backend.onrender.com';
+const out = new URL('./reference/api/', import.meta.url);
+const get = async (p) => { const r = await fetch(B + p); return { status: r.status, body: await r.json().catch(() => null) }; };
+const save = (n, v) => fs.writeFileSync(new URL(n + '.json', out), JSON.stringify(v, null, 1));
+const cats = await get('/api/categories'); save('categories', cats);
+const st = await get('/api/stories?page=1&perPage=3'); save('stories', st);
+save('stories-cat', await get('/api/stories?page=1&perPage=2&category=' + cats.body.data[0]._id));
+save('popular', await get('/api/stories/popular?page=1&perPage=3'));
+const sid = st.body.data.stories[0]._id;
+save('story', await get('/api/stories/' + sid));
+save('story-404', await get('/api/stories/000000000000000000000000'));
+save('story-bad', await get('/api/stories/abc'));
+const us = await get('/api/users?page=1&limit=3'); save('users', us);
+save('users-limit', await get('/api/users?page=1&limit=51'));
+const uid = (us.body.data.users || us.body.data.items || [])[0]?._id;
+if (uid) save('user', await get('/api/users/' + uid + '?page=1&limit=2'));
+save('stories-bad', await get('/api/stories?page=0&perPage=abc'));
+console.log('done', sid, uid);

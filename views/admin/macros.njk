@@ -1,0 +1,16 @@
+{# Form field macros shared by admin forms. #}
+{% macro field(name, label, value, o = {}) %}
+<div class="field" data-field="{{ name }}">
+  <label class="field__label" for="{{ name }}">{{ label }}{% if o.required %} *{% endif %}</label>
+  <input class="field__input" id="{{ name }}" name="{{ name }}" type="{{ o.type or 'text' }}" value="{{ value if value !== null and value !== undefined else '' }}"{% if o.max %} maxlength="{{ o.max }}"{% endif %}{% if o.step %} step="{{ o.step }}"{% endif %}{% if o.min !== undefined %} min="{{ o.min }}"{% endif %}{% if o.required %} required{% endif %}>
+  <span class="field__error" data-error-for="{{ name }}"></span>
+</div>
+{% endmacro %}
+{% macro area(name, label, value, o = {}) %}
+<div class="field" data-field="{{ name }}">
+  <label class="field__label" for="{{ name }}">{{ label }}{% if o.required %} *{% endif %}</label>
+  <textarea class="field__textarea" id="{{ name }}" name="{{ name }}" rows="{{ o.rows or 6 }}"{% if o.max %} maxlength="{{ o.max }}"{% endif %}{% if o.required %} required{% endif %} data-counter>{{ value or '' }}</textarea>
+  <span class="field__hint" data-count-for="{{ name }}"></span>
+  <span class="field__error" data-error-for="{{ name }}"></span>
+</div>
+{% endmacro %}

@@ -1,0 +1,14 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<section class="auth">
+  <div class="auth__container">
+    <div class="auth__tabs">
+      <a class="auth__tab{% if mode == 'register' %} auth__tab--active{% endif %}" href="{{ url('/auth/register') }}"{% if mode == 'register' %} aria-current="page"{% endif %}>{{ t('nav.register') }}</a>
+      <a class="auth__tab{% if mode == 'login' %} auth__tab--active{% endif %}" href="{{ url('/auth/login') }}"{% if mode == 'login' %} aria-current="page"{% endif %}>{{ t('nav.login') }}</a>
+    </div>
+    <h1 class="auth__title">{{ t('auth.' + mode + 'Title') }}</h1>
+    <p class="auth__subtitle">{{ t('auth.' + mode + 'Subtitle') }}</p>
+    {% include "partials/editorial-notice.njk" %}
+  </div>
+</section>
+{% endblock %}
