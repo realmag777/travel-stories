@@ -1,0 +1,36 @@
+{
+ "status": 200,
+ "body": {
+  "status": 200,
+  "message": "Successfully found travellers",
+  "data": {
+   "users": [
+    {
+     "_id": "6881563901add19ee16fcff5",
+     "name": "Дмитро Романенко",
+     "avatarUrl": "https://ftp.goit.study/img/harmoniq/users/6881563901add19ee16fcff5.webp",
+     "articlesAmount": 13,
+     "description": "Привіт! Я Дмитро. Люблю знаходити приховані перлини у кожній поїздці та ділитися ними. Світ повний дивовижних відкриттів!"
+    },
+    {
+     "_id": "6881563901add19ee16fd017",
+     "name": "Матвій Савченко",
+     "avatarUrl": "https://ftp.goit.study/img/harmoniq/users/6881563901add19ee16fd017.webp",
+     "articlesAmount": 20,
+     "description": "Мене звати Матвій. Почав ділитися враженнями. Захоплююсь красою нашого світу та шукаю гармонію в кожній миті. Радий надихати."
+    },
+    {
+     "_id": "6881563901add19ee16fd010",
+     "name": "Назар Романенко",
+     "avatarUrl": "https://ftp.goit.study/img/harmoniq/users/6881563901add19ee16fd010.webp",
+     "articlesAmount": 24,
+     "description": "Я Назар. Світ на смак – мій девіз! У моїх історіях я досліджую культуру через її автентичні прояви. Буде дуже смачно!"
+    }
+   ],
+   "page": 1,
+   "perPage": 3,
+   "totalItems": 167,
+   "hasNextPage": true
+  }
+ }
+}

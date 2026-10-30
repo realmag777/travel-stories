@@ -14,3 +14,5 @@ public/build/
 public/fonts/
 tools/fetch-media.log
 dev-server.log
+test-results/
+playwright-report/

@@ -105,7 +105,7 @@
   "client": {
     "close": "Cerrar", "network": "Sin conexión con el servidor. Revisa tu internet.", "requestFailed": "La solicitud falló. Inténtalo de nuevo.",
     "tooMany": "Demasiadas solicitudes: inténtalo en un minuto.", "savedToast": "Historia guardada", "unsaved": "Historia quitada de guardadas",
-    "searchApplied": "Filtros elegidos según tu búsqueda: {n} historias", "searchNothing": "No reconocimos filtros: mostramos todas las historias",
+    "searchApplied": "Filtros elegidos según tu búsqueda — encontradas: {n}", "searchNothing": "No reconocimos filtros: mostramos todas las historias",
     "map": { "open": "Leer la historia", "count": "En el mapa: {n}" },
     "validation": { "required": "Este campo es obligatorio", "min": "Mínimo {min} caracteres", "max": "Máximo {max} caracteres", "email": "Introduce un correo válido", "invalid": "Valor no válido" },
     "booking": {

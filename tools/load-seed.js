@@ -39,6 +39,30 @@ function looksLikeTestStory(s) {
   return false;
 }
 
+/**
+ * Moderation pass over imported original records: hides test stories and repeated copies of
+ * the same story by the same author (the earliest copy stays), then hides accounts that end up
+ * with nothing public and no description. Re-runnable.
+ */
+async function moderateOriginal() {
+  const rows = await db('stories').where({ source: 'original' }).orderBy('created_at').select('id', 'title', 'article', 'category_id', 'owner_id');
+  const seen = new Set();
+  const hide = [];
+  const show = [];
+  for (const r of rows) {
+    const key = r.owner_id + '|' + String(r.title).toLowerCase().replace(/[^\p{L}]+/gu, '').replace(/^м?андрівк/u, 'андрівк');
+    const bad = looksLikeTestStory({ title: r.title, article: r.article, category: r.category_id }) || seen.has(key);
+    seen.add(key);
+    (bad ? hide : show).push(r.id);
+  }
+  if (hide.length) await db('stories').whereIn('id', hide).update({ hidden: true });
+  if (show.length) await db('stories').whereIn('id', show).update({ hidden: false });
+  await db.raw(`UPDATE users u SET hidden = (position('@' in u.name) > 0) OR (
+      NOT EXISTS (SELECT 1 FROM stories s WHERE s.owner_id = u.id AND NOT s.hidden) AND coalesce(trim(u.description), '') = '')
+    WHERE u.source = 'original'`);
+  return { hidden: hide.length, visible: show.length };
+}
+
 async function storeImage(file, kind, id) {
   if (!file || !fs.existsSync(file)) return null;
   try {
@@ -203,4 +227,4 @@ async function loadBookingDemo(tIds, { now = new Date() } = {}) {
   return { guides: keys.length, slots };
 }
 
-module.exports = { seedDictionaries, loadOriginal, loadDemo, loadBookingDemo, looksLikeTestStory, slugify };
+module.exports = { seedDictionaries, loadOriginal, moderateOriginal, loadDemo, loadBookingDemo, looksLikeTestStory, slugify };

@@ -105,7 +105,7 @@
   "client": {
     "close": "Close", "network": "No connection to the server. Check your internet.", "requestFailed": "The request failed. Please try again.",
     "tooMany": "Too many requests — try again in a minute.", "savedToast": "Story saved", "unsaved": "Story removed from saved",
-    "searchApplied": "Filters picked from your request: {n} stories", "searchNothing": "No filters recognised — showing all stories",
+    "searchApplied": "Filters picked from your request — found: {n}", "searchNothing": "No filters recognised — showing all stories",
     "map": { "open": "Read the story", "count": "On the map: {n}" },
     "validation": { "required": "This field is required", "min": "At least {min} characters", "max": "At most {max} characters", "email": "Enter a valid e-mail", "invalid": "Invalid value" },
     "booking": {

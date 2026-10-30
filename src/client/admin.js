@@ -162,7 +162,14 @@ document.querySelectorAll('[data-adm-form], [data-ajax-form]').forEach((form) =>
     btn?.classList.add('is-loading');
     try {
       const url = form.getAttribute('action');
-      const r = await post(url + (url.includes('_csrf') ? '' : (url.includes('?') ? '&' : '?') + '_csrf=' + encodeURIComponent(csrf)), fd);
+      // Only forms with a file go as multipart; the rest as JSON (repeated keys become arrays).
+      let body = fd;
+      if (!form.querySelector('input[type=file]')) {
+        body = {};
+        for (const [k, v] of fd.entries()) body[k] = k in body ? [].concat(body[k], v) : v;
+        form.querySelectorAll('input[type=checkbox]').forEach((c) => { if (!c.checked && !(c.name in body) && c.name !== 'weekdays') body[c.name] = ''; });
+      }
+      const r = await post(url + (url.includes('_csrf') ? '' : (url.includes('?') ? '&' : '?') + '_csrf=' + encodeURIComponent(csrf)), body);
       showFieldErrors(form, {});
       handleResult(r);
     } catch (err) {

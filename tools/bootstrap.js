@@ -39,6 +39,8 @@ async function main() {
       }
     }
     const r = await seed.loadOriginal();
+    const m = await seed.moderateOriginal();
+    console.log(`[bootstrap] moderation: ${m.hidden} test/duplicate stories hidden, ${m.visible} visible`);
     await save('original');
     console.log(`[bootstrap] original: ${r.stories} stories, ${r.users} users`);
   }

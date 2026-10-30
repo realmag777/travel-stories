@@ -1,0 +1,26 @@
+{
+ "status": 200,
+ "body": {
+  "status": 200,
+  "message": "Successfully found story",
+  "data": {
+   "_id": "6ae4c1b04c17585d1e441a1a",
+   "img": "https://res.cloudinary.com/hhhiknaz/image/upload/v1793376687/stories/story_4e330707-77e8-4d92-9eb0-32b07fe2a3c5.jpg",
+   "title": "Миколаїв 2026",
+   "article": "Наші школяри)",
+   "category": {
+    "_id": "68fb50c80ae91338641121f3",
+    "name": "Америка"
+   },
+   "ownerId": {
+    "_id": "6addd040a85cd334e0022983",
+    "name": "IVASHCHENKO IEVHEN",
+    "avatarUrl": "https://ac.goit.global/fullstack/react/default-avatar.jpg"
+   },
+   "date": "2026-10-30",
+   "favoriteCount": 0,
+   "createdAt": "2026-10-30T16:11:28.247Z",
+   "updatedAt": "2026-10-30T16:11:57.184Z"
+  }
+ }
+}

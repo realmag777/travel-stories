@@ -81,7 +81,7 @@ function toUrl(state, { base = '/stories', withPage = true, withView = true } = 
   if (state.sort && state.sort !== 'new') q.push('sort=' + state.sort);
   if (state.bbox) q.push('bbox=' + state.bbox.join(','));
   if (state.q) q.push('q=' + encodeURIComponent(state.q));
-  if (withView && state.view === 'map') q.push('view=map');
+  if (withView && state.view === 'map' && base !== '/map') q.push('view=map');
   if (withPage && state.page > 1) q.push('page=' + state.page);
   if (q.length) url += '?' + q.join('&');
   return url;

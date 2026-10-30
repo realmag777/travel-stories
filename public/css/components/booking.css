@@ -1,7 +1,7 @@
 /* "Забронювати" block on a traveller profile: service, slot calendar, form. */
-.booking { background-color: #f7f9ff; padding: 0 20px 32px; }
-@media (min-width: 768px) { .booking { padding: 0 32px 32px; } }
-@media (min-width: 1440px) { .booking { padding: 0 64px 48px; } }
+.booking { background-color: #f7f9ff; padding: 32px 20px; }
+@media (min-width: 768px) { .booking { padding: 32px; } }
+@media (min-width: 1440px) { .booking { padding: 48px 64px; } }
 .booking__card { max-width: 1312px; margin: 0 auto; background: var(--color-white); border: 1px solid var(--opacity-neutral-darkest-10); border-radius: 24px; padding: 24px 20px; display: flex; flex-direction: column; gap: 24px; }
 @media (min-width: 768px) { .booking__card { padding: 32px; } }
 @media (min-width: 1440px) { .booking__card { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; padding: 40px 48px; } }
@@ -24,7 +24,7 @@
 .service__meta { font-size: 14px; color: var(--color-neutral-dark); }
 .service__price { font-weight: 700; white-space: nowrap; }
 
-.calendar { display: flex; flex-direction: column; gap: 12px; }
+.calendar { display: flex; flex-direction: column; gap: 12px; max-width: 420px; }
 .calendar__nav { display: flex; align-items: center; justify-content: space-between; }
 .calendar__month { font-weight: 700; text-transform: capitalize; }
 .calendar__arrow { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--opacity-neutral-darkest-15); background: var(--color-white); display: inline-flex; align-items: center; justify-content: center; }
@@ -32,7 +32,7 @@
 .calendar__arrow:disabled { opacity: .3; cursor: default; }
 .calendar__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
 .calendar__dow { text-align: center; font-size: 12px; color: var(--color-neutral); padding: 4px 0; }
-.calendar__day { aspect-ratio: 1; border-radius: 8px; border: 1px solid transparent; background: none; font-size: 14px; color: var(--color-neutral-light); display: flex; align-items: center; justify-content: center; cursor: default; }
+.calendar__day { height: 40px; border-radius: 8px; border: 1px solid transparent; background: none; font-size: 14px; color: var(--color-neutral-light); display: flex; align-items: center; justify-content: center; cursor: default; }
 .calendar__day--available { color: var(--color-neutral-darkest); background: var(--color-royal-blue-lighter); cursor: pointer; font-weight: 600; }
 .calendar__day--available:hover { border-color: var(--color-royal-blue); }
 .calendar__day--selected { background: var(--color-royal-blue); color: #fff; }
