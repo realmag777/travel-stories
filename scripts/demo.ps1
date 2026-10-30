@@ -6,15 +6,15 @@ $compose = @('compose', '-f', 'docker-compose.demo.yml')
 
 function Fail($msg) { Write-Host "`n$msg" -ForegroundColor Red; exit 1 }
 
-if (-not (Get-Command docker -ErrorAction SilentlyContinue)) { Fail 'Docker не найден. Установите Docker Desktop.' }
+if (-not (Get-Command docker -ErrorAction SilentlyContinue)) { Fail 'Docker not found. Install Docker Desktop.' }
 docker info *> $null
-if ($LASTEXITCODE -ne 0) { Fail 'Docker не запущен. Запустите Docker Desktop и повторите.' }
+if ($LASTEXITCODE -ne 0) { Fail 'Docker is not running. Start Docker Desktop and try again.' }
 docker compose version *> $null
-if ($LASTEXITCODE -ne 0) { Fail "Нет 'docker compose' (v2). Обновите Docker Desktop." }
+if ($LASTEXITCODE -ne 0) { Fail "'docker compose' (v2) is missing. Update Docker Desktop." }
 
 if (-not (Test-Path .env)) {
   Copy-Item .env.demo .env
-  Write-Host '[demo] .env создан из .env.demo'
+  Write-Host '[demo] .env created from .env.demo'
 }
 
 function EnvVal($name) {
@@ -26,8 +26,8 @@ $port = EnvVal 'APP_PORT'; if (-not $port) { $port = '8080' }
 $adminUser = EnvVal 'ADMIN_USER'; if (-not $adminUser) { $adminUser = 'admin' }
 $adminPass = EnvVal 'DEMO_ADMIN_PASS'
 
-if (-not (Test-Path demo/db/demo.dump)) { Fail 'Нет demo/db/demo.dump — репозиторий склонирован не полностью.' }
-if (-not (Test-Path demo/uploads/covers)) { Fail 'Нет demo/uploads — репозиторий склонирован не полностью.' }
+if (-not (Test-Path demo/db/demo.dump)) { Fail 'demo/db/demo.dump is missing - the repository was not cloned completely.' }
+if (-not (Test-Path demo/uploads/covers)) { Fail 'demo/uploads is missing - the repository was not cloned completely.' }
 
 # Port check (skipped when our own demo already listens there).
 $running = docker @compose ps -q app 2>$null
@@ -39,37 +39,37 @@ if (-not $running) {
     try { $busy = $client.ConnectAsync('127.0.0.1', [int]$port).Wait(700) } catch { $busy = $false } finally { $client.Dispose() }
     if ($busy) { Start-Sleep -Seconds 1 }
   }
-  if ($busy) { Fail "Порт $port занят. Укажите другой в .env: APP_PORT=8090 — и запустите скрипт снова." }
+  if ($busy) { Fail "Port $port is taken. Set another one in .env, e.g. APP_PORT=8090, and run the script again." }
 }
 
-Write-Host '[demo] сборка и запуск (первый раз 2–5 минут: образ собирается, база восстанавливается из снимка)...'
+Write-Host '[demo] building and starting (first time 2-5 minutes: the image builds, the database is restored from the snapshot)...'
 docker @compose up -d --build
-if ($LASTEXITCODE -ne 0) { Fail 'docker compose up завершился с ошибкой.' }
+if ($LASTEXITCODE -ne 0) { Fail 'docker compose up failed.' }
 
-Write-Host -NoNewline '[demo] жду готовности'
+Write-Host -NoNewline '[demo] waiting for the app'
 $status = 'starting'
 for ($i = 0; $i -lt 180; $i++) {
   $id = docker @compose ps -q app
   $status = docker inspect -f '{{if .State.Health}}{{.State.Health.Status}}{{else}}{{.State.Status}}{{end}}' $id 2>$null
   if ($status -eq 'healthy') { break }
-  if ($status -eq 'unhealthy') { Write-Host ''; docker @compose logs --tail 50 app; Fail 'Приложение не поднялось (см. лог выше).' }
+  if ($status -eq 'unhealthy') { Write-Host ''; docker @compose logs --tail 50 app; Fail 'The app did not start (see the log above).' }
   Write-Host -NoNewline '.'
   Start-Sleep -Seconds 5
 }
 Write-Host ''
-if ($status -ne 'healthy') { docker @compose logs --tail 50 app; Fail 'Не дождался готовности за 15 минут.' }
+if ($status -ne 'healthy') { docker @compose logs --tail 50 app; Fail 'The app was not ready within 15 minutes.' }
 
 $url = "http://localhost:$port"
 Write-Host @"
 
-  Подорожники+ — демо запущено
-  ─────────────────────────────────────────────
-  Сайт:     $url
-  Админка:  $url/admin   логин: $adminUser   пароль: $adminPass
+  Podorozhnyky+ demo is running
+  ---------------------------------------------
+  Site:     $url
+  Admin:    $url/admin   login: $adminUser   password: $adminPass
   API:      $url/docs
-  Карта:    $url/map
-  Гиды:     $url/guides
-  ─────────────────────────────────────────────
-  Сброс к снимку: scripts\demo-reset.ps1    Остановить: docker compose -f docker-compose.demo.yml down
+  Map:      $url/map
+  Guides:   $url/guides
+  ---------------------------------------------
+  Reset to the snapshot: scripts\demo-reset.ps1    Stop: docker compose -f docker-compose.demo.yml down
 
 "@

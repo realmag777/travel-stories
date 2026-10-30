@@ -3,6 +3,6 @@
 # from demo/db/demo.dump and demo/uploads.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-echo "[demo] удаляю данные демо (тома базы и uploads)…"
+echo "[demo] deleting the demo data (database and uploads volumes)…"
 docker compose -f docker-compose.demo.yml down -v --remove-orphans
 exec "$(dirname "$0")/demo.sh"
